@@ -1,0 +1,59 @@
+[Venta.frm/Forma]
+ListaAcciones.Cambios=Insertar<TAB>GenerarCFD<TAB>110<BR>Insertar<TAB>EnviarCFD<TAB>111
+
+[Venta.frm/Acciones.GenerarCFD]
+Nombre=GenerarCFD
+Boton=0
+NombreDesplegar=Generar Comprobante Fiscal Digital
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Menu=&Archivo
+Expresion=CFD.Generar( <T>VTAS<T>, Venta:Venta.ID)
+Activo=S
+Visible=S
+
+[Venta.frm/Acciones.EnviarCFD]
+Nombre=EnviarCFD
+Boton=0
+NombreDesplegarEnviar Comprobante Fiscal Digital
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Menu=&Archivo
+Expresion=CFD.Enviar( <T>VTAS<T>, Venta:Venta.ID)
+Activo=S
+Visible=S
+
+[CXC.frm/Forma]
+PosicionInicialArriba=102
+ListaAcciones.Cambios=Insertar<TAB>GenerarCFDCX<TAB>21<BR>Insertar<TAB>EnviarCFD<TAB>22
+
+
+[CXC.frm/Acciones.GenerarCFDCX]
+Nombre=GenerarCFD
+Boton=0
+NombreDesplegar=Generar Comprobante Fiscal Digital
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Menu=&Archivo
+Expresion=CFD.Generar( <T>CXC<T>, CXC:CXC.ID)
+Activo=S
+Visible=S
+
+[CXC.frm/Acciones.EnviarCFD]
+Nombre=EnviarCFD
+Boton=0
+NombreDesplegarEnviar Comprobante Fiscal Digital
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Menu=&Archivo
+Expresion=CFD.Enviar( <T>CXC<T>, CXC:CXC.ID)
+Activo=S
+Visible=S

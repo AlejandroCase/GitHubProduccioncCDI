@@ -1,0 +1,37 @@
+[Vista]
+ListaCampos=(Lista)
+SQL=(Lista)
+
+[Parentesco.Parentesco]
+Nombre=
+Visible=
+OpcionesColumnas=
+OpcionesRenglones=
+TamanoValidacion=
+
+[Parentesco.SufijosSocios]
+Clave=Parentesco.SufijosSocios
+Nombre=SufijosSocios
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+LigaTabla=Parentesco
+LigaCampo=SufijosSocios
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=SufijosSocios
+
+[Vista.ListaCampos]
+(Inicio)=Parentesco.Parentesco
+Parentesco.Parentesco=Parentesco.SufijosSocios
+Parentesco.SufijosSocios=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=Parentesco.Parentesco,
+Parentesco.Parentesco,=Parentesco.SufijosSocios
+Parentesco.SufijosSocios=FROM Parentesco
+FROM Parentesco=(Fin)

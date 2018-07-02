@@ -1,0 +1,18 @@
+[Dinero.frm/MovImpuesto]
+Carpetadesactivada=S
+
+[Dinero.tbl/BeneficiarioNombre]
+AyudaEnCaptura=
+AyudaForma=
+AyudaVista=
+AyudaCampo=
+UnicamenteLectura=S
+
+
+
+[Dinero.vis/Vista.SQL]
+Titulo.Nombre,=Titulo.Valor,
+Titulo.Valor=
+Titulo.Valor,=CentroCostos2.Descripcion,
+CentroCostos2.Descripcion,=CentroCostos3.Descripcion
+CentroCostos3.Descripcion=FROM Dinero

@@ -1,0 +1,49 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.ListaCampos]
+AsisteD.ActividadAvance=Personal.ApellidoPaterno
+AsisteD.Extra=
+AsisteD.GestionRef=
+AsisteD.ActividadABCRef=
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=AsisteD.ID,
+AsisteD.ID,=AsisteD.Renglon,
+AsisteD.Renglon,=AsisteD.Recurso,
+AsisteD.Recurso,=AsisteD.Personal,
+AsisteD.Personal,=AsisteD.Registro,
+AsisteD.Registro,=AsisteD.HoraRegistro,
+AsisteD.HoraRegistro,=AsisteD.HoraD,
+AsisteD.HoraD,=AsisteD.HoraA,
+AsisteD.HoraA,=AsisteD.FechaD,
+AsisteD.FechaD,=AsisteD.FechaA,
+AsisteD.FechaA,=AsisteD.Fecha,
+AsisteD.Fecha,=AsisteD.Cantidad,
+AsisteD.Cantidad,=AsisteD.Tipo,
+AsisteD.Tipo,=AsisteD.Concepto,
+AsisteD.Concepto,=AsisteD.Observaciones,
+AsisteD.Observaciones,=AsisteD.Sucursal,
+AsisteD.Sucursal,=AsisteD.SucursalOrigen,
+AsisteD.SucursalOrigen,=AsisteD.MovimientoRef,
+AsisteD.MovimientoRef,=AsisteD.Proyecto,
+AsisteD.Proyecto,=AsisteD.Actividad,
+AsisteD.Actividad,=AsisteD.Costo,
+AsisteD.Costo,=AsisteD.ActividadEstado,
+AsisteD.ActividadEstado,=AsisteD.ActividadAvance,
+AsisteD.ActividadAvance,=Personal.ApellidoPaterno,
+Personal.ApellidoPaterno,=Personal.ApellidoMaterno,
+Personal.ApellidoMaterno,=Personal.Nombre,
+Personal.Nombre,=Personal.Estatus,
+Personal.Estatus,=Proy.Descripcion,
+Proy.Descripcion,=ProyectoDEnFirme.Asunto,
+ProyectoDEnFirme.Asunto,=ProyectoDEnFirme.Estado,
+ProyectoDEnFirme.Estado,=ProyectoDEnFirme.Avance,
+ProyectoDEnFirme.Avance,=Recurso.Nombre
+Recurso.Nombre=FROM AsisteD
+FROM AsisteD=LEFT OUTER JOIN Personal ON AsisteD.Personal<IGUAL>Personal.Personal
+LEFT OUTER JOIN Personal ON AsisteD.Personal<IGUAL>Personal.Personal=LEFT OUTER JOIN Proy ON AsisteD.Proyecto<IGUAL>Proy.Proyecto
+LEFT OUTER JOIN Proy ON AsisteD.Proyecto<IGUAL>Proy.Proyecto=LEFT OUTER JOIN ProyectoDEnFirme ON AsisteD.Proyecto<IGUAL>ProyectoDEnFirme.Proyecto AND AsisteD.Actividad<IGUAL>ProyectoDEnFirme.Actividad
+LEFT OUTER JOIN ProyectoDEnFirme ON AsisteD.Proyecto<IGUAL>ProyectoDEnFirme.Proyecto AND AsisteD.Actividad<IGUAL>ProyectoDEnFirme.Actividad=LEFT OUTER JOIN Recurso ON AsisteD.Recurso<IGUAL>Recurso.Recurso
+LEFT OUTER JOIN Recurso ON AsisteD.Recurso<IGUAL>Recurso.Recurso=(Fin)

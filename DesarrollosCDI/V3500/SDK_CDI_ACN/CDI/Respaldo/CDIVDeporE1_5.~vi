@@ -1,0 +1,112 @@
+
+[Vista]
+Icono=0
+Clave=CDIVDeporE1_5
+Nombre=CDIVDeporE1_5
+Modulos=(Todos)
+Singular=CDIVDeporE1_5
+
+VistaIndependiente=S
+TipoTabla=General
+
+
+ListaCampos=(Lista)
+
+SQL=(Lista)
+[Equipo]
+Clave=Equipo
+Nombre=Equipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=Equipo
+
+
+[Deporte]
+Clave=Deporte
+Nombre=Deporte
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+ClaveBDE=Deporte
+
+[RamaDepor]
+Clave=RamaDepor
+Nombre=RamaDepor
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+ClaveBDE=RamaDepor
+
+[Fuerza]
+Clave=Fuerza
+Nombre=Fuerza
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+ClaveBDE=Fuerza
+
+[clavetorneo]
+Clave=clavetorneo
+Nombre=clavetorneo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=clavetorneo
+
+
+
+
+
+
+
+
+
+[Gf]
+Clave=Gf
+Nombre=Gf
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Gf
+
+
+
+[Vista.ListaCampos]
+(Inicio)=Equipo
+Equipo=Deporte
+Deporte=RamaDepor
+RamaDepor=Fuerza
+Fuerza=clavetorneo
+clavetorneo=Gf
+Gf=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT  e.Equipo,
+SELECT  e.Equipo,=SUM(e.GF) Gf
+SUM(e.GF) Gf=,ce.Deporte,ce.RamaDepor, LEFT(ce.Fuerza,1) Fuerza
+,ce.Deporte,ce.RamaDepor, LEFT(ce.Fuerza,1) Fuerza=,te.clavetorneo
+,te.clavetorneo=FROM CDIVTG e
+FROM CDIVTG e=LEFT JOIN CDIEquiposTorneos ce ON ce.Clave<IGUAL>e.Equipo
+LEFT JOIN CDIEquiposTorneos ce ON ce.Clave<IGUAL>e.Equipo=LEFT JOIN cditornesoequipos te ON te.ClaveEquipo<IGUAL>ce.clave
+LEFT JOIN cditornesoequipos te ON te.ClaveEquipo<IGUAL>ce.clave=WHERE te.claveTorneo IN (SELECT Torneo FROM CDiTorneosWeb) AND ce.Deporte IS NOT NULL AND ce.RamaDepor IS NOT NULL AND ce.Fuerza IS NOt null
+WHERE te.claveTorneo IN (SELECT Torneo FROM CDiTorneosWeb) AND ce.Deporte IS NOT NULL AND ce.RamaDepor IS NOT NULL AND ce.Fuerza IS NOt null=Group BY  e.Equipo,ce.Deporte,ce.RamaDepor, ce.Fuerza, te.ClaveTorneo
+Group BY  e.Equipo,ce.Deporte,ce.RamaDepor, ce.Fuerza, te.ClaveTorneo=ORDER BY gf desc
+ORDER BY gf desc=(Fin)

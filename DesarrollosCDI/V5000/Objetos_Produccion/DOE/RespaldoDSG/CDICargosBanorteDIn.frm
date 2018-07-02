@@ -1,0 +1,534 @@
+
+[Forma]
+Clave=CDICargosBanorteDIn
+Icono=0
+Modulos=(Todos)
+Nombre=Respuesta banco
+
+ListaCarpetas=CDICargosBanorteDIn
+CarpetaPrincipal=CDICargosBanorteDIn
+BarraHerramientas=S
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=134
+PosicionInicialArriba=136
+PosicionInicialAlturaCliente=458
+PosicionInicialAncho=1098
+Totalizadores=S
+PosicionSec1=372
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaSinIconosMarco=S
+VentanaEstadoInicial=Normal
+[CDICargosBanorteDIn]
+Estilo=Hoja
+Clave=CDICargosBanorteDIn
+AlineacionAutomatica=S
+AcomodarTexto=S
+MostrarConteoRegistros=S
+Zona=A1
+Vista=CDICargosBanorteDIn
+Fuente={Tahoma, 8, Negro, []}
+HojaTitulos=S
+HojaMostrarColumnas=S
+HojaMostrarRenglones=S
+HojaColoresPorEstatus=S
+HojaVistaOmision=Automática
+CampoColorLetras=Negro
+CampoColorFondo=Blanco
+CarpetaVisible=S
+ListaEnCaptura=(Lista)
+
+PermiteEditar=S
+
+HojaPermiteInsertar=S
+Filtros=S
+FiltroPredefinido=S
+FiltroNullNombre=(sin clasificar)
+FiltroEnOrden=S
+FiltroTodoNombre=(Todo)
+FiltroAncho=20
+FiltroGeneral=Id={info.id}
+FiltroRespetar=S
+FiltroTipo=General
+[CDICargosBanorteDIn.CDICargosBanorteDIn.Referencia]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.Referencia
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=255
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.NUMERO_CONTROL]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.NUMERO_CONTROL
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=255
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.NUMERO_TARJETA]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.NUMERO_TARJETA
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=16
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.FECHA_EXP]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.FECHA_EXP
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=5
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.MONTO]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.MONTO
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.ESTATUS]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.ESTATUS
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=100
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.CodAutorizacion]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.CodAutorizacion
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=100
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.MensajeRespuesta]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.MensajeRespuesta
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=100
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.CodRespuesta]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.CodRespuesta
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.Programada]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.Programada
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=2
+ColorFondo=Blanco
+
+[CDICargosBanorteDIn.CDICargosBanorteDIn.Comentarios]
+Carpeta=CDICargosBanorteDIn
+Clave=CDICargosBanorteDIn.Comentarios
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=255
+ColorFondo=Blanco
+
+[Acciones.Enviar a Excel]
+Nombre=Enviar a Excel
+Boton=115
+NombreDesplegar=Enviar a Excel
+EnBarraHerramientas=S
+Carpeta=(Carpeta principal)
+TipoAccion=Controles Captura
+ClaveAccion=Enviar/Recibir Excel
+Activo=S
+Visible=S
+
+Multiple=S
+ListaAccionesMultiples=(Lista)
+[CDICargosBanorteDIn.Columnas]
+Referencia=80
+NUMERO_CONTROL=116
+NUMERO_TARJETA=105
+FECHA_EXP=61
+MONTO=64
+ESTATUS=68
+CodAutorizacion=83
+MensajeRespuesta=149
+CodRespuesta=79
+Programada=62
+Comentarios=163
+
+
+
+
+
+[Acciones.Cerrar]
+Nombre=Cerrar
+Boton=23
+NombreDesplegar=Cerrar
+EnBarraHerramientas=S
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EspacioPrevio=S
+[(Carpeta Totalizadores)]
+Clave=(Carpeta Totalizadores)
+AlineacionAutomatica=S
+AcomodarTexto=S
+MostrarConteoRegistros=S
+Zona=B1
+Fuente={Tahoma, 8, Negro, []}
+FichaEspacioEntreLineas=6
+FichaEspacioNombres=100
+FichaEspacioNombresAuto=S
+FichaNombres=Izquierda
+FichaAlineacion=Izquierda
+FichaColorFondo=Plata
+FichaAlineacionDerecha=S
+Totalizadores1=Total Registros<BR>Importe Emision<BR>Importe Aprobado<BR>Importe Declinado
+Totalizadores2=conteo(CDICargosBanorteDIn:CDICargosBanorteDIn.Id)<BR>suma(CDICargosBanorteDIn:CDICargosBanorteDIn.MONTO)<BR>SQL(<T>SELECT SUM(MONTO) FROM CDICargosBanorteDIn where id=:nI and Estatus=:tO<T>,CDICargosBanorteDIn:CDICargosBanorteDIn.Id,<T>Aprobada<T>)<BR>SQL(<T>SELECT SUM(MONTO) FROM CDICargosBanorteDIn where id=:nI and Estatus=:tO<T>,CDICargosBanorteDIn:CDICargosBanorteDIn.Id,<T>Declinada<T>)
+Totalizadores3=(Cantidades)<BR>(Monetario)<BR>(Monetario)<BR>(Monetario)
+Totalizadores=S
+CampoColorLetras=Negro
+CampoColorFondo=Plata
+CarpetaVisible=S
+
+
+
+
+
+ListaEnCaptura=(Lista)
+
+
+TotCarpetaRenglones=CDICargosBanorteDIn
+TotExpresionesEnSumas=S
+TotAlCambiar=S
+[(Carpeta Totalizadores).Total Registros]
+Carpeta=(Carpeta Totalizadores)
+Clave=Total Registros
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Plata
+
+[(Carpeta Totalizadores).Importe Emision]
+Carpeta=(Carpeta Totalizadores)
+Clave=Importe Emision
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Plata
+
+[(Carpeta Totalizadores).Importe Aprobado]
+Carpeta=(Carpeta Totalizadores)
+Clave=Importe Aprobado
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Plata
+
+[(Carpeta Totalizadores).Importe Declinado]
+Carpeta=(Carpeta Totalizadores)
+Clave=Importe Declinado
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Plata
+
+
+
+
+[Acciones.Actualizar Forma]
+Nombre=Actualizar Forma
+Boton=92
+NombreEnBoton=S
+NombreDesplegar=Actualizar totales
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+EspacioPrevio=S
+Multiple=S
+ListaAccionesMultiples=(Lista)
+[(Carpeta Totalizadores).ListaEnCaptura]
+(Inicio)=Total Registros
+Total Registros=Importe Emision
+Importe Emision=Importe Aprobado
+Importe Aprobado=Importe Declinado
+Importe Declinado=(Fin)
+
+
+
+
+
+
+
+
+
+[Acciones.Enviar a Excel.Enviar/Recibir Excel]
+Nombre=Enviar/Recibir Excel
+Boton=0
+Carpeta=(Carpeta principal)
+TipoAccion=Controles Captura
+ClaveAccion=Enviar/Recibir Excel
+Activo=S
+Visible=S
+
+[Acciones.Enviar a Excel.Guardar Cambios]
+Nombre=Guardar Cambios
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Guardar Cambios
+Activo=S
+Visible=S
+
+
+
+[Acciones.Enviar a Excel.Expresion1]
+Nombre=Expresion1
+Boton=0
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+Expresion=Asigna(info.numero,1)
+[Acciones.Enviar a Excel.Expresion2]
+Nombre=Expresion2
+Boton=0
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+
+
+Expresion=asigna(Info.numero,0)
+
+
+
+
+[Acciones.Enviar a Excel.ListaAccionesMultiples]
+(Inicio)=Expresion1
+Expresion1=Enviar/Recibir Excel
+Enviar/Recibir Excel=Guardar Cambios
+Guardar Cambios=Expresion2
+Expresion2=(Fin)
+
+
+
+
+
+
+
+[CDICargosBanorteDIn.ListaEnCaptura]
+(Inicio)=CDICargosBanorteDIn.Referencia
+CDICargosBanorteDIn.Referencia=CDICargosBanorteDIn.NUMERO_CONTROL
+CDICargosBanorteDIn.NUMERO_CONTROL=CDICargosBanorteDIn.NUMERO_TARJETA
+CDICargosBanorteDIn.NUMERO_TARJETA=CDICargosBanorteDIn.FECHA_EXP
+CDICargosBanorteDIn.FECHA_EXP=CDICargosBanorteDIn.MONTO
+CDICargosBanorteDIn.MONTO=CDICargosBanorteDIn.ESTATUS
+CDICargosBanorteDIn.ESTATUS=CDICargosBanorteDIn.CodAutorizacion
+CDICargosBanorteDIn.CodAutorizacion=CDICargosBanorteDIn.MensajeRespuesta
+CDICargosBanorteDIn.MensajeRespuesta=CDICargosBanorteDIn.CodRespuesta
+CDICargosBanorteDIn.CodRespuesta=CDICargosBanorteDIn.Programada
+CDICargosBanorteDIn.Programada=CDICargosBanorteDIn.Comentarios
+CDICargosBanorteDIn.Comentarios=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Acciones.Guardar Cambios.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Expresion=ProcesarSql(<T>update CDICargosBanorteOut set Estatus=:tU WHERE ID=:nI<T>,<T>PENDIENTE<T>, CDICargosBanorteDIn:CDICargosBanorteDIn.Id)
+Activo=S
+Visible=S
+
+[Acciones.Guardar Cambios.Cerrar]
+Nombre=Cerrar
+Boton=0
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Activo=S
+Visible=S
+
+[Acciones.Guardar Cambios.ListaAccionesMultiples]
+(Inicio)=Guardar Cambios
+Guardar Cambios=Expresion
+Expresion=Cerrar
+Cerrar=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Acciones.Guardar Cambios]
+Nombre=Guardar Cambios
+Boton=3
+NombreDesplegar=Guardar
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Guardar Cambios
+Activo=S
+Visible=S
+
+
+
+NombreEnBoton=S
+
+
+EspacioPrevio=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Acciones.Actualizar Forma.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+Expresion=EjecutarSql(<T>xpcdiCargosBanorteActEst :nI<T>, CDICargosBanorteDIn:CDICargosBanorteDIn.Id)
+[Acciones.Actualizar Forma.Actualizar Forma]
+Nombre=Actualizar Forma
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Activo=S
+Visible=S
+
+
+
+
+
+[Acciones.Actualizar Forma.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar Forma
+Actualizar Forma=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+[Forma.ListaAcciones]
+(Inicio)=Enviar a Excel
+Enviar a Excel=Guardar Cambios
+Guardar Cambios=Cerrar
+Cerrar=Actualizar Forma
+Actualizar Forma=(Fin)

@@ -1,0 +1,77 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.ListaCalculados]
+FechaRequeridaEstatus=CDIResponsable
+CDIResponsable=(Fin)
+
+[CDIResponsable]
+Clave=CDIResponsable
+TipoDatos=Texto
+Tamano=100
+TipoCampo=Calculado
+TamanoValidacion=100
+Alineacion=por Omisión
+Nombre=Responsable
+Formula=SQL(<T>EXEC CDIUsuarioSeguimiento :tModulo, :nID<T>, <T>GAS<T>, Gasto.ID)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=Gasto.ID,
+Gasto.ID,=Gasto.Empresa,
+Gasto.Empresa,=Gasto.Mov,
+Gasto.Mov,=Gasto.MovID,
+Gasto.MovID,=Gasto.FechaEmision,
+Gasto.FechaEmision,=Gasto.UltimoCambio,
+Gasto.UltimoCambio,=Gasto.Acreedor,
+Gasto.Acreedor,=Gasto.Moneda,
+Gasto.Moneda,=Gasto.Proyecto,
+Gasto.Proyecto,=Gasto.Usuario,
+Gasto.Usuario,=Gasto.Observaciones,
+Gasto.Observaciones,=Gasto.Clase,
+Gasto.Clase,=Gasto.SubClase,
+Gasto.SubClase,=Gasto.Estatus,
+Gasto.Estatus,=Gasto.Situacion,
+Gasto.Situacion,=Gasto.SituacionFecha,
+Gasto.SituacionFecha,=Gasto.SituacionUsuario,
+Gasto.SituacionUsuario,=Gasto.SituacionNota,
+Gasto.SituacionNota,=Gasto.Periodicidad,
+Gasto.Periodicidad,=Gasto.Condicion,
+Gasto.Condicion,=Gasto.Vencimiento,
+Gasto.Vencimiento,=Gasto.CtaDinero,
+Gasto.CtaDinero,=Gasto.Importe,
+Gasto.Importe,=Gasto.Retencion,
+Gasto.Retencion,=Gasto.Impuestos,
+Gasto.Impuestos,=Gasto.Saldo,
+Gasto.Saldo,=Gasto.Origen,
+Gasto.Origen,=Gasto.OrigenID,
+Gasto.OrigenID,=Gasto.Poliza,
+Gasto.Poliza,=Gasto.PolizaID,
+Gasto.PolizaID,=Gasto.GenerarPoliza,
+Gasto.GenerarPoliza,=Gasto.ContID,
+Gasto.ContID,=Gasto.FechaRegistro,
+Gasto.FechaRegistro,=Gasto.FechaConclusion,
+Gasto.FechaConclusion,=Gasto.FechaCancelacion,
+Gasto.FechaCancelacion,=Gasto.FechaRequerida,
+Gasto.FechaRequerida,=Gasto.AnexoModulo,
+Gasto.AnexoModulo,=Gasto.AnexoID,
+Gasto.AnexoID,=Gasto.ProdSerieLote,
+Gasto.ProdSerieLote,=Gasto.Sucursal,
+Gasto.Sucursal,=Gasto.SucursalDestino,
+Gasto.SucursalDestino,=Gasto.Mensaje,
+Gasto.Mensaje,=Gasto.Actividad,
+Gasto.Actividad,=Gasto.UEN,
+Gasto.UEN,=Gasto.Prioridad,
+Gasto.Prioridad,=Gasto.SubModulo,
+Gasto.SubModulo,=MovTipo.SubClave,
+MovTipo.SubClave,=Prov.Proveedor,
+Prov.Proveedor,=Prov.Nombre,
+Prov.Nombre,=MensajeLista.Mensaje,
+MensajeLista.Mensaje,=MensajeLista.Descripcion,
+MensajeLista.Descripcion,=MensajeLista.Tipo
+MensajeLista.Tipo=FROM
+FROM=Gasto
+Gasto=LEFT OUTER JOIN MovTipo ON {Comillas('GAS')}<IGUAL>MovTipo.Modulo AND Gasto.Mov<IGUAL>MovTipo.Mov
+LEFT OUTER JOIN MovTipo ON {Comillas('GAS')}<IGUAL>MovTipo.Modulo AND Gasto.Mov<IGUAL>MovTipo.Mov=JOIN Prov ON Gasto.Acreedor<IGUAL>Prov.Proveedor
+JOIN Prov ON Gasto.Acreedor<IGUAL>Prov.Proveedor=LEFT OUTER JOIN MensajeLista ON Gasto.Mensaje<IGUAL>MensajeLista.Mensaje
+LEFT OUTER JOIN MensajeLista ON Gasto.Mensaje<IGUAL>MensajeLista.Mensaje=(Fin)

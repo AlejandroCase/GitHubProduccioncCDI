@@ -1,0 +1,47 @@
+
+[Tabla]
+Icono=0
+Clave=CDIFechaPlanesBajar
+Nombre=CDIFechaPlanesBajar
+Archivo=CDIFechaPlanesBajar
+Modulos=(Todos)
+Singular=CDIFechaPlanesBajar
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=FechaInicio
+SQL=(Lista)
+[FechaInicio]
+Clave=FechaInicio
+Nombre=Fecha de Inicio
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+AyudaEnCaptura=Calendario sin Hora
+[FechaFin]
+Clave=FechaFin
+Nombre=Fecha Final
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario sin Hora
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=FechaInicio
+FechaInicio=FechaFin
+FechaFin=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=FechaInicio,
+FechaInicio,=FechaFin
+FechaFin=FROM CDIFechaPlanesBajar
+FROM CDIFechaPlanesBajar=(Fin)

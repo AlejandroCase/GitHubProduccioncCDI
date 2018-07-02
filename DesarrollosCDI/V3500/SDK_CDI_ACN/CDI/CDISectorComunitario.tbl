@@ -1,0 +1,27 @@
+
+[Tabla]
+Icono=0
+Clave=CDISectorComunitario
+Nombre=CDISectorComunitario
+Archivo=CDISectorComunitario
+Modulos=(Todos)
+Singular=CDISectorComunitario
+
+TipoTabla=General
+ListaCampos=SectorComunitario
+
+SQL=(Lista)
+LlavePrimaria=SectorComunitario
+[SectorComunitario]
+Clave=SectorComunitario
+Nombre=Sector Comunitario
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=SectorComunitario
+SectorComunitario=FROM CDISectorComunitario
+FROM CDISectorComunitario=(Fin)

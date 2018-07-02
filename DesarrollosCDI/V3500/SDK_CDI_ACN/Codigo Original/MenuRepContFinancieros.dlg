@@ -1,0 +1,138 @@
+[Dialogo]
+Clave=MenuRepContFinancieros
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=521
+PosicionInicialArriba=394
+PosicionInicialAltura=213
+PosicionInicialAncho=357
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialAlturaCliente=234
+
+[Acciones.Balance]
+Nombre=Balance
+Boton=0
+NombreDesplegar=Estado de &Posición Financiera
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=RepContBalance
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/Balance<T>)
+[Acciones.EdoResultados]
+Nombre=EdoResultados
+Boton=0
+NombreDesplegar=Estado de &Resultados
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContResultados
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/EdoResultados<T>)
+[Acciones.OARecursos]
+Nombre=OARecursos
+Boton=0
+NombreDesplegar=&Origen y Aplicación de Recursos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContOARecursos
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/OARecursos<T>)
+[Acciones.RepContResultadosAnual]
+Nombre=RepContResultadosAnual
+Boton=0
+NombreDesplegar=Estado de Resultados (&Anual)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContResultadosAnual
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/RepContResultadosAnual<T>)
+[Acciones.EdoResultadosP]
+Nombre=EdoResultadosP
+Boton=0
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+NombreDesplegar=Estado de Resultados (&Presupuesto)
+TipoAccion=Formas
+ClaveAccion=RepContResultadosPresup
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/EdoResultadosP<T>)
+[Acciones.SistemaDetallista]
+Nombre=SistemaDetallista
+Boton=0
+NombreDesplegar=&Sistema Detallista
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepSistemaDetallista
+Activo=S
+
+VisibleCondicion=General.SistemaDetallista o (no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/SistemaDetallista<T>))
+[Acciones.BalanceAnuales]
+Nombre=BalanceAnuales
+Boton=0
+NombreDesplegar=Estado de Posición Financiera (&Varios Ejercicios)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContBalanceAnuales
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/BalanceAnuales<T>)
+[Acciones.ResultadosAnuales]
+Nombre=ResultadosAnuales
+Boton=0
+NombreDesplegar=Estado de Resultados (Varios &Ejercicios)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContResultadosAnuales
+Activo=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Contabilidad/Financieros/ResultadosAnuales<T>)
+
+
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Balance
+Balance=BalanceAnuales
+BalanceAnuales=EdoResultados
+EdoResultados=RepContResultadosAnual
+RepContResultadosAnual=EdoResultadosP
+EdoResultadosP=ResultadosAnuales
+ResultadosAnuales=OARecursos
+OARecursos=SistemaDetallista
+SistemaDetallista=(Fin)

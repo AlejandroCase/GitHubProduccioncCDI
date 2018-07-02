@@ -1,0 +1,11 @@
+[GenerarDineroTraspaso.dlg/Acciones.Otros1]
+NombreDesplegar=&Generar Deposito Traspaso
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Deposito Traspaso<T>, Afectar.FormaCaptura)
+Activo=S
+Visible=S
+
+[GenerarDineroTraspaso.dlg/Dialogo]
+PosicionInicialIzquierda=551
+PosicionInicialArriba=296
+PosicionInicialAlturaCliente=138
+

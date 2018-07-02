@@ -1,0 +1,718 @@
+
+[Reporte]
+Clave=CIDCartaFormaPago
+Nombre=Carta Socios Forma de Pago
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+ConFormaPrevia=S
+OtroOrden=S
+ListaOrden=Socio<TAB>(Acendente)
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1319
+FormaPrevia=CDITipoCteCatCte
+BarraHerramientas=S
+ListaAcciones=(Lista)
+Submenu=Especiales
+[Vista]
+Icono=0
+Clave=CIDCartaFormaPago
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=CDIcartaAnuales2013Cas<T>{Info.CteTipo}<T>, <T>{Info.CteCat}<T>
+[CLIENTE]
+Clave=CLIENTE
+Nombre=CLIENTE
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=CLIENTE
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Socio
+
+[Membresia]
+Clave=Membresia
+Nombre=Membresia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Membresia
+
+[tipo]
+Clave=tipo
+Nombre=tipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+ClaveBDE=tipo
+
+[Categoria]
+Clave=Categoria
+Nombre=Categoria
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Categoria
+
+[nombre]
+Clave=nombre
+Nombre=nombre
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=152
+TipoDatos=Texto
+Tamano=152
+ClaveBDE=nombre
+
+[Direccion]
+Clave=Direccion
+Nombre=Direccion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Direccion
+
+[DireccionNumero]
+Clave=DireccionNumero
+Nombre=DireccionNumero
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=DireccionNumero
+
+[DireccionNumeroInt]
+Clave=DireccionNumeroInt
+Nombre=DireccionNumeroInt
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=DireccionNumeroInt
+
+[colonia]
+Clave=colonia
+Nombre=colonia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=colonia
+
+[Estado]
+Clave=Estado
+Nombre=Estado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+ClaveBDE=Estado
+
+[CodigoPostal]
+Clave=CodigoPostal
+Nombre=CodigoPostal
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+ClaveBDE=CodigoPostal
+
+[Articulo]
+Clave=Articulo
+Nombre=Articulo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=Articulo
+
+[EsCuota]
+Clave=EsCuota
+Nombre=EsCuota
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+ClaveBDE=EsCuota
+
+[Descripcion1]
+Clave=Descripcion1
+Nombre=Descripcion1
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Descripcion1
+
+[Precio10]
+Clave=Precio10
+Nombre=Precio10
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Precio10
+
+[Titular]
+Clave=Titular
+Nombre=Titular
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+ClaveBDE=Titular
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio
+
+VentanaIzquierda=23
+VentanaArriba=0
+VentanaAltura=784
+VentanaAncho=1319
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=3.08
+Renglones=8
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=2
+Visible=1=0
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=3.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea3]
+Clave=Encabezado
+Objetos=0
+Seccion=Encabezado Página
+Grupo=
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+EstiloMarco=0
+[Linea4]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.92
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=4
+EstiloMarco=3
+[Linea5]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea6]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.53
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea7]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea8]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.82
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=2
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3.5
+AnchoTexto=19
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+BordeAbajo=S
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=15.79
+AnchoTexto=85
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas + Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+BordeAbajo=S
+
+
+[Linea9]
+Clave=Inicio: Socio
+Objetos=2
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea10]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=0
+
+[Linea11]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.71
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+
+
+Objetos=1
+[A8]
+Celda=A8
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+
+[Linea12]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea13]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=11.97
+Renglones=32
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+
+
+[B8]
+Celda=B8
+Alineacion=Izquierda
+AnchoEnCm=15.89
+AnchoTexto=85
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=nombre
+
+
+[Acciones.CA]
+Nombre=CA
+Boton=4
+NombreDesplegar=CA
+EnBarraHerramientas=S
+TipoAccion=Reportes Impresora
+ClaveAccion=CIDCartaFormaPago
+Activo=S
+Visible=S
+
+
+
+[Vista.ListaCampos]
+(Inicio)=CLIENTE
+CLIENTE=Socio
+Socio=Membresia
+Membresia=tipo
+tipo=Categoria
+Categoria=nombre
+nombre=Direccion
+Direccion=DireccionNumero
+DireccionNumero=DireccionNumeroInt
+DireccionNumeroInt=colonia
+colonia=Estado
+Estado=CodigoPostal
+CodigoPostal=Articulo
+Articulo=EsCuota
+EsCuota=Descripcion1
+Descripcion1=Precio10
+Precio10=Titular
+Titular=(Fin)
+
+[Linea14]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A4]
+Celda=A4
+Alineacion=Izquierda
+AnchoEnCm=13.5
+AnchoTexto=73
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B4]
+Celda=B4
+Alineacion=Centrado
+AnchoEnCm=1.29
+AnchoTexto=7
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+[C4]
+Celda=C4
+Alineacion=Centrado
+AnchoEnCm=2.71
+AnchoTexto=15
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=MesNombre( ahora )
+
+[D4]
+Celda=D4
+Alineacion=Izquierda
+AnchoEnCm=1.39
+AnchoTexto=7
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=EjercicioTrabajo
+
+[A6]
+Celda=A6
+Alineacion=Derecha
+AnchoEnCm=3.3
+AnchoTexto=18
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Estimado Socio: <T>
+
+[A9]
+Celda=A9
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B9]
+Celda=B9
+Alineacion=Izquierda
+AnchoEnCm=4.61
+AnchoTexto=25
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>( <T>+Socio+<T> )<T>
+
+[A11]
+Celda=A11
+Alineacion=Centrado
+AnchoEnCm=18.89
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T> Para facilitar su pago, ponemos a su disposición las siguientes alternativas:<T>
+
+[A13]
+Celda=A13
+Alineacion=Centrado
+AnchoEnCm=18.9
+ExpresionMultiple=S
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>* Si requiere que carguemos a su tarjeta automaticamente el importe de la anualidad<T><BR><T>  favor de comunicarse al area de cobranza.<T><BR><T> <T><BR><T>* Pagos Directos en caja general del CDI en los siguientes horarios:<T><BR><T>  de Lunes a Jueves de 8:00 a 20:00 horas<T><BR><T>  Sábado y Domingo de 10:00 a 14:00 horas<T><BR><T> <T><BR><T>* También podrá efectuar su pago en cualquier sucursal de :<T><BR><T> <T><BR><T>  BBVA Bancomer, a la cuenta número 0181633449<T><BR><T>  Banca Mifel, S.A. a la cuenta número 4000765<T><BR><T> <T><BR><T> <T><BR><T>Al realizar su depósito en los bancos señalados, por favor anote como referencia su<T><BR><T>número de Socio, para efectuar la identificación y aplicación oportuna de su pago.<T><BR><T> <T><BR><T> <T><BR><T>En  caso  de que  desee realizar el pago  en  su domicilio, comuníquese por favor al<T><BR><T>número 2629 7400, Exts. 281, 405, 329 y 397.<T><BR><T> <T><BR><T> <T><BR><T>Atentamente<T><BR><T>TESORERIA<T><BR><T>CDI<T>
+
+[Acciones.CDIcartaAnuales2013CasExcel]
+Nombre=CDIcartaAnuales2013CasExcel
+Boton=115
+NombreDesplegar=CDIcartaAnuales2013CasExcel
+EnBarraHerramientas=S
+TipoAccion=Reportes Excel
+ClaveAccion=CDIcartaAnuales2013CasExcel
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reporte.ListaAcciones]
+(Inicio)=CA
+CA=CDIcartaAnuales2013CasExcel
+CDIcartaAnuales2013CasExcel=(Fin)

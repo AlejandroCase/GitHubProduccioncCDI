@@ -1,0 +1,7 @@
+[Nomina.frm/Ficha.Nomina.Proyecto]
+ColorFuente=
+EditarConBloqueo=S
+
+[Nomina.tbl/Proyecto]
+CondicionEdicion=(no Usuario.BloquearProyecto)
+TipoDatos=Texto

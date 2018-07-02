@@ -1,0 +1,104 @@
+[Tabla]
+SQL=(Lista)
+
+[Tabla.ListaCampos]
+CantidadMaxima=CdiCausaBloqueo
+CdiCausaBloqueo=(Fin)
+
+[CdiCausaBloqueo]
+Clave=CdiCausaBloqueo
+Nombre=Causa Bloqueo
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=Info.Modulo = <T>CXC<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+OpcionesUnicamente=S
+ListaOpciones=(Lista)
+
+[CdiCausaBloqueo.ListaOpciones]
+(Inicio)=Admisión
+Admisión=Cuota
+Cuota=Inscripción
+Inscripción=Otros Ingresos
+Otros Ingresos=Credencial
+Credencial=Casilleros
+Casilleros=Tarjetas Bancarias
+Tarjetas Bancarias=Renovación Credencial
+Renovación Credencial=Honor y Justicia
+Honor y Justicia=Baja por Defunción
+Baja por Defunción=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Modulo,
+Modulo,=Concepto,
+Concepto,=EsDeducible,
+EsDeducible,=Indirecto,
+Indirecto,=ConSueldo,
+ConSueldo,=Cuenta,
+Cuenta,=Impuestos,
+Impuestos,=Retencion,
+Retencion,=Retencion2,
+Retencion2,=Retencion3,
+Retencion3,=Clase,
+Clase,=SubClase,
+SubClase,=Bloqueo,
+Bloqueo,=Orden,
+Orden,=ValidarPresupuesto,
+ValidarPresupuesto,=Tipo,
+Tipo,=Proyecto,
+Proyecto,=Actividad,
+Actividad,=PorcentajeDeducible,
+PorcentajeDeducible,=LimiteDeducible,
+LimiteDeducible,=AcreedorDef,
+AcreedorDef,=NivelAcceso,
+NivelAcceso,=TipoProrrateo,
+TipoProrrateo,=EstimuloFiscal,
+EstimuloFiscal,=CR,
+CR,=UEN,
+UEN,=Politica,
+Politica,=ConceptoCxp,
+ConceptoCxp,=Provisionable,
+Provisionable,=ProvisionImporte,
+ProvisionImporte,=CuentaPresupuesto,
+CuentaPresupuesto,=CalcularPresupuesto,
+CalcularPresupuesto,=InflacionPresupuesto,
+InflacionPresupuesto,=DepartamentoDetallista,
+DepartamentoDetallista,=Impuesto1Excento,
+Impuesto1Excento,=TipoOperacion,
+TipoOperacion,=Numero,
+Numero,=Descripcion,
+Descripcion,=CostoEstandar,
+CostoEstandar,=UltimoCosto,
+UltimoCosto,=UltimoGasto,
+UltimoGasto,=MonedaCosto,
+MonedaCosto,=Excento2,
+Excento2,=Excento3,
+Excento3,=EsInventariable,
+EsInventariable,=Articulo,
+Articulo,=ContUso,
+ContUso,=ContUso2,
+ContUso2,=ContUso3,
+ContUso3,=ObjetoGasto,
+ObjetoGasto,=ObjetoGastoRef,
+ObjetoGastoRef,=ClavePresupuestalImpuesto1,
+ClavePresupuestalImpuesto1,=TipoImpuesto1,
+TipoImpuesto1,=TipoImpuesto2,
+TipoImpuesto2,=TipoImpuesto3,
+TipoImpuesto3,=TipoImpuesto4,
+TipoImpuesto4,=TipoRetencion1,
+TipoRetencion1,=TipoRetencion2,
+TipoRetencion2,=TipoRetencion3,
+TipoRetencion3,=TipoImpuesto5,
+TipoImpuesto5,=EcuadorTipoOperacionGasto,
+EcuadorTipoOperacionGasto,=InvSeguridad,
+InvSeguridad,=CantidadMinima,
+CantidadMinima,=CantidadMaxima,
+CantidadMaxima,=CdiCausaBloqueo
+CdiCausaBloqueo=FROM Concepto
+FROM Concepto=(Fin)

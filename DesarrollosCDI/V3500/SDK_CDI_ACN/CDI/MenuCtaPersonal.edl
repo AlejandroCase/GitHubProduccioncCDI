@@ -1,0 +1,18 @@
+[Dialogo]
+PosicionInicialIzquierda=571
+PosicionInicialArriba=271
+
+[Dialogo.ListaAcciones]
+Plazas=PersonalExterno
+PersonalExterno=(Fin)
+
+[Acciones.PersonalExterno]
+Nombre=PersonalExterno
+Boton=0
+NombreDesplegar=Personal Externo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=cdiPersonalExterno
+Activo=S
+Visible=S

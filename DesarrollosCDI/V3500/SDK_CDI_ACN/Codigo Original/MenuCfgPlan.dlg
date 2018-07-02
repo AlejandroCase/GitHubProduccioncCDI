@@ -1,0 +1,47 @@
+[Dialogo]
+Clave=MenuCfgPlan
+Nombre=Planeación
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAltura=141
+PosicionInicialAncho=239
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=392
+PosicionInicialArriba=310
+PosicionInicialAlturaCliente=114
+
+[Acciones.RutaDistribucion]
+Nombre=RutaDistribucion
+Boton=0
+NombreDesplegar=&Rutas Distribución
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RutaDistribucion
+Activo=S
+Visible=S
+
+[Acciones.PlanEstructura]
+Nombre=PlanEstructura
+Boton=0
+NombreDesplegar=&Estructuras Planeación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=PlanEstructura
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=RutaDistribucion
+RutaDistribucion=PlanEstructura
+PlanEstructura=(Fin)

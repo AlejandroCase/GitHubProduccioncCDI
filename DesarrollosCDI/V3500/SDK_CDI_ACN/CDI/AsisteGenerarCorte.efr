@@ -1,0 +1,29 @@
+[Forma]
+PosicionInicialIzquierda=540
+PosicionInicialArriba=286
+PosicionInicialAncho=285
+ExpresionesAlMostrar=Asigna(Info.Mov,sqL(<T>xpcditraerMovCorte :nI<T>,Info.id))<BR>CASO Info.mov es <T>Corte<T><BR>   entonces<BR>        Asigna(Temp.Reg, SQL(<T>spAsisteCorteFechas :tEmpresaa, :nI<T>, Empresa, Info.id))<BR>        Asigna(Info.FechaD, Temp.Reg[1])<BR>        Asigna(Info.FechaA, Temp.Reg[2])<BR>        Asigna(Info.PersonalCat, Temp.Reg[3])<BR>   es <T>Corte Qna<T><BR>        Asigna(Temp.Reg, SQL(<T>spAsisteCorteFechasQna :tEmpresa, :nI<T>, Empresa, Info.id))<BR>        Asigna(Info.FechaD, Temp.Reg[1])<BR>        Asigna(Info.FechaA, Temp.Reg[2])<BR>        Asigna(Info.PersonalCat, Temp.Reg[3])<BR>   es <T>SINREFERENCIA<T><BR>       Informacion(<T>Falta especificar el tipo de Nomina<T>)<BR>       <BR>FIN
+PosicionInicialAlturaCliente=156
+VentanaEstadoInicial=Normal
+
+[(Variables).Info.FechaA]
+ColorFuente=
+
+[Acciones.Aceptar]
+ListaAccionesMultiples=(Lista)
+
+[Acciones.Aceptar.Expresion]
+Expresion=CASO Info.mov es <T>Corte<T><BR>  entonces<BR>    ProcesarSQL(<T>spGenerarAsisteCorteSem :nSucursal, :tEmpresa, :tUsuario, :fFechaD, :fFechaA, :tP, :tTipo, :nI<T>, Sucursal, Empresa, Usuario, Info.FechaD, Info.FechaA, Nulo, Info.PersonalCat, Info.id)<BR>  sino<BR>    ProcesarSQL(<T>spGenerarAsisteCorte_dACN2 :nSucursal, :tEmpresa, :tUsuario, :fFechaD, :fFechaA, :tP, :tTipo, :nI<T>, Sucursal, Empresa, Usuario, Info.FechaD, Info.FechaA, Nulo,Info.PersonalCat, Info.id)<BR>FIN
+
+[(Variables).Info.FechaD]
+ColorFuente=
+
+[Lista.Columnas]
+0=272
+1=268
+
+[Acciones.Aceptar.ListaAccionesMultiples]
+(Inicio)=Asignar
+Asignar=Expresion
+Expresion=Aceptar
+Aceptar=(Fin)

@@ -1,0 +1,27 @@
+
+[Dialogo]
+Clave=CDIMenuExplorarInvDComite
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=CDIExplorarInvDComite
+PosicionInicialArriba=40
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=500
+[Acciones.CDIExplorarInvDComite]
+Nombre=CDIExplorarInvDComite
+Boton=0
+NombreDesplegar=Inventarios Comité
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIExplorarInvDComite
+Activo=S
+Visible=S

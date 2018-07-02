@@ -1,0 +1,41 @@
+[Forma]
+Nombre=Si<BR>  Info.Numero <> 1<BR>Entonces<BR>  <T>Tipos Clientes<T><BR>Sino<BR>  <T>Tipos Socios<T>   <BR>Fin
+PosicionInicialIzquierda=418
+PosicionInicialArriba=130
+PosicionInicialAncho=408
+
+[Lista.Columnas]
+Tipo=246
+Orden=67
+
+[Forma.ListaAcciones]
+CampoExtra=FormasPag
+FormasPag=ComdPag
+ComdPag=(Fin)
+
+[Acciones.FormasPag]
+Nombre=FormasPag
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=&Formas Pago
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIFormaPagoTipSoc
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.CDITipoSocio, CteTipo:CteTipo.Tipo)
+
+[Acciones.ComdPag]
+Nombre=ComdPag
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=&Condiciones Pago
+EnBarraHerramientas=S
+TipoAccion=Formas
+ClaveAccion=CDICondPagoTipSoc
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.CDITipoSocio, CteTipo:CteTipo.Tipo)

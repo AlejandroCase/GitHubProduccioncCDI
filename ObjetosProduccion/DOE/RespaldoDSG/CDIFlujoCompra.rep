@@ -1,0 +1,84 @@
+
+[Reporte]
+Clave=CDIFlujoCompra
+Nombre=Flujo Compra
+Icono=0
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+Vista=Compra
+BarraHerramientas=S
+ListaAcciones=FlujoCompra
+PosicionInicialAlturaCliente=27
+PosicionInicialAncho=630
+Submenu=Compras
+[Formato]
+ListaLineas=Encabezado
+
+VentanaIzquierda=363
+VentanaArriba=174
+VentanaAltura=420
+VentanaAncho=640
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Texto<T>
+
+[Acciones.FlujoCompra]
+Nombre=FlujoCompra
+Boton=55
+NombreEnBoton=S
+NombreDesplegar=Flujo Compra
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIFlujoCompra
+Activo=S
+Visible=S

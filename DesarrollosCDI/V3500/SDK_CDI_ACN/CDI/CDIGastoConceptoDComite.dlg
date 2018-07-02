@@ -1,0 +1,26 @@
+
+[Dialogo]
+Clave=CDIGastoConceptoDComite
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=CDIGastoConceptoDComite
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=500
+[Acciones.CDIGastoConceptoDComite]
+Nombre=CDIGastoConceptoDComite
+Boton=0
+NombreDesplegar=Gastos por Concepto por Comité
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIExplorarGastoDConceptoComite
+Activo=S
+Visible=S

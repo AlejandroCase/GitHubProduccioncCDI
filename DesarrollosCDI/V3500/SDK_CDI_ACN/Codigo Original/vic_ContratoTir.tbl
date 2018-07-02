@@ -1,0 +1,38 @@
+[Tabla]
+Icono=0
+Clave=vic_ContratoTir
+Archivo=vic_ContratoTir
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=(Lista)
+Nombre=Tipo de renta
+Singular=Tipoderenta
+LlavePrimaria=Tipoderenta
+
+SQL=SELECT<BR>  Tipoderenta,<BR>  TipoderentaMaestra,<BR>  Icono<BR><BR>FROM<BR>  vic_ContratoTir
+[Tipoderenta]
+Clave=Tipoderenta
+Nombre=Tipo de Renta
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[TipoderentaMaestra]
+Clave=TipoderentaMaestra
+Nombre=Tipo de Renta Maestra
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[Icono]
+Clave=Icono
+Nombre=Icono
+TipoDatos=Numérico
+TamanoValidacion=10
+
+
+[Tabla.ListaCampos]
+(Inicio)=Tipoderenta
+Tipoderenta=TipoderentaMaestra
+TipoderentaMaestra=Icono
+Icono=(Fin)

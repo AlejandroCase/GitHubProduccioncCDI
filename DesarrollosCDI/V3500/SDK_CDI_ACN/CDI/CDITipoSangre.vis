@@ -1,0 +1,36 @@
+
+[Vista]
+Icono=0
+Clave=CDITipoSangre
+Nombre=CDITipoSangre
+Modulos=(Todos)
+Singular=CDITipoSangre
+ListaTablas=CDITipoSangre
+TablaPrincipal=CDITipoSangre
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=CDITipoSangre.TipoSangre
+CamposBusquedaRapida=CDITipoSangre.TipoSangre
+SQL=(Lista)
+[CDITipoSangre.TipoSangre]
+Clave=CDITipoSangre.TipoSangre
+Nombre=Tipo de Sangre
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+LigaTabla=CDITipoSangre
+LigaCampo=TipoSangre
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=TipoSangre
+
+
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDITipoSangre.TipoSangre
+CDITipoSangre.TipoSangre=FROM CDITipoSangre
+FROM CDITipoSangre=(Fin)

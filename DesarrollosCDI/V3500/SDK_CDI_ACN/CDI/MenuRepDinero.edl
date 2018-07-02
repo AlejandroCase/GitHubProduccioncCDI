@@ -1,0 +1,20 @@
+[Dialogo]
+PosicionInicialIzquierda=521
+PosicionInicialArriba=226
+PosicionInicialAlturaCliente=234
+
+[Dialogo.ListaAcciones]
+Diario=CDICorteCaja
+CDICorteCaja=(Fin)
+
+[Acciones.CDICorteCaja]
+Nombre=CDICorteCaja
+Boton=0
+NombreDesplegar=Corte De Caja
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepCDICorteCaja
+Activo=S
+Visible=S
+EspacioPrevio=S

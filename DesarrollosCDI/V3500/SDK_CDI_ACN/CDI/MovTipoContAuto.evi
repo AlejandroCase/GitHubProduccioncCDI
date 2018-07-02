@@ -1,0 +1,55 @@
+[Vista]
+SQL=(Lista)
+
+[MovTipoContAuto.Empresa]
+Nombre=
+Visible=
+TamanoValidacion=
+ValorPorOmision=
+
+[Vista.ListaCampos]
+Cta.Tipo=Cta.TieneMovimientos
+Cta.TieneMovimientos=(Fin)
+
+[Cta.TieneMovimientos]
+Clave=Cta.TieneMovimientos
+Nombre=Tiene Movimientos
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+LigaTabla=Cta
+LigaCampo=TieneMovimientos
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=TieneMovimientos
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=MovTipoContAuto.Empresa,
+MovTipoContAuto.Empresa,=MovTipoContAuto.Modulo,
+MovTipoContAuto.Modulo,=MovTipoContAuto.Clave,
+MovTipoContAuto.Clave,=MovTipoContAuto.Nombre,
+MovTipoContAuto.Nombre,=MovTipoContAuto.Cuenta,
+MovTipoContAuto.Cuenta,=MovTipoContAuto.CuentaOmision,
+MovTipoContAuto.CuentaOmision,=MovTipoContAuto.Debe,
+MovTipoContAuto.Debe,=MovTipoContAuto.Haber,
+MovTipoContAuto.Haber,=MovTipoContAuto.Orden,
+MovTipoContAuto.Orden,=MovTipoContAuto.OmitirConcepto,
+MovTipoContAuto.OmitirConcepto,=MovTipoContAuto.OmitirCentroCostos,
+MovTipoContAuto.OmitirCentroCostos,=MovTipoContAuto.Condicion,
+MovTipoContAuto.Condicion,=MovTipoContAuto.Presupuesto,
+MovTipoContAuto.Presupuesto,=MovTipoContAuto.Controladora,
+MovTipoContAuto.Controladora,=MovTipoContAuto.IncluirArticulos,
+MovTipoContAuto.IncluirArticulos,=MovTipoContAuto.CentroCostos,
+MovTipoContAuto.CentroCostos,=MovTipoContAuto.Sucursal,
+MovTipoContAuto.Sucursal,=MovTipoContAuto.IncluirDepartamento,
+MovTipoContAuto.IncluirDepartamento,=MovTipoContAuto.Concepto,
+MovTipoContAuto.Concepto,=MovTipoContAuto.ObligacionFiscal,
+MovTipoContAuto.ObligacionFiscal,=MovTipoContAuto.ContactoEspecifico,
+MovTipoContAuto.ContactoEspecifico,=Cta.Cuenta,
+Cta.Cuenta,=Cta.Descripcion,
+Cta.Descripcion,=Cta.Tipo,
+Cta.Tipo,=Cta.TieneMovimientos
+Cta.TieneMovimientos=FROM MovTipoContAuto
+FROM MovTipoContAuto=LEFT OUTER JOIN Cta ON MovTipoContAuto.CuentaOmision<IGUAL>Cta.Cuenta
+LEFT OUTER JOIN Cta ON MovTipoContAuto.CuentaOmision<IGUAL>Cta.Cuenta=(Fin)

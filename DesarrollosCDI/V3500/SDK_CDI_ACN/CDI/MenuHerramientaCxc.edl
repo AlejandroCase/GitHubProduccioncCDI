@@ -1,0 +1,20 @@
+[Dialogo]
+PosicionInicialIzquierda=473
+PosicionInicialArriba=130
+PosicionInicialAlturaCliente=426
+
+[Dialogo.ListaAcciones]
+Cuotas=CDIReasignaCobrador
+CDIReasignaCobrador=(Fin)
+
+[Acciones.CDIReasignaCobrador]
+Nombre=CDIReasignaCobrador
+Boton=0
+NombreDesplegar=&Reasignar Cobrador
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIReasignaCobradorP
+Activo=S
+Visible=S
+EspacioPrevio=S

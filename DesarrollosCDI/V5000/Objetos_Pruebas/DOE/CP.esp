@@ -1,0 +1,10 @@
+[CP.tbl/Observaciones]
+CondicionEdicion=(Estatus en (EstatusSinAfectar,EstatusPendiente))
+
+[CP.Frm/Ficha.CP.Observaciones]
+EditarConBloqueo=S
+
+
+[CPD.tbl/Tipo]
+CondicionDespliege=MovTipo(<T>CP<T>, CP:CP.Mov) en (CP.AP, CP.AS, CP.TA, CP.TR, CP.RF) y (SQL(<T>SELECT MOV FROM CP WHERE ID = :nID<T>,ID)  <><T>Categorizacion<T>)
+

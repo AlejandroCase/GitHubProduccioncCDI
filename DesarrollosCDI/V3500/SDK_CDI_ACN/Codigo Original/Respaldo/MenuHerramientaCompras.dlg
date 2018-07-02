@@ -1,0 +1,48 @@
+[Dialogo]
+Clave=MenuHerramientaCompras
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=503
+PosicionInicialArriba=438
+PosicionInicialAlturaCliente=114
+PosicionInicialAncho=273
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaEscCerrar=S
+VentanaConIcono=S
+
+[Acciones.ProcesarRequisicionesCompra]
+Nombre=ProcesarRequisicionesCompra
+Boton=0
+NombreDesplegar=Procesar &Requisiciones Compra
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ProcesarRequisicionesCompra
+Activo=S
+Visible=S
+
+[Acciones.ProcesarCompra]
+Nombre=ProcesarCompra
+Boton=0
+NombreDesplegar=&Procesar en Lote
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ProcesarCompra
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=ProcesarCompra
+ProcesarCompra=ProcesarRequisicionesCompra
+ProcesarRequisicionesCompra=(Fin)

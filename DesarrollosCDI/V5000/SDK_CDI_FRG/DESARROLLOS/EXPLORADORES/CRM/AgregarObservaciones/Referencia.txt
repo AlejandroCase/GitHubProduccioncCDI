@@ -1,0 +1,25 @@
+
+Se agrega la Columna  Observa  como TEXT para que pueda tomar los 500 caracteres
+
+alter table Campana add Observa nvarchar(max)
+go
+
+alter table Campana alter column Observa text
+
+se modifica la Vista CDIVMemGest con  nuevo campo c.Observa
+
+SET DATEFIRST 7
+SET ANSI_NULLS OFF
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+SET LOCK_TIMEOUT -1
+SET QUOTED_IDENTIFIER OFF
+go
+
+
+alter  view CDIVMemGest  
+as  
+select c.ID, c.Mov, c.Movid, c.FechaEmision, c.Estatus, c.Agente, c.MembresiaInicial,c.Observaciones,c.Observa, c.Referencia  
+,cg.Accion, cg.Acuerdo, cg.Contacto, cg.FechaCompromiso, cg.FormaPago  
+FROM Campana c  
+left join CDicampanaGest cg on cg.ID=c.id  
+where c.mov in ('Gestion')  

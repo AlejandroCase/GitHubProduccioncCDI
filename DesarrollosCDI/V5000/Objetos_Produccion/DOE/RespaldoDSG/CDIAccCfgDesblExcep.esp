@@ -1,0 +1,19 @@
+[CDIMenuCfgSocios.dlg/Dialogo]
+PosicionInicialIzquierda=539
+PosicionInicialArriba=241
+PosicionInicialAlturaCliente=248
+
+[CDIMenuCfgSocios.dlg/Dialogo.ListaAcciones]
+Subsidios=CDIExcepDesbReins
+CDIExcepDesbReins=(Fin)
+
+[CDIMenuCfgSocios.dlg/Acciones.CDIExcepDesbReins]
+Nombre=CDIExcepDesbReins
+Boton=0
+NombreDesplegar=Excepciones Desbloqueo/Reinstalación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIAccCfgDesblExcep
+Activo=S
+Visible=S

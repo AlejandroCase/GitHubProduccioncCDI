@@ -1,0 +1,3 @@
+[CDITareasPendientes.frm/Acciones.IrModulo]
+Expresion=asigna(Info.Asunto,CDITareasPendientes:CDITareasPendientes.Modulo )<BR>caso info.asunto es <T>CE<T><BR>  entonces Forma(<T>CE<T>)<BR>fin<BR><BR>asigna(Info.Asunto,Modulo.Tabla(CDITareasPendientes:CDITareasPendientes.Modulo ))<BR>caso info.asunto es <T>CDISocio<T><BR>  entonces Forma(<T>CDIModuloSocios<T>)<BR>  sino<BR>  Forma(  Modulo.Tabla(CDITareasPendientes:CDITareasPendientes.Modulo )  )<BR>fin<BR>//Forma(  Modulo.Tabla(CDITareasPendientes:CDITareasPendientes.Modulo )  )
+

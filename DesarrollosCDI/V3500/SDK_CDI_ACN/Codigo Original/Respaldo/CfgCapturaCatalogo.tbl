@@ -1,0 +1,34 @@
+[Tabla]
+Icono=0
+Clave=CfgCapturaCatalogo
+Archivo=CfgCapturaCatalogo
+Modulos=(Todos)
+TipoTabla=Configuracion
+ListaCampos=(Lista)
+Nombre=Catálogos
+Singular=Catálogo
+LlavePrimaria=Catalogo
+SQL=SELECT<BR>  Catalogo,<BR>  Forma<BR><BR>FROM<BR>  CfgCapturaCatalogo
+
+[Catalogo]
+Clave=Catalogo
+Nombre=Catálogo
+Visible=S
+TamanoValidacion=50
+Tamano=50
+
+[Forma]
+Clave=Forma
+Nombre=Forma
+Visible=S
+TamanoValidacion=100
+Tamano=100
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+Formula=ListaFormas
+
+[Tabla.ListaCampos]
+(Inicio)=Catalogo
+Catalogo=Forma
+Forma=(Fin)

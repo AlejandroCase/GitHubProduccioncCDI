@@ -1,0 +1,27 @@
+
+[Vista]
+Icono=0
+Clave=EntidadTipoRelacion
+Nombre=Tipos Relaciones
+Modulos=(Todos)
+Singular=Tipo Relación
+ListaTablas=EntidadTipoRelacion
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=EntidadTipoRelacion.TipoRelacion
+TablaPrincipal=EntidadTipoRelacion
+SQL=SELECT<BR>  EntidadTipoRelacion.TipoRelacion<BR><BR>FROM<BR>  EntidadTipoRelacion
+[EntidadTipoRelacion.TipoRelacion]
+Clave=EntidadTipoRelacion.TipoRelacion
+Nombre=Tipo Relación
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+LigaTabla=EntidadTipoRelacion
+LigaCampo=TipoRelacion
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=TipoRelacion

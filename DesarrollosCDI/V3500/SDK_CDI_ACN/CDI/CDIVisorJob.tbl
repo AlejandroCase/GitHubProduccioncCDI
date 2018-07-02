@@ -1,0 +1,50 @@
+
+[Tabla]
+Icono=0
+Clave=CDIVisorJob
+Nombre=CDIVisorJob
+Archivo=CDIVisorJob
+Modulos=(Todos)
+Singular=CDIVisorJob
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=NombreJob
+SQL=(Lista)
+[NombreJob]
+Clave=NombreJob
+Nombre=Nombre del Job
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=10
+Formula=SQLEnLista(<T>SELECT name FROM msdb.dbo.sysjobs<T>)
+[Mail]
+Clave=Mail
+Nombre=Mail
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=NombreJob
+NombreJob=Mail
+Mail=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=NombreJob,
+NombreJob,=Mail
+Mail=FROM CDIVisorJob
+FROM CDIVisorJob=(Fin)

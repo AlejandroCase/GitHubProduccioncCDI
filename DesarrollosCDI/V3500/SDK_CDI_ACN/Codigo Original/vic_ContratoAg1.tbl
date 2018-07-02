@@ -1,0 +1,42 @@
+[Tabla]
+Icono=0
+Clave=vic_ContratoAg1
+Archivo=vic_ContratoAg1
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=(Lista)
+Nombre=Agrupador 1
+Singular=Agrupador1
+LlavePrimaria=Agrupador1
+
+SQL=SELECT<BR>  Agrupador1,<BR>  Agrupador1Maestra,<BR>  Icono<BR><BR>FROM<BR>  vic_ContratoAg1
+[Agrupador1]
+Clave=Agrupador1
+Nombre=Agrupador 1
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[Agrupador1Maestra]
+Clave=Agrupador1Maestra
+Nombre=Agrupador 1 Maestra
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[Icono]
+Clave=Icono
+Nombre=Icono
+OpcionesColumnas=1
+OpcionesRenglones=8
+TipoDatos=Numérico
+TamanoValidacion=10
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Agrupador1
+Agrupador1=Agrupador1Maestra
+Agrupador1Maestra=Icono
+Icono=(Fin)

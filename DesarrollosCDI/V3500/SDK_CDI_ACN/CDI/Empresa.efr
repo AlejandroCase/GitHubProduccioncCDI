@@ -1,0 +1,13 @@
+[Forma]
+PosicionInicialIzquierda=360
+PosicionInicialArriba=235
+
+[Acciones.Otros1]
+TipoAccion=Formas
+Menu=&Edición
+NombreDesplegar=Configuración Control Esco&lar
+ClaveAccion=EmpresaCfgCE
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Empresa, Empresa:Empresa.Empresa)
+Visible=S

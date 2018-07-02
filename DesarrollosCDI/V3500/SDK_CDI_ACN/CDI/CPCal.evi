@@ -1,0 +1,19 @@
+[Vista]
+SQL=(Lista)
+
+[PeriodoNombre]
+Formula=Si(CPCal.Periodo>0, SQL(<T>SELECT Nombre FROM CDIMesNombre WHERE Mes =:tMes<T>, CPCal.Periodo))
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CPCal.ID,
+CPCal.ID,=CPCal.ClavePresupuestal,
+CPCal.ClavePresupuestal,=CPCal.Tipo,
+CPCal.Tipo,=CPCal.Ejercicio,
+CPCal.Ejercicio,=CPCal.Periodo,
+CPCal.Periodo,=CPCal.Importe,
+CPCal.Importe,=CPCal.Sucursal,
+CPCal.Sucursal,=CPCal.SucursalOrigen
+CPCal.SucursalOrigen=FROM
+FROM=CPCal
+CPCal=(Fin)

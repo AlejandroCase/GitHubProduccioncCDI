@@ -1,0 +1,55 @@
+[Tabla]
+Icono=0
+Clave=CEPlanPrecio
+Archivo=CEPlanPrecio
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=CEPlan<BR>ClienteTipo<BR>Rama<BR>Precio
+Nombre=CEPlanPrecio
+LlavePrimaria=CEPlan<BR>ClienteTipo<BR>Rama
+ListaRelaciones=Cte
+SQL=SELECT<BR>  CEPlan,<BR>  ClienteTipo,<BR>  Rama,<BR>  Precio<BR><BR>FROM<BR>  CEPlanPrecio
+[CEPlan]
+Clave=CEPlan
+Nombre=CEPlan
+Visible=S
+TamanoValidacion=10
+Tamano=10
+ValorPorOmision=Info.Plan
+[ClienteTipo]
+Clave=ClienteTipo
+Nombre=Tipo de Cliente
+Visible=S
+TamanoValidacion=15
+Tamano=15
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Unicamente opciones listadas
+Formula=SQLEnLista(<T>SELECT Tipo FROM CteTipo Order by Orden<T>)
+[Precio]
+Clave=Precio
+Nombre=Precio
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+AyudaEnCaptura=Calculadora
+Monetario=S
+[Rama]
+Clave=Rama
+Nombre=Rama
+Visible=S
+TamanoValidacion=10
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CteRama
+AyudaVista=Cte2
+AyudaCampo=Cte.Cliente
+ValidacionUsaTabla=S
+ValidacionTablas=Cte
+Mayusculas=S
+[Relaciones.Cte]
+TipoRelacion=Forzosa
+LlaveLocal=Rama
+Clave=Cte
+TablaRemota=Cte
+LlaveRemota=Cliente

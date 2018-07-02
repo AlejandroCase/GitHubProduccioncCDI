@@ -1,0 +1,31 @@
+[Dialogo]
+PosicionInicialIzquierda=538
+PosicionInicialArriba=212
+PosicionInicialAlturaCliente=306
+
+[Dialogo.ListaAcciones]
+Reevaluacion=PagosElectronicos
+PagosElectronicos=TansWeb
+TansWeb=(Fin)
+
+[Acciones.PagosElectronicos]
+Nombre=PagosElectronicos
+Boton=0
+NombreDesplegar=Pagos Electronicos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIPagosElectronicos
+Activo=S
+Visible=S
+
+[Acciones.TansWeb]
+Nombre=TansWeb
+Boton=0
+NombreDesplegar=Transacciones WEB
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDITranWeb
+Activo=S
+Visible=S

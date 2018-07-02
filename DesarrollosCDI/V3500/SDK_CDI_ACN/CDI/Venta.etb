@@ -1,0 +1,188 @@
+[Mov]
+CondicionEdicion=((Estatus=EstatusSinAfectar) y Vacio(Mensaje) y Vacio(MovID) y Vacio(Filtro.Mov)) y (no CDIFlujoAutorizacion)
+
+[Concepto]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Cliente]
+ValorRefrescar=SQL(<T>SELECT Cliente FROM Cte WHERE SOCIO = :tSocio<T>, CDISocio)<BR>//Si(ConDatos(Info.Cliente),Info.Cliente,Cliente)
+
+[Condicion]
+AyudaEnCaptura=Expresion
+AyudaMemOpc=Validar captura en la lista
+AyudaMemAvanzada=
+AyudaRefrescar=S
+Formula=//SQLEnLista(<T>SELECT Condicion FROM Condicion INNER JOIN CDICondPagoCte ON Condicion = CondPago AND Cliente = :tCliente<T>, Cliente)<BR>Si<BR>  ConDatos(CDICEPlan)<BR>Entonces<BR>  SQLEnLista(<T>SELECT Condicion FROM dbo.fnCDICondPago(:tCte, :tPlan)<T>, Cliente, CDICEPlan)<BR>Sino<BR>  SQLEnLista(<T>SELECT Condicion FROM dbo.fnCDICondPago(:tCte, DEFAULT)<T>, Cliente)<BR>Fin
+
+[FormaPagoTipo]
+AyudaEnCaptura=Expresion
+AyudaMemTabla=
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+Formula=Si<BR>  ConDatos(CDICEPlan)<BR>Entonces<BR>  SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPagoTipo(:tCliente, :tPlan)<T>, Cliente, CDICEPlan)<BR>Sino<BR>  SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPagoTipo(:tCliente, DEFAULT)<T>, Cliente)<BR>Fin
+
+[Cliente.ListaRefrescar]
+VigenteA=CDISocio
+CDISocio=CDIFacturarA
+CDIFacturarA=(Fin)
+
+[Tabla.ListaCampos]
+FechaContableMov=CDIFlujoAutorizacion
+CDIFlujoAutorizacion=CDICargoAutomatico
+CDICargoAutomatico=CDIEstado
+CDIEstado=CDISocio
+CDISocio=CDITarjetaCargo
+CDITarjetaCargo=CDICEPlan
+CDICEPlan=CDIFacturarA
+CDIFacturarA=CDIPermiteEditar
+CDIPermiteEditar=(Fin)
+
+[Tabla.SQL]
+SucursalOrigen,=SucursalDestino,
+SucursalDestino=
+FROM=
+Venta=
+SucursalDestino,=CDIFlujoAutorizacion,
+CDIFlujoAutorizacion,=CDICargoAutomatico,
+CDICargoAutomatico,=CDIEstado,
+CDIEstado,=CDISocio,
+CDISocio,=CDITarjetaCargo,
+CDITarjetaCargo,=CDICEPlan,
+CDICEPlan,=CDIFacturarA,
+CDIFacturarA,=CDIPermiteEditar
+CDIPermiteEditar=FROM Venta
+FROM Venta=(Fin)
+
+[Tabla.ListaRelaciones]
+MovTipo=CDICteSocio
+CDICteSocio=CteDestino
+CteDestino=(Fin)
+
+[Relaciones.TipoComprobante]
+TipoRelacion=Opcional
+LlaveLocal=TipoComprobante
+Clave=TipoComprobante
+TablaRemota=TipoComprobante
+LlaveRemota=TipoComprobante
+
+[CDIFlujoAutorizacion]
+Clave=CDIFlujoAutorizacion
+Nombre=CDIFlujoAutorizacion
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[CDICargoAutomatico]
+Clave=CDICargoAutomatico
+Nombre=Cargo Automático
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=CDITarjetaCargo
+ValorPorOmision=0
+
+[CDIEstado]
+Clave=CDIEstado
+Nombre=CDIEstado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+[CDISocio]
+Clave=CDISocio
+Nombre=Socio
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+Mayusculas=S
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ConRefrescarCondiciones=S
+CondicionEdicion=Vacio(AnexoID) y Vacio(Filtro.Cliente)
+ListaRefrescarCondiciones=Cliente
+RefrescarTotales=S
+AlCambiar=Si(MovTipoEn(<T>VTAS<T>, Mov, (VTAS.S, VTAS.CS)), Asigna(ServicioAseguradora, SQL(<T>SELECT Aseguradora FROM Cte WHERE Socio=:tSoc<T>, CDISocio)))
+AutoBloqueaDetalle=S
+AyudaEnCaptura=Vista
+AyudaForma=CDISocioLista
+AyudaVista=CteA
+AyudaCampo=Cte.Socio
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=Venta:Cte.Cliente+Si(Venta:Cte.Tipo=<T>Estructura<T>,<T> No es un Cliente<T>,<T> No permiten las Ventas a Consignación<T>)
+ValorPorOmision=Si(ConDatos(Filtro.Cliente), SQL(<T>SELECT Socio FROM Cte WHERE Cliente = :tCte<T>, Filtro.Cliente), SQL(<T>SELECT Socio FROM Cte WHERE Cliente = :tCte<T>, Usuario.DefCliente))
+ValorRefrescar=SQL(<T>SELECT Socio FROM Cte WHERE Cliente = :tCte<T>, Cliente)
+ValidacionCondicion=(Venta:Cte.Tipo<><T>Estructura<T>) y<BR>((MovTipo(<T>VTAS<T>,Mov) noen (VTAS.VC, VTAS.DC,VTAS.DCR)) o Venta:Cte.VtasConsignacion)
+
+[Relaciones.CDICteSocio]
+TipoRelacion=Opcional
+LlaveLocal=CDISocio
+Clave=CDICteSocio
+TablaRemota=CDICteSocio
+LlaveRemota=Socio
+
+[CDITarjetaCargo]
+Clave=CDITarjetaCargo
+Nombre=Tarjeta Cargo
+Visible=S
+TamanoValidacion=16
+TipoDatos=Texto
+Tamano=16
+AyudaEnCaptura=Vista
+AyudaForma=CDITarjetasBanc
+AyudaVista=CDITarjetasBanc
+AyudaCampo=NoTarjeta
+CondicionDespliege=CDICargoAutomatico=VERDADERO
+AyudaBusquedaRapida=Asigna(Info.Cliente, Cliente)
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+
+[CDICEPlan]
+Clave=CDICEPlan
+Nombre=Plan de Estudios
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+
+[CDIFacturarA]
+Clave=CDIFacturarA
+Nombre=Facturar A
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CteLista
+AyudaVista=CteA
+AyudaCampo=Cte.Cliente
+ValidacionUsaTabla=S
+ValidacionTablas=CteDestino
+ValorRefrescar=Venta:Cte.CDIFacturarA
+
+[Relaciones.CteDestino]
+TipoRelacion=Opcional
+LlaveLocal=CDIFacturarA
+Clave=CteDestino
+TablaRemota=CteDestino
+LlaveRemota=Cliente
+
+[CDISocio.ListaRefrescar]
+(Inicio)=Cliente
+Cliente=CDIFacturarA
+CDIFacturarA=(Fin)
+
+[CDIPermiteEditar]
+Clave=CDIPermiteEditar
+Nombre=CDIPermiteEditar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=1

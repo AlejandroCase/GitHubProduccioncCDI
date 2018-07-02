@@ -1,0 +1,27 @@
+[CDISocios.frm/Acciones.Guardar.ListaAccionesMultiples]
+Exprecion=SocioDuplicado
+SocioDuplicado=(Fin)
+
+[CDISocios.frm/Acciones.Guardar.SocioDuplicado]
+Nombre=SocioDuplicado
+Boton=0
+TipoAccion=Expresion
+Expresion=Si<BR>(sql(<T>Select count(socio) from cte where socio =:tcte<T>,Cte:Cte.Socio))>1<BR>Entonces<BR>Error( <T>Ya existe un Socio con este numero: <T> +Cte:Cte.Socio ,  BotonAceptar  )
+Activo=S
+Visible=S
+
+
+[CDISocios.frm/Economicos]
+Pestana=N
+
+[CDISocios.frm/DatosAcademicos]
+Pestana=N
+
+[CDISocios.frm/EstudioSocioeconomico]
+Pestana=N
+
+[CDISocios.frm/CDIAsignacionRoles]
+Pestana=N
+
+[CDISocios.frm/(Carpeta Abrir)]
+BusquedaSelCampo=S

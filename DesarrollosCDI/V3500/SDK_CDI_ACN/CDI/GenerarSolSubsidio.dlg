@@ -1,0 +1,34 @@
+
+[Dialogo]
+Clave=GenerarSolSubsidio
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+VentanaSiempreAlFrente=S
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaEscCerrar=S
+VentanaEstadoInicial=Normal
+
+ListaAcciones=Subsidio
+PosicionInicialIzquierda=545
+PosicionInicialArriba=458
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=189
+[Acciones.Subsidio]
+Nombre=Subsidio
+Boton=0
+NombreDesplegar=Subsidio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(<T>SOC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Subsidio<T>, Afectar.FormaCaptura)

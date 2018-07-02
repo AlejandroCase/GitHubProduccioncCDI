@@ -1,0 +1,94 @@
+[Dialogo]
+Clave=MenuCuotaCx
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=por Diseño
+ListaAcciones=(Lista)
+ExpresionesAlMostrar=Asigna(Info.Empresa, Empresa) 
+PosicionInicialIzquierda=985
+PosicionInicialArriba=154
+PosicionInicialAlturaCliente=200
+PosicionInicialAncho=240
+
+[Acciones.Cxc]
+Nombre=Cxc
+Boton=0
+NombreDesplegar=Cuotas Cx&c
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Asigna(Info.Modulo,<T>CXC<T>)<BR>Forma( <T>CuotaCxc<T> )
+
+[Acciones.Cxp]
+Nombre=Cxp
+Boton=0
+NombreDesplegar=Cuotas de Cxp
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Asigna(Info.Modulo,<T>CXP<T>)<BR>Forma( <T>CuotaCx<T> )
+
+[Acciones.PeriodoCxc]
+Nombre=PeriodoCxc
+Boton=0
+NombreDesplegar=Generar Cuotas Cuentas x Cobrar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Asigna(Info.Modulo,<T>CXC<T>)<BR>Forma(<T>EspecificarEjercicioPeriodo<T>)<BR>Informacion(SQL(<T>spCuotaCxGenerar :tEmpresa, :tModulo, :nEjercicio, :nPeriodo<T>,Empresa,Info.Modulo,Info.Ejercicio,Info.Periodo))
+
+[Acciones.PeriodoCxp]
+Nombre=PeriodoCxp
+Boton=0
+NombreDesplegar=Generar Cuotas Cuentas X Pagar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Asigna(Info.Modulo,<T>CXP<T>)<BR>Forma(<T>EspecificarEjercicioPeriodo<T>)<BR>Informacion(SQL(<T>spCuotaCxGenerar :tEmpresa, :tModulo, :nEjercicio, :nPeriodo<T>,Empresa,Info.Modulo,Info.Ejercicio,Info.Periodo))
+
+[Acciones.ReporteCxc]
+Nombre=ReporteCxc
+Boton=0
+NombreDesplegar=Reporte Cuotas - Cuentas Por Cobrar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=ReportePantalla(<T>CuotaCxc<T>,<T>CXC<T>)
+
+[Acciones.ReporteCxp]
+Nombre=ReporteCxp
+Boton=0
+NombreDesplegar=Reporte Cuotas-Cuentas Por Pagar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Expresion=ReportePantalla(<T>CuotaCxp<T>,<T>CXP<T>)
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=Cxc
+Cxc=Cxp
+Cxp=PeriodoCxc
+PeriodoCxc=PeriodoCxp
+PeriodoCxp=ReporteCxc
+ReporteCxc=ReporteCxp
+ReporteCxp=(Fin)

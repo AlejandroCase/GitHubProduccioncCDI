@@ -1,0 +1,5 @@
+[ExplorarCxcMov.frm/Lista]
+FiltroGeneral=CxcInfo.Empresa=<T>{Empresa}<T>
+FiltroGeneral=CxcInfo.Empresa
+IconosConPaginas=S
+ElementosPorPaginaEsp=999999999

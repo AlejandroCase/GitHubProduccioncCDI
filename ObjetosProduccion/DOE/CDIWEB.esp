@@ -1,0 +1,32 @@
+[MenuCfgWeb.dlg/Dialogo]
+PosicionInicialAlturaCliente=138
+PosicionInicialIzquierda=556
+PosicionInicialArriba=296
+
+[MenuCfgWeb.dlg/Dialogo.ListaAcciones]
+CalificacionTipo=CDICfgWEB
+CDICfgWEB=FirmasCorreo
+FirmasCorreo=(Fin)
+
+[MenuCfgWeb.dlg/Acciones.CDICfgWEB]
+Nombre=CDICfgWEB
+Boton=0
+NombreDesplegar=CDI Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=CDICfgWeb
+Activo=S
+Visible=S
+
+
+[MenuCfgWeb.dlg/Acciones.FirmasCorreo]
+Nombre=FirmasCorreo
+Boton=0
+NombreDesplegar=Firmas para Correo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=formas
+ClaveAccion=CDIFirmaWeb
+Activo=S
+Visible=S

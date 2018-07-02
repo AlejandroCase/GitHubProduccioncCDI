@@ -1,0 +1,694 @@
+[Tabla]
+Icono=0
+Clave=Concepto
+Archivo=Concepto
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=(Lista)
+Nombre=Conceptos
+Singular=Concepto
+LlavePrimaria=Modulo<BR>Concepto
+ListaRelaciones=(Lista)
+ControlNivelAcceso=S
+CampoNivelAcceso=NivelAcceso
+TablaAccesoEspecifico=ConceptoAcceso
+ControlAccesoEspecifico=S
+SQL=SELECT<BR>  Modulo,<BR>  Concepto,<BR>  EsDeducible,<BR>  Indirecto,<BR>  ConSueldo,<BR>  Cuenta,<BR>  Impuestos,<BR>  Retencion,<BR>  Retencion2,<BR>  Retencion3,<BR>  Clase,<BR>  SubClase,<BR>  Bloqueo,<BR>  Orden,<BR>  ValidarPresupuesto,<BR>  Tipo,<BR>  Proyecto,<BR>  Actividad,<BR>  PorcentajeDeducible,<BR>  LimiteDeducible,<BR>  AcreedorDef,<BR>  NivelAcceso,<BR>  TipoProrrateo,<BR>  EstimuloFiscal,<BR>  CR,<BR>  UEN,<BR>  Politica,<BR>  ConceptoCxp,<BR>  Provisionable,<BR>  ProvisionImporte,<BR>  CuentaPresupuesto,<BR>  CalcularPresupuesto,<BR>  InflacionPresupuesto,<BR>  DepartamentoDetallista,<BR>  Impuesto1Excento,<BR>  TipoOperacion,<BR>  Numero,<BR>  Descripcion,<BR>  CostoEstandar,<BR>  UltimoCosto,<BR>  UltimoGasto,<BR>  MonedaCosto,<BR>  Excento2,<BR>  Excento3,<BR>  EsInventariable,<BR>  Articulo,<BR>  ContUso,<BR>  ContUso2<BR><BR>FROM<BR>  Concepto
+
+[Concepto]
+Clave=Concepto
+Nombre=Concepto
+TamanoValidacion=50
+Tamano=50
+TipoDatos=Texto
+
+[Bloqueo]
+Clave=Bloqueo
+Nombre=Bloqueo
+TamanoValidacion=15
+Tamano=50
+CondicionDespliege=Info.Modulo=<T>CXC<T>
+TipoDatos=Texto
+
+[Modulo]
+Clave=Modulo
+Nombre=Módulo
+TamanoValidacion=5
+Tamano=5
+ValorPorOmision=Info.Modulo
+TipoDatos=Texto
+
+[Orden]
+Clave=Orden
+Nombre=Orden
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[EsDeducible]
+Clave=EsDeducible
+Nombre=Deducible
+AyudaEnCaptura=Lista de Opciones
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Verdadero
+CondicionDespliege=Info.Modulo=<T>GAS<T>
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+
+[ConSueldo]
+Clave=ConSueldo
+Nombre=con Goce Sueldo
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+CondicionDespliege=Modulo = <T>ASIS<T>
+
+[Cuenta]
+Clave=Cuenta
+Nombre=Cuenta
+Visible=S
+TamanoValidacion=20
+Tamano=20
+ValidacionUsaTabla=S
+ValidacionTablas=Cta
+AyudaEnCaptura=Vista
+AyudaForma=CtaLista
+AyudaVista=CtaLista
+AyudaCampo=CtaLista.Cuenta
+AyudaIgnoraChequeos=S
+CondicionDespliege=Info.Modulo <> <T>CONT<T>
+Mayusculas=S
+TipoDatos=Texto
+
+[Impuestos]
+Clave=Impuestos
+Nombre=% IVA
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+AyudaEnCaptura=Calculadora
+CondicionDespliege=Info.Modulo en (<T>GAS<T>, <T>COMSG<T>)
+ValorPorOmision=Si(Info.Modulo=<T>GAS<T>, General.DefImpuesto, Nulo)
+
+[Retencion]
+Clave=Retencion
+Nombre=% Retención ISR
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+AyudaEnCaptura=Calculadora
+CondicionDespliege=Info.Modulo en (<T>GAS<T>, <T>COMSG<T>)
+
+[Relaciones.Cta]
+TipoRelacion=Opcional
+LlaveLocal=Cuenta
+Clave=Cta
+TablaRemota=Cta
+LlaveRemota=Cuenta
+
+[Retencion2]
+Clave=Retencion2
+Nombre=% Retención IVA
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+CondicionDespliege=(Info.Modulo en (<T>GAS<T>, <T>COMSG<T>)) y Config.Gasto2Retenciones
+AyudaEnCaptura=Calculadora
+
+[Clase]
+Clave=Clase
+Nombre=Clasificación
+Visible=S
+TamanoValidacion=50
+Tamano=50
+CondicionDespliege=Info.Modulo en (<T>GAS<T>, <T>RISK<T>)
+AyudaEnCaptura=Expresion
+ConRefrescar=S
+ListaRefrescar=SubClase
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=SubClase
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+Formula=SQLEnLista(<T>SELECT Clase FROM Clase WHERE Modulo = :tModulo ORDER BY Orden<T>,Info.Modulo)
+TipoDatos=Texto
+
+[SubClase]
+Clave=SubClase
+Nombre=Subclasificación
+Visible=S
+TamanoValidacion=50
+Tamano=50
+CondicionDespliege=Info.Modulo en (<T>GAS<T>, <T>RISK<T>)
+ValorRefrescar=<T><T>
+CondicionEdicion=ConDatos(Clase)
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+AyudaRefrescar=S
+Formula=SQLEnLista(<T>SELECT SubClase FROM SubClase WHERE Modulo = :tModulo AND Clase = :tClase ORDER BY Orden<T>,Info.Modulo, Concepto:Concepto.Clase)
+TipoDatos=Texto
+
+[ValidarPresupuesto]
+Clave=ValidarPresupuesto
+Nombre=Validar Presupuesto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+Tamano=20
+CondicionDespliege=(Info.Modulo=<T>GAS<T>) y Config.GastoValidarPresupuesto
+ValorPorOmision=<T>No<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+RefrescarTodo=
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Tipo]
+Clave=Tipo
+Nombre=Tipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+Tamano=20
+ValorPorOmision=<T>Fijo<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=Info.Modulo=<T>GAS<T>
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Actividad]
+Clave=Actividad
+Nombre=Actividad
+Visible=S
+TamanoValidacion=50
+Tamano=100
+CondicionDespliege=(Info.Modulo=<T>GAS<T>) y Config.GastoActividad
+AyudaEnCaptura=Vista
+AyudaMemTabla=Actividad
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+AyudaForma=ProyectoDListaUsuario
+AyudaVista=ProyectoDEnFirme
+AyudaCampo=ProyectoDEnFirme.Actividad
+AyudaBusquedaRapida=Asigna(Info.Proyecto, Proyecto)
+ConAyudaBusquedaRapida=S
+ValidacionUsaTabla=S
+ValidacionTablas=ProyectoDEnFirme
+AyudaRefrescar=S
+AyudaIgnoraChequeos=S
+TipoDatos=Texto
+
+[PorcentajeDeducible]
+Clave=PorcentajeDeducible
+Nombre=% Deducible
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+CondicionDespliege=Info.Modulo=<T>GAS<T>
+ValorPorOmision=100
+
+[AcreedorDef]
+Clave=AcreedorDef
+Nombre=Acreedor (omisión) 
+Visible=S
+TamanoValidacion=10
+Tamano=10
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=AcreedorLista
+AyudaVista=Prov
+AyudaCampo=Prov.Proveedor
+ValidacionUsaTabla=S
+ValidacionTablas=Prov
+CondicionDespliege=Info.Modulo=<T>GAS<T>
+TipoDatos=Texto
+
+[Relaciones.Prov]
+TipoRelacion=Opcional
+LlaveLocal=AcreedorDef
+Clave=Prov
+TablaRemota=Prov
+LlaveRemota=Proveedor
+
+[Indirecto]
+Clave=Indirecto
+Nombre=Indirecto
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionDespliege=Info.Modulo=<T>GAS<T>
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ValorPorOmision=Falso
+
+[NivelAcceso]
+Clave=NivelAcceso
+Nombre=Acceso
+Visible=S
+TamanoValidacion=50
+Tamano=50
+CondicionDespliege=General.NivelAcceso
+AyudaEnCaptura=Expresion
+AyudaMemTabla=NivelAccesoEsp
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+Formula=SQLEnLista(<T>SELECT Nivel FROM NivelAccesoEsp ORDER BY Orden<T>)
+TipoDatos=Texto
+
+[TipoProrrateo]
+Clave=TipoProrrateo
+Nombre=Tipo Prorrateo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=Indirecto y General.AutoTransportes
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[EstimuloFiscal]
+Clave=EstimuloFiscal
+Nombre=% Estimulo Fiscal
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+CondicionDespliege=General.Autotransportes
+
+[CR]
+Clave=CR
+Nombre=Visible Caja Registradora
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionDespliege=General.CR y (Modulo en (<T>DIN<T>, <T>GAS<T>))
+ValorPorOmision=Falso
+
+[UEN]
+Clave=UEN
+Nombre=UEN
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+AyudaEnCaptura=Vista
+AyudaForma=UENLista
+AyudaVista=UEN
+AyudaCampo=UEN.UEN
+ValidacionUsaTabla=S
+ValidacionTablas=UEN
+CondicionDespliege=Falso
+
+[Relaciones.UEN]
+TipoRelacion=Opcional
+LlaveLocal=UEN
+Clave=UEN
+TablaRemota=UEN
+LlaveRemota=UEN
+
+[Retencion3]
+Clave=Retencion3
+Nombre=% Retención 3
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+CondicionDespliege=(Info.Modulo en (<T>GAS<T>, <T>COMSG<T>)) y Config.Gasto3Retenciones
+AyudaEnCaptura=Calculadora
+
+[LimiteDeducible]
+Clave=LimiteDeducible
+Nombre=Límite Deducible
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[Politica]
+Clave=Politica
+Nombre=Política
+Visible=S
+TamanoValidacion=50x3
+TipoDatos=Memo
+
+[ConceptoCxp]
+Clave=ConceptoCxp
+Nombre=Concepto (Cuentas por Pagar)
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Conceptos
+OpcionesModulo=CXP
+CondicionDespliege=Config.GastoConceptoCxp
+TipoDatos=Texto
+
+[Provisionable]
+Clave=Provisionable
+Nombre=Provisionable
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=ProvisionImporte
+
+[ProvisionImporte]
+Clave=ProvisionImporte
+Nombre=Provisión Mensual
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+CondicionDespliege=Provisionable
+AyudaEnCaptura=Calculadora
+
+[CuentaPresupuesto]
+Clave=CuentaPresupuesto
+Nombre=Cuenta Presupuesto
+Visible=S
+TamanoValidacion=20
+Tamano=20
+CondicionDespliege=General.PPTO y (Info.Modulo noen (<T>CONT<T>, <T>VTAS<T>))
+AyudaEnCaptura=Vista
+AyudaForma=CtaLista
+AyudaVista=CtaLista
+AyudaCampo=CtaLista.Cuenta
+AyudaIgnoraChequeos=S
+ValidacionUsaTabla=S
+ValidacionTablas=CtaPresupuesto
+Mayusculas=S
+TipoDatos=Texto
+
+[Relaciones.CtaPresupuesto]
+TipoRelacion=Opcional
+LlaveLocal=CuentaPresupuesto
+Clave=CtaPresupuesto
+TablaRemota=CtaPresupuesto
+LlaveRemota=Cuenta
+
+[CalcularPresupuesto]
+Clave=CalcularPresupuesto
+Nombre=Calcular Presupuesto
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionDespliege=Vacio(ValidarPresupuesto, <T>No<T>)<><T>No<T>
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=
+ValorPorOmision=Falso
+ListaRefrescarCondiciones=InflacionPresupuesto
+
+[InflacionPresupuesto]
+Clave=InflacionPresupuesto
+Nombre=% Inflación
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Cantidad=S
+CondicionDespliege=(Vacio(ValidarPresupuesto, <T>No<T>)<><T>No<T>) y CalcularPresupuesto 
+
+[DepartamentoDetallista]
+Clave=DepartamentoDetallista
+Nombre=Departamento Detallista
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+AyudaEnCaptura=Vista
+AyudaForma=DepartamentoDetallistaLista
+AyudaVista=DepartamentoDetallista
+AyudaCampo=DepartamentoDetallista.Departamento
+ValidacionUsaTabla=S
+ValidacionTablas=DepartamentoDetallista
+CondicionDespliege=General.SistemaDetallista
+
+[Relaciones.DepartamentoDetallista]
+TipoRelacion=Opcional
+LlaveLocal=DepartamentoDetallista
+Clave=DepartamentoDetallista
+TablaRemota=DepartamentoDetallista
+LlaveRemota=Departamento
+
+[Impuesto1Excento]
+Clave=Impuesto1Excento
+Nombre=Exento IVA
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Proyecto]
+Clave=Proyecto
+Nombre=Proyecto
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Vista
+AyudaForma=ProyLista
+AyudaVista=Proy
+AyudaCampo=Proy.Proyecto
+AyudaMemTabla=Proy
+AyudaMemRenglones=12
+AyudaMemAvanzada=S
+AyudaMemOpc=Unicamente opciones listadas
+AlCambiar=Asigna(Actividad, Nulo)
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No Existe<T>
+ValidacionCondicion=SQL(<T>SELECT Proyecto FROM Proy WHERE Proyecto=:tProy AND Estatus=:tEstatus<T>, Proyecto, EstatusAlta)=Proyecto
+TipoDatos=Texto
+
+[TipoOperacion]
+Clave=TipoOperacion
+Nombre=Tipo Operación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+Tamano=30
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Numero]
+Clave=Numero
+Nombre=Número
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Relaciones.ProyectoDEnFirme]
+TipoRelacion=Opcional
+LlaveLocal=(Lista)
+Clave=ProyectoDEnFirme
+TablaRemota=ProyectoDEnFirme
+LlaveRemota=(Lista)
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[CostoEstandar]
+Clave=CostoEstandar
+Nombre=Costo Estándar
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[UltimoCosto]
+Clave=UltimoCosto
+Nombre=Ultimo Costo
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+UnicamenteLectura=S
+
+[MonedaCosto]
+Clave=MonedaCosto
+Nombre=Moneda Costo
+Visible=S
+TamanoValidacion=10
+Tamano=10
+UnicamenteLectura=S
+TipoDatos=Texto
+
+[UltimoGasto]
+Clave=UltimoGasto
+Nombre=Ultimo Gasto
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+FormatoValidacion=dd/mmm/aaaa
+UnicamenteLectura=S
+
+[Excento2]
+Clave=Excento2
+Nombre=Excento ISR
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Excento3]
+Clave=Excento3
+Nombre=Excento IETU
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EsInventariable]
+Clave=EsInventariable
+Nombre=Inventariable
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=Articulo
+CondicionDespliege=Config.GastoConceptosInventariables
+
+[Articulo]
+Clave=Articulo
+Nombre=Artículo
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Vista
+AyudaForma=ArtLista
+AyudaVista=Art
+AyudaCampo=Art.Articulo
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No Existe<T>
+Mayusculas=S
+CondicionDespliege=Config.GastoConceptosInventariables y EsInventariable
+ValidacionCondicion=SQL(<T>SELECT Articulo FROM Art WHERE Articulo=:tArt<T>, Articulo)=Articulo
+
+[Tabla.ListaCampos]
+(Inicio)=Modulo
+Modulo=Concepto
+Concepto=EsDeducible
+EsDeducible=PorcentajeDeducible
+PorcentajeDeducible=LimiteDeducible
+LimiteDeducible=ConSueldo
+ConSueldo=Orden
+Orden=Bloqueo
+Bloqueo=Cuenta
+Cuenta=CuentaPresupuesto
+CuentaPresupuesto=Impuestos
+Impuestos=Retencion
+Retencion=Retencion2
+Retencion2=Retencion3
+Retencion3=Clase
+Clase=SubClase
+SubClase=ValidarPresupuesto
+ValidarPresupuesto=Tipo
+Tipo=AcreedorDef
+AcreedorDef=Indirecto
+Indirecto=NivelAcceso
+NivelAcceso=TipoProrrateo
+TipoProrrateo=EstimuloFiscal
+EstimuloFiscal=CR
+CR=UEN
+UEN=Politica
+Politica=ConceptoCxp
+ConceptoCxp=Provisionable
+Provisionable=ProvisionImporte
+ProvisionImporte=CalcularPresupuesto
+CalcularPresupuesto=InflacionPresupuesto
+InflacionPresupuesto=DepartamentoDetallista
+DepartamentoDetallista=Impuesto1Excento
+Impuesto1Excento=Proyecto
+Proyecto=Actividad
+Actividad=TipoOperacion
+TipoOperacion=Numero
+Numero=Descripcion
+Descripcion=CostoEstandar
+CostoEstandar=UltimoCosto
+UltimoCosto=UltimoGasto
+UltimoGasto=MonedaCosto
+MonedaCosto=Excento2
+Excento2=Excento3
+Excento3=EsInventariable
+EsInventariable=Articulo
+Articulo=(Fin)
+
+[Tabla.ListaRelaciones]
+(Inicio)=Cta
+Cta=Prov
+Prov=UEN
+UEN=CtaPresupuesto
+CtaPresupuesto=DepartamentoDetallista
+DepartamentoDetallista=ProyectoDEnFirme
+ProyectoDEnFirme=(Fin)
+
+[ValidarPresupuesto.ListaOpciones]
+(Inicio)=No
+No=Mensual
+Mensual=Acumulado
+Acumulado=Anual
+Anual=(Fin)
+
+[Tipo.ListaOpciones]
+(Inicio)=Fijo
+Fijo=Variable
+Variable=(Fin)
+
+[TipoProrrateo.ListaOpciones]
+(Inicio)=Todos
+Todos=Rol
+Rol=Autobus
+Autobus=Mixto
+Mixto=(Fin)
+
+[TipoOperacion.ListaOpciones]
+(Inicio)=Honorarios
+Honorarios=Renta
+Renta=Intereses
+Intereses=Otros
+Otros=Importacion Bienes
+Importacion Bienes=Importacion Servicios
+Importacion Servicios=(Fin)
+
+[Relaciones.ProyectoDEnFirme.LlaveLocal]
+(Inicio)=Proyecto
+Proyecto=Actividad
+Actividad=(Fin)
+
+[Relaciones.ProyectoDEnFirme.LlaveRemota]
+(Inicio)=Proyecto
+Proyecto=Actividad
+Actividad=(Fin)

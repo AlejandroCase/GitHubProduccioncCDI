@@ -1,0 +1,20 @@
+[Forma]
+PosicionInicialIzquierda=278
+PosicionInicialArriba=178
+Comentarios=
+
+[Forma.ListaAcciones]
+RegimenFiscal=CDIRegla
+CDIRegla=(Fin)
+
+[Acciones.CDIRegla]
+Nombre=CDIRegla
+Boton=99
+NombreEnBoton=S
+NombreDesplegar=Concepto Condicion Forma Pago
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIvtacondFP
+Activo=S
+Visible=S

@@ -1,0 +1,82 @@
+[VentaAcumD.vis/Vista.SQL]
+(Inicio)=SELECT   Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio,  Cte.Membresia,  Art.Articulo,  Art.Rama,  Art.Descripcion1,  Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo,
+SELECT   Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio,  Cte.Membresia,  Art.Articulo,  Art.Rama,  Art.Descripcion1,  Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo,='VentaMes' <IGUAL> (SELECT Sum(Cargos) - Sum(Abonos) FROM AcumRU WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND Empresa <IGUAL> '{Empresa}' AND Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),
+'VentaMes' <IGUAL> (SELECT Sum(Cargos) - Sum(Abonos) FROM AcumRU WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND Empresa <IGUAL> '{Empresa}' AND Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),='CantidadMes' <IGUAL> (SELECT Sum(CargosU) - Sum(AbonosU) FROM AcumRU WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND Empresa <IGUAL> '{Empresa}' AND Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),
+'CantidadMes' <IGUAL> (SELECT Sum(CargosU) - Sum(AbonosU) FROM AcumRU WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND Empresa <IGUAL> '{Empresa}' AND Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),='VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),
+'VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),='CantidadAcum' <IGUAL> Sum(SaldoRU.SaldoU),
+'CantidadAcum' <IGUAL> Sum(SaldoRU.SaldoU),=SaldoRU.Moneda
+SaldoRU.Moneda=FROM   SaldoRU
+FROM   SaldoRU=JOIN Art ON SaldoRU.Cuenta <IGUAL> Art.Articulo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'
+JOIN Art ON SaldoRU.Cuenta <IGUAL> Art.Articulo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'=JOIN Cte ON SaldoRU.Grupo <IGUAL> Cte.Cliente
+JOIN Cte ON SaldoRU.Grupo <IGUAL> Cte.Cliente=GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio, Cte.Membresia,   Art.Articulo,   Art.Rama,  Art.Descripcion1,   Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo
+GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio, Cte.Membresia,   Art.Articulo,   Art.Rama,  Art.Descripcion1,   Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo=(Fin)
+
+[VentaPendienteDisponible.vis/Vista.ListaCampos]
+Cte.Extencion2=Cte.Membresia
+Cte.Membresia=Cte.Socio
+Cte.Socio=ContMoneda.ContMoneda
+
+[Cxc.vis/Vista.ListaCampos]
+Cxc.PedidoReferenciaID=Cxc.CDIFlujoAutorizacion
+Cte.DescuentoRecargos=Cte.PersonalNombres
+Cte.Agente4=Cte.Membresia
+CentroCostos.Descripcion=CentroCostos2.Descripcion
+CentroCostos2.Descripcion=CentroCostos3.Descripcion
+CentroCostos3.Descripcion=ContMoneda.ContMoneda
+ContMoneda.ContMoneda=ContMoneda.TipoCambio
+ContMoneda.TipoCambio=CteDestino.Nombre
+Cxc.CDIFlujoAutorizacion=Cxc.CDICargoAutomatico
+Cxc.CDICargoAutomatico=Cxc.CDISocio
+Cxc.CDISocio=Cxc.CDIFacturarA
+Cxc.CDIFacturarA=Cxc.CDIPermiteEditar
+Cxc.CDIPermiteEditar=Mon.TipoCambio
+Cte.PersonalNombres=Cte.PersonalApellidoPaterno
+Cte.PersonalApellidoPaterno=Cte.PersonalApellidoMaterno
+Cte.PersonalApellidoMaterno=Cte.Agente3
+Cte.Membresia=Cte.Socio
+Cte.Socio=Cte.CDIFacturarA
+Cte.CDIFacturarA=CDICteSocio.Cliente
+CDICteSocio.Cliente=CDICteSocio.Nombre
+CDICteSocio.Nombre=CDICteSocio.Membresia
+CDICteSocio.Membresia=CDICteSocio.Socio
+CDICteSocio.Socio=CteEnviarA.Clave
+CteDestino.Nombre=(Fin)
+
+
+[Cxc.vis/Vista.SQL]
+Cxc.PedidoReferenciaID,=Cxc.CDIFlujoAutorizacion,
+Cte.DescuentoRecargos,=Cte.PersonalNombres,
+Cte.Agente4,=Cte.Membresia,
+CentroCostos.Descripcion,=CentroCostos2.Descripcion,
+CentroCostos2.Descripcion,=CentroCostos3.Descripcion,
+CentroCostos3.Descripcion,=ContMoneda.ContMoneda,
+ContMoneda.ContMoneda,=ContMoneda.TipoCambio,
+ContMoneda.TipoCambio,=CteDestino.Nombre
+LEFT OUTER JOIN CentroCostos3 ON Cxc.ContUso3<IGUAL>CentroCostos3.CentroCostos3=LEFT OUTER JOIN Cte CDICteSocio ON Cxc.CDISocio<IGUAL>CDICteSocio.Cliente
+Cxc.CDIFlujoAutorizacion,=Cxc.CDICargoAutomatico,
+Cxc.CDICargoAutomatico,=Cxc.CDISocio,
+Cxc.CDISocio,=Cxc.CDIFacturarA,
+Cxc.CDIFacturarA,=Cxc.CDIPermiteEditar,
+Cxc.CDIPermiteEditar,=Mon.TipoCambio,
+Cte.PersonalNombres,=Cte.PersonalApellidoPaterno,
+Cte.PersonalApellidoPaterno,=Cte.PersonalApellidoMaterno,
+Cte.PersonalApellidoMaterno,=Cte.Agente3,
+Cte.Membresia,=Cte.Socio,
+Cte.Socio,=Cte.CDIFacturarA,
+Cte.CDIFacturarA,=CDICteSocio.Cliente,
+CDICteSocio.Cliente,=CDICteSocio.Nombre,
+CDICteSocio.Nombre,=CDICteSocio.Membresia,
+CDICteSocio.Membresia,=CDICteSocio.Socio,
+CDICteSocio.Socio,=CteEnviarA.Clave,
+CteDestino.Nombre=FROM Cxc
+LEFT OUTER JOIN Cte CDICteSocio ON Cxc.CDISocio<IGUAL>CDICteSocio.Cliente=LEFT OUTER JOIN Cte CteDestino ON Cxc.CDIFacturarA<IGUAL>CteDestino.Cliente
+LEFT OUTER JOIN Cte CteDestino ON Cxc.CDIFacturarA<IGUAL>CteDestino.Cliente=(Fin)
+
+[Cxc.vis/Vista.ListaCalculados]
+TotalComisiones=ImporteTotalMN
+ImporteTotalMN=CobroTotalMN
+CobroTotalMN=SaldoFMN
+SaldoFMN=ImpuestosMN
+ImpuestosMN=ImporteMN
+ImporteMN=NombreSocio
+NombreSocio=(Fin)

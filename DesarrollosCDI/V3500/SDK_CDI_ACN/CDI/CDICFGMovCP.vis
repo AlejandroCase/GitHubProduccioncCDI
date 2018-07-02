@@ -1,0 +1,62 @@
+
+[Vista]
+Icono=0
+Clave=CDICFGMovCP
+Nombre=CDICFGMovCP
+Modulos=(Todos)
+Singular=CDICFGMovCP
+ListaTablas=CDICFGMovCP
+TablaPrincipal=CDICFGMovCP
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=(Lista)
+SQL=(Lista)
+[CDICFGMovCP.MovOrigen]
+Clave=CDICFGMovCP.MovOrigen
+Nombre=Mov Origen
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=20
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Modulo IN (:tCom, :tGas) ORDER BY Mov<T>, <T>COMS<T>, <T>GAS<T>)
+LigaTabla=CDICFGMovCP
+LigaCampo=MovOrigen
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=MovOrigen
+
+[CDICFGMovCP.MovDestino]
+Clave=CDICFGMovCP.MovDestino
+Nombre=Mov Control Presupuestal
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=20
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Modulo =:tCP ORDER BY Mov <T>, <T>CP<T>)
+LigaTabla=CDICFGMovCP
+LigaCampo=MovDestino
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=MovDestino
+
+
+
+[Vista.ListaCampos]
+(Inicio)=CDICFGMovCP.MovOrigen
+CDICFGMovCP.MovOrigen=CDICFGMovCP.MovDestino
+CDICFGMovCP.MovDestino=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDICFGMovCP.MovOrigen,
+CDICFGMovCP.MovOrigen,=CDICFGMovCP.MovDestino
+CDICFGMovCP.MovDestino=FROM CDICFGMovCP
+FROM CDICFGMovCP=(Fin)

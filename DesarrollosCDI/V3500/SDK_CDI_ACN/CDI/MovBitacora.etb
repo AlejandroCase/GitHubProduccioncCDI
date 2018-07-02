@@ -1,0 +1,56 @@
+[Tabla]
+LlavePrimaria=(Lista)
+SQL=(Lista)
+
+[RID]
+TipoDatos=AutoInc
+
+[MovSituacionNota]
+TipoDatos=Texto
+
+[DuracionUnidad]
+TipoDatos=Texto
+
+[Tabla.ListaCampos]
+DuracionUnidad=CDIConcepto
+CDIConcepto=(Fin)
+
+[CDIConcepto]
+Clave=CDIConcepto
+Nombre=Nom Concepto
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Conceptos
+OpcionesRenglones=8
+OpcionesModulo=NOM
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Modulo,
+Modulo,=ID,
+ID,=RID,
+RID,=Fecha,
+Fecha,=Evento,
+Evento,=Tipo,
+Tipo,=Sucursal,
+Sucursal,=Usuario,
+Usuario,=MovEstatus,
+MovEstatus,=MovSituacion,
+MovSituacion,=MovSituacionFecha,
+MovSituacionFecha,=MovSituacionUsuario,
+MovSituacionUsuario,=MovSituacionNota,
+MovSituacionNota,=Duracion,
+Duracion,=DuracionUnidad,
+DuracionUnidad,=CDIConcepto
+CDIConcepto=FROM MovBitacora
+FROM MovBitacora=(Fin)
+
+[Tabla.LlavePrimaria]
+(Inicio)=Modulo
+Modulo=ID
+ID=RID
+RID=(Fin)

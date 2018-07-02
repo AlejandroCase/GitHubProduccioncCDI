@@ -1,0 +1,7 @@
+[MenuPrincipal.dlg/Acciones.Herramienta.Paginas]
+NombreDesplegar=Timbrado CFDI
+TipoAccion=Dialogos
+ClaveAccion=MenuHtaCFDI
+VisibleCondicion=
+Visible=S
+

@@ -1,0 +1,14 @@
+[MenuRepNomina.dlg/Acciones.CDICartaPatronal]
+Nombre=CDICartaPatronal
+Boton=0
+NombreDesplegar=Formato de Carta Patronal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=reportes Pantalla
+ClaveAccion=CDICartaPatronal
+Activo=S
+Visible=S
+
+
+[MenuRepNomina.dlg/Dialogo.ListaAcciones]
+AcumVacaciones=CDICartaPatronal

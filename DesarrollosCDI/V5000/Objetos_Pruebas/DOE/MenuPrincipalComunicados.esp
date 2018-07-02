@@ -1,0 +1,14 @@
+[MenuPrincipal.dlg/Dialogo.ListaAcciones]
+Herramienta.EnviarCorreo=Comunicados
+Comunicados=Herramienta.Mapa
+
+[MenuPrincipal.dlg/Acciones.Comunicados]
+Nombre=Comunicados
+Boton=0
+Menu=&Herramientas
+NombreDesplegar=&Comunicados Campamentos
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIMensajeCom
+Activo=S
+Visible=S

@@ -1,0 +1,34 @@
+[Venta.frm/Forma.ListaAcciones]
+Otros8=CFDICliente
+CFDICliente=CFDIProveedor
+CFDIProveedor=Otros9
+
+[Venta.frm/Acciones.CFDICliente]
+Nombre=CFDICliente
+Boton=0
+NombreDesplegar=Especificar Cliente Terceros
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Antes=S
+Visible=S
+Menu=&Edición
+GuardarAntes=S
+Expresion=EjecutarSQL(<T>xpCFDVentaDCopiarCliente :nID<T>,Venta:Venta.ID)<BR>Forma(<T>CFDVentaDCte<T>)
+AntesExpresiones=Asigna(Info.ID,Venta:Venta.ID)
+
+[Venta.frm/Acciones.CFDIProveedor]
+Nombre=CFDIProveedor
+Boton=0
+NombreDesplegar=Especificar Proveedor Terceros
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Expresion
+Activo=S
+Antes=S
+Visible=S
+Menu=&Edición
+GuardarAntes=S
+Expresion=EjecutarSQL(<T>xpCFDVentaDCopiarProvedor :nID<T>,Venta:Venta.ID)<BR>Forma(<T>CFDVentaDProv<T>)
+AntesExpresiones=Asigna(Info.ID,Venta:Venta.ID)

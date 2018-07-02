@@ -1,0 +1,12 @@
+[CentroCostosRama.frm/Acciones.Otros1]
+Menu=&Ver
+Boton=103
+NombreEnBoton=S
+NombreDesplegar=Actualizar Ctas
+GuardarAntes=S
+GuardarConfirmar=S
+EnBarraHerramientas=S
+Activo=S
+Visible=S
+EsDefault=S
+Expresion=EjecutarSQLAnimado(<T>MURSPGENERAACTUALIZACIONCENTROCOSTOS  :TCentro<T>,CentroCostos:CentroCostos.CentroCostos )<BR>Informacion(<T>Proceso Concluido<T>)

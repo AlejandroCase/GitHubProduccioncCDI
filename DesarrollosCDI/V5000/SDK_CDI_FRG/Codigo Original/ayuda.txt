@@ -1,0 +1,89 @@
+'Página '+ReportePaginaNumero
+
+Cte.Tipo<>'Estructura'   
+FiltroGeneral=Cte.Tipo<><T>Estructura
+
+CDIMemVisitasAnual
+'{Info.CDIMembresiaListaD}',
+'{Info.CDISocioLista}',
+'{Info.CteCat}'
+
+
+CDIAcumuladoNomina
+
+edad minima y edad maxima 
+
+CDIConceptoTresPorciento 
+'{Info.Estacion}',
+'{Info.Ejercicio}',
+'{Info.Periodo}',
+
+
+SQL(CDIConceptoTresPorciento nE:,n:J, n:P , Estacion ,Ejercicio,Periodo)
+SQL(exec CDIConceptoTresPorciento nE:, n:J , n:P  Estacion ,Ejercicio,Periodo)
+
+
+
+Empresa.Nombre
+Mayusculas('Reporte de Jornadas')
+
+
+Ahora
+'Página '+ReportePaginaNumero
+
+
+cel
+casas 5939145641
+papa 5543063839
+
+JulFran
+
+JUAN GUSS ELTERMAN
+
+TOABADAGDE
+
+
+friendBack@outlook.com
+FutBol1987
+
+5552150286
+
+url 
+
+ADRIANA BIALOSTOZKY JUSIDMAN
+Jumpflying@outlook.com 
+1968-02-20 00:00:00.000
+
+MOISES KOLTENIUK LIFSHITZ
+Kof_Jumpflying@outlook.com 
+1988-01-08 00:00:00.000
+
+kaeri218santana
+
+5530172595
+
+
+03018 1944 2017 8_1
+
+
+
+5581714921 
+
+domic/737450 18/12 
+
+saandra sanches hoteles pirtamide
+
+Galerías Plaza de las Estrellas, Calle Melchor Ocampo 193, 
+Miguel Hidalgo, Veronica Anzures, 11300 Ciudad de México, CDMX
+9 A 9
+
+
+exec xpCDIConcentraTotales '{info.periodo}','{info.ano}''{info.usuario}','{info.departamento}'
+
+
+arturo PACHECO
+2700
+
+
+2034401
+

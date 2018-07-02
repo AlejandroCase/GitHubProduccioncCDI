@@ -1,0 +1,368 @@
+[Forma]
+PosicionInicialIzquierda=-8
+PosicionInicialArriba=-8
+PosicionInicialAncho=1382
+PosicionInicialAlturaCliente=705
+PosicionSec1=355
+PosicionSec2=476
+
+[Detalle]
+CondicionEdicion=(Compra:Compra.CDIPermiteEditar) y (Compra:Compra.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))<BR> y (Compra:Compra.Mov <> (<T>Bonificacion Compra<T>))
+
+[Detalle.Columnas]
+ClavePresupuestal=149
+Categoria=304
+Impuesto5=64
+ABC=304
+CDIAutorizaCompra=84
+MovOrigen=124
+IdOrigen=124
+
+[(Carpeta Abrir).Columnas]
+2=384
+
+[Lista.Columnas]
+Articulo=99
+0=135
+1=192
+Almacen=68
+Cantidad=61
+4=-2
+5=-2
+6=-2
+7=-2
+8=-2
+Codigo=74
+UnidadCompra=57
+CantidadA=57
+
+[Detalle.ListaEnCaptura]
+CompraD.DescripcionExtra=CompraD.CDIAutorizaCompra
+CompraD.SecuenciaRetencion=MovOrigen
+CompraD.CDIAutorizaCompra=CompraD.Estado
+MovOrigen=(Fin)
+
+[Detalle.ListaCamposAValidar]
+Art.Descripcion1=Art.Tipo
+OpcionDesc=
+Art.UnidadCompra=ClavePresupuestal.Descripcion
+ClavePresupuestal.Descripcion=CentroCostos.Descripcion
+CentroCostos.Descripcion=(Fin)
+
+[Forma.ListaCarpetas]
+Anexo=CDIEvaluacionProveedores
+CDIEvaluacionProveedores=(Fin)
+
+[Forma.ListaAcciones]
+CompraExtraccion=Bitacora
+Otros9=CDIAutorizar
+Bitacora=MovPos
+CDIAutorizar=CDICumplimiento
+CDICumplimiento=CDIReevaluacionCal
+CDIReevaluacionCal=CDIInfo.CP
+CDIInfo.CP=CDIBoni
+CDIBoni=(Fin)
+
+[Acciones.CDIAutorizar]
+Nombre=CDIAutorizar
+Boton=0
+Menu=&Edición
+UsaTeclaRapida=S
+TeclaRapida=Shift+Ctrl+A
+NombreDesplegar=Autorizar Flujo
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIMovAutorizar
+Visible=S
+Antes=S
+DespuesGuardar=S
+ActivoCondicion=Compra:Compra.CDIFlujoAutorizacion
+AntesExpresiones=Asigna(Info.Modulo, <T>COMS<T>)<BR>Asigna(Info.ID,Compra:Compra.ID)<BR>Asigna(Info.Mov,Compra:Compra.Mov)
+
+[Acciones.Bitacora]
+Nombre=Bitacora
+Boton=0
+Menu=&Ver
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+B
+NombreDesplegar=&Bitácora
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=MovBitacora
+Activo=S
+Antes=S
+DespuesGuardar=S
+Visible=S
+AntesExpresiones=Asigna(Info.Modulo, <T>COMS<T>)<BR>Asigna(Info.ID, Compra:Compra.ID)<BR>Asigna(Info.Mov, Compra:Compra.Mov)<BR>Asigna(Info.MovID, Compra:Compra.MovID)<BR>Asigna(Info.PuedeEditar, Compra:Compra.Estatus noen (EstatusConcluido, EstatusCancelado) y PuedeModificar(Compra:Compra.Usuario))
+
+[CDIEvaluacionProveedores]
+Estilo=Ficha
+Pestana=S
+PestanaOtroNombre=S
+PestanaNombre=Evaluación Proveedores
+Clave=CDIEvaluacionProveedores
+AlineacionAutomatica=S
+AcomodarTexto=S
+MostrarConteoRegistros=S
+Zona=A1
+Vista=Compra
+Fuente={Tahoma, 8, Negro, []}
+FichaEspacioEntreLineas=6
+FichaEspacioNombres=100
+FichaEspacioNombresAuto=S
+FichaNombres=Izquierda
+FichaAlineacion=Izquierda
+FichaColorFondo=Plata
+FichaAlineacionDerecha=S
+CampoColorLetras=Negro
+CampoColorFondo=Plata
+ListaEnCaptura=(Lista)
+CondicionVisible=(ConDatos( Compra:Compra.Proveedor ))  Y  MovTipoEn(<T>COMS<T>, Compra:Compra.Mov, (COMS.O, COMS.C))
+
+[CDIEvaluacionProveedores.Compra.CDIQuejasProveedor]
+Carpeta=CDIEvaluacionProveedores
+Clave=Compra.CDIQuejasProveedor
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Plata
+Efectos=[Negritas]
+
+[CDIEvaluacionProveedores.Compra.CDISatisfaccionTE]
+Carpeta=CDIEvaluacionProveedores
+Clave=Compra.CDISatisfaccionTE
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Plata
+Efectos=[Negritas]
+
+[CDIEvaluacionProveedores.Compra.CDICalificacion]
+Carpeta=CDIEvaluacionProveedores
+Clave=Compra.CDICalificacion
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Plata
+Efectos=[Negritas]
+
+[CDIEvaluacionProveedores.Compra.CDIRechazosMercancia]
+Carpeta=CDIEvaluacionProveedores
+Clave=Compra.CDIRechazosMercancia
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Plata
+Efectos=[Negritas]
+
+[Acciones.ReEvaluar.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Expresion=SQL( <T>EXEC spCDIReevaluacionCalificacion :tEmpresa1, :tProveedor1, :nID1<T>, Empresa, Compra:Compra.Proveedor,Compra:Compra.ID )
+Activo=S
+Visible=S
+
+[Acciones.ReEvaluar.Actualizar]
+Nombre=Actualizar
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Vista
+Activo=S
+Visible=S
+
+[Acciones.ReEvaluar.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar
+Actualizar=(Fin)
+
+[Acciones.CDIReevaluarCal.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Asigna( Info.Numero, SQL( <T>EXEC spCDIReevaluacionCalificacion :tEmpresa1, :tProveedor1, :nID1<T>, Empresa, Compra:Compra.Proveedor,Compra:Compra.ID ))<BR>Si<BR>  Info.Numero = 0<BR>Entonces<BR>  Informacion(<T>Cálculo Relizado Correctamente<T>)<BR>SiNo<BR>  Precaucion(<T>Cálculo Relizado Incorrectamente<T>)<BR>Fin
+
+[Acciones.CDIReevaluarCal.Actualizar Vista]
+Nombre=Actualizar Vista
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Vista
+Activo=S
+Visible=S
+
+[CDIEvaluacionProveedores.ListaEnCaptura]
+(Inicio)=Compra.CDIQuejasProveedor
+Compra.CDIQuejasProveedor=Compra.CDISatisfaccionTE
+Compra.CDISatisfaccionTE=Compra.CDICalificacion
+Compra.CDICalificacion=Compra.CDIRechazosMercancia
+Compra.CDIRechazosMercancia=(Fin)
+
+[Acciones.CDIReevaluarCal.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar Vista
+Actualizar Vista=(Fin)
+
+[Acciones.CDICumplimiento]
+Nombre=CDICumplimiento
+Boton=60
+NombreDesplegar=C&umplimiento
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=mis_RepCompraCumplimiento
+Activo=S
+VisibleCondicion=(ConDatos( Compra:Compra.ID )) Y (ConDatos( Compra:Compra.Proveedor ))  Y  MovTipoEn(<T>COMS<T>, Compra:Compra.Mov, (COMS.O, COMS.C))
+
+[Acciones.CDIReevaluacionCal]
+Nombre=CDIReevaluacionCal
+Boton=10
+NombreDesplegar=Reevaluación &Calificación
+Multiple=S
+EnBarraHerramientas=S
+ListaAccionesMultiples=(Lista)
+Activo=S
+VisibleCondicion=(ConDatos( Compra:Compra.ID )) Y (ConDatos( Compra:Compra.Proveedor ))  Y  MovTipoEn(<T>COMS<T>, Compra:Compra.Mov, (COMS.O, COMS.C))
+
+[Acciones.CDIReevaluacionCal.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Expresion=Asigna(Info.Numero, SQL( <T>EXEC spCDIReevaluacionCalificacion :tEmpresa1, :tProveedor1, :nID1, :nOperacion<T>, Empresa, Compra:Compra.Proveedor, Compra:Compra.ID, 1 ))<BR><BR>Si<BR>  Info.Numero = 0<BR>Entonces<BR>  Informacion(<T>Cálculo Realizado Correctamente<T>)<BR>SiNo<BR>  Precaucion(<T>Cálculo Realizado InCorrectamente<T>)<BR>Fin
+
+[Acciones.CDIReevaluacionCal.Actualizar Vista]
+Nombre=Actualizar Vista
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Vista
+
+[Acciones.CDIReevaluacionCal.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar Vista
+Actualizar Vista=(Fin)
+
+[Acciones.CDIInfo.CP.Asignar]
+Nombre=Asignar
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Variables Asignar
+Activo=S
+Visible=S
+
+[Acciones.CDIInfo.CP.Forma]
+Nombre=Forma
+Boton=0
+TipoAccion=Formas
+ClaveAccion=CDIInfoCP
+Activo=S
+Visible=S
+
+[Acciones.CDIInfo.CP]
+Nombre=CDIInfo.CP
+Boton=96
+NombreDesplegar=&Información Presupuestal
+Multiple=S
+EnBarraHerramientas=S
+ListaAccionesMultiples=(Lista)
+Activo=S
+Antes=S
+Visible=S
+GuardarAntes=S
+ConCondicion=S
+EjecucionConError=S
+EjecucionCondicion=Compra:Compra.Estatus <> (<T>SINAFECTAR<T>)
+EjecucionMensaje=SQL( <T>SELECT Descripcion FROM MensajeLista WHERE Mensaje =:nMensaje1<T>, 10015 )
+AntesExpresiones=Asigna(Info.Proyecto,Compra:Compra.Proyecto)<BR>Asigna(Info.ID,      Compra:Compra.ID)<BR>Asigna(Info.Modulo,  <T>COMS<T>)
+
+[Acciones.CDIInfo.CP.ListaAccionesMultiples]
+(Inicio)=Asignar
+Asignar=Forma
+Forma=(Fin)
+
+[Detalle.CompraD.CDIAutorizaCompra]
+Carpeta=Detalle
+Clave=CompraD.CDIAutorizaCompra
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=2
+ColorFondo=Blanco
+
+[Acciones.CDIBoni]
+Nombre=CDIBoni
+Boton=95
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+Z
+NombreDesplegar=Compras Proveedor
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIBoniCompras
+Visible=S
+GuardarAntes=S
+Antes=S
+DespuesGuardar=S
+Menu=&Archivo
+ConCondicion=S
+Multiple=S
+ListaAccionesMultiples=(Lista)
+ActivoCondicion=Compra:Compra.Mov en (<T>Bonificacion Compra<T>,<T>Cargo por Aj. Provee<T>)
+EjecucionCondicion=Compra:Compra.Mov en (<T>Bonificacion Compra<T>,<T>Cargo por Aj. Provee<T>)
+AntesExpresiones=Asigna(info.id,Compra:Compra.ID)<BR>Ejecutarsql(<T>xpCDIBonCompraDet :nid, :tP<T>,Compra:Compra.ID,Compra:Compra.Proveedor)
+
+[Acciones.CDIBoni.Expresion]
+Nombre=Expresion
+Boton=0
+TipoAccion=Expresion
+Expresion=FormaModal(<T>CDIBoniCompras<T>)
+Activo=S
+Visible=S
+
+[Acciones.CDIBoni.Actualizar Forma]
+Nombre=Actualizar Forma
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Activo=S
+Visible=S
+
+[CDIBoniCompras.Columnas]
+Mov=87
+Movid=55
+FechaEmision=69
+Articulo=91
+Descripcion1=224
+Unidad=68
+Cantidad=49
+Costo=64
+Importe=64
+ClavePresupuestal=124
+CDICantBonif=58
+CDICostBonif=68
+Observaciones=170
+
+[Acciones.CDIBoni.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar Forma
+Actualizar Forma=(Fin)
+
+[Detalle.MovOrigen]
+Carpeta=Detalle
+Clave=MovOrigen
+Editar=N
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Blanco

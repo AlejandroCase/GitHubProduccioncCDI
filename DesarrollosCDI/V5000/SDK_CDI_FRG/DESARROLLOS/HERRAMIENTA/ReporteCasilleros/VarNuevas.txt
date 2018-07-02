@@ -1,0 +1,41 @@
+VARIABLES
+
+info.CDISocioEstatus
+info.cdiCasSeccion
+info.CDIEdoCasillero
+
+
+
+[info.CDISocioEstatus]
+Grupo=info
+Clave=CDISocioEstatus
+Tipo=Texto
+ValorInicial=<T>TODOS<T>
+Nombre=Estatus
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+ListaOpciones=ALTA<BR>BAJA<BR>TODOS
+OpcionesPredefinidas=Ninguna
+
+[Info.CdiCasSeccion]
+Grupo=Info
+Clave=CdiCasSeccion
+Tipo=Texto
+ValorInicial=<T>TODOS<T>
+Nombre=Sección
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+ListaOpciones=DAMAS<BR>CABALLEROS<BR>FISHBEIN<BR>SQUASH<BR>ALBERCA TECHADA<BR>TODOS
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+
+[Info.CDIEdoCasillero]
+Grupo=Info
+Clave=CDIEdoCasillero
+Tipo=Texto
+ValorInicial=<T>TODOS<T>
+Nombre=Estado Casillero
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+ListaOpciones=ASIGNADO<BR>DISPONIBLE<BR>TODOS
+OpcionesPredefinidas=Ninguna

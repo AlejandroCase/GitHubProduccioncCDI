@@ -1,0 +1,32 @@
+
+[Dialogo]
+Clave=CDIMenuHerramientaCP
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=PresupuestoAnoSig
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=222
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=Centrado
+VentanaEstadoInicial=Normal
+PosicionInicialIzquierda=529
+PosicionInicialArriba=346
+[Acciones.PresupuestoAnoSig]
+Nombre=PresupuestoAnoSig
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=&Presupuesto Año Siguiente
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIPresupuestoAnoSig
+Activo=S
+Visible=S

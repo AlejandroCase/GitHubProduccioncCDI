@@ -1,0 +1,391 @@
+
+[Reporte]
+Clave=CDIForfeits
+Nombre=Forfeits
+Icono=0
+Vista=CDIForFeits
+Tipo=Reporte
+SubmenuPreliminar=S
+OtroOrden=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=Por omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+ListaOrden=CDIForFeits.ForFeit<TAB>(Decendente)
+PosicionInicialAlturaCliente=423
+PosicionInicialAncho=630
+
+Parametros1=CDIForFeits.Clavetorneo
+Parametros2==
+Parametros3=N
+BarraHerramientas=S
+ListaAcciones=Forfeits
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Detalle<BR>Pie
+
+VentanaIzquierda=-8
+VentanaArriba=-8
+VentanaAltura=744
+VentanaAncho=1382
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.95
+Renglones=3
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea3]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea4]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea5]
+Clave=Encabezado
+Objetos=5
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea6]
+Clave=Detalle
+Objetos=5
+Seccion=Detalle
+AltoEnCm=0.4
+Renglones=1
+EstiloMarco=3
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea7]
+Clave=Pie
+Objetos=1
+Seccion=Pie Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A1]
+Celda=A1
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Forfeits<T>
+
+[A5]
+Celda=A5
+Alineacion=Centrado
+AnchoEnCm=2.5
+AnchoTexto=13
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Torneo<T>
+
+[B5]
+Celda=B5
+Alineacion=Centrado
+AnchoEnCm=1.61
+AnchoTexto=9
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Vuelta<T>
+
+[C5]
+Celda=C5
+Alineacion=Centrado
+AnchoEnCm=2
+AnchoTexto=11
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Jornada<T>
+
+[D5]
+Celda=D5
+Alineacion=Centrado
+AnchoEnCm=3.5
+AnchoTexto=19
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Equipo<T>
+
+[E5]
+Celda=E5
+Alineacion=Centrado
+AnchoEnCm=2
+AnchoTexto=11
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIForFeits.ForFeit)
+
+[A6]
+Celda=A6
+Alineacion=Izquierda
+AnchoEnCm=2.5
+AnchoTexto=13
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIForFeits.Clavetorneo
+
+[B6]
+Celda=B6
+Alineacion=Derecha
+AnchoEnCm=1.61
+AnchoTexto=9
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIForFeits.NoVuelta
+
+[C6]
+Celda=C6
+Alineacion=Derecha
+AnchoEnCm=2
+AnchoTexto=11
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIForFeits.NoJornada
+
+[D6]
+Celda=D6
+Alineacion=Izquierda
+AnchoEnCm=3.5
+AnchoTexto=19
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIForFeits.Equipo
+
+[E6]
+Celda=E6
+Alineacion=Derecha
+AnchoEnCm=2
+AnchoTexto=11
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIForFeits.ForFeit
+
+[A7]
+Celda=A7
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Ahora
+
+[Acciones.Forfeits]
+Nombre=Forfeits
+Boton=115
+NombreDesplegar=Forfeits
+EnBarraHerramientas=S
+TipoAccion=Reportes Excel
+ClaveAccion=CDIForfeits
+Activo=S
+Visible=S

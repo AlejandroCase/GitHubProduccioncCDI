@@ -1,0 +1,213 @@
+[Vista]
+SQL=(Lista)
+
+[RHD.ID]
+TipoDatos=AutoInc
+
+[RHD.IDSEConciliado]
+Nombre=
+Visible=
+TamanoValidacion=
+
+[RHD.IDSEMensaje]
+Nombre=
+Visible=
+TamanoValidacion=
+
+[Vista.ListaCampos]
+RHD.IDSEMensaje=RHD.ChecadaLibre
+Personal.Estatus=Personal.ChecadaLibre
+RHD.ChecadaLibre=RHD.ChecadaLibreFechaD
+RHD.ChecadaLibreFechaD=RHD.ChecadaLibreFechaA
+RHD.ChecadaLibreFechaA=RHD.ChecarConTeclado
+RHD.ChecarConTeclado=Personal.Personal
+Personal.ChecadaLibre=Personal.ChecarConTeclado
+Personal.ChecarConTeclado=Personal.ChecadaLibreFechaD
+Personal.ChecadaLibreFechaD=Personal.ChecadaLibreFechaA
+Personal.ChecadaLibreFechaA=Plaza.Descripcion
+
+[RHD.ChecadaLibre]
+Clave=RHD.ChecadaLibre
+LigaTabla=RHD
+LigaCampo=ChecadaLibre
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+Tamano=2
+ClaveBDE=ChecadaLibre
+
+[RHD.ChecadaLibreFechaD]
+Clave=RHD.ChecadaLibreFechaD
+LigaTabla=RHD
+LigaCampo=ChecadaLibreFechaD
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=FechaHora
+ClaveBDE=ChecadaLibreFechaD
+
+[RHD.ChecadaLibreFechaA]
+Clave=RHD.ChecadaLibreFechaA
+LigaTabla=RHD
+LigaCampo=ChecadaLibreFechaA
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=FechaHora
+ClaveBDE=ChecadaLibreFechaA
+
+[RHD.ChecarConTeclado]
+Clave=RHD.ChecarConTeclado
+LigaTabla=RHD
+LigaCampo=ChecarConTeclado
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+Tamano=2
+ClaveBDE=ChecarConTeclado
+
+[Personal.ChecadaLibre]
+Clave=Personal.ChecadaLibre
+Nombre=Checada Libre
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+CondicionEdicion=Personal.Estatus en (EstatusAspirante, EstatusCandidato)
+LigaTabla=Personal
+LigaCampo=ChecadaLibre
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=ChecadaLibre_1
+
+[Personal.ChecarConTeclado]
+Clave=Personal.ChecarConTeclado
+Nombre=Checar con Teclado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+CondicionEdicion=Personal.Estatus en (EstatusAspirante, EstatusCandidato)
+LigaTabla=Personal
+LigaCampo=ChecarConTeclado
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=ChecarConTeclado_1
+
+[Personal.ChecadaLibreFechaD]
+Clave=Personal.ChecadaLibreFechaD
+Nombre=Checada Libre Fecha Desde
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario sin Hora
+CondicionEdicion=Personal.Estatus en (EstatusAspirante, EstatusCandidato)
+LigaTabla=Personal
+LigaCampo=ChecadaLibreFechaD
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=ChecadaLibreFechaD_1
+
+[Personal.ChecadaLibreFechaA]
+Clave=Personal.ChecadaLibreFechaA
+Nombre=Checada Libre Fecha Hasta
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario sin Hora
+CondicionEdicion=Personal.Estatus en (EstatusAspirante, EstatusCandidato)
+LigaTabla=Personal
+LigaCampo=ChecadaLibreFechaA
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=ChecadaLibreFechaA_1
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=RHD.ID,
+RHD.ID,=RHD.Renglon,
+RHD.Renglon,=RHD.Personal,
+RHD.Personal,=RHD.TipoSueldo,
+RHD.TipoSueldo,=RHD.Categoria,
+RHD.Categoria,=RHD.SueldoDiario,
+RHD.SueldoDiario,=RHD.SueldoDiarioComplemento,
+RHD.SueldoDiarioComplemento,=RHD.SDI,
+RHD.SDI,=RHD.TipoContrato,
+RHD.TipoContrato,=RHD.VencimientoContrato,
+RHD.VencimientoContrato,=RHD.PeriodoTipo,
+RHD.PeriodoTipo,=RHD.Jornada,
+RHD.Jornada,=RHD.Departamento,
+RHD.Departamento,=RHD.Puesto,
+RHD.Puesto,=RHD.Grupo,
+RHD.Grupo,=RHD.Observaciones,
+RHD.Observaciones,=RHD.Calificacion,
+RHD.Calificacion,=RHD.FechaAlta,
+RHD.FechaAlta,=RHD.FechaAntiguedad,
+RHD.FechaAntiguedad,=RHD.SucursalTrabajo,
+RHD.SucursalTrabajo,=RHD.Sucursal,
+RHD.Sucursal,=RHD.SucursalOrigen,
+RHD.SucursalOrigen,=RHD.ReportaA,
+RHD.ReportaA,=RHD.CentroCostos,
+RHD.CentroCostos,=RHD.Incremento,
+RHD.Incremento,=RHD.Plaza,
+RHD.Plaza,=RHD.SueldoNuevo,
+RHD.SueldoNuevo,=RHD.IDSEConciliado,
+RHD.IDSEConciliado,=RHD.IDSEMensaje,
+RHD.IDSEMensaje,=RHD.ChecadaLibre,
+RHD.ChecadaLibre,=RHD.ChecadaLibreFechaD,
+RHD.ChecadaLibreFechaD,=RHD.ChecadaLibreFechaA,
+RHD.ChecadaLibreFechaA,=RHD.ChecarConTeclado,
+RHD.ChecarConTeclado,=Personal.Personal,
+Personal.Personal,=Personal.ApellidoPaterno,
+Personal.ApellidoPaterno,=Personal.ApellidoMaterno,
+Personal.ApellidoMaterno,=Personal.Nombre,
+Personal.Nombre,=Personal.TipoSueldo,
+Personal.TipoSueldo,=Personal.SueldoDiario,
+Personal.SueldoDiario,=Personal.SueldoDiarioComplemento,
+Personal.SueldoDiarioComplemento,=Personal.SDI,
+Personal.SDI,=Personal.Departamento,
+Personal.Departamento,=Personal.TipoContrato,
+Personal.TipoContrato,=Personal.Grupo,
+Personal.Grupo,=Personal.Puesto,
+Personal.Puesto,=Personal.PeriodoTipo,
+Personal.PeriodoTipo,=Personal.Jornada,
+Personal.Jornada,=Personal.Categoria,
+Personal.Categoria,=Personal.Moneda,
+Personal.Moneda,=Personal.Registro,
+Personal.Registro,=Personal.FechaAlta,
+Personal.FechaAlta,=Personal.FechaAntiguedad,
+Personal.FechaAntiguedad,=Personal.FechaBaja,
+Personal.FechaBaja,=Personal.UltimaModificacion,
+Personal.UltimaModificacion,=Personal.VencimientoContrato,
+Personal.VencimientoContrato,=Personal.AspiraDepartamento,
+Personal.AspiraDepartamento,=Personal.AspiraGrupo,
+Personal.AspiraGrupo,=Personal.AspiraPuesto,
+Personal.AspiraPuesto,=Personal.AspiraCategoria,
+Personal.AspiraCategoria,=Personal.Estatus,
+Personal.Estatus,=Personal.ChecadaLibre,
+Personal.ChecadaLibre,=Personal.ChecarConTeclado,
+Personal.ChecarConTeclado,=Personal.ChecadaLibreFechaD,
+Personal.ChecadaLibreFechaD,=Personal.ChecadaLibreFechaA,
+Personal.ChecadaLibreFechaA,=Plaza.Descripcion,
+Plaza.Descripcion,=Plaza.Departamento,
+Plaza.Departamento,=Plaza.Puesto,
+Plaza.Puesto,=Sucursal.Nombre,
+Sucursal.Nombre,=Sucursal.Estatus,
+Sucursal.Estatus,=PersonalLista.ApellidoPaterno,
+PersonalLista.ApellidoPaterno,=PersonalLista.ApellidoMaterno,
+PersonalLista.ApellidoMaterno,=PersonalLista.Nombre,
+PersonalLista.Nombre,=CentroCostos.Rama,
+CentroCostos.Rama,=CentroCostos.Descripcion
+CentroCostos.Descripcion=FROM RHD
+FROM RHD=JOIN Personal ON RHD.Personal<IGUAL>Personal.Personal
+JOIN Personal ON RHD.Personal<IGUAL>Personal.Personal=LEFT OUTER JOIN Sucursal ON RHD.SucursalTrabajo<IGUAL>Sucursal.Sucursal
+LEFT OUTER JOIN Sucursal ON RHD.SucursalTrabajo<IGUAL>Sucursal.Sucursal=LEFT OUTER JOIN Personal PersonalLista ON RHD.ReportaA<IGUAL>PersonalLista.Personal
+LEFT OUTER JOIN Personal PersonalLista ON RHD.ReportaA<IGUAL>PersonalLista.Personal=LEFT OUTER JOIN CentroCostos ON RHD.CentroCostos<IGUAL>CentroCostos.CentroCostos
+LEFT OUTER JOIN CentroCostos ON RHD.CentroCostos<IGUAL>CentroCostos.CentroCostos=LEFT OUTER JOIN Plaza ON RHD.Plaza<IGUAL>Plaza.Plaza
+LEFT OUTER JOIN Plaza ON RHD.Plaza<IGUAL>Plaza.Plaza=(Fin)

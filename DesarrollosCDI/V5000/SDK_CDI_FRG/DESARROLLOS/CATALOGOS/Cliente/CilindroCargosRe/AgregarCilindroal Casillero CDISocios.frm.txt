@@ -1,0 +1,95 @@
+se agrega el campo Cilindro calculado a CDIArtCargosRecurrentes esp
+
+
+
+
+[CDIArtCargosRecurrentes.frm/Lista.Columnas]
+;[Lista.Columnas]
+Articulo=124
+Condicion=138
+0=127
+1=211
+2=-2
+3=-2
+Descripcion1=276
+FechaInicio=76
+FechaFin=76
+Cantidad=60
+PrecioLista=86
+EsCuota=64
+casillero=51
+Ubicacion=280
+Automatico=106
+Cilindro=64 ----- solo esta parte
+
+---
+
+[CDIArtCargosRecurrentes.frm/Lista.ListaEnCaptura]
+Descripcion1=PrecioLista
+CDIArtCargosRecurrentes.EsCuota=
+CDIArtCargosRecurrentes.FechaFin=CDIArtCargosRecurrentes.casillero
+CDIArtCargosRecurrentes.casillero=CDIArtCargosRecurrentes.Ubicacion
+CDIArtCargosRecurrentes.Ubicacion=Automatico
+Automatico=Cilindro ---
+Cilindro=(Fin) ---
+
+
+-- abajo de la instruccion [CDIArtCargosRecurrentes.frm/Lista.Automatico]
+[CDIArtCargosRecurrentes.frm/Lista.Cilindro]
+Clave=Cilindro
+TipoDatos=Texto
+Tamano=10
+LigaTabla=CDIArtCargosRecurrentes
+TipoCampo=Calculado
+TamanoValidacion=10
+Alineacion=por Omisión
+Nombre=Cilindro
+Formula=SQL( <T>select cilindro from cdicasilleros where casillero = :tC<T>,CDIArtCargosRecurrentes.casillero )
+
+[CDIArtCargosRecurrentes.vis/Vista.ListaCalculados]
+PrecioLista=Automatico
+Automatico=Cilindro --- 
+Cilindro=(Fin)--*--
+
+
+
+se agrega debajo de 
+[CDIArtCargosRecurrentes.vis/Automatico]
+
+[CDIArtCargosRecurrentes.vis/Cilindro]
+Clave=Cilindro
+TipoDatos=Texto
+Tamano=10
+LigaTabla=CDIArtCargosRecurrentes
+TipoCampo=Calculado
+TamanoValidacion=10
+Alineacion=por Omisión
+Nombre=Cilindro
+Formula=SQL( <T>select cilindro from cdicasilleros where casillero = :tC<T>,CDIArtCargosRecurrentes.casillero )
+
+
+se agrega a la forma
+[CDISocios.frm/CDICargRec.Cilindro]
+Carpeta=CDICargRec
+Clave=Cilindro
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=10
+ColorFondo=Blanco
+
+----------------------
+
+[CDISocios.frm/CDICargRec.ListaEnCaptura]
+(Inicio)=CDIArtCargosRecurrentes.Articulo
+CDIArtCargosRecurrentes.Articulo=Descripcion1
+Descripcion1=PrecioLista
+PrecioLista=CDIArtCargosRecurrentes.Cantidad
+CDIArtCargosRecurrentes.Cantidad=CDIArtCargosRecurrentes.FechaInicio
+CDIArtCargosRecurrentes.FechaInicio=CDIArtCargosRecurrentes.FechaFin
+CDIArtCargosRecurrentes.FechaFin=CDIArtCargosRecurrentes.casillero
+CDIArtCargosRecurrentes.casillero=CDIArtCargosRecurrentes.Ubicacion
+CDIArtCargosRecurrentes.Ubicacion=Automatico
+Automatico=Cilindro
+Cilindro=(Fin)

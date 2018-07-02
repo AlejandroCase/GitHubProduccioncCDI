@@ -1,0 +1,27 @@
+
+[Vista]
+Icono=0
+Clave=CDIProfesores1
+Nombre=CDIProfesores1
+Modulos=(Todos)
+ListaTablas=CDIProfesores1
+TablaPrincipal=CDIProfesores1
+UsoCapturas=S
+
+
+
+
+
+
+SQL=(Lista)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDIProfesores1.id_Prof,
+CDIProfesores1.id_Prof,=CDIProfesores1.Nombre,
+CDIProfesores1.Nombre,=CDIProfesores1.Apellido_Paterno,
+CDIProfesores1.Apellido_Paterno,=CDIProfesores1.Apellido_Materno,
+CDIProfesores1.Apellido_Materno,=CDIProfesores1.Grupo,
+CDIProfesores1.Grupo,=CDIProfesores1.Id_Mat
+CDIProfesores1.Id_Mat=FROM  CDIProfesores1
+FROM  CDIProfesores1=(Fin)

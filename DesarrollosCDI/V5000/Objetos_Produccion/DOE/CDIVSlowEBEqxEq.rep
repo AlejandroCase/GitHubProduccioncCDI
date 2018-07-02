@@ -1,0 +1,1062 @@
+
+[Reporte]
+Clave=CDIVSlowEBEqxEq
+Nombre=CDIVSlowEBEqxEq
+Icono=0
+Vista=CDIVSlowEBEqxEq
+Tipo=Reporte
+SubmenuPreliminar=S
+BarraHerramientas=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=27.9
+LargoPagina=21.6
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=Horizontal
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros1=CDIVSlowEBEqxEq.clavetorneo
+Parametros2==
+Parametros3=N
+Parametros=S
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1319
+
+OtroOrden=S
+ListaOrden=(Lista)
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Inicio: CDIVSlowEBEqxEq.Equipo<BR>Detalle<BR>Pie
+
+VentanaIzquierda=-8
+VentanaArriba=-8
+VentanaAltura=784
+VentanaAncho=1319
+PanelArriba=226
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Objetos=2
+Seccion=Encabezado Página
+AltoEnCm=2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea3]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea4]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea5]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=1
+[Linea6]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=0
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+Expresion=\\10.10.10.212\Intelisis 3500\Dibujos\Imagenes\Logo CDI.bmp
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=22
+AnchoTexto=118
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.nombre
+
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=134
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Bateo Colectivo Equipo por Equipo<T>
+
+[Linea7]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=17
+BordeArriba=S
+BordeAbajo=S
+[Linea8]
+Clave=Inicio: CDIVSlowEBEqxEq.Equipo
+Seccion=Inicio Grupo
+AltoEnCm=0.2
+Renglones=1
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+
+Objetos=0
+Grupo=CDIVSlowEBEqxEq.Equipo
+Visible=1=1
+[A5]
+Celda=A5
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=134
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Correspondientes al Torneo: <T>+sql(<T>Select nombre from cdicatTorneos where<BR>claveTorneo=:tT<T>,CDIVSlowEBEqxEq.clavetorneo)
+
+[A7]
+Celda=A7
+Alineacion=Centrado
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.Equipo)
+
+BordeArriba=S
+BordeAbajo=S
+[B7]
+Celda=B7
+Alineacion=Centrado
+AnchoEnCm=7.5
+AnchoTexto=39
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.Nombre)
+
+BordeArriba=S
+BordeAbajo=S
+[C7]
+Celda=C7
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=0.39
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>A<T>
+
+BordeArriba=S
+BordeAbajo=S
+[D7]
+Celda=D7
+Alineacion=Izquierda
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Porc.<T>
+
+BordeArriba=S
+BordeAbajo=S
+[E7]
+Celda=E7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.VB)
+
+BordeArriba=S
+BordeAbajo=S
+[F7]
+Celda=F7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.JJ)
+
+BordeArriba=S
+BordeAbajo=S
+[G7]
+Celda=G7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.C)
+
+BordeArriba=S
+BordeAbajo=S
+[H7]
+Celda=H7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.H)
+
+BordeArriba=S
+BordeAbajo=S
+[I7]
+Celda=I7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.H2)
+
+BordeArriba=S
+BordeAbajo=S
+[J7]
+Celda=J7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.H3)
+
+BordeArriba=S
+BordeAbajo=S
+[K7]
+Celda=K7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.HR)
+
+BordeArriba=S
+BordeAbajo=S
+[L7]
+Celda=L7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.CP)
+
+BordeArriba=S
+BordeAbajo=S
+[M7]
+Celda=M7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.K)
+
+BordeArriba=S
+BordeAbajo=S
+[N7]
+Celda=N7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.BB)
+
+BordeArriba=S
+BordeAbajo=S
+[O7]
+Celda=O7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.GP)
+
+BordeArriba=S
+BordeAbajo=S
+[P7]
+Celda=P7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.SH)
+
+BordeArriba=S
+BordeAbajo=S
+[Linea9]
+Clave=Detalle
+Objetos=17
+Seccion=Detalle
+AltoEnCm=0.45
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+BordeArriba=N
+Marco=S
+EstiloMarco=3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Visible=((CDIVSlowEBEqxEq.VB>=0) y (CDIVSlowEBEqxEq.asociado=nulo)) o ((CDIVSlowEBEqxEq.VB>0) y (CDIVSlowEBEqxEq.asociado=<T>*<T>))
+[A9]
+Celda=A9
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.Equipo
+
+
+
+
+
+
+
+
+
+
+
+
+
+BordeArriba=N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Marco=S
+EstiloMarco=3
+
+[Linea10]
+Clave=Pie
+Objetos=1
+Seccion=Pie Página
+AltoEnCm=0.4
+Renglones=1
+BordeArriba=S
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[B9]
+Celda=B9
+Alineacion=Izquierda
+AnchoEnCm=7.5
+AnchoTexto=30
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 7, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.Nombre
+
+[C9]
+Celda=C9
+Alineacion=Izquierda
+AnchoEnCm=0.39
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.asociado
+
+FormatoValidacion=
+[D9]
+Celda=D9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.Porcentaje<BR>//CDIVSlowEBEqxEq.H/CDIVSlowEBEqxEq.VB
+
+FormatoValidacion=#0.000
+[E9]
+Celda=E9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.VB
+
+[F9]
+Celda=F9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.JJ
+
+[G9]
+Celda=G9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.C
+
+[H9]
+Celda=H9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.H
+
+[I9]
+Celda=I9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.H2
+
+[J9]
+Celda=J9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.H3
+
+[K9]
+Celda=K9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.HR
+
+[L9]
+Celda=L9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.CP
+
+[M9]
+Celda=M9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.K
+
+[N9]
+Celda=N9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.BB
+
+[O9]
+Celda=O9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.GP
+
+[P9]
+Celda=P9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.SH
+
+[A10]
+Celda=A10
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=134
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Ahora
+
+
+
+
+
+
+
+
+
+
+
+
+[Q7]
+Celda=Q7
+Alineacion=Centrado
+AnchoEnCm=1
+AnchoTexto=5
+BordeArriba=S
+BordeAbajo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre(CDIVSlowEBEqxEq.SF)
+
+[Q9]
+Celda=Q9
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CDIVSlowEBEqxEq.SF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reporte.ListaOrden]
+(Inicio)=CDIVSlowEBEqxEq.Equipo	(Acendente)
+CDIVSlowEBEqxEq.Equipo	(Acendente)=CDIVSlowEBEqxEq.Porcentaje	(Decendente)
+CDIVSlowEBEqxEq.Porcentaje	(Decendente)=(Fin)

@@ -1,0 +1,86 @@
+[Tabla]
+LlavePrimaria=(Lista)
+SQL=(Lista)
+ControlProyectos=S
+CampoProyecto=Proyecto
+
+[Mov]
+ValorPorOmision=
+OpcionesPredefinidas=Ninguna
+AlCambiar=
+TipoDatos=Texto
+ListaOpciones=(Lista)
+OpcionesValidar=S
+
+[FechaEmision]
+ValorPorOmision=
+
+[Personal]
+ValorPorOmision=
+TipoDatos=Texto
+ConRefrescar=S
+ListaRefrescar=(Lista)
+
+[Usuario]
+TipoDatos=Texto
+
+[NominaConcepto]
+AyudaEnCaptura=Lista de Opciones
+ValidacionUsaTabla=
+ValidacionTablas=
+ValorPorOmision=
+AlCambiar=
+TipoDatos=Texto
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+ValorRefrescar=<T>Normal<T>
+ListaOpciones=Normal
+
+[Tabla.ListaCampos]
+Horas=Proyecto
+Proyecto=(Fin)
+
+[Proyecto]
+Clave=Proyecto
+Nombre=Proyecto
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ValorRefrescar=SQL(<T>Select Proyecto from Personal where personal=:tper<T>,Personal)
+
+[Mov.ListaOpciones]
+(Inicio)=Vacacion Empleados
+Vacacion Empleados=Vacacion Directores
+Vacacion Directores=(Fin)
+
+[Personal.ListaRefrescar]
+(Inicio)=Proyecto
+Proyecto=NominaConcepto
+NominaConcepto=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Usuario,
+Usuario,=ID,
+ID,=Empresa,
+Empresa,=Mov,
+Mov,=NominaConcepto,
+NominaConcepto,=Referencia,
+Referencia,=FechaEmision,
+FechaEmision,=Personal,
+Personal,=Cantidad,
+Cantidad,=Importe,
+Importe,=FechaD,
+FechaD,=FechaA,
+FechaA,=Horas,
+Horas,=Proyecto
+Proyecto=FROM IncidenciaH
+FROM IncidenciaH=(Fin)
+
+[Tabla.LlavePrimaria]
+(Inicio)=Usuario
+Usuario=ID
+ID=(Fin)

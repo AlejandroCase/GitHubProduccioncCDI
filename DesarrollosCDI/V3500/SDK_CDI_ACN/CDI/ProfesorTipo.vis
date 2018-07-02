@@ -1,0 +1,24 @@
+[Vista]
+Icono=0
+Clave=ProfesorTipo
+Nombre=ProfesorTipo
+Modulos=(Todos)
+Singular=ProfesorTipo
+ListaTablas=ProfesorTipo
+TablaPrincipal=ProfesorTipo
+UsoCapturas=S
+UsoReportes=S
+ListaCampos=ProfesorTipo.ProfesorTipo
+SQL=SELECT<BR>  ProfesorTipo.ProfesorTipo<BR><BR>FROM<BR>  ProfesorTipo
+[ProfesorTipo.ProfesorTipo]
+Clave=ProfesorTipo.ProfesorTipo
+Nombre=Tipo de Profesor
+Visible=S
+TamanoValidacion=15
+Tamano=15
+LigaTabla=ProfesorTipo
+LigaCampo=ProfesorTipo
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+ClaveBDE=ProfesorTipo

@@ -1,0 +1,6 @@
+[CompraD.tbl/ClavePresupuestal]
+Requerido=S
+
+[GastoD.tbl/ClavePresupuestal]
+Requerido=S
+

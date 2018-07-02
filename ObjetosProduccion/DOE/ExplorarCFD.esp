@@ -1,0 +1,2 @@
+[ExplorarCFD.frm/Acciones.ReporteMensual]
+Expresion=Asigna(Info.Ejercicio, EjercicioTrabajo)<BR>Asigna(Info.Periodo, PeriodoTrabajo)<BR>Si<BR>  Forma(<T>EspecificarEjercicioPeriodo<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCFDReporteMensual :tEmp, :nEjercicio, :nPeriodo<T>, Empresa, Info.Ejercicio, Info.Periodo)<BR>  GuardarLista(SQLEnLista(<T>SELECT Dato FROM CFDReporteMensual<T>), <T><T>, <T>1<T>+Empresa.RFC+LlenaDeCeros(Info.Periodo,2)+Info.Ejercicio+<T>.txt<T>, <T>TXT<T>, <T>Datos<T>, <T>Datos<T>)<BR>Fin

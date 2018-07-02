@@ -1,0 +1,66 @@
+[Dialogo]
+Clave=MenuRepNomDispMag
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+PosicionInicialIzquierda=355
+PosicionInicialArriba=313
+PosicionInicialAltura=141
+PosicionInicialAncho=238
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+ListaAcciones=(Lista)
+
+[Acciones.Alta]
+Nombre=Alta
+Boton=0
+NombreDesplegar=&Reingresos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepNomDispMagAlta
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/DispMag/Alta<T>)
+[Acciones.Baja]
+Nombre=Baja
+Boton=0
+NombreDesplegar=&Baja
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepNomDispMagBaja
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/DispMag/Baja<T>)
+[Acciones.Modif]
+Nombre=Modif
+Boton=0
+NombreDesplegar=&Modificación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepNomDispMagModif
+Activo=S
+
+
+
+
+
+
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/DispMag/Modif<T>)
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Alta
+Alta=Baja
+Baja=Modif
+Modif=(Fin)

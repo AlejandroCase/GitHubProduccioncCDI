@@ -1,0 +1,74 @@
+[Forma]
+PosicionInicialAncho=768
+PosicionInicialIzquierda=299
+PosicionInicialArriba=228
+
+[Lista.PeriodoTipo.PeriodoTipo]
+ColorFuente=
+
+[Lista.Columnas]
+PeriodicidadPago=85
+
+[Lista.PeriodoTipo.DiasPeriodo]
+ColorFuente=
+
+[Lista.PeriodoTipo.DiasHabiles]
+ColorFuente=
+
+[Lista.PeriodoTipo.UltimoDiaPagado]
+ColorFuente=
+
+[Forma.ListaAcciones]
+PeriodoTipoMovEmpresa=NoNominaAnexo20
+NoNominaAnexo20=NominaAnexo20
+NominaAnexo20=tiposperiodicida pago
+tiposperiodicida pago=Editar
+
+[Lista.ListaEnCaptura]
+PeriodoTipo.UltimoDiaPagado=PeriodoTipo.PeriodicidadPago
+PeriodoTipo.PeriodicidadPago=(Fin)
+
+[Lista.PeriodoTipo.PeriodicidadPago]
+Carpeta=Lista
+Clave=PeriodoTipo.PeriodicidadPago
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+ColorFondo=Blanco
+
+[Acciones.NoNominaAnexo20]
+Nombre=NoNominaAnexo20
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Nómina Versión 1.1
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Expresion
+Expresion=EjecutarSQL(<T>EXEC spPeriodoTipoNomina 0<T>)<BR>ActualizarVista<BR>ActualizarForma
+Activo=S
+Visible=S
+
+[Acciones.NominaAnexo20]
+Nombre=NominaAnexo20
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Nómina Versión 1.2
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Expresion
+Expresion=EjecutarSQL(<T>EXEC spPeriodoTipoNomina 1<T>)<BR>ActualizarVista<BR>ActualizarForma
+Activo=S
+Visible=S
+
+[Acciones.tiposperiodicida pago]
+Nombre=tiposperiodicida pago
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Tipo de Periodicidad de Pago
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CFDINominaTiposPeriodicidadPago
+Activo=S
+VisibleCondicion=PeriodoTipo:PeriodoTipo.NominaAnexo20 = Verdadero

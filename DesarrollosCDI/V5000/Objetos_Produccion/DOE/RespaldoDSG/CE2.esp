@@ -1,0 +1,36 @@
+[CE.tbl/Proyecto]
+ValorPorOmision=Si(ConDatos(Filtro.Proyecto), Filtro.Proyecto, Usuario.DefProyecto)
+CondicionEdicion=Vacio(Filtro.Proyecto)    y (no Usuario.BloquearProyecto)    y ((Estatus en (EstatusSinAfectar, EstatusPorConfirmar)) o Usuario.ModificarProyUENActCC)
+
+
+[CE.frm/Detalle]
+CondicionEdicion=((CE:CE.CDIPermiteEditar) y (CE:CE.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))<BR>y (CE:CE.Mov<><T>Baja<T>) )
+
+[CE.frm/Forma.ListaAcciones]
+Bitacora=PreRegistros
+PreRegistros=(Fin)
+
+[CE.frm/CDIPreRegisDet.Columnas]
+Mov=66
+MovId=43
+FechaEmision=73
+CDISocio=56
+Nombre=193
+Concepto=319
+Programa=89
+Ceplan=83
+Estatus=104
+
+[CE.frm/Acciones.PreRegistros]
+Nombre=PreRegistros
+Boton=18
+NombreDesplegar=PreRegistros
+GuardarAntes=S
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Antes=S
+Visible=S
+NombreEnBoton=S
+ActivoCondicion=(CE:CE.Mov=<T>Baja<T>) Y( CE:CE.Estatus =<T>SINAFECTAR<T>)
+AntesExpresiones=guardarcambios<BR>asigna(Info.CDIPlan,CE:CE.CEPlan)<BR>asigna(Info.Programa,CE:CE.Programa)<BR>asigna(Info.Cliente,CE:CE.Cliente)<BR>ASigna(info.Numero,CE:CE.ID)<BR>Formamodal(<T>CDIPreRegisDet<T>)

@@ -1,0 +1,111 @@
+[Dialogo]
+Clave=MenuRepDinero
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAltura=244
+PosicionInicialAncho=238
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=393
+PosicionInicialArriba=262
+
+[Acciones.Acum]
+Nombre=Acum
+Boton=0
+NombreDesplegar=&Acumulados
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepDineroAcum
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/Acum<T>)
+[Acciones.Conciliar]
+Nombre=Conciliar
+Boton=0
+NombreDesplegar=Movimientos por &Conciliar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepCtaDineroConciliar
+Activo=S
+Antes=S
+
+AntesExpresiones=Asigna(Info.Rama, <T>DIN<T>)
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/Conciliar<T>)
+[Acciones.Mov]
+Nombre=Mov
+Boton=0
+NombreDesplegar=&Movimientos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepDineroMov
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/Mov<T>)
+[Acciones.Aux]
+Nombre=Aux
+Boton=0
+NombreDesplegar=Au&xiliares
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepDineroAux
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/Aux<T>)
+[Acciones.General]
+Nombre=General
+Boton=0
+NombreDesplegar=&General de Movimientos
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=mis_RepDineroAnalisisMov
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/General<T>)
+[Acciones.Diario]
+Nombre=Diario
+Boton=0
+NombreDesplegar=&Diario de Movimientos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepDineroAnalisisMovDiario
+Activo=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Dinero/Diario<T>)
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Conciliar
+Conciliar=Acum
+Acum=Aux
+Aux=Mov
+Mov=General
+General=Diario
+Diario=(Fin)

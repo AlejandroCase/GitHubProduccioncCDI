@@ -1,0 +1,50 @@
+[Tabla]
+Icono=0
+Clave=Nacionalidad
+Archivo=Nacionalidad
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=(Lista)
+Nombre=Nacionalidades
+Singular=Nacionalidad
+LlavePrimaria=(Lista)
+
+SQL=(Lista)
+CamposBusquedaRapida=Nacionalidad
+[Nacionalidad]
+Clave=Nacionalidad
+Nombre=Nacionalidad
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+Tamano=30
+TipoDatos=Texto
+
+[Orden]
+Clave=Orden
+Nombre=Orden
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+ValorPorOmision=1
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Nacionalidad
+Nacionalidad=Orden
+Orden=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=  Nacionalidad,
+  Nacionalidad,=  Orden
+  Orden=FROM
+FROM=  Nacionalidad
+  Nacionalidad=(Fin)
+
+[Tabla.LlavePrimaria]
+(Inicio)=Orden
+Orden=Nacionalidad
+Nacionalidad=(Fin)

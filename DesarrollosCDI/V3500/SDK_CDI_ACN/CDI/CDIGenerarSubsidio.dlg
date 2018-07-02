@@ -1,0 +1,97 @@
+
+[Dialogo]
+Clave=CDIGenerarSubsidio
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+VentanaSiempreAlFrente=S
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaEscCerrar=S
+VentanaEstadoInicial=Normal
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=544
+PosicionInicialArriba=434
+PosicionInicialAlturaCliente=128
+PosicionInicialAncho=191
+[Acciones.Aceptar]
+Nombre=Aceptar
+Boton=0
+NombreDesplegar=Aceptar Subsidio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+Expresion=Generar(<T>SOC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Aceptar Subsidio<T>, Afectar.FormaCaptura)
+[Acciones.Rechazar]
+Nombre=Rechazar
+Boton=0
+NombreDesplegar=Rechazar Subsidio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+
+Expresion=Generar(<T>SOC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Rechazar Subsidio<T>, Afectar.FormaCaptura)
+[Acciones.Escalar]
+Nombre=Escalar
+Boton=0
+NombreDesplegar=Escalar a Directivo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Expresion=Generar(<T>SOC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Escalar a Directivo<T>, Afectar.FormaCaptura)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Aceptar
+Aceptar=Rechazar
+Rechazar=Escalar
+Escalar=(Fin)

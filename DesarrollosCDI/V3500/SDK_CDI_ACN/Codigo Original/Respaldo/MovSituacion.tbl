@@ -1,0 +1,262 @@
+[Tabla]
+Icono=0
+Clave=MovSituacion
+Archivo=MovSituacion
+Modulos=(Todos)
+TipoTabla=Configuracion
+ListaCampos=(Lista)
+Nombre=Situaciones
+Singular=Situación
+LlavePrimaria=ID
+CampoMov=Mov
+CampoEstatus=Estatus
+CampoSituacion=Situacion
+ControlID=S
+CampoID=ID
+ControlSucursal=S
+CampoSucursal=Sucursal
+SQL=SELECT<BR>  ID,<BR>  Modulo,<BR>  Mov,<BR>  Tipo,<BR>  Estatus,<BR>  Orden,<BR>  Situacion,<BR>  Flujo,<BR>  Cuesta,<BR>  PermiteAfectacion,<BR>  PermiteRetroceder,<BR>  PermiteBrincar,<BR>  ControlUsuarios,<BR>  Icono,<BR>  Sucursal,<BR>  Tiempo,<BR>  SMS<BR><BR>FROM<BR>  MovSituacion
+
+[Mov]
+Clave=Mov
+Nombre=Movimiento
+AyudaEnCaptura=Expresion
+TamanoValidacion=20
+Tamano=20
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+Requerido=S
+ListaRefrescarCondiciones=Tipo
+ValorPorOmision=Info.Mov
+Formula=ListaMovimientos(Info.Modulo)
+TipoDatos=Texto
+
+[Estatus]
+Clave=Estatus
+Nombre=Estatus
+AyudaEnCaptura=Lista de Opciones
+TamanoValidacion=15
+Tamano=15
+OpcionesPresentacion=Consulta Opcional
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+OpcionesUnicamente=S
+ValorPorOmision=Info.Estatus
+Requerido=S
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Situacion]
+Clave=Situacion
+Nombre=Situación
+TamanoValidacion=15
+Tamano=50
+TipoDatos=Texto
+
+[Modulo]
+Clave=Modulo
+Nombre=Módulo
+AyudaEnCaptura=Lista de Opciones
+TamanoValidacion=5
+Tamano=5
+OpcionesPresentacion=Consulta Opcional
+OpcionesColumnas=1
+OpcionesPredefinidas=Módulos
+OpcionesRenglones=20
+Requerido=S
+ValorPorOmision=Info.Modulo
+TipoDatos=Texto
+
+[Cuesta]
+Clave=Cuesta
+Nombre=Cuesta
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+
+[Orden]
+Clave=Orden
+Nombre=Orden
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Flujo]
+Clave=Flujo
+Nombre=Flujo
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+Tamano=20
+ValorPorOmision=<T>Todas<T>
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ListaOpciones=(Lista)
+
+[PermiteAfectacion]
+Clave=PermiteAfectacion
+Nombre=Permite Afectar
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Si - No
+
+[ID]
+Clave=ID
+Nombre=ID
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+
+[Tipo]
+Clave=Tipo
+Nombre=Tipo
+Visible=S
+TamanoValidacion=50
+Tamano=50
+CondicionDespliege=(MovTipo(Info.Modulo, Info.Mov) = VTAS.S) y Config.VentaServicioSituacionTipo
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=ServicioTipo
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+TipoDatos=Texto
+
+[Icono]
+Clave=Icono
+Nombre=Icono
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+EsIcono=S
+ValorPorOmision=0
+
+[PermiteRetroceder]
+Clave=PermiteRetroceder
+Nombre=Retroceder
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Verdadero
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+
+[PermiteBrincar]
+Clave=PermiteBrincar
+Nombre=Brincar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Verdadero
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+
+[ControlUsuarios]
+Clave=ControlUsuarios
+Nombre=Control Usuarios
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+
+[Sucursal]
+Clave=Sucursal
+Nombre=Sucursal
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Tiempo]
+Clave=Tiempo
+Nombre=Tiempo
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[SMS]
+Clave=SMS
+Nombre=SMS
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=12
+TamanoValidacion=20
+Tamano=20
+ValorPorOmision=<T>No<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+ListaOpciones=(Lista)
+OpcionesPredefinidas=Ninguna
+
+[Tabla.ListaCampos]
+(Inicio)=ID
+ID=Modulo
+Modulo=Mov
+Mov=Estatus
+Estatus=Tipo
+Tipo=Orden
+Orden=Situacion
+Situacion=Flujo
+Flujo=Cuesta
+Cuesta=PermiteAfectacion
+PermiteAfectacion=PermiteRetroceder
+PermiteRetroceder=PermiteBrincar
+PermiteBrincar=ControlUsuarios
+ControlUsuarios=Icono
+Icono=Sucursal
+Sucursal=Tiempo
+Tiempo=SMS
+SMS=(Fin)
+
+[Estatus.ListaOpciones]
+(Inicio)=PENDIENTE
+PENDIENTE=CONCLUIDO
+CONCLUIDO=CONFIRMAR
+CONFIRMAR=PROCESAR
+PROCESAR=CANCELADO
+CANCELADO=SINAFECTAR
+SINAFECTAR=(Fin)
+
+[Flujo.ListaOpciones]
+(Inicio)=Todas
+Todas=Inicial Todas
+Inicial Todas=Inicial Especial
+Inicial Especial=Especial
+Especial=Final
+Final=(Fin)
+
+[SMS.ListaOpciones]
+(Inicio)=No
+No=Informar
+Informar=Avanzar
+Avanzar=(Fin)

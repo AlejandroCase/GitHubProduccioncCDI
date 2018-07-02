@@ -1,0 +1,48 @@
+[Dialogo]
+Clave=MenuRepContBalanza
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAltura=147
+PosicionInicialAncho=318
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=262
+PosicionInicialArriba=313
+
+[Acciones.RepContBalanza]
+Nombre=RepContBalanza
+Boton=0
+NombreDesplegar=&Balanza Comprobación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContBalanza
+Activo=S
+Visible=S
+Antes=S
+AntesExpresiones=Asigna(Rep.Titulo, <T>Balanza de Comprobación<T>)
+
+[Acciones.RepContBalanzaAnual]
+Nombre=RepContBalanzaAnual
+Boton=0
+NombreDesplegar=Balanza Comprobación (&Anual)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContBalanzaAnual
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=RepContBalanza
+RepContBalanza=RepContBalanzaAnual
+RepContBalanzaAnual=(Fin)

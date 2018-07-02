@@ -1,0 +1,11 @@
+
+[Agente.tbl/Agente]
+AyudaEnCaptura=Vista
+AyudaForma=UsuarioLista
+AyudaVista=UsuarioA
+AyudaCampo=Usuario.Usuario
+ConRefrescar=S
+ListaRefrescar=Nombre
+
+[Agente.tbl/Nombre]
+ValorPorOmision=sql(<T>select nombre from usuario where usuario=:tx<T>,Agente)

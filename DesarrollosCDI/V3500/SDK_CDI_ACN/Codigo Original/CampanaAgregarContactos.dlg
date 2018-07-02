@@ -1,0 +1,83 @@
+[Dialogo]
+Clave=CampanaAgregarContactos
+Nombre=Agregar Contactos
+Icono=639
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+PosicionInicialAlturaCliente=186
+PosicionInicialAncho=274
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaConIcono=S
+PosicionInicialIzquierda=823
+PosicionInicialArriba=489
+ListaAcciones=(Lista)
+
+[Acciones.Clientes]
+Nombre=Clientes
+Boton=0
+NombreDesplegar=Agregar &Clientes...
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Expresion=Si<BR>  Forma(<T>CteProcesar<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCampanaAgregarContactos :nEstacion, :tUsuario, :nID, :tContactoTipo<T>, EstacionTrabajo, Usuario, Info.ID, <T>Cliente<T>) <BR>Fin
+VisibleCondicion=Temp.Reg[2]
+
+[Acciones.Proveedores]
+Nombre=Proveedores
+Boton=0
+NombreDesplegar=Agregar &Proveedores...
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Expresion=Si<BR>  Forma(<T>ProvProcesar<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCampanaAgregarContactos :nEstacion, :tUsuario, :nID, :tContactoTipo<T>, EstacionTrabajo, Usuario, Info.ID, <T>Proveedor<T>) <BR>Fin
+VisibleCondicion=Temp.Reg[3]
+
+[Acciones.Personal]
+Nombre=Personal
+Boton=0
+NombreDesplegar=Agregar P&ersonal...
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Expresion=Si<BR>  Forma(<T>PersonalProcesar<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCampanaAgregarContactos :nEstacion, :tUsuario, :nID, :tContactoTipo<T>, EstacionTrabajo, Usuario, Info.ID, <T>Personal<T>) <BR>Fin
+VisibleCondicion=Temp.Reg[4]
+
+[Acciones.Agentes]
+Nombre=Agentes
+Boton=0
+NombreDesplegar=Agregar &Agentes...
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Expresion=Si<BR>  Forma(<T>AgenteProcesar<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCampanaAgregarContactos :nEstacion, :tUsuario, :nID, :tContactoTipo<T>, EstacionTrabajo, Usuario, Info.ID, <T>Agente<T>) <BR>Fin
+VisibleCondicion=Temp.Reg[5]
+
+[Acciones.Prospectos]
+Nombre=Prospectos
+Boton=0
+NombreDesplegar=Agregar P&rospectos...
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Expresion=Si<BR>  Forma(<T>ProspectoProcesar<T>)<BR>Entonces<BR>  EjecutarSQL(<T>spCampanaAgregarContactos :nEstacion, :tUsuario, :nID, :tContactoTipo<T>, EstacionTrabajo, Usuario, Info.ID, <T>Prospecto<T>) <BR>Fin
+VisibleCondicion=Temp.Reg[1]
+
+[Dialogo.ListaAcciones]
+(Inicio)=Prospectos
+Prospectos=Clientes
+Clientes=Proveedores
+Proveedores=Personal
+Personal=Agentes
+Agentes=(Fin)

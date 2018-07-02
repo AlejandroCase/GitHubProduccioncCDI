@@ -1,0 +1,24 @@
+
+[Prov.tbl/ProvBancoSucursal]
+AyudaEnCaptura=Expresion
+Formula=SQLenlista(<T>SELECT Institucion FROM InstitucionFIn)
+
+
+[Prov.frm/Forma.ListaAcciones]
+Navegador=DesplegarCampos
+
+
+[Prov.frm/Acciones.DesplegarCampos]
+Nombre=DesplegarCampos
+Boton=95
+NombreDesplegar=&Desplegar Campos
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+Activo=S
+Visible=S
+ClaveAccion=CDIProvCampos
+NombreEnBoton=S
+EspacioPrevio=S
+Antes=S
+AntesExpresiones=asigna(Info.Proveedor,Prov:Prov.Proveedor)

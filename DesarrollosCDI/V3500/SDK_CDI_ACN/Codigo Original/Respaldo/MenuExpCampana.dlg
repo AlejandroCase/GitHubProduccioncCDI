@@ -1,0 +1,27 @@
+[Dialogo]
+Clave=MenuExpCampana
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=Campanas
+PosicionInicialIzquierda=415
+PosicionInicialArriba=184
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=500
+
+[Acciones.Campanas]
+Nombre=Campanas
+Boton=0
+NombreDesplegar=Explorar Campañas
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ExplorarCampana
+Activo=S
+Visible=S

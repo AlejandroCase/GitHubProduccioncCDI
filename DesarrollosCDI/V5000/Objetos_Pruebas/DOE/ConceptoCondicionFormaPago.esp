@@ -1,0 +1,15 @@
+[ConceptoVtas.frm/Forma.ListaAcciones]
+RegimenFiscal=CDIRegla
+CDIRegla=(Fin)
+
+[ConceptoVtas.frm/Acciones.CDIRegla]
+Nombre=CDIRegla
+Boton=99
+NombreEnBoton=S
+NombreDesplegar=Concepto Condicion Forma Pago
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIvtacondFP
+Activo=S
+Visible=S

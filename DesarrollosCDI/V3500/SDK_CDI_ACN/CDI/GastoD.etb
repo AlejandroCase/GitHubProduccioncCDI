@@ -1,0 +1,18 @@
+[Concepto]
+ValidacionTablas=(Lista)
+
+[ClavePresupuestal]
+AyudaForma=CDIClavePresupuestalProyLista
+AyudaVista=CDIClavePresupuestalProyLista
+AyudaBusquedaRapida=Asigna(Info.ObjetoGasto, GastoD:Concepto.ObjetoGasto)<BR>Asigna(Info.Proyecto, Gasto:Gasto.Proyecto)
+ValorPorOmision=SQL( <T>SELECT dbo.fnCDICP (:tArt1, :tCla1, :tCon1, :tProy1, :tModulo1)<T>, <T><T>, <T><T>, Concepto , Gasto:Gasto.Proyecto, <T>GAS<T> )
+ValorRefrescar=SQL( <T>SELECT dbo.fnCDICP (:tArt1, :tCla1, :tCon1, :tProy1, :tModulo1)<T>, <T><T>, <T><T>, Concepto , Gasto:Gasto.Proyecto, <T>GAS<T> )
+
+[Concepto.ListaRefrescar]
+EcuadorTipoOperacionGasto=ClavePresupuestal
+ClavePresupuestal=(Fin)
+
+[Concepto.ValidacionTablas]
+(Inicio)=Concepto
+Concepto=ClavePresupuestal
+ClavePresupuestal=(Fin)

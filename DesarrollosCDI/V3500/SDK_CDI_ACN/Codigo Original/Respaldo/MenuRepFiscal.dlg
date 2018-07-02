@@ -1,0 +1,156 @@
+[Dialogo]
+Clave=MenuRepFiscal
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAlturaCliente=330
+PosicionInicialAncho=324
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=798
+PosicionInicialArriba=417
+
+[Acciones.RepContReexAF]
+Nombre=RepContReexAF
+Boton=0
+NombreDesplegar=Actualización de Activo Fijo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexAF
+Activo=S
+Visible=S
+
+[Acciones.RepContReexAFDepreciacion]
+Nombre=RepContReexAFDepreciacion
+Boton=0
+NombreDesplegar=Actualización de la Depreciación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexAFDepreciacion
+Activo=S
+Visible=S
+
+[Acciones.RepContReexCapital]
+Nombre=RepContReexCapital
+Boton=0
+NombreDesplegar=Actualización del Capital Social
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexCapital
+Activo=S
+Visible=S
+
+[Acciones.RepContReexMonetarios]
+Nombre=RepContReexMonetarios
+Boton=0
+NombreDesplegar=Actualización de Activos Monetarios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexMonetarios
+Activo=S
+Visible=S
+
+[Acciones.RepContReexResultados]
+Nombre=RepContReexResultados
+Boton=0
+NombreDesplegar=Actualización de Resultado del Ejercicio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexResultados
+Activo=S
+Visible=S
+
+[Acciones.RepContReexVentaAF]
+Nombre=RepContReexVentaAF
+Boton=0
+NombreDesplegar=Actualización de Venta del Activo Fijo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepContReexVentaAF
+Activo=S
+Visible=S
+
+[Acciones.RepFiscalVentaTasa]
+Nombre=RepFiscalVentaTasa
+Boton=0
+NombreDesplegar=Ventas por Tasa
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepFiscalVentaTasa
+Activo=S
+Visible=S
+
+[Acciones.RepFiscalVentaCte]
+Nombre=RepFiscalVentaCte
+Boton=0
+NombreDesplegar=Principales Clientes
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepFiscalVentaCte
+Activo=S
+Visible=S
+
+[Acciones.RepFiscalCompraProv]
+Nombre=RepFiscalCompraProv
+Boton=0
+NombreDesplegar=Principales Proveedores
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepFiscalCompraProv
+Activo=S
+Visible=S
+
+[Acciones.RepFiscalIVAAcreditable]
+Nombre=RepFiscalIVAAcreditable
+Boton=0
+NombreDesplegar=&IVA Acreditable
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=RepFiscalIVAAcreditable
+Activo=S
+Visible=S
+
+[Acciones.FiscalIncentivoInv2007]
+Nombre=FiscalIncentivoInv2007
+Boton=0
+NombreDesplegar=Incentivo Fiscal - Inventario 200&7
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Reportes Pantalla
+ClaveAccion=FiscalIncentivoInv2007
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=RepContReexAF
+RepContReexAF=RepContReexAFDepreciacion
+RepContReexAFDepreciacion=RepContReexCapital
+RepContReexCapital=RepContReexMonetarios
+RepContReexMonetarios=RepContReexResultados
+RepContReexResultados=RepContReexVentaAF
+RepContReexVentaAF=RepFiscalVentaTasa
+RepFiscalVentaTasa=RepFiscalVentaCte
+RepFiscalVentaCte=RepFiscalCompraProv
+RepFiscalCompraProv=RepFiscalIVAAcreditable
+RepFiscalIVAAcreditable=FiscalIncentivoInv2007
+FiscalIncentivoInv2007=(Fin)

@@ -1,0 +1,32 @@
+[Dialogo]
+PosicionInicialIzquierda=549
+PosicionInicialArriba=140
+PosicionInicialAlturaCliente=450
+
+[Dialogo.ListaAcciones]
+Condicion=PlandePagos
+MovGrupo=CDIMenuCfgEspecial
+PlandePagos=FormaPago
+CDIMenuCfgEspecial=(Fin)
+
+[Acciones.CDIMenuCfgEspecial]
+Nombre=CDIMenuCfgEspecial
+Boton=0
+NombreDesplegar=Configuración Especial
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=CDIMenuCfgEspecial
+Activo=S
+Visible=S
+
+[Acciones.PlandePagos]
+Nombre=PlandePagos
+Boton=0
+NombreDesplegar=Condiciones Plan de Pagos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIPlanCondicion
+Activo=S
+Visible=S

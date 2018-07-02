@@ -1,0 +1,13 @@
+Info.CDISucursal
+
+
+[Info.CDISucursal]
+Grupo=Info
+Clave=CDISucursal
+Tipo=Texto
+Nombre=&Sucursal
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+ListaOpciones=0<BR>1<BR>Todo
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna

@@ -1,0 +1,58 @@
+[Dialogo]
+Clave=MenuCfgCampana
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=836
+PosicionInicialArriba=513
+PosicionInicialAlturaCliente=138
+PosicionInicialAncho=248
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+
+[Acciones.CargaCta]
+Nombre=CargaCta
+Boton=0
+NombreDesplegar=&Carga en Lote (Prospectos)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CargaCta
+Activo=S
+Visible=S
+
+[Acciones.CampanaTipo]
+Nombre=CampanaTipo
+Boton=0
+NombreDesplegar=&Tipos Campañas
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CampanaTipo
+Activo=S
+Visible=S
+
+[Acciones.TablaEvaluacion]
+Nombre=TablaEvaluacion
+Boton=0
+NombreDesplegar=Tablas E&valuación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=TablaEvaluacion
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=CargaCta
+CargaCta=CampanaTipo
+CampanaTipo=TablaEvaluacion
+TablaEvaluacion=(Fin)

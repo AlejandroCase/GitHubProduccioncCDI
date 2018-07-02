@@ -1,0 +1,17 @@
+[CDIExplorarSoporteClaseComite.frm/Forma.ListaAcciones]
+MostrarCampos=Bitacora
+Bitacora=(Fin)
+
+[CDIExplorarSoporteClaseComite.frm/Acciones.Bitacora]
+Nombre=Bitacora
+Boton=56
+NombreEnBoton=S
+NombreDesplegar=&Bitacora
+EnBarraHerramientas=S
+TipoAccion=Formas
+ClaveAccion=MovBitacora
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.Modulo, <T>ST<T>)<BR>Asigna(Info.ID, SoporteA:Soporte.ID)<BR>Asigna(Info.Mov, SoporteA:Soporte.Mov)<BR>Asigna(Info.MovID, SoporteA:Soporte.MovID)<BR>Asigna(Info.PuedeEditar, SoporteA:Soporte.Estatus noen (EstatusConcluido, EstatusCancelado) y PuedeModificar(SoporteA:Soporte.Usuario))
+

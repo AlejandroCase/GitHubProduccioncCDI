@@ -1,0 +1,37 @@
+
+[Tabla]
+Icono=0
+Clave=CDITipoSangre
+Nombre=CDITipoSangre
+Archivo=CDITipoSangre
+Modulos=(Todos)
+Singular=CDITipoSangre
+
+TipoTabla=Maestros
+ListaCampos=TipoSangre
+
+LlavePrimaria=TipoSangre
+SQL=(Lista)
+[TipoSangre]
+Clave=TipoSangre
+Nombre=Tipo de Sangre
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+
+
+
+
+
+
+
+
+
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=TipoSangre
+TipoSangre=FROM CDITipoSangre
+FROM CDITipoSangre=(Fin)

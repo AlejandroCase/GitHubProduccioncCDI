@@ -1,0 +1,11 @@
+[CEProgramaLista.frm/CEPrograma]
+FiltroTipo=Múltiple (por Grupos)
+FiltroGeneral=
+FiltroGrupo1=CEPrograma.Estatus
+FiltroValida1=CEPrograma.Estatus
+
+[CEProgramaLista.frm/Forma]
+PosicionInicialIzquierda=401
+PosicionInicialArriba=120
+PosicionInicialAncho=564
+

@@ -1,0 +1,24 @@
+
+[Dialogo]
+Clave=MenuExpCE
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=Inscritos
+[Acciones.Inscritos]
+Nombre=Inscritos
+Boton=0
+NombreDesplegar=Inscritos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIInscritos
+Activo=S
+Visible=S

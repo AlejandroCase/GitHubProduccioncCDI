@@ -1,0 +1,37 @@
+
+[Dialogo]
+Clave=CDIMenuHerramientaInterfaz
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=Centrado
+VentanaEscCerrar=S
+VentanaEstadoInicial=Normal
+
+ListaAcciones=CDIInterfazSolPentos
+PosicionInicialIzquierda=502
+PosicionInicialArriba=346
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=275
+[Acciones.CDIInterfazSolPentos]
+Nombre=CDIInterfazSolPentos
+Boton=0
+NombreDesplegar=Interfaz &Solicitud Puntos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIServidorVinculado
+Activo=S
+Antes=S
+Visible=S
+
+
+NombreEnBoton=S
+AntesExpresiones=Asigna(Info.CDIProcesoVinculacion, <T>INTERFAZ SOLICITUD PUNTOS<T>)<BR>OtraForma( <T>CDIServidorVinculado<T>,   Forma.ActualizarVista)

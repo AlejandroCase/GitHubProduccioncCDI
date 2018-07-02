@@ -1,0 +1,79 @@
+[GenerarSolicitudDevolucion.dlg/Dialogo]
+PosicionInicialIzquierda=544
+PosicionInicialArriba=296
+PosicionInicialAlturaCliente=138
+
+[GenerarSolicitudDevolucion.dlg/Dialogo.ListaAcciones]
+DevFaltante=DevVtaSI
+DevVtaSI=SolCan
+SolCan=DevApCam
+DevApCam=DescCar
+DescCar=DevOc
+DevOc=(Fin)
+
+[GenerarSolicitudDevolucion.dlg/Acciones.DevVtaSI]
+Nombre=DevVtaSI
+Boton=0
+NombreDesplegar=Devolución Venta SI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=GenerarPedidoPendiente
+Activo=S
+Visible=S
+Antes=S
+AntesExpresiones=Asigna(Afectar.GenerarMov, <T>Devolucion Venta SI<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))
+
+[GenerarSolicitudDevolucion.dlg/Acciones.SolCan]
+Nombre=SolCan
+Boton=0
+NombreDesplegar=Cancelacion RI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+ClaveAccion=SolCanxxxx
+Activo=S
+Visible=S
+Expresion=Asigna(Afectar.GenerarMov, <T>Cancelacion RI<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))<BR> Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Pendiente<T>, Afectar.GenerarMov,Afectar.FormaCaptura)
+
+
+[GenerarSolicitudDevolucion.dlg/Acciones.DevApCam]
+Nombre=DevApCam
+Boton=0
+NombreDesplegar=Dev.Aplic Cambio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+ClaveAccion=DevVta
+Activo=S
+Visible=S
+Expresion=Asigna(Afectar.GenerarMov, <T>Dev.Aplic Cambio<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))<BR> Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Pendiente<T>, Afectar.GenerarMov,Afectar.FormaCaptura)
+
+
+
+
+[GenerarSolicitudDevolucion.dlg/Acciones.DescCar]
+Nombre=DescCar
+Boton=0
+NombreDesplegar=Desc. Cargo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+ClaveAccion=DescCar
+Activo=S
+Visible=S
+Expresion=Asigna(Afectar.GenerarMov, <T>Desc. Cargo<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))<BR> Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Pendiente<T>, Afectar.GenerarMov,Afectar.FormaCaptura)
+
+
+
+[GenerarSolicitudDevolucion.dlg/Acciones.DevOc]
+Nombre=DevOc
+Boton=0
+NombreDesplegar=Dev. Orden Cobro
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+ClaveAccion=DevOc
+Activo=S
+Visible=S
+Expresion=Asigna(Afectar.GenerarMov, <T>Dev. Orden Cobro<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))<BR> Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Pendiente<T>, Afectar.GenerarMov,Afectar.FormaCaptura)

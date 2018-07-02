@@ -1,0 +1,29 @@
+[MenuHerramientasVenta.dlg/Dialogo]
+ListaAcciones.Cambios=Insertar<TAB>GenerarCFDLote<TAB>2
+
+[MenuHerramientasVenta.dlg/Acciones.GenerarCFDLote]
+Nombre=GenerarCFDLote
+Boton=0
+NombreDesplegar=Generar &CFD en Lote
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=VentaCFD
+Activo=S
+Visible=S
+
+[MenuHerramientaCxc.dlg/Dialogo]
+ListaAcciones.Cambios=Insertar<TAB>GenerarCFDLote<TAB>2
+
+[MenuHerramientaCxc.dlg/Acciones.GenerarCFDLote]
+Nombre=GenerarCFDLote
+Boton=0
+NombreDesplegar=Generar &CFD en Lote
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CxcCFD
+Activo=S
+Visible=S
+
+

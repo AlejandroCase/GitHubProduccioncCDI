@@ -1,0 +1,26 @@
+[Vista]
+Icono=0
+Clave=MensajeInstitucionClase
+Nombre=Clasificaciones
+Modulos=(Todos)
+Singular=Clasificación
+ListaTablas=MensajeInstitucionClase
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+ListaCampos=MensajeInstitucionClase.Clasificacion
+TablaPrincipal=MensajeInstitucionClase
+SQL=SELECT<BR>  MensajeInstitucionClase.Clasificacion<BR><BR>FROM<BR>  MensajeInstitucionClase
+
+[MensajeInstitucionClase.Clasificacion]
+Clave=MensajeInstitucionClase.Clasificacion
+Nombre=Clasificación
+Visible=S
+TamanoValidacion=50
+Tamano=50
+LigaTabla=MensajeInstitucionClase
+LigaCampo=Clasificacion
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+ClaveBDE=Clasificacion

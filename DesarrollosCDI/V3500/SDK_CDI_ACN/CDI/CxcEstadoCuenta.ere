@@ -1,0 +1,21 @@
+[Reporte]
+FiltroAbierto=EstadoCuenta.Estacion={EstacionTrabajo} AND EstadoCuenta.Modulo=<T>CXC<T><BR>{Si(ConDatos(Info.Moneda), <T> AND EstadoCuenta.Moneda = <T>+Comillas(Info.Moneda), <T><T>)}<BR>{Si(ConDatos(Info.CDISocioLista), <T> AND Cte.Socio = <T>+Comillas(Info.CDISocioLista), <T><T>)}<BR>{Si(ConDatos(Info.Membresia), <T> AND Cte.Membresia = <T>+Comillas(Info.Membresia), <T><T>)}
+
+[Formato]
+VentanaIzquierda=181
+VentanaArriba=81
+
+[Reporte.ListaOrden]
+(Inicio)=EstadoCuenta.Moneda	(Acendente)
+EstadoCuenta.Moneda<TAB>(Acendente)=
+Cte.Numero<TAB>(Acendente)=
+Cte.Cliente<TAB>(Acendente)=
+Auxiliar.Aplica<TAB>(Acendente)=
+Auxiliar.AplicaID<TAB>(Acendente)=
+EstadoCuenta.ID<TAB>(Acendente)=
+EstadoCuenta.Moneda	(Acendente)=Cte.Numero	(Acendente)
+Cte.Numero	(Acendente)=Cte.Cliente	(Acendente)
+Cte.Cliente	(Acendente)=Auxiliar.Aplica	(Acendente)
+Auxiliar.Aplica	(Acendente)=Auxiliar.AplicaID	(Acendente)
+Auxiliar.AplicaID	(Acendente)=EstadoCuenta.ID	(Acendente)
+EstadoCuenta.ID	(Acendente)=(Fin)

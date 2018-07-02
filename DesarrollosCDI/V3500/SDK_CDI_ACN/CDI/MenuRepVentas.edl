@@ -1,0 +1,19 @@
+[Dialogo]
+PosicionInicialIzquierda=501
+PosicionInicialArriba=130
+PosicionInicialAlturaCliente=426
+
+[Dialogo.ListaAcciones]
+AntiguedadPedidos=CDIResumenCargos
+CDIResumenCargos=(Fin)
+
+[Acciones.CDIResumenCargos]
+Nombre=CDIResumenCargos
+Boton=0
+NombreDesplegar=&Resumen Analítico de Cargos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Reportes Pantalla
+ClaveAccion=RepCDIResumenCargos
+Activo=S
+Visible=S

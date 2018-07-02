@@ -1,0 +1,2 @@
+[Acciones.Asignar]
+AntesExpresiones=RegistrarSeleccionIDRenglon(<T>Lista<T>, <T>COMS<T>, <T>Compra.ID<T>, <T>CompraD.Renglon<T>, <T>CompraD.RenglonSub<T>)<BR>EjecutarSQL(<T>spCompraDAsignar :nEstacion, :nID<T>, EstacionTrabajo, Info.ID)<BR>//Para copiar clave presupuestal<BR>RegistrarSeleccionIDRenglon(<T>Lista<T>, <T>COMS<T>, <T>Compra.ID<T>, <T>CompraD.Renglon<T>, <T>CompraD.RenglonSub<T>)<BR>EjecutarSQL(<T>CDIxpCompraDAsignar :nEstacion, :nID<T>, EstacionTrabajo, Info.ID)

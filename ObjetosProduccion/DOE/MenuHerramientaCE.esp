@@ -1,0 +1,48 @@
+
+[MenuHerramientaCE.dlg/Dialogo]
+Clave=MenuHerramientaCE
+Nombre=Control Escolar
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=(Lista)
+PosicionInicialAlturaCliente=114
+PosicionInicialAncho=500
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+VentanaEstadoInicial=Normal
+PosicionInicialIzquierda=433
+PosicionInicialArriba=307
+[Acciones.PreRegistro]
+Nombre=PreRegistro
+Boton=0
+NombreDesplegar=Pre Registros
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=AsistenteCursoCCPM
+Activo=S
+Visible=S
+
+[MenuHerramientaCE.dlg/Acciones.PorLote]
+Nombre=PorLote
+Boton=0
+NombreDesplegar=&Alta Programa Por Lote
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=formas
+ClaveAccion=CDIPrograma
+Activo=S
+Visible=S
+
+[MenuHerramientaCE.dlg/Dialogo.ListaAcciones]
+(Inicio)=PreRegistro
+PreRegistro=PorLote
+PorLote=(Fin)

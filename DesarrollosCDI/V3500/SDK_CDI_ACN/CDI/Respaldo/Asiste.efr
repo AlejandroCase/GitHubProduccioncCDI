@@ -1,0 +1,96 @@
+[Forma]
+PosicionInicialIzquierda=294
+PosicionInicialArriba=92
+PosicionInicialAncho=778
+PosicionInicialAlturaCliente=544
+
+[(Carpeta Abrir).Columnas]
+4=-2
+
+[Detalle]
+CondicionEdicion=(Asiste:Asiste.CDIPermiteEditar) y (Asiste:Asiste.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))
+
+[Detalle.Columnas]
+GestionRef=64
+ActividadABCRef=85
+
+[Acciones.Afectar]
+Expresion=Asigna(Afectar.ID, Asiste:Asiste.ID)<BR>Asigna(Afectar.Mov, Asiste:Asiste.Mov)<BR>Asigna(Afectar.MovID, Asiste:Asiste.MovID)<BR>Asigna(Afectar.FormaCaptura, <T>Asiste<T>)<BR>Asigna(Info.Modulo,<T>ASIS<T>)<BR>Asigna(Info.Id, Asiste:Asiste.ID)<BR>Asigna(Info.Cantidad,SQL(<T>Exec SpNomCDIMostrarBitacora :nid<T>,Asiste:Asiste.ID))<BR>Si <BR>  (MovTipo(<T>ASIS<T>, Asiste:Asiste.Mov) = ASIS.C) y (Asiste:Asiste.Estatus = EstatusSinAfectar)<BR>Entonces<BR>  Forma(<T>AsisteGenerarCorte<T>)<BR>Sino<BR>  Si                                                                                  <BR>    MovTipo(<T>ASIS<T>, Asiste:Asiste.Mov) = ASIS.AU<BR>  Entonces<BR>    Dialogo(<T>GenerarAusencia<T>)<BR>  Sino<BR>      SI<BR>       Info.Cantidad > 0<BR>      entonces<BR>          Si<BR>            Confirmacion( <T>El Empleado rebasa <T>&Info.Cantidad&<T> Hras del limite Permitido, ¿Autoriza?<T>,BotonSi, BotonNo)=BotonNo<BR>          Entonces<BR>              AbortarOperacion<BR>          Sino<BR>                Forma(<T>MovBitacoraAgregar<T>)<BR>                AbortarOperacion<BR>          Fin<BR>      sino<BR>        Afectar(<T>ASIS<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T><T>, Afectar.FormaCaptura)<BR>      FIn<BR>   Fin<BR>Fin
+
+[Acciones.Infomacion]
+Activo=
+ActivoCondicion=SQL(<T>exec SpVePersonalInfo :tUsu<T>,Usuario)=<T>SI<T>
+
+[Detalle.ListaEnCaptura]
+AsisteD.Registro=AsisteD.Cantidad
+AsisteD.HoraA=AsisteD.Tipo
+AsisteD.Cantidad=AsisteD.FechaD
+AsisteD.Observaciones=(Fin)
+AsisteD.Extra=
+AsisteD.GestionRef=
+AsisteD.ActividadABCRef=
+
+[Lista.Columnas]
+0=106
+1=301
+
+[Forma.ListaAcciones]
+PoliticaConcepto=Bitacora
+Otros9=CDIAutorizar
+Bitacora=MovPos
+CDIAutorizar=VerAcum
+VerAcum=(Fin)
+
+[Acciones.CDIAutorizar]
+Nombre=CDIAutorizar
+Boton=0
+Menu=&Edición
+UsaTeclaRapida=S
+TeclaRapida=Shift+Ctrl+A
+NombreDesplegar=Autorizar Flujo
+GuardarAntes=S
+EnMenu=S
+TipoAccion=formas
+ClaveAccion=CDIMovAutorizar
+ActivoCondicion=Asiste:Asiste.CDIFlujoAutorizacion
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>ASIS<T>)<BR>Asigna(Info.ID, Asiste:Asiste.ID)<BR>Asigna(Info.Mov, Asiste:Asiste.Mov)
+DespuesGuardar=S
+Visible=S
+
+[Acciones.VerAcum]
+Nombre=VerAcum
+Boton=108
+NombreEnBoton=S
+Menu=&Ver
+TeclaFuncion=F10
+NombreDesplegar=VerAcum
+EnBarraHerramientas=S
+EnMenu=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=VerAcum
+Activo=S
+Visible=S
+ConCondicion=S
+Antes=S
+UsaTeclaRapida=S
+EjecucionCondicion=ConDatos(AsisteD:AsisteD.Personal)
+AntesExpresiones=IrModulo(<T>NOM<T>)<BR>IrDireccion(<T>VAC<T>, AsisteD:AsisteD.Personal)
+
+[Acciones.Bitacora]
+Nombre=Bitacora
+Boton=0
+Menu=&Ver
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+B
+NombreDesplegar=&Bitácora
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=MovBitacora
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>ASIS<T>)<BR>Asigna(Info.ID, Asiste:Asiste.ID)<BR>Asigna(Info.Mov, Asiste:Asiste.Mov)<BR>Asigna(Info.MovID, Asiste:Asiste.MovID)<BR>Asigna(Info.PuedeEditar, Asiste:Asiste.Estatus noen (EstatusConcluido, EstatusCancelado) y PuedeModificar(Asiste:Asiste.Usuario))
+DespuesGuardar=S
+Visible=S

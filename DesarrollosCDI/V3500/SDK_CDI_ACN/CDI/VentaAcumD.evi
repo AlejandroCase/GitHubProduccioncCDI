@@ -1,0 +1,56 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.ListaCampos]
+CantidadAcum=Socio
+Socio=Membresia
+Membresia=(Fin)
+
+[Vista.CamposBusquedaRapida]
+Art.Codigo=Socio
+Socio=Membresia
+Membresia=(Fin)
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Socio
+
+[Membresia]
+Clave=Membresia
+Nombre=Membresia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Membresia
+
+[Vista.SQL]
+(Inicio)=SELECT   Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio,  Cte.Membresia,  Art.Articulo,  Art.Rama,  Art.Descripcion1,  Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo,
+SELECT   Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio,  Cte.Membresia,  Art.Articulo,  Art.Rama,  Art.Descripcion1,  Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo,='VentaMes'   <IGUAL>
+'VentaMes'   <IGUAL>=(SELECT Sum(Cargos) - Sum(Abonos)
+(SELECT Sum(Cargos) - Sum(Abonos)=FROM AcumRU
+FROM AcumRU=WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND
+WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND=Empresa <IGUAL> '{Empresa}' AND
+Empresa <IGUAL> '{Empresa}' AND=Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),
+Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),='CantidadMes'   <IGUAL>
+'CantidadMes'   <IGUAL>=(SELECT Sum(CargosU) - Sum(AbonosU)
+(SELECT Sum(CargosU) - Sum(AbonosU)=FROM AcumRU <LN#9>
+FROM AcumRU <LN#9>=WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND<LN#10>
+WHERE Cuenta <IGUAL> Art.Articulo AND Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND<LN#10>=Empresa <IGUAL> '{Empresa}' AND <LN#11>
+Empresa <IGUAL> '{Empresa}' AND <LN#11>=Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),<LN#12>
+Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),<LN#12>='VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),
+'VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),='CantidadAcum' <IGUAL> Sum(SaldoRU.SaldoU),
+'CantidadAcum' <IGUAL> Sum(SaldoRU.SaldoU),=SaldoRU.Moneda
+SaldoRU.Moneda=FROM   SaldoRU
+FROM   SaldoRU=JOIN Art ON SaldoRU.Cuenta <IGUAL> Art.Articulo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'
+JOIN Art ON SaldoRU.Cuenta <IGUAL> Art.Articulo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'=JOIN Cte ON SaldoRU.Grupo <IGUAL> Cte.Cliente
+JOIN Cte ON SaldoRU.Grupo <IGUAL> Cte.Cliente=GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio, Cte.Membresia,   Art.Articulo,   Art.Rama,  Art.Descripcion1,   Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo
+GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,  Cte.Socio, Cte.Membresia,   Art.Articulo,   Art.Rama,  Art.Descripcion1,   Art.Categoria,  Art.Familia,  Art.Grupo,  Art.Fabricante,  Art.Codigo=(Fin)

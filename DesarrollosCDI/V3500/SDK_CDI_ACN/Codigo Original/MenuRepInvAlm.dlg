@@ -1,0 +1,47 @@
+[Dialogo]
+Clave=MenuRepInvAlm
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=400
+PosicionInicialArriba=310
+PosicionInicialAltura=141
+PosicionInicialAncho=224
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialAlturaCliente=114
+
+[Acciones.Articulo]
+Nombre=Articulo
+Boton=0
+NombreDesplegar=Nivel &Artículo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ExplorarInvAlm
+Activo=S
+Visible=S
+
+[Acciones.Subcuenta]
+Nombre=Subcuenta
+Boton=0
+NombreDesplegar=Nivel &Subcuenta
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Si<BR>  Config.CosteoNivelSubCuenta<BR>Entonces<BR>  Forma(<T>ExplorarInvAlmSubCosto<T>)<BR>Sino<BR>  Forma(<T>ExplorarInvAlmSub<T>)<BR>Fin
+
+[Dialogo.ListaAcciones]
+(Inicio)=Articulo
+Articulo=Subcuenta
+Subcuenta=(Fin)

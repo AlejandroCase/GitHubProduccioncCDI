@@ -1,0 +1,58 @@
+[Dialogo]
+Clave=pFiscal
+Nombre=Módulo Fiscal (Service Pack)
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=803
+PosicionInicialArriba=513
+PosicionInicialAlturaCliente=138
+PosicionInicialAncho=313
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+
+[Acciones.pFiscal]
+Nombre=pFiscal
+Boton=0
+NombreDesplegar=Módulo &Fiscal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pFiscal
+Activo=S
+Visible=S
+
+[Acciones.pExplorarFiscal]
+Nombre=pExplorarFiscal
+Boton=0
+NombreDesplegar=E&xplorar Fiscal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pExplorarFiscal
+Activo=S
+Visible=S
+
+[Acciones.pFiscalIncentivoInv2007]
+Nombre=pFiscalIncentivoInv2007
+Boton=0
+NombreDesplegar=&Reporte Incentivo Fiscal Inventario 2007
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Reportes Pantalla
+ClaveAccion=pFiscalIncentivoInv2007
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=pFiscal
+pFiscal=pExplorarFiscal
+pExplorarFiscal=pFiscalIncentivoInv2007
+pFiscalIncentivoInv2007=(Fin)

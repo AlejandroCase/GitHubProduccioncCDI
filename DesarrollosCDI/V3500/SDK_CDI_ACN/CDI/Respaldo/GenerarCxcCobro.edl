@@ -1,0 +1,10 @@
+[Dialogo]
+PosicionInicialIzquierda=545
+PosicionInicialArriba=211
+PosicionInicialAlturaCliente=306
+
+[Acciones.Otros1]
+NombreDesplegar=Cobro OC Cta y Orden
+Activo=S
+Visible=S
+Expresion=Generar(<T>CXC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cobro OC Cta y Orden<T>, Afectar.FormaCaptura)

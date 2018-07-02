@@ -1,0 +1,82 @@
+[Dialogo]
+Clave=MenuCfgWeb
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAlturaCliente=186
+PosicionInicialAncho=253
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+PosicionInicialIzquierda=833
+PosicionInicialArriba=489
+VentanaConIcono=S
+
+[Acciones.WebUsuario]
+Nombre=WebUsuario
+Boton=0
+NombreDesplegar=&Usuarios Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=WebUsuario
+Activo=S
+Visible=S
+
+[Acciones.WebPagina]
+Nombre=WebPagina
+Boton=0
+NombreDesplegar=&Páginas Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=WebPagina
+Activo=S
+Visible=S
+
+[Acciones.WebSitio]
+Nombre=WebSitio
+Boton=0
+NombreDesplegar=&Sitios Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=WebSitio
+Activo=S
+Visible=S
+
+[Acciones.WebColor]
+Nombre=WebColor
+Boton=0
+NombreDesplegar=&Colores Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=WebColor
+Activo=S
+Visible=S
+
+[Acciones.CalificacionTipo]
+Nombre=CalificacionTipo
+Boton=0
+NombreDesplegar=&Tipos Calificación
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CalificacionTipo
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=WebUsuario
+WebUsuario=WebPagina
+WebPagina=WebSitio
+WebSitio=WebColor
+WebColor=CalificacionTipo
+CalificacionTipo=(Fin)

@@ -1,0 +1,25 @@
+
+
+
+[CDIExplorarCvePres.frm/Acciones.ExplorarClave]
+Nombre=ExplorarClave
+Boton=18
+NombreEnBoton=S
+NombreDesplegar=&Resumen por CP
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=formas
+ClaveAccion=CDIResumenCP
+Activo=S
+Visible=S
+
+
+[CDIExplorarCvePres.frm/Forma.ListaAcciones]
+(Inicio)=Cerrar
+Cerrar=Imprimir
+Imprimir=Preliminar
+Preliminar=Excel
+Excel=Movimiento
+Movimiento=Campos
+Campos=ExplorarClave
+ExplorarClave=(Fin)

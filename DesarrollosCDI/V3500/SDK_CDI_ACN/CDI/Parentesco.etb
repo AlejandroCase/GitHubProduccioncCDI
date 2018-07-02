@@ -1,0 +1,31 @@
+[Tabla]
+ListaCampos=(Lista)
+SQL=(Lista)
+
+[Parentesco]
+OpcionesColumnas=
+OpcionesRenglones=
+
+[SufijosSocios]
+Clave=SufijosSocios
+Nombre=Sufijos Socios
+Visible=S
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+Requerido=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Ya Existe<T>
+ValidacionCondicion=SQL(<T>SELECT SufijosSocios FROM Parentesco WHERE SufijosSocios =:tSufijos<T>, Parentesco:Parentesco.SufijosSocios) <> Parentesco:Parentesco.SufijosSocios
+
+[Tabla.ListaCampos]
+(Inicio)=Parentesco
+Parentesco=SufijosSocios
+SufijosSocios=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Parentesco,
+Parentesco,=SufijosSocios
+SufijosSocios=FROM Parentesco
+FROM Parentesco=(Fin)

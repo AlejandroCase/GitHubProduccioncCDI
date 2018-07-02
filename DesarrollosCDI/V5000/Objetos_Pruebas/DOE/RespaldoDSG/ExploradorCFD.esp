@@ -1,0 +1,2 @@
+[MenuExpFiscal.dlg/Acciones.ExplorarCFD]
+VisibleCondicion=Empresa.CFD o General.CFDFlex

@@ -1,0 +1,12 @@
+
+[Vista]
+Icono=0
+Clave=CDIRepPersonal
+Nombre=CDIRepPersonal
+Modulos=(Todos)
+Singular=CDIRepPersonal
+ListaTablas=CDIRepPersonal
+TablaPrincipal=CDIRepPersonal
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S

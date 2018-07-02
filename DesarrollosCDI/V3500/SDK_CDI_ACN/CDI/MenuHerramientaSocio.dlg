@@ -1,0 +1,53 @@
+
+[Dialogo]
+Clave=MenuHerramientaSocio
+Nombre=Barra de Herramientas
+Icono=16
+TipoDialogo=Barra de Heramientas
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=(Lista)
+
+PosicionInicialIzquierda=471
+PosicionInicialArriba=274
+PosicionInicialAlturaCliente=104
+PosicionInicialAncho=500
+[Acciones.RenuevaSubs]
+Nombre=RenuevaSubs
+Boton=0
+NombreDesplegar=Renovación de Subsidios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIHerRenuevaSubsid
+Activo=S
+Visible=S
+
+[Acciones.CambioCategoria]
+Nombre=CambioCategoria
+Boton=0
+NombreDesplegar=&Cambio de Categoría
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDICambioCategoria
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=RenuevaSubs
+RenuevaSubs=CambioCategoria
+CambioCategoria=(Fin)

@@ -1,0 +1,368 @@
+
+[Reporte]
+Clave=CDITempInscContra
+Nombre=Contrato
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+OtroOrden=S
+ListaOrden=(Lista)
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1295
+[Vista]
+Icono=0
+Clave=CDITempInscContra
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=xpCDICalInsc1Rep3 {EstacionTrabajo}
+[LId]
+Clave=LId
+Nombre=LId
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+ClaveBDE=LId
+
+[id]
+Clave=id
+Nombre=id
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=id
+
+[estacion]
+Clave=estacion
+Nombre=estacion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=estacion
+
+[texto]
+Clave=texto
+Nombre=texto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=132
+TipoDatos=Texto
+Tamano=132
+ClaveBDE=texto
+
+[socio]
+Clave=socio
+Nombre=socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=socio
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Inicio: estacion<BR>Inicio: socio<BR>Detalle<BR>Fin: socio<BR>Fin: estacion
+
+VentanaIzquierda=-8
+VentanaArriba=-8
+VentanaAltura=744
+VentanaAncho=1382
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+Grupo=
+AltoEnCm=2
+Renglones=5
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=3
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+Grupo=
+AltoEnCm=1.39
+Renglones=4
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=1
+BordeAbajo=S
+[Linea3]
+Clave=Inicio: estacion
+Objetos=0
+Seccion=Inicio Grupo
+AltoEnCm=0.4
+Renglones=1
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Grupo=estacion
+[Linea4]
+Clave=Inicio: socio
+Seccion=Inicio Grupo
+Grupo=socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea5]
+Clave=Detalle
+Seccion=Detalle
+Grupo=
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+EstiloMarco=3
+
+[Linea6]
+Clave=Fin: socio
+Objetos=0
+Seccion=Fin Grupo
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+BordeArriba=N
+Grupo=socio
+[Linea7]
+Clave=Fin: estacion
+Objetos=0
+Seccion=Fin Grupo
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+BordeAbajo=N
+Grupo=estacion
+
+
+[Vista.ListaCampos]
+(Inicio)=LId
+LId=id
+id=estacion
+estacion=texto
+texto=socio
+socio=(Fin)
+
+
+
+
+
+
+
+
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=13
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.nombre
+
+[C1]
+Celda=C1
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=27
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[A2]
+Celda=A2
+Alineacion=Centrado
+AnchoEnCm=19
+AlturaVariable=S
+ExpresionMultiple=S
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<BR><T>Clinicas y Campamentos de Verano 2016<T><BR><T>Reglamento<T>
+
+BordeAbajo=S
+[A5]
+Celda=A5
+Alineacion=Izquierda
+AnchoEnCm=19.11
+AnchoTexto=103
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=texto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reporte.ListaOrden]
+(Inicio)=estacion	(Acendente)
+estacion	(Acendente)=socio	(Acendente)
+socio	(Acendente)=(Fin)

@@ -1,0 +1,50 @@
+
+[Dialogo]
+Clave=Estadisticas Slow Pitch
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=(Lista)
+PosicionInicialAlturaCliente=104
+PosicionInicialAncho=500
+[Acciones.EstaSlow]
+Nombre=EstaSlow
+Boton=0
+NombreDesplegar=Estadisticas Slow Pitch
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+Activo=S
+Visible=S
+
+[Acciones.EstaFutBol]
+Nombre=EstaFutBol
+Boton=0
+NombreDesplegar=Estadisticas Fut
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=EstaSlow
+EstaSlow=EstaFutBol
+EstaFutBol=(Fin)

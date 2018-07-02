@@ -1,0 +1,8 @@
+[Dialogo]
+PosicionInicialIzquierda=547
+PosicionInicialArriba=307
+PosicionInicialAlturaCliente=114
+
+[Acciones.Pendiente]
+Visible=
+VisibleCondicion=Info.TituloDialogo <> <T>Recibir Prestamo<T>

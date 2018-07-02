@@ -1,0 +1,18 @@
+[Tabla]
+Icono=0
+Clave=GestionUbicacion
+Archivo=GestionUbicacion
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=Ubicacion
+Nombre=Ubicaciones
+Singular=Ubicación
+SQL=SELECT<BR>  Ubicacion<BR><BR>FROM<BR>  GestionUbicacion
+LlavePrimaria=Ubicacion
+
+[Ubicacion]
+Clave=Ubicacion
+Nombre=Ubicación
+Visible=S
+TamanoValidacion=100
+Tamano=100

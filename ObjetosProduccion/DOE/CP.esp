@@ -1,0 +1,5 @@
+[CP.tbl/Observaciones]
+CondicionEdicion=(Estatus en (EstatusSinAfectar,EstatusPendiente))
+
+[CP.Frm/Ficha.CP.Observaciones]
+EditarConBloqueo=S

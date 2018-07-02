@@ -1,0 +1,74 @@
+[CxpAuxConcentrado.rep/Reporte]
+FiltroAbierto=CxpAux.Empresa=<T>{Empresa}<T> AND <BR>CxpAux.Moneda={Comillas(Info.Moneda)}<BR>{Si(ConDatos(Rep.MovEspecifico), <T> AND CxpAux.Mov = <T>+Comillas(Rep.MovEspecifico), <T><T>)}<BR>{Si(ConDatos(Info.ProvCat),   <T> AND Prov.Categoria = <T>+Comillas(Info.ProvCat), <T><T>)}<BR>{Si(ConDatos(Info.ProvFam),   <T> AND Prov.Familia = <T>+Comillas(Info.ProvFam), <T><T>)}<BR>{Si(ConDatos(Info.ProvTipo),   <T> AND Prov.Tipo = <T>+Comillas(Info.ProvTipo), <T><T>)}
+
+[CxpAuxConcentrado.rep/Reporte.ListaOrden]
+(Inicio)=Prov.Proveedor	(Acendente)
+Prov.Proveedor<TAB>(Acendente)=
+CxpAux.Fecha<TAB>(Acendente)=
+CxpAux.ID<TAB>(Acendente)=
+Prov.Proveedor	(Acendente)=CxpAux.Fecha	(Acendente)
+CxpAux.Fecha	(Acendente)=CxpAux.ID	(Acendente)
+CxpAux.ID	(Acendente)=(Fin)
+
+[CxpAuxDia.rep/Reporte]
+FiltroAbierto=CxpAux.Empresa=<T>{Empresa}<T> AND<BR>CxpAux.Moneda={Comillas(Info.Moneda)}<BR>{Si(ConDatos(Rep.MovEspecifico), <T> AND CxpAux.Mov = <T>+Comillas(Rep.MovEspecifico), <T><T>)}<BR>{Si(ConDatos(Info.ProvCat),   <T> AND Prov.Categoria = <T>+Comillas(Info.ProvCat), <T><T>)}<BR>{Si(ConDatos(Info.ProvFam),   <T> AND Prov.Familia = <T>+Comillas(Info.ProvFam), <T><T>)}<BR>{Si(ConDatos(Info.ProvTipo),   <T> AND Prov.Tipo = <T>+Comillas(Info.ProvTipo), <T><T>)}
+
+[CxpAuxDia.rep/Reporte.ListaOrden]
+(Inicio)=Prov.Proveedor	(Acendente)
+Prov.Proveedor<TAB>(Acendente)=
+CxpAux.Fecha<TAB>(Acendente)=
+CxpAux.ID<TAB>(Acendente)=
+Prov.Proveedor	(Acendente)=CxpAux.Fecha	(Acendente)
+CxpAux.Fecha	(Acendente)=CxpAux.ID	(Acendente)
+CxpAux.ID	(Acendente)=(Fin)
+
+[RepCxpAux.frm/(Variables).Info.FechaA]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.FechaD]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.Moneda]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.ProvCat]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.ProveedorA]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.ProveedorD]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Info.ProvFam]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).ListaEnCaptura]
+Rep.MovEspecifico=Info.ProvTipo
+Info.ProvTipo=Rep.Aux
+
+[RepCxpAux.frm/(Variables).Rep.Aux]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Rep.MovEspecifico]
+ColorFuente=
+
+[RepCxpAux.frm/(Variables).Rep.Titulo]
+ColorFuente=
+
+[RepCxpAux.frm/Forma]
+PosicionInicialIzquierda=526
+PosicionInicialArriba=213
+
+[RepCxpAux.frm/(Variables).Info.ProvTipo]
+Carpeta=(Variables)
+Clave=Info.ProvTipo
+Editar=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Blanco
+
+[RepCxpAux.frm/Lista.Columnas]
+Tipo=207
+

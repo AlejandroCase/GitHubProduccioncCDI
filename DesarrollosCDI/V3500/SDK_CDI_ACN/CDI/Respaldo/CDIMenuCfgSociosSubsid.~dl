@@ -1,0 +1,46 @@
+
+[Dialogo]
+Clave=CDIMenuCfgSociosSubsid
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=(Lista)
+[Acciones.Subsidio]
+Nombre=Subsidio
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Tipos &Subsidios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDISocioSubsidio
+Activo=S
+Visible=S
+
+[Acciones.SubsidioCat]
+Nombre=SubsidioCat
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Subsidios por &Categoría
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+Activo=S
+Visible=S
+
+
+
+ClaveAccion=CDISubsidioXCateg
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Subsidio
+Subsidio=SubsidioCat
+SubsidioCat=(Fin)

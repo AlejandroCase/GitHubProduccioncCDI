@@ -1,0 +1,8 @@
+[Forma]
+PosicionInicialIzquierda=408
+PosicionInicialArriba=209
+ExpresionesAlMostrar=
+VentanaSinIconosMarco=S
+
+[Lista]
+FiltroGeneral=CPCal.ID={Info.ID} AND CPCal.ClavePresupuestal=<T>{Info.ClavePresupuestal}<T> AND CPCal.Tipo=<T>{Info.Tipo}<T><BR>{Si<BR>   (Info.Referencia <> <T>Borrador Presupuesto<T>)<BR> Entonces<BR>   <T> AND CPCal.Ejercicio= <T> + (Info.Ejercicio)<BR> Sino<BR>   <T> <T><BR> Fin}

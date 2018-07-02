@@ -1,0 +1,53 @@
+
+[Tabla]
+Icono=0
+Clave=CDITipoSocios
+Nombre=CDITipoSocios
+Archivo=CDITipoSocios
+Modulos=(Todos)
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=Tipo
+ControlTipo=S
+CampoTipo=Tipo
+SQL=(Lista)
+[Tipo]
+Clave=Tipo
+Nombre=Tipo
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=CteTipo
+AyudaMemRenglones=20
+AyudaMemOpc=Unicamente opciones listadas
+[Orden]
+Clave=Orden
+Nombre=Orden
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+Requerido=S
+
+
+
+
+AyudaEnCaptura=Calculadora
+
+
+[Tabla.ListaCampos]
+(Inicio)=Tipo
+Tipo=Orden
+Orden=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Tipo,
+Tipo,=Orden
+Orden=FROM CDITipoSocios
+FROM CDITipoSocios=(Fin)

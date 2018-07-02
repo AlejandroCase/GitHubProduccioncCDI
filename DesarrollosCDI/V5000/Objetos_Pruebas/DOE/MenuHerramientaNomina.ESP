@@ -1,0 +1,17 @@
+ 
+[MenuHerramientaNomina.dlg/Acciones.PagoMifel]
+Nombre=PagoMifel
+Boton=0
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+Visible=S
+NombreDesplegar=&Nomina Electrónica Mifel
+TipoAccion=Formas
+ClaveAccion=CDIRegistroMifel
+
+
+[MenuHerramientaNomina.dlg/Dialogo.ListaAcciones]
+NominaFusionarBorradores=PagoMifel
+PagoMifel=NominaExportarBanamex
+

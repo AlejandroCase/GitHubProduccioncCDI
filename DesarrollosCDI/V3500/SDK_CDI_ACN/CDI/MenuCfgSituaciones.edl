@@ -1,0 +1,20 @@
+[Dialogo]
+PosicionInicialIzquierda=510
+PosicionInicialArriba=33
+PosicionInicialAlturaCliente=930
+
+[Dialogo.ListaAcciones]
+ISL=SOC
+SOC=(Fin)
+
+[Acciones.SOC]
+Nombre=SOC
+Boton=0
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=MovSituacionL
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.Modulo, <T>SOC<T>)<BR>Asigna(Info.Descripcion, <T>Socios<T>)

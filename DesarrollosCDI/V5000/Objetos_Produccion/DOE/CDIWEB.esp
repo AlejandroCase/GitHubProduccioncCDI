@@ -1,0 +1,19 @@
+[MenuCfgWeb.dlg/Dialogo]
+PosicionInicialAlturaCliente=138
+PosicionInicialIzquierda=556
+PosicionInicialArriba=296
+
+[MenuCfgWeb.dlg/Dialogo.ListaAcciones]
+CalificacionTipo=CDICfgWEB
+CDICfgWEB=(Fin)
+
+[MenuCfgWeb.dlg/Acciones.CDICfgWEB]
+Nombre=CDICfgWEB
+Boton=0
+NombreDesplegar=CDI Web
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=CDICfgWeb
+Activo=S
+Visible=S

@@ -1,0 +1,21 @@
+[Forma]
+PosicionInicialIzquierda=500
+PosicionInicialArriba=362
+
+[Forma.ListaAcciones]
+Excel=Articulos
+Articulos=(Fin)
+
+[Acciones.Articulos]
+Nombre=Articulos
+Boton=75
+NombreEnBoton=S
+NombreDesplegar=Articulos
+EnBarraHerramientas=S
+TipoAccion=Formas
+ClaveAccion=CDICfgCategoriaArt
+Activo=S
+Visible=S
+Antes=S
+EspacioPrevio=S
+AntesExpresiones=Asigna( Info.Categoria, CteCat:CteCat.Categoria )

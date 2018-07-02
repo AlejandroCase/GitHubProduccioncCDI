@@ -1,0 +1,129 @@
+[Mov]
+CondicionEdicion=((Estatus=EstatusSinAfectar) y Vacio(Filtro.Mov)) y (no CDIFlujoAutorizacion)
+
+[Proyecto]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+Requerido=S
+
+[Referencia]
+Requerido=S
+
+[Directo]
+CondicionDespliege=MovTipoEn(<T>COMS<T>, Mov, (COMS.R,COMS.C,COMS.O,COMS.OP,COMS.CP,COMS.OG,COMS.OD,COMS.OI,COMS.F,COMS.FL,COMS.EG,COMS.EI,COMS.IG,COMS.CC,COMS.D,COMS.DG, COMS.B))
+
+[Proveedor.ListaRefrescar]
+FormaEnvio=Agente
+Almacen=
+VigenteA=CDIQuejasProveedor
+CDIQuejasProveedor=CDISatisfaccionTE
+CDISatisfaccionTE=CDIRechazosMercancia
+CDIRechazosMercancia=CDICalificacion
+CDICalificacion=(Fin)
+
+[Tabla.ListaCampos]
+SecuencialSRIRetencion=CDIFlujoAutorizacion
+CDIFlujoAutorizacion=CDIEstado
+CDIEstado=CDIEstatusCompra
+CDIEstatusCompra=CDIQuejasProveedor
+CDIQuejasProveedor=CDISatisfaccionTE
+CDISatisfaccionTE=CDIRechazosMercancia
+CDIRechazosMercancia=CDICalificacion
+CDICalificacion=CDIPermiteEditar
+CDIPermiteEditar=(Fin)
+
+[Tabla.SQL]
+SucursalOrigen,=SucursalDestino,
+SucursalDestino=
+SucursalDestino,=CDIFlujoAutorizacion,
+CDIFlujoAutorizacion,=CDIEstado,
+CDIEstado,=CDIEstatusCompra,
+CDIEstatusCompra,=CDIQuejasProveedor,
+CDIQuejasProveedor,=CDISatisfaccionTE,
+CDISatisfaccionTE,=CDIRechazosMercancia,
+CDIRechazosMercancia,=CDICalificacion,
+CDICalificacion,=CDIPermiteEditar
+CDIPermiteEditar=FROM Compra
+
+[CDIFlujoAutorizacion]
+Clave=CDIFlujoAutorizacion
+Nombre=CDIFlujoAutorizacion
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[CDIEstado]
+Clave=CDIEstado
+Nombre=CDIEstado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+[CDIEstatusCompra]
+Clave=CDIEstatusCompra
+Nombre=Estatus Compra
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+CondicionDespliege=MovTipo(<T>COMS<T>, Mov) = <T>COMS.D<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+
+[CDIQuejasProveedor]
+Clave=CDIQuejasProveedor
+Nombre=Quejas hacia proveedor
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+FormatoValidacion=0.000
+ValorPorOmision=SQL( <T>EXEC spCDINumeroQuejasProv :tEmpresa1, :tProveedor1<T>, Empresa, Proveedor)
+
+[CDISatisfaccionTE]
+Clave=CDISatisfaccionTE
+Nombre=Satisfacción tiempos de entrega
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+ValorPorOmision=SQL( <T>EXEC spCDINumeroSatisfaccionTE :tEmpresa1, :tProveedor1<T>, Empresa, Proveedor)
+FormatoValidacion=0.000
+
+[CDIRechazosMercancia]
+Clave=CDIRechazosMercancia
+Nombre=Rechazos de mercancía
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+ValorPorOmision=SQL( <T>EXEC spCDIRechazosMercancia :tEmpresa1, :tProveedor1<T>, Empresa, Proveedor)
+FormatoValidacion=0.000
+
+[CDICalificacion]
+Clave=CDICalificacion
+Nombre=Calificación
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+FormatoValidacion=0.00
+ValorPorOmision=SQL( <T>EXEC spCDIReevaluacionCalificacion :tEmpresa1, :tProveedor1, :nID1, :nOperacion<T>, Empresa, Proveedor, 1, 0 ))
+
+[CDIPermiteEditar]
+Clave=CDIPermiteEditar
+Nombre=CDIPermiteEditar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=1
+
+[CDIEstatusCompra.ListaOpciones]
+(Inicio)=Recibido
+Recibido=Programado
+Programado=Pagado
+Pagado=(Fin)

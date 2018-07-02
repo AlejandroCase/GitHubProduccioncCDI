@@ -1,0 +1,810 @@
+[Tabla]
+Icono=0
+Clave=WebPagina
+Archivo=WebPagina
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=(Lista)
+Nombre=Páginas
+Singular=Página
+LlavePrimaria=Pagina
+ControlEstatus=S
+ControlCambios=S
+ControlUsuarios=S
+CampoEstatus=Estatus
+CampoUltimoCambio=UltimoCambio
+CampoUsuario=Usuario
+ControlGrupo=S
+CampoGrupo=Grupo
+ControlTipo=S
+CampoTipo=Tipo
+ControlNivelAcceso=S
+CampoNivelAcceso=NivelAcceso
+EstatusDefault=ALTA
+ListaRelaciones=(Lista)
+CampoSugerido=Pagina
+SQL=SELECT<BR>  Pagina,<BR>  Nombre,<BR>  Descripcion,<BR>  Tipo,<BR>  Categoria,<BR>  Grupo,<BR>  Familia,<BR>  HTML,<BR>  URL,<BR>  Sitio,<BR>  Estatus,<BR>  UltimoCambio,<BR>  Alta,<BR>  NivelAcceso,<BR>  Usuario,<BR>  RequiereAcceso,<BR>  ControlAcceso,<BR>  TieneParametros,<BR>  TipoParametros,<BR>  BlogPermiteCalificar,<BR>  BlogCalificacionTipo,<BR>  PermiteBuscar,<BR>  PermiteFiltrar,<BR>  PermiteOrdenar,<BR>  PermiteSeleccionar,<BR>  PermiteSeleccionarMultiple,<BR>  PermiteAgrupar,<BR>  RegistrosPagina,<BR>  EnviarPDF,<BR>  EnviarXLS,<BR>  EnviarRTF,<BR>  sp,<BR>  spSesionID,<BR>  spOrigen,<BR>  spPagina,<BR>  PermiteInsertar,<BR>  PermiteEliminar,<BR>  PermiteActualizar,<BR>  BotonProcesar,<BR>  CampoNombre,<BR>  CampoValor,<BR>  MostrarValores,<BR>  CampoLatitud,<BR>  CampoLongitud,<BR>  CampoDescripcion,<BR>  TieneDetalle,<BR>  PaginaDetalle,<BR>  CampoLlave,<BR>  LlaveVisible,<BR>  GraficaTipo,<BR>  CampoSerie,<BR>  CampanaTipo,<BR>  Vistas,<BR>  TablaVista,<BR>  BuscarNombres,<BR>  BuscarDescripciones,<BR>  BuscarHTML,<BR>  BuscarOtrosSitios,<BR>  Cubo,<BR>  CapturaIrA,<BR>  ModoVentana,<BR>  Servidor,<BR>  BaseDatos,<BR>  PermiteCrearVistas,<BR>  PermiteEliminarVistas<BR><BR>FROM<BR>  WebPagina
+
+[Pagina]
+Clave=Pagina
+Nombre=Pagina
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+ValorPorOmision=SQL(<T>spVerConsecutivo :tTipo, :nSucursal<T>, <T>WebPagina<T>, Sucursal)
+
+[Nombre]
+Clave=Nombre
+Nombre=Nombre
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[Tipo]
+Clave=Tipo
+Nombre=Tipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=20
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ValorPorOmision=<T>HTML<T>
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Categoria]
+Clave=Categoria
+Nombre=Categoría
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=WebPaginaCat
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+TipoDatos=Texto
+
+[Grupo]
+Clave=Grupo
+Nombre=Grupo
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=WebPaginaGrupo
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+TipoDatos=Texto
+
+[Familia]
+Clave=Familia
+Nombre=Familia
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=WebPaginaFam
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+TipoDatos=Texto
+
+[HTML]
+Clave=HTML
+Nombre=HTML
+Visible=S
+TamanoValidacion=50x3
+TipoDatos=Memo
+
+[URL]
+Clave=URL
+Nombre=URL
+Visible=S
+TamanoValidacion=255
+Tamano=255
+AyudaEnCaptura=Buscar Direccion
+TipoDatos=Texto
+
+[Sitio]
+Clave=Sitio
+Nombre=Sitio
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+CondicionDespliege=Tipo en (<T>Sitio<T>, <T>Documentos<T>)
+AyudaEnCaptura=Vista
+AyudaForma=WebSitioLista
+AyudaVista=WebSitio
+AyudaCampo=WebSitio.Sitio
+ValidacionUsaTabla=S
+ValidacionTablas=WebSitio
+RequeridoActivo=S
+TipoDatos=Texto
+
+[Estatus]
+Clave=Estatus
+Nombre=Estatus
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+Tamano=15
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+ListaOpciones=(Lista)
+OpcionesPredefinidas=Ninguna
+TipoDatos=Texto
+
+[UltimoCambio]
+Clave=UltimoCambio
+Nombre=UltimoCambio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+[Alta]
+Clave=Alta
+Nombre=Alta
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+[NivelAcceso]
+Clave=NivelAcceso
+Nombre=NivelAcceso
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[Usuario]
+Clave=Usuario
+Nombre=Usuario
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+
+[Relaciones.WebSitio]
+TipoRelacion=Opcional
+LlaveLocal=Sitio
+Clave=WebSitio
+TablaRemota=WebSitio
+LlaveRemota=Sitio
+
+[ControlAcceso]
+Clave=ControlAcceso
+Nombre=Control Acceso
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[BlogPermiteCalificar]
+Clave=BlogPermiteCalificar
+Nombre=Permite Calificar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=BlogCalificacionTipo
+
+[BlogCalificacionTipo]
+Clave=BlogCalificacionTipo
+Nombre=Tipo Calificación
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=CalificacionTipo
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+CondicionDespliege=BlogPermiteCalificar
+TipoDatos=Texto
+
+[TieneParametros]
+Clave=TieneParametros
+Nombre=Parametros
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+CondicionEdicion=Tipo noen (<T>Cubo OLAP<T>)
+
+[PermiteBuscar]
+Clave=PermiteBuscar
+Nombre=Permite Buscar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteFiltrar]
+Clave=PermiteFiltrar
+Nombre=Permite Filtrar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteOrdenar]
+Clave=PermiteOrdenar
+Nombre=Permite Ordenar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteSeleccionar]
+Clave=PermiteSeleccionar
+Nombre=Permite Seleccionar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=PermiteSeleccionarMultiple
+
+[PermiteAgrupar]
+Clave=PermiteAgrupar
+Nombre=Permite Agrupar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[RegistrosPagina]
+Clave=RegistrosPagina
+Nombre=Registros Página
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+ValorPorOmision=20
+
+[RequiereAcceso]
+Clave=RequiereAcceso
+Nombre=Requiere Acceso
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[sp]
+Clave=sp
+Nombre=Stored Procedure
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[spSesionID]
+Clave=spSesionID
+Nombre=@SesionID uniqueidentifier
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[spPagina]
+Clave=spPagina
+Nombre=@Pagina varchar(20)
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EnviarPDF]
+Clave=EnviarPDF
+Nombre=Enviar PDF
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EnviarXLS]
+Clave=EnviarXLS
+Nombre=Enviar XLS
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EnviarRTF]
+Clave=EnviarRTF
+Nombre=Enviar RTF
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteInsertar]
+Clave=PermiteInsertar
+Nombre=Permite Insertar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteEliminar]
+Clave=PermiteEliminar
+Nombre=Permite Eliminar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteActualizar]
+Clave=PermiteActualizar
+Nombre=Permite Actualizar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[BotonProcesar]
+Clave=BotonProcesar
+Nombre=Botón Procesar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+CondicionEdicion=Tipo noen (<T>Cubo OLAP<T>)
+
+[PermiteSeleccionarMultiple]
+Clave=PermiteSeleccionarMultiple
+Nombre=Selección Multiple
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionEdicion=PermiteSeleccionar
+ValorPorOmision=Falso
+
+[spOrigen]
+Clave=spOrigen
+Nombre=@Origen varchar(255)
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[TipoParametros]
+Clave=TipoParametros
+Nombre=Tipo Parámetros
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+Tamano=20
+ValorPorOmision=<T>Forma Previa<T>
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionEdicion=TieneParametros
+CondicionDespliege=Tipo noen (<T>Captura<T>, <T>Encuesta<T>)
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[TieneDetalle]
+Clave=TieneDetalle
+Nombre=Tiene Detalle
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+CondicionEdicion=WebPagina:WebPagina.Tipo en (<T>Tabla<T>, <T>Consulta<T>, <T>Consulta Dinamica<T>, <T>Nube<T>, <T>Grafica<T>)
+
+[PaginaDetalle]
+Clave=PaginaDetalle
+Nombre=Página Detalle
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=WebPaginaLista
+AyudaVista=WebPagina
+AyudaCampo=WebPagina.Pagina
+ValidacionUsaTabla=S
+ValidacionTablas=WebPaginaDetalle
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No Puede ser la misma<T>
+ValidacionCondicion=WebPagina:WebPagina.PaginaDetalle<>WebPagina:WebPagina.Pagina
+TipoDatos=Texto
+
+[CampoLlave]
+Clave=CampoLlave
+Nombre=Campo Llave
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[LlaveVisible]
+Clave=LlaveVisible
+Nombre=Llave Visible
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Relaciones.WebPaginaDetalle]
+TipoRelacion=Opcional
+LlaveLocal=PaginaDetalle
+Clave=WebPaginaDetalle
+TablaRemota=WebPaginaDetalle
+LlaveRemota=Pagina
+
+[CampoNombre]
+Clave=CampoNombre
+Nombre=Campo Nombre
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[CampoValor]
+Clave=CampoValor
+Nombre=Campo Valor
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[MostrarValores]
+Clave=MostrarValores
+Nombre=Mostrar Valores
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[CampoLatitud]
+Clave=CampoLatitud
+Nombre=Campo Latitud
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[CampoLongitud]
+Clave=CampoLongitud
+Nombre=Campo Longitud
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[CampoDescripcion]
+Clave=CampoDescripcion
+Nombre=Campo Descripción
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[GraficaTipo]
+Clave=GraficaTipo
+Nombre=Tipo Gráfica
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=20
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+OpcionesUnicamente=S
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[CampanaTipo]
+Clave=CampanaTipo
+Nombre=Tipo Campaña
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=CampanaTipo
+AyudaMemRenglones=12
+AyudaMemOpc=Unicamente opciones listadas
+AyudaMemEnBlanco=S
+TipoDatos=Texto
+
+[CampoSerie]
+Clave=CampoSerie
+Nombre=Campo Serie
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[Vistas]
+Clave=Vistas
+Nombre=Vistas
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+CondicionEdicion=Tipo en (<T>Consulta<T>, <T>Consulta Dinamica<T>)
+RefrescarTotales=S
+
+[TablaVista]
+Clave=TablaVista
+Nombre=Tabla o Vista
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[BuscarNombres]
+Clave=BuscarNombres
+Nombre=Buscar en Nombres
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[BuscarDescripciones]
+Clave=BuscarDescripciones
+Nombre=Buscar en Descripciones
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[BuscarHTML]
+Clave=BuscarHTML
+Nombre=Buscar en HTML
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[BuscarOtrosSitios]
+Clave=BuscarOtrosSitios
+Nombre=Buscar en Otros Sitios
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Cubo]
+Clave=Cubo
+Nombre=Cubo
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[CapturaIrA]
+Clave=CapturaIrA
+Nombre=Ir a (Despues de Aceptar)
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=WebPaginaLista
+AyudaVista=WebPagina
+AyudaCampo=WebPagina.Pagina
+ValidacionUsaTabla=S
+ValidacionTablas=WebPaginaDestino
+TipoDatos=Texto
+
+[Relaciones.WebPaginaDestino]
+TipoRelacion=Opcional
+LlaveLocal=CapturaIrA
+Clave=WebPaginaDestino
+TablaRemota=WebPaginaDestino
+LlaveRemota=Pagina
+
+[ModoVentana]
+Clave=ModoVentana
+Nombre=Modo &Ventana
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Servidor]
+Clave=Servidor
+Nombre=Servidor
+Visible=S
+TamanoValidacion=100
+Tamano=100
+
+[BaseDatos]
+Clave=BaseDatos
+Nombre=Base Datos
+Visible=S
+TamanoValidacion=100
+Tamano=100
+
+[PermiteCrearVistas]
+Clave=PermiteCrearVistas
+Nombre=Crear Vistas
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[PermiteEliminarVistas]
+Clave=PermiteEliminarVistas
+Nombre=Eliminar Vistas
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Tabla.ListaCampos]
+(Inicio)=Pagina
+Pagina=Nombre
+Nombre=Descripcion
+Descripcion=Tipo
+Tipo=Categoria
+Categoria=Grupo
+Grupo=Familia
+Familia=HTML
+HTML=URL
+URL=Sitio
+Sitio=Estatus
+Estatus=UltimoCambio
+UltimoCambio=Alta
+Alta=NivelAcceso
+NivelAcceso=Usuario
+Usuario=RequiereAcceso
+RequiereAcceso=ControlAcceso
+ControlAcceso=TieneParametros
+TieneParametros=TipoParametros
+TipoParametros=BlogPermiteCalificar
+BlogPermiteCalificar=BlogCalificacionTipo
+BlogCalificacionTipo=PermiteBuscar
+PermiteBuscar=PermiteFiltrar
+PermiteFiltrar=PermiteOrdenar
+PermiteOrdenar=PermiteSeleccionar
+PermiteSeleccionar=PermiteSeleccionarMultiple
+PermiteSeleccionarMultiple=PermiteAgrupar
+PermiteAgrupar=RegistrosPagina
+RegistrosPagina=sp
+sp=spSesionID
+spSesionID=spOrigen
+spOrigen=spPagina
+spPagina=EnviarPDF
+EnviarPDF=EnviarXLS
+EnviarXLS=EnviarRTF
+EnviarRTF=PermiteInsertar
+PermiteInsertar=PermiteEliminar
+PermiteEliminar=PermiteActualizar
+PermiteActualizar=BotonProcesar
+BotonProcesar=TieneDetalle
+TieneDetalle=PaginaDetalle
+PaginaDetalle=CampoLlave
+CampoLlave=LlaveVisible
+LlaveVisible=CampoNombre
+CampoNombre=CampoValor
+CampoValor=MostrarValores
+MostrarValores=CampoLatitud
+CampoLatitud=CampoLongitud
+CampoLongitud=CampoDescripcion
+CampoDescripcion=GraficaTipo
+GraficaTipo=CampanaTipo
+CampanaTipo=CampoSerie
+CampoSerie=Vistas
+Vistas=TablaVista
+TablaVista=BuscarNombres
+BuscarNombres=BuscarDescripciones
+BuscarDescripciones=BuscarHTML
+BuscarHTML=BuscarOtrosSitios
+BuscarOtrosSitios=Cubo
+Cubo=CapturaIrA
+CapturaIrA=ModoVentana
+ModoVentana=PermiteCrearVistas
+PermiteCrearVistas=PermiteEliminarVistas
+PermiteEliminarVistas=Servidor
+Servidor=BaseDatos
+BaseDatos=(Fin)
+
+[Tabla.ListaRelaciones]
+(Inicio)=WebSitio
+WebSitio=WebPaginaDetalle
+WebPaginaDetalle=WebPaginaDestino
+WebPaginaDestino=(Fin)
+
+[Tipo.ListaOpciones]
+(Inicio)=HTML
+HTML=Sitio
+Sitio=Captura
+Captura=Encuesta
+Encuesta=Consulta
+Consulta=Consulta Dinamica
+Consulta Dinamica=Tareas
+Tareas=Blog
+Blog=Nube
+Nube=Noticias
+Noticias=Calendario
+Calendario=URL
+URL=URL Externo
+URL Externo=Cubo OLAP
+Cubo OLAP=Mapa
+Mapa=Grafica
+Grafica=Tabla
+Tabla=Busqueda
+Busqueda=Documentos
+Documentos=(Fin)
+
+[Estatus.ListaOpciones]
+(Inicio)=ALTA
+ALTA=BLOQUEADO
+BLOQUEADO=BAJA
+BAJA=(Fin)
+
+[TipoParametros.ListaOpciones]
+(Inicio)=Forma Previa
+Forma Previa=Dinamicos
+Dinamicos=(Fin)
+
+[GraficaTipo.ListaOpciones]
+(Inicio)=Barras
+Barras=Barras Apilado
+Barras Apilado=Barras Apilado 100%
+Barras Apilado 100%=Barras Manhattan
+Barras Manhattan=Puntos
+Puntos=Lineas
+Lineas=Lineas Pasos
+Lineas Pasos=Lineas 3D
+Lineas 3D=Lineas Pasos 3D
+Lineas Pasos 3D=Area
+Area=Area 3D
+Area 3D=Area Apilada
+Area Apilada=Area Apilada 100%
+Area Apilada 100%=Area Apilada 3D
+Area Apilada 3D=Pastel
+Pastel=Pastel 3D
+Pastel 3D=Accion
+Accion=Accion Candil
+Accion Candil=Barras Rango
+Barras Rango=Barras Rango (de Lado)
+Barras Rango (de Lado)=Gantt
+Gantt=Gantt (de Lado)
+Gantt (de Lado)=Radar Puntos
+Radar Puntos=Radar Lineas
+Radar Lineas=Radar Area
+Radar Area=Polar Puntos
+Polar Puntos=Polar Lineas
+Polar Lineas=Polar Area
+Polar Area=(Fin)

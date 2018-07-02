@@ -1,0 +1,70 @@
+[Tabla]
+SQL=(Lista)
+
+[FormaCobro1]
+Formula=SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPago(:tTipo, :tCliente)<T>, Info.FormaPagoTipo, Info.Cliente)<BR>//SQLEnLista(<T>spFormaPago :tTipo<T>, Info.FormaPagoTipo)
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+AlCambiar=Asigna(Temp.Num, 1)
+
+[FormaCobro2]
+Formula=SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPago(:tTipo, :tCliente)<T>, Info.FormaPagoTipo, Info.Cliente)<BR>//SQLEnLista(<T>spFormaPago :tTipo<T>, Info.FormaPagoTipo)
+AlCambiar=Asigna(Temp.Num, 2)
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[FormaCobro3]
+Formula=SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPago(:tTipo, :tCliente)<T>, Info.FormaPagoTipo, Info.Cliente)<BR>//SQLEnLista(<T>spFormaPago :tTipo<T>, Info.FormaPagoTipo)
+AlCambiar=Asigna(Temp.Num, 3)
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[FormaCobro4]
+Formula=SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPago(:tTipo, :tCliente)<T>, Info.FormaPagoTipo, Info.Cliente)<BR>//SQLEnLista(<T>spFormaPago :tTipo<T>, Info.FormaPagoTipo)
+AlCambiar=Asigna(Temp.Num, 4)
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[FormaCobro5]
+Formula=SQLEnLista(<T>SELECT * FROM dbo.fnCDIFormasPago(:tTipo, :tCliente)<T>, Info.FormaPagoTipo, Info.Cliente)<BR>//SQLEnLista(<T>spFormaPago :tTipo<T>, Info.FormaPagoTipo)
+AlCambiar=Asigna(Temp.Num, 5)
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=ID,
+ID,=Importe1,
+Importe1,=Importe2,
+Importe2,=Importe3,
+Importe3,=Importe4,
+Importe4,=Importe5,
+Importe5,=FormaCobro1,
+FormaCobro1,=FormaCobro2,
+FormaCobro2,=FormaCobro3,
+FormaCobro3,=FormaCobro4,
+FormaCobro4,=FormaCobro5,
+FormaCobro5,=Referencia1,
+Referencia1,=Referencia2,
+Referencia2,=Referencia3,
+Referencia3,=Referencia4,
+Referencia4,=Referencia5,
+Referencia5,=Cambio,
+Cambio,=Redondeo,
+Redondeo,=DelEfectivo,
+DelEfectivo,=Sucursal,
+Sucursal,=CtaDinero,
+CtaDinero,=Cajero,
+Cajero,=TotalCobrado,
+TotalCobrado,=SucursalOrigen,
+SucursalOrigen,=Condicion,
+Condicion,=Vencimiento,
+Vencimiento,=Actualizado,
+Actualizado,=Observaciones1,
+Observaciones1,=Observaciones2,
+Observaciones2,=Observaciones3,
+Observaciones3,=Observaciones4,
+Observaciones4,=Observaciones5
+Observaciones5=FROM
+FROM=VentaCobro
+VentaCobro=(Fin)

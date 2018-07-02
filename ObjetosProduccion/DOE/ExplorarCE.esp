@@ -1,0 +1,17 @@
+[ExplorarCE.frm/Forma]
+PosicionInicialIzquierda=181
+PosicionInicialArriba=121
+;VentanaSiempreAlFrente=S
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=Centrado
+VentanaEstadoInicial=Normal
+;VentanaExclusiva=S
+VentanaEscCerrar=S
+
+[ExplorarCE.frm/Lista]
+IconosConPaginas=
+ElementosPorPaginaEsp=
+FiltroGeneral=CE.Empresa=<T>{Empresa}<T>
+ElementosPorPaginaEsp=20000
+
+

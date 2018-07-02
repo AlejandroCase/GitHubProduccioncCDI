@@ -1,0 +1,59 @@
+
+[Tabla]
+Icono=0
+Clave=Vic_ContratoTipoRelacion
+Nombre=Tipos de Relación
+Archivo=vic_ContratoTipoRelacion
+Modulos=(Todos)
+Singular=Tipo de  Relación
+
+TipoTabla=Maestros
+ListaCampos=(Lista)
+
+LlavePrimaria=TipoRelacion
+SQL=(Lista)
+[TipoRelacion]
+Clave=TipoRelacion
+Nombre=Tipo de Relación
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+Requerido=S
+[TipoRelacionmaestra]
+Clave=TipoRelacionmaestra
+Nombre=TipoRelacionmaestra
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[icono]
+Clave=icono
+Nombre=icono
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=TipoRelacion
+TipoRelacion=TipoRelacionmaestra
+TipoRelacionmaestra=icono
+icono=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=TipoRelacion,
+TipoRelacion,=TipoRelacionmaestra,
+TipoRelacionmaestra,=icono
+icono=FROM vic_ContratoTipoRelacion
+FROM vic_ContratoTipoRelacion=(Fin)

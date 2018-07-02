@@ -1,0 +1,57 @@
+
+[Vista]
+Icono=0
+Clave=CDICEPlanFormaPagoTipo
+Nombre=CDICEPlanFormaPagoTipo
+Modulos=(Todos)
+ListaTablas=CDICEPlanFormaPagoTipo
+TablaPrincipal=CDICEPlanFormaPagoTipo
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=(Lista)
+SQL=(Lista)
+[CDICEPlanFormaPagoTipo.CEPlan]
+Clave=CDICEPlanFormaPagoTipo.CEPlan
+Nombre=CEPlan
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ValorPorOmision=Info.Plan
+LigaTabla=CDICEPlanFormaPagoTipo
+LigaCampo=CEPlan
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CEPlan
+
+[CDICEPlanFormaPagoTipo.FormaPagoTipo]
+Clave=CDICEPlanFormaPagoTipo.FormaPagoTipo
+Nombre=Tipo de Forma de Pago
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=FormaPagoTipo
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+LigaTabla=CDICEPlanFormaPagoTipo
+LigaCampo=FormaPagoTipo
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=FormaPagoTipo
+
+[Vista.ListaCampos]
+(Inicio)=CDICEPlanFormaPagoTipo.CEPlan
+CDICEPlanFormaPagoTipo.CEPlan=CDICEPlanFormaPagoTipo.FormaPagoTipo
+CDICEPlanFormaPagoTipo.FormaPagoTipo=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDICEPlanFormaPagoTipo.CEPlan,
+CDICEPlanFormaPagoTipo.CEPlan,=CDICEPlanFormaPagoTipo.FormaPagoTipo
+CDICEPlanFormaPagoTipo.FormaPagoTipo=FROM CDICEPlanFormaPagoTipo
+FROM CDICEPlanFormaPagoTipo=(Fin)

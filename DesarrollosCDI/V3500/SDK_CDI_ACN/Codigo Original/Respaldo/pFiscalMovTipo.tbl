@@ -1,0 +1,55 @@
+[Tabla]
+Icono=0
+Clave=pFiscalMovTipo
+Archivo=pFiscalMovTipo
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=(Lista)
+Nombre=Tipos Movimientos
+Singular=Tipo Movimiento
+LlavePrimaria=Modulo<BR>Mov
+ControlMov=S
+CampoMov=Mov
+SQL=SELECT<BR>  Modulo,<BR>  Mov,<BR>  Clave,<BR>  AfectarFiscal<BR><BR>FROM<BR>  pFiscalMovTipo
+
+[Modulo]
+Clave=Modulo
+Nombre=Modulo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+
+[Mov]
+Clave=Mov
+Nombre=Movimiento
+Visible=S
+TamanoValidacion=20
+Tamano=20
+
+[Clave]
+Clave=Clave
+Nombre=Clave
+Visible=S
+TamanoValidacion=20
+Tamano=20
+
+[AfectarFiscal]
+Clave=AfectarFiscal
+Nombre=Afectar Fiscal
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+Formula=<T>No<T>+NuevaLinea+SQLEnLista(<T>SELECT Mov FROM pFiscalMov WHERE Mov<>:tCxp ORDER BY Orden<T>, <T>Impuestos por Pagar<T>)+NuevaLinea+<T>Ingresos/Egreso<T>
+
+[Tabla.ListaCampos]
+(Inicio)=Modulo
+Modulo=Mov
+Mov=Clave
+Clave=AfectarFiscal
+AfectarFiscal=(Fin)

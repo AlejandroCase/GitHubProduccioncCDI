@@ -1,0 +1,32 @@
+[Dialogo]
+Clave=MenuCfgProd
+Nombre=Producción
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=Causa
+PosicionInicialIzquierda=262
+PosicionInicialArriba=322
+PosicionInicialAlturaCliente=90
+PosicionInicialAncho=270
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+
+[Acciones.Causa]
+Nombre=Causa
+Boton=0
+NombreDesplegar=Causas (Tiempos Muertos)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=Causa
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>PROD<T>)<BR>Asigna(Info.Descripcion, <T>Producción<T>)
+Visible=S

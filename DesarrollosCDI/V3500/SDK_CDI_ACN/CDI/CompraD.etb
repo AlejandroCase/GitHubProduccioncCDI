@@ -1,0 +1,51 @@
+[Aplica]
+CondicionDespliege=(MovTipoEn(<T>COMS<T>,Compra:Compra.Mov, (COMS.R,COMS.O,COMS.OP,COMS.CP,COMS.OG,COMS.OD,COMS.OI)) o MovTipoEn(<T>COMS<T>,Compra:Compra.Mov, (COMS.C, COMS.F, COMS.FL, COMS.EG, COMS.EI, COMS.IG, COMS.D, COMS.DG, COMS.CC, COMS.B))) y (no Compra:Compra.Directo) y (Compra:Compra.Estatus en (EstatusSinAfectar, EstatusPorConfirmar))
+
+[AplicaID]
+CondicionDespliege=(MovTipoEn(<T>COMS<T>,Compra:Compra.Mov, (COMS.R,COMS.O,COMS.OP,COMS.CP,COMS.OG,COMS.OD,COMS.OI)) o MovTipoEn(<T>COMS<T>,Compra:Compra.Mov, (COMS.C, COMS.F, COMS.FL, COMS.EG, COMS.EI, COMS.IG, COMS.D, COMS.DG, COMS.CC, COMS.B))) y (no Compra:Compra.Directo) y (Compra:Compra.Estatus en (EstatusSinAfectar, EstatusPorConfirmar))
+
+[ClavePresupuestal]
+AyudaForma=CDIClavePresupuestalProyLista
+AyudaVista=CDIClavePresupuestalProyLista
+AyudaBusquedaRapida=Asigna(Info.ObjetoGasto, CompraD:Art.ObjetoGasto)<BR>Asigna(Info.Proyecto,Compra:Compra.Proyecto)
+ValorPorOmision=SQL( <T>SELECT dbo.fnCDICP (:tArt1, :tCla1, :tCon1, :tProy1, :tModulo1)<T>, Articulo, <T><T>, <T><T>,Compra:Compra.Proyecto, <T>COMS<T> )
+ValorRefrescar=SQL( <T>SELECT dbo.fnCDICP (:tArt1, :tCla1, :tCon1, :tProy1, :tModulo1)<T>, Articulo, <T><T>, <T><T>,Compra:Compra.Proyecto, <T>COMS<T> )
+CondicionEdicion=(Compra:Compra.Estatus en (EstatusSinAfectar))
+
+[Articulo.ListaRefrescar]
+ContUso3=ClavePresupuestal
+ClavePresupuestal=(Fin)
+
+[Tabla.ListaCampos]
+Impuesto5=CDIAutorizaCompra
+CDIAutorizaCompra=(Fin)
+
+[Tabla.SQL]
+TipoRetencion3,=TipoComprobante,
+SucursalOrigen,=TipoImpuesto5,
+CostoReposicion,=SucursalOrigen,
+FechaContableMov,=CostoPromedio,
+TipoImpuesto5,=Impuesto5,
+Impuesto5=
+FROM=
+CompraD=
+Impuesto5,=CDIAutorizaCompra
+CDIAutorizaCompra=FROM CompraD
+FROM CompraD=(Fin)
+
+[CDIAutorizaCompra]
+Clave=CDIAutorizaCompra
+Nombre=Autoriza Compra
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Si - No
+CondicionDespliege=MovTipo(<T>COMS<T>, Compra:Compra.Mov)=COMS.C
+RequeridoActivo=S
+CondicionEdicion=Usuario.AutorizarCompra
+ValorPorOmision=<T>No<T>

@@ -1,0 +1,33 @@
+
+[Dialogo]
+Clave=MenuAltaSoc
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=AltaSocio
+[Acciones.AltaSocio.Exp]
+Nombre=Exp
+Boton=0
+TipoAccion=expresion
+Activo=S
+Visible=S
+
+Expresion=FormaPos(<T>SOC<T>,info.id)
+[Acciones.AltaSocio]
+Nombre=AltaSocio
+Boton=0
+NombreDesplegar=&Alta Socio
+Multiple=S
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=formas
+ListaAccionesMultiples=Exp
+Activo=S
+Visible=S

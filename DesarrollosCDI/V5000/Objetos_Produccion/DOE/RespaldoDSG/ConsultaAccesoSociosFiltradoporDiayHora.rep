@@ -1,0 +1,728 @@
+
+[Reporte]
+Clave=ConsultaAccesoSociosFiltradoporDiayHora
+Nombre=Acceso Socios por Día y Hora
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+BarraHerramientas=S
+OtroOrden=S
+ListaOrden=(Lista)
+ConFormaPrevia=S
+FormaPrevia=CDIACCESODIAHORA
+PosicionInicialAlturaCliente=716
+PosicionInicialAncho=1382
+PreliminarColores=S
+Submenu=Asistencias
+ListaAcciones=(Lista)
+[Vista]
+Icono=0
+Clave=ConsultaAccesoSociosFiltradoporDiayHora
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=ConsultaAccesoSociosFiltradoporDiayHora <T>{Info.FechaD}<T>,<T>{Info.FechaA}<T>,<T>{Info.CDIHoraD}<T>,<T>{Info.CDIHoraA}<T>
+[FechaEmision]
+Clave=FechaEmision
+Nombre=FechaEmision
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=FechaEmision
+
+[HoraRegistro]
+Clave=HoraRegistro
+Nombre=HoraRegistro
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+ClaveBDE=HoraRegistro
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=Socio
+
+[PersonalNombres]
+Clave=PersonalNombres
+Nombre=PersonalNombres
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=PersonalNombres
+
+[PersonalApellidoPaterno]
+Clave=PersonalApellidoPaterno
+Nombre=PersonalApellidoPaterno
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=PersonalApellidoPaterno
+
+[PersonalApellidoMaterno]
+Clave=PersonalApellidoMaterno
+Nombre=PersonalApellidoMaterno
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=PersonalApellidoMaterno
+
+[Vista.ListaCampos]
+(Inicio)=FechaEmision
+FechaEmision=HoraRegistro
+HoraRegistro=Socio
+Socio=PersonalNombres
+PersonalNombres=PersonalApellidoPaterno
+PersonalApellidoPaterno=PersonalApellidoMaterno
+PersonalApellidoMaterno=(Fin)
+
+
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Título<BR>Título<BR>Título<BR>Inicio: FechaEmision<BR>Detalle
+
+VentanaIzquierda=0
+VentanaArriba=7
+VentanaAltura=754
+VentanaAncho=1382
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=2.5
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial Black, 16, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=3
+[Linea3]
+Clave=Título
+Seccion=Título
+AltoEnCm=1
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial Black, 16, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=3
+[Linea4]
+Clave=Título
+Seccion=Título
+AltoEnCm=0.39
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=2
+[Linea5]
+Clave=Título
+Seccion=Título
+Grupo=
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=0
+BordeAbajo=N
+EstiloAbajo=0
+[Linea6]
+Clave=Inicio: FechaEmision
+Objetos=6
+Seccion=Inicio Grupo
+Grupo=FechaEmision
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 11, Negro, [Negritas]}
+AVertical=Centrado
+
+Marco=N
+EstiloMarco=0
+
+BordeAbajo=S
+EstiloAbajo=1
+[A6]
+Celda=A6
+Alineacion=Izquierda
+AnchoEnCm=0.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+Marco=N
+EstiloMarco=0
+EstiloAbajo=1
+[B6]
+Celda=B6
+Alineacion=Derecha
+AnchoEnCm=5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Fecha de Registro: <T>
+
+
+Marco=N
+EstiloMarco=0
+
+
+
+
+BordeAbajo=S
+EstiloAbajo=1
+[C6]
+Celda=C6
+Alineacion=Centrado
+AnchoEnCm=5
+AnchoTexto=5
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=FechaEmision
+
+BordeAbajo=S
+EstiloAbajo=1
+[D6]
+Celda=D6
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+BordeAbajo=S
+EstiloAbajo=1
+[E6]
+Celda=E6
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+BordeAbajo=S
+EstiloAbajo=1
+[F6]
+Celda=F6
+Alineacion=Izquierda
+AnchoEnCm=2.11
+AnchoTexto=11
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+BordeAbajo=S
+EstiloAbajo=1
+
+
+[A3]
+Celda=A3
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B3]
+Celda=B3
+Alineacion=Centrado
+AnchoEnCm=12.61
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Accesos por Dia y Hora<T>
+
+[C3]
+Celda=C3
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+
+[A4]
+Celda=A4
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B4]
+Celda=B4
+Alineacion=Centrado
+AnchoEnCm=12.61
+AnchoTexto=68
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Del día: <T> +  Info.FechaD+ <T> Al <T> + Info.FechaA  + <T>  De las: <T> + Info.CDIHoraD + <T> a <BR>las <T> + Info.CDIHoraA + <T> Horas<T>
+
+
+
+
+
+
+
+
+[Linea7]
+Clave=Detalle
+Objetos=8
+Seccion=Detalle
+AltoEnCm=0.4
+Renglones=1
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A7]
+Celda=A7
+Alineacion=Izquierda
+AnchoEnCm=0.5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B7]
+Celda=B7
+Alineacion=Derecha
+AnchoEnCm=1
+AnchoTexto=16
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Hora: <T>
+
+[C7]
+Celda=C7
+Alineacion=Centrado
+AnchoEnCm=3
+AnchoTexto=14
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=HoraRegistro
+
+[D7]
+Celda=D7
+Alineacion=Derecha
+AnchoEnCm=1.61
+AnchoTexto=16
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Socio: <T>
+
+[E7]
+Celda=E7
+Alineacion=Izquierda
+AnchoEnCm=1.5
+AnchoTexto=9
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Socio
+
+[F7]
+Celda=F7
+Alineacion=Centrado
+AnchoEnCm=5
+AnchoTexto=24
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=PersonalNombres
+
+[G7]
+Celda=G7
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=PersonalApellidoPaterno
+
+[H7]
+Celda=H7
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=5
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=PersonalApellidoMaterno
+
+
+
+
+
+
+
+
+
+
+[A2]
+Celda=A2
+Alineacion=Izquierda
+AnchoEnCm=2.5
+AnchoTexto=27
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Logo CDI Integra.bmp
+
+[B2]
+Celda=B2
+Alineacion=Centrado
+AnchoEnCm=13.61
+AnchoTexto=73
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+[C2]
+Celda=C2
+Alineacion=Izquierda
+AnchoEnCm=2.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial Black, 16, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+
+
+
+[Acciones.Imprimir]
+Nombre=Imprimir
+Boton=4
+NombreEnBoton=S
+NombreDesplegar=&Imprimir
+EnBarraHerramientas=S
+TipoAccion=Reportes Impresora
+ClaveAccion=ConsultaAccesoSociosFiltradoporDiayHora
+Activo=S
+Visible=S
+
+
+[Acciones.Excel]
+Nombre=Excel
+Boton=67
+NombreEnBoton=S
+NombreDesplegar=&Excel
+EnBarraHerramientas=S
+TipoAccion=Reportes Excel
+ClaveAccion=ConsultaAccesoSociosFiltradoporDiayHora
+Activo=S
+Visible=S
+
+[Reporte.ListaOrden]
+(Inicio)=FechaEmision	(Acendente)
+FechaEmision	(Acendente)=HoraRegistro	(Acendente)
+HoraRegistro	(Acendente)=Socio	(Acendente)
+Socio	(Acendente)=(Fin)
+
+[Reporte.ListaAcciones]
+(Inicio)=Imprimir
+Imprimir=Excel
+Excel=(Fin)

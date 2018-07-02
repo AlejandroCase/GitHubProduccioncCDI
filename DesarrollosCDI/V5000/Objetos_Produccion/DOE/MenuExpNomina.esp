@@ -1,0 +1,15 @@
+[MenuExpNomina.dlg/Acciones.MovsPersonal]
+Nombre=MovsPersonal
+Boton=0
+NombreDesplegar=Movimientos Personal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIMovsNomina
+Activo=S
+Visible=S
+
+[MenuExpNomina.dlg/Dialogo.ListaAcciones]
+;(Inicio)=ExplorarNominaConcepto
+ExplorarNominaConcepto=MovsPersonal
+MovsPersonal=(Fin)

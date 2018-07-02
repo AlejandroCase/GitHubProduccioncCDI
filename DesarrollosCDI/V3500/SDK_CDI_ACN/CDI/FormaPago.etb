@@ -1,0 +1,47 @@
+[Tabla]
+SQL=(Lista)
+
+[Tabla.ListaCampos]
+Importacion=CDICargoAutom
+CDICargoAutom=CDIPorDefault
+CDIPorDefault=(Fin)
+
+[CDICargoAutom]
+Clave=CDICargoAutom
+Nombre=Cargo Automático
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[CDIPorDefault]
+Clave=CDIPorDefault
+Nombre=Por Omisión
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=FormaPago,
+FormaPago,=MovIngresos,
+MovIngresos,=MovEgresos,
+MovEgresos,=Comision,
+Comision,=Comision2,
+Comision2,=Impuestos,
+Impuestos,=Moneda,
+Moneda,=RequiereReferencia,
+RequiereReferencia,=Orden,
+Orden,=Restringida,
+Restringida,=PermiteCambio,
+PermiteCambio,=PV,
+PV,=TarjetaBandaMagnetica,
+TarjetaBandaMagnetica,=Cuenta,
+Cuenta,=Grupo,
+Grupo,=DefCtaDinero,
+DefCtaDinero,=Importacion,
+Importacion,=CDICargoAutom,
+CDICargoAutom,=CDIPorDefault
+CDIPorDefault=FROM FormaPago
+FROM FormaPago=(Fin)

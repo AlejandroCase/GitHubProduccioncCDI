@@ -1,0 +1,16 @@
+[CDIMenuConfigCasilleros.dlg/Dialogo.ListaAcciones]
+Config=CasillerosVCDI
+CasillerosVCDI=(Fin)
+
+[CDIMenuConfigCasilleros.dlg/Acciones.CasillerosVCDI]
+Nombre=CasillerosVCDI
+Boton=0
+NombreDesplegar=Gestión Casilleros
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDICasilleros
+Activo=S
+Visible=S
+[CDIArtCargosRecurrentes.frm/Lista]
+PermiteEditar=

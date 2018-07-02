@@ -1,0 +1,22 @@
+[Tabla]
+LlavePrimaria=(Lista)
+SQL=(Lista)
+
+[Expresion]
+AyudaExpresionesForma=Caso Info.Modulo<BR>  Es <T>VTAS<T>  Entonces <T>Venta<T><BR>  Es <T>AF<T>    Entonces <T>ActivoFijo<T><BR>  Es <T>AGENT<T> Entonces <T>Agent<T><BR>  Es <T>ASIS<T>  Entonces <T>Asiste<T><BR>  Es <T>CAM<T>   Entonces <T>Cambio<T><BR>  Es <T>CAP<T>   Entonces <T>Capital<T><BR>  Es <T>COMS<T>  Entonces <T>Compra<T><BR>  Es <T>CONT<T>  Entonces <T>Cont<T><BR>  Es <T>CR<T>    Entonces <T>CR<T><BR>  Es <T>CXC<T>   Entonces <T>Cxc<T><BR>  Es <T>CXP<T>   Entonces <T>Cxp<T><BR>  Es <T>DIN<T>   Entonces <T>Dinero<T><BR>  Es <T>EMB<T>   Entonces <T>Embarque<T><BR>  Es <T>GAS<T>   Entonces <T>Gasto<T><BR>  Es <T>INV<T>   Entonces <T>Inv<T><BR>  Es <T>NOM<T>   Entonces <T>Nomina<T><BR>  Es <T>PC<T>    Entonces <T>PC<T><BR>  Es <T>PROD<T>  Entonces <T>Prod<T><BR>  Es <T>RH<T>    Entonces <T>RH<T><BR>  Es <T>ST<T>    Entonces <T>Soporte<T><BR>  Es <T>VALE<T>  Entonces <T>Vale<T><BR>  Es <T>VTAS<T>  Entonces <T>Venta<T><BR>  Es <T>CREDI<T> Entonces <T>Credito<T><BR>  Es <T>SOC<T>   Entonces <T>Socios<T><BR>Sino<BR>  Info.Forma<BR>Fin
+TipoDatos=Texto
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=ID,
+ID,=Renglon,
+Renglon,=Referencia,
+Referencia,=Expresion
+Expresion=FROM
+FROM=PlantillaOfficeD
+PlantillaOfficeD=(Fin)
+
+[Tabla.LlavePrimaria]
+(Inicio)=ID
+ID=Renglon
+Renglon=(Fin)

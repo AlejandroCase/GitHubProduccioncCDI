@@ -1,0 +1,41 @@
+[Lista]
+BusquedaActualizacionManual=S
+
+[Lista.Cxc.FechaEmision]
+ColorFuente=
+
+[Lista.Cxc.Referencia]
+ColorFuente=
+
+[Lista.Cxc.Cliente]
+ColorFuente=
+
+[Lista.Cte.Nombre]
+ColorFuente=
+
+[Lista.Cxc.FormaCobro]
+ColorFuente=
+
+[Lista.Cxc.CtaDinero]
+ColorFuente=
+
+[Lista.ImporteTotal]
+ColorFuente=
+
+[Lista.Cxc.PersonalCobrador]
+ColorFuente=
+
+[Forma.ListaAcciones]
+Mostrar Campos=Refrescar
+Refrescar=(Fin)
+
+[Acciones.Refrescar]
+Nombre=Refrescar
+Boton=82
+NombreDesplegar=&Refrescar
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Activo=S
+Visible=S

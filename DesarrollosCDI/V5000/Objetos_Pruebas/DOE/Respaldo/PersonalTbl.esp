@@ -1,0 +1,463 @@
+[Personal.Tbl/Tabla]
+SQL=(Lista)
+
+
+[Personal.Tbl/TipoContrato]
+AyudaMemOpc=Validar captura en la lista
+AyudaEnCaptura=Expresion
+AyudaRefrescar=S
+Formula=SQLEnLista(<T>SELECT Tipo FROM NominaContratoTipo<T>)
+
+[Personal.Tbl/Jornada]
+AyudaMemTabla=
+AyudaMemOpc=Validar captura en la lista
+AyudaEnCaptura=Expresion
+AyudaRefrescar=S
+AyudaMemEnBlanco=S
+Formula=SQLEnLista(<T>SELECT Jornada FROM Jornada<T>)
+
+[Personal.Tbl/Colonia]
+AyudaForma=SATDireccionFiscal
+AyudaVista=SATDireccionFiscal
+AyudaCampo=SATColoniaDescripcion
+AyudaBusquedaRapida=Si(ConDatos(CodigoPostal), Asigna(Info.CodigoPostal, CodigoPostal), Asigna(Info.CodigoPostal, Nulo))
+ConAyudaBusquedaRapida=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ValidacionCondicion=Si(SQL(<T>SELECT ClavePais FROM SATPais WHERE Descripcion=:tPais<T>, Pais) = <T>MEX<T>, SQL(<T>SELECT 1 FROM SATColonia WHERE Descripcion=:tDesc<T>, Colonia) > 0, 1=1)
+
+[Personal.Tbl/Poblacion]
+ValorRefrescar=Si(Info.Copiar,  Asigna(Info.Copiar, Falso) Info.Localidad, Poblacion)
+AyudaEnCaptura=Vista
+AyudaForma=SATDireccionFiscal
+AyudaVista=SATDireccionFiscal
+AyudaCampo=SATLocalidadDescripcion
+AyudaBusquedaRapida=Si(ConDatos(CodigoPostal), Asigna(Info.CodigoPostal, CodigoPostal), Asigna(Info.CodigoPostal, Nulo))
+ConAyudaBusquedaRapida=S
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ValidacionCondicion=Si(SQL(<T>SELECT ClavePais FROM SATPais WHERE Descripcion=:tPais<T>, Pais) = <T>MEX<T>, SQL(<T>SELECT 1 FROM SATLocalidad WHERE Descripcion=:tDesc<T>, Poblacion) > 0, 1=1)
+
+[Personal.Tbl/Estado]
+Visible=
+AyudaEnCaptura=Vista
+AyudaMemRenglones=
+AyudaMemOpc=
+AyudaMemTabla=
+AyudaForma=SATEstadoLista
+AyudaVista=SATEstado
+AyudaCampo=SATEstadoDescripcion
+AyudaBusquedaRapida=Asigna(Info.Pais, SQL(<T>SELECT ClavePais FROM SATPais WHERE Descripcion =:tPais<T>, Pais))
+ConAyudaBusquedaRapida=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValidacionCondicion=Si(SQL(<T>SELECT 1 FROM SATEstado e JOIN SATPais p ON e.ClavePais = p.ClavePais WHERE p.Descripcion = :tPais<T>, Pais) = 1, SQL(<T>SELECT 1 FROM SATEstado WHERE Descripcion=:tDesc<T>, Estado) > 0, 1=1)
+AyudaRefrescar=S
+
+[Personal.Tbl/Pais]
+OpcionesColumnas=
+OpcionesRenglones=
+AyudaEnCaptura=Expresion
+OpcionesPredefinidas=
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValidacionCondicion=SQL(<T>SELECT 1 FROM SATPais WHERE Descripcion=:tDesc<T>, Pais) > 0
+Formula=SQLEnLista(<T>SELECT Descripcion FROM SATPais ORDER BY Descripcion<T>)
+
+[Personal.Tbl/CodigoPostal]
+AyudaForma=SATDireccionFiscal
+AyudaVista=SATDireccionFiscal
+AyudaCampo=ClaveCP
+AyudaBusquedaRapida=Asigna(Info.CodigoPostal, Nulo)
+ConAyudaBusquedaRapida=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ValidacionCondicion=Si(SQL(<T>SELECT ClavePais FROM SATPais WHERE Descripcion=:tPais<T>, Pais) = <T>MEX<T>, SQL(<T>SELECT 1 FROM SATCatCP WHERE ClaveCP=:tCodigoPostal<T>, CodigoPostal) > 0, 1=1)
+
+[Personal.Tbl/Registro]
+ValorRefrescar=Si((ConDatos(FechaNacimiento) y ConDatos(Sexo) y ConDatos(LugarNacimiento)), SQL(<T>spRegistroSugerir :tCual, :tRegistro, :tNombre, :tPaterno, :tMaterno, :fNacimiento, :tSexo, :tLugarNacimiento<T>, <T>CURP<T>, Registro, Nombre, ApellidoPaterno, ApellidoMaterno, FechaNacimiento,Sexo, LugarNacimiento))
+
+[Personal.Tbl/SueldoDiario]
+
+[Personal.Tbl/Delegacion]
+AyudaForma=SATDireccionFiscal
+AyudaVista=SATDireccionFiscal
+AyudaCampo=SATMunicipioDescripcion
+AyudaBusquedaRapida=Si(ConDatos(CodigoPostal), Asigna(Info.CodigoPostal, CodigoPostal), Asigna(Info.CodigoPostal, Nulo))
+ConAyudaBusquedaRapida=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ValidacionCondicion=Si(SQL(<T>SELECT ClavePais FROM SATPais WHERE Descripcion=:tPais<T>, Pais) = <T>MEX<T>, SQL(<T>SELECT 1 FROM SATMunicipio WHERE Descripcion=:tDesc<T>, Delegacion) > 0, 1=1)
+
+[Personal.Tbl/Contrasena]
+Nombre=Contraseña (Internet)
+
+[Personal.Tbl/Colonia.ListaRefrescar]
+Pais=Poblacion
+Poblacion=(Fin)
+
+[Personal.Tbl/CodigoPostal.ListaRefrescar]
+Pais=Poblacion
+Poblacion=(Fin)
+
+[Personal.Tbl/Delegacion.ListaRefrescar]
+Pais=Poblacion
+Poblacion=(Fin)
+
+[Personal.Tbl/Relaciones.CtaSituacion.LlaveLocal]
+(Inicio)={Comillas('RH')}
+{Comillas(<T>RH<T>)}=
+{Comillas('RH')}=Situacion
+
+[Personal.Tbl/MapaPrecision]
+OpcionesColumnas=
+OpcionesRenglones=
+
+[Personal.Tbl/Plano]
+OpcionesColumnas=
+OpcionesRenglones=
+
+[Personal.Tbl/Tabla.ListaCampos]
+MES=NIPCDI
+NIPCDI=SueldoDiarioAsimilable
+SueldoDiarioAsimilable=ChecadaLibre
+ChecadaLibre=ChecarConTeclado
+ChecarConTeclado=ChecadaLibreFechaA
+ChecadaLibreFechaA=ChecadaLibreFechaD
+ChecadaLibreFechaD=CDIPerImagen
+CDIPerImagen=SubContratacionRfcLabora
+SubContratacionRfcLabora=SubContratacionPorcentajeTiem
+SubContratacionPorcentajeTiem=SubContratacionRfcLabora2
+SubContratacionRfcLabora2=SubContratacionPorcentajeTiem2
+SubContratacionPorcentajeTiem2=SubContratacionRfcLabora3
+SubContratacionRfcLabora3=SubContratacionPorcentajeTiem3
+SubContratacionPorcentajeTiem3=NominaProrrateo
+NominaProrrateo=ReferenciaIntelisisService
+ReferenciaIntelisisService=(Fin)
+
+[Personal.Tbl/ContactoTipo]
+Clave=ContactoTipo
+Nombre=Contacto Tipo
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=20
+UnicamenteLectura=S
+
+[Personal.Tbl/ReferenciaIntelisisService]
+Clave=ReferenciaIntelisisService
+Nombre=Referencia Intelisis Service
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Expresion
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+Formula=Caso SQL(<T>SELECT PlantaSucEmpresa FROM Version<T>)<BR>  Es <T>Empresa<T> Entonces SQLEnLista(<T>SELECT DISTINCT ReferenciaIntelisisService FROM Empresa<T>)<BR>  Es <T>Sucursal<T>Entonces SQLEnLista(<T>SELECT DISTINCT ReferenciaIntelisisService FROM Sucursal<T>)<BR>Fin<BR>
+
+[Personal.Tbl/NominaProrrateo]
+Clave=NominaProrrateo
+Nombre=Prorrateo
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+Formula=SQLEnLista(<T>SELECT Prorrateo FROM NominaProrrateo<T>)
+
+[Personal.Tbl/Estado.ListaRefrescar]
+(Inicio)=Colonia
+Colonia=Delegacion
+Delegacion=Pais
+Pais=CodigoPostal
+CodigoPostal=Poblacion
+Poblacion=(Fin)
+
+[Personal.Tbl/Pais.ListaRefrescar]
+(Inicio)=Colonia
+Colonia=Delegacion
+Delegacion=Estado
+Estado=CodigoPostal
+CodigoPostal=Poblacion
+Poblacion=(Fin)
+
+[Personal.Tbl/Poblacion.ListaRefrescar]
+(Inicio)=Colonia
+Colonia=Delegacion
+Delegacion=Estado
+Estado=Pais
+Pais=CodigoPostal
+CodigoPostal=(Fin)
+
+[Personal.Tbl/SubContratacionRfcLabora]
+Clave=SubContratacionRfcLabora
+Nombre=RFC Labora Subcontratacion
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+Mayusculas=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Incorrecto<T>
+ValidacionCondicion=SQL(<T>spRegistroOk :tCual, :tRegistro, :tEmpresa<T>, <T>RFC<T>, SubContratacionRfcLabora, Empresa)
+
+[Personal.Tbl/SueldoDiarioAsimilable]
+Clave=SueldoDiarioAsimilable
+Nombre=SueldoDiarioAsimilable
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+
+[Personal.Tbl/SubContratacionPorcentajeTiem]
+Clave=SubContratacionPorcentajeTiem
+Nombre=Porcentaje Tiempo Subcontratacion
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[Personal.Tbl/SubContratacionRfcLabora2]
+Clave=SubContratacionRfcLabora2
+Nombre=RFC Labora Subcontratacion 2
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+Mayusculas=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Incorrecto<T>
+ValidacionCondicion=SQL(<T>spRegistroOk :tCual, :tRegistro, :tEmpresa<T>, <T>RFC<T>, SubContratacionRfcLabora2, Empresa)
+
+[Personal.Tbl/SubContratacionPorcentajeTiem2]
+Clave=SubContratacionPorcentajeTiem2
+Nombre=Porcentaje Tiempo Subcontratacion 2
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[Personal.Tbl/SubContratacionRfcLabora3]
+Clave=SubContratacionRfcLabora3
+Nombre=RFC Labora Subcontratacion 3
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+Mayusculas=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Incorrecto<T>
+ValidacionCondicion=SQL(<T>spRegistroOk :tCual, :tRegistro, :tEmpresa<T>, <T>RFC<T>, SubContratacionRfcLabora3, Empresa)
+
+[Personal.Tbl/SubContratacionPorcentajeTiem3]
+Clave=SubContratacionPorcentajeTiem3
+Nombre=Porcentaje Tiempo Subcontratacion 3
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[Personal.Tbl/Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Personal,
+Personal,=ApellidoPaterno,
+ApellidoPaterno,=ApellidoMaterno,
+ApellidoMaterno,=Nombre,
+Nombre,=Tipo,
+Tipo,=Direccion,
+Direccion,=DireccionNumero,
+DireccionNumero,=DireccionNumeroInt,
+DireccionNumeroInt,=Colonia,
+Colonia,=Delegacion,
+Delegacion,=Poblacion,
+Poblacion,=Estado,
+Estado,=Pais,
+Pais,=CodigoPostal,
+CodigoPostal,=Telefono,
+Telefono,=eMail,
+eMail,=eMailAuto,
+eMailAuto,=ZonaEconomica,
+ZonaEconomica,=Registro,
+Registro,=Registro2,
+Registro2,=Registro3,
+Registro3,=Registro4,
+Registro4,=FormaPago,
+FormaPago,=CtaDinero,
+CtaDinero,=Afore,
+Afore,=PersonalSucursal,
+PersonalSucursal,=PersonalCuenta,
+PersonalCuenta,=FechaNacimiento,
+FechaNacimiento,=LugarNacimiento,
+LugarNacimiento,=Nacionalidad,
+Nacionalidad,=Pasaporte,
+Pasaporte,=Cartilla,
+Cartilla,=Permiso,
+Permiso,=NivelAcademico,
+NivelAcademico,=Sexo,
+Sexo,=EstadoCivil,
+EstadoCivil,=Hijos,
+Hijos,=Dependientes,
+Dependientes,=Beneficiario,
+Beneficiario,=BeneficiarioNacimiento,
+BeneficiarioNacimiento,=Parentesco,
+Parentesco,=Porcentaje,
+Porcentaje,=Beneficiario2,
+Beneficiario2,=Beneficiario2Nacimiento,
+Beneficiario2Nacimiento,=Parentesco2,
+Parentesco2,=Porcentaje2,
+Porcentaje2,=Beneficiario3,
+Beneficiario3,=Beneficiario3Nacimiento,
+Beneficiario3Nacimiento,=Parentesco3,
+Parentesco3,=Porcentaje3,
+Porcentaje3,=Beneficiario4,
+Beneficiario4,=Beneficiario4Nacimiento,
+Beneficiario4Nacimiento,=Parentesco4,
+Parentesco4,=Porcentaje4,
+Porcentaje4,=Beneficiario5,
+Beneficiario5,=Beneficiario5Nacimiento,
+Beneficiario5Nacimiento,=Parentesco5,
+Parentesco5,=Porcentaje5,
+Porcentaje5,=Beneficiario6,
+Beneficiario6,=Beneficiario6Nacimiento,
+Beneficiario6Nacimiento,=Parentesco6,
+Parentesco6,=Porcentaje6,
+Porcentaje6,=Beneficiario7,
+Beneficiario7,=Beneficiario7Nacimiento,
+Beneficiario7Nacimiento,=Parentesco7,
+Parentesco7,=Porcentaje7,
+Porcentaje7,=Beneficiario8,
+Beneficiario8,=Beneficiario8Nacimiento,
+Beneficiario8Nacimiento,=Parentesco8,
+Parentesco8,=Porcentaje8,
+Porcentaje8,=Valuacion,
+Valuacion,=Padre,
+Padre,=Madre,
+Madre,=UnidadMedica,
+UnidadMedica,=CentroCostos,
+CentroCostos,=ReportaA,
+ReportaA,=AspiraSueldo,
+AspiraSueldo,=AspiraCategoria,
+AspiraCategoria,=AspiraDepartamento,
+AspiraDepartamento,=AspiraGrupo,
+AspiraGrupo,=AspiraPuesto,
+AspiraPuesto,=AspiraFecha,
+AspiraFecha,=Categoria,
+Categoria,=Departamento,
+Departamento,=Grupo,
+Grupo,=Puesto,
+Puesto,=TipoContrato,
+TipoContrato,=PeriodoTipo,
+PeriodoTipo,=Jornada,
+Jornada,=TipoSueldo,
+TipoSueldo,=Moneda,
+Moneda,=DiasPeriodo,
+DiasPeriodo,=SueldoDiario,
+SueldoDiario,=SDI,
+SDI,=SDIBimestral,
+SDIBimestral,=SDIAnterior,
+SDIAnterior,=SueldoDiarioComplemento,
+SueldoDiarioComplemento,=FechaAlta,
+FechaAlta,=FechaBaja,
+FechaBaja,=ConceptoBaja,
+ConceptoBaja,=FechaAntiguedad,
+FechaAntiguedad,=UltimaModificacion,
+UltimaModificacion,=UltimoPago,
+UltimoPago,=VencimientoContrato,
+VencimientoContrato,=Estatus,
+Estatus,=UltimoCambio,
+UltimoCambio,=Situacion,
+Situacion,=SituacionFecha,
+SituacionFecha,=SituacionUsuario,
+SituacionUsuario,=SituacionNota,
+SituacionNota,=EstaPresente,
+EstaPresente,=TieneMovimientos,
+TieneMovimientos,=SucursalTrabajo,
+SucursalTrabajo,=NivelAcceso,
+NivelAcceso,=MinimoProfesional,
+MinimoProfesional,=Sindicato,
+Sindicato,=Vehiculo,
+Vehiculo,=TablaCobranza,
+TablaCobranza,=TablaCobranzaBono,
+TablaCobranzaBono,=TablaCobranzaCascada,
+TablaCobranzaCascada,=TablaCobranzaBonoCascada,
+TablaCobranzaBonoCascada,=TablaVentaCascada,
+TablaVentaCascada,=UEN,
+UEN,=Actividad,
+Actividad,=Area,
+Area,=Fuente,
+Fuente,=Reclutador,
+Reclutador,=RecomendadoPor,
+RecomendadoPor,=Cuenta,
+Cuenta,=CuentaRetencion,
+CuentaRetencion,=MovNomina,
+MovNomina,=Contrasena,
+Contrasena,=Configuracion,
+Configuracion,=Referencia,
+Referencia,=ReferenciaDireccion,
+ReferenciaDireccion,=ReferenciaTelefono,
+ReferenciaTelefono,=Referencia2,
+Referencia2,=Referencia2Direccion,
+Referencia2Direccion,=Referencia2Telefono,
+Referencia2Telefono,=Referencia3,
+Referencia3,=Referencia3Direccion,
+Referencia3Direccion,=Referencia3Telefono,
+Referencia3Telefono,=Licencia,
+Licencia,=LicenciaVencimiento,
+LicenciaVencimiento,=Cliente,
+Cliente,=Incremento,
+Incremento,=EsSocio,
+EsSocio,=IndemnizacionPct,
+IndemnizacionPct,=Proyecto,
+Proyecto,=Plaza,
+Plaza,=Empresa,
+Empresa,=SueldoMensual,
+SueldoMensual,=ISRFijoPeriodo,
+ISRFijoPeriodo,=RataHora,
+RataHora,=DeclaraRenta,
+DeclaraRenta,=EsRecurso,
+EsRecurso,=EsAgente,
+EsAgente,=EsUsuarioWeb,
+EsUsuarioWeb,=EntreCalles,
+EntreCalles,=Plano,
+Plano,=ReferenciaIntelisisService,
+ReferenciaIntelisisService,=Observaciones,
+Observaciones,=MapaLatitud,
+MapaLatitud,=MapaLongitud,
+MapaLongitud,=MapaPrecision,
+MapaPrecision,=FechaInicioContrato,
+FechaInicioContrato,=DuracionContrato,
+DuracionContrato,=Confidencial,
+Confidencial,=ActividadMedicion,
+ActividadMedicion,=Personal as ContactoTipo,
+Personal as ContactoTipo,=NominaProrrateo,
+NominaProrrateo,=MES,
+MES,=SueldoDiarioAsimilable,
+SueldoDiarioAsimilable,=FechaInicioContrato,
+FechaInicioContrato,=DuracionContrato,
+DuracionContrato,=NIPCDI,
+NIPCDI,=ChecadaLibre,
+ChecadaLibre,=ChecadaLibreFechaD,
+ChecadaLibreFechaD,=ChecadaLibreFechaA,
+ChecadaLibreFechaA,=ChecarConTeclado,
+ChecarConTeclado,=CDIPerImagen,
+CDIPerImagen,=SubContratacionRfcLabora,
+SubContratacionRfcLabora,=SubContratacionPorcentajeTiem,
+SubContratacionPorcentajeTiem,=SubContratacionRfcLabora2,
+SubContratacionRfcLabora2,=SubContratacionPorcentajeTiem2,
+SubContratacionPorcentajeTiem2,=SubContratacionRfcLabora3,
+SubContratacionRfcLabora3,=SubContratacionPorcentajeTiem3,
+SubContratacionPorcentajeTiem3,=NominaProrrateo,
+NominaProrrateo,=ReferenciaIntelisisService
+ReferenciaIntelisisService=FROM Personal
+FROM Personal=(Fin)

@@ -1,0 +1,981 @@
+
+[Reporte]
+Clave=CDICargoBancario
+Nombre=Cargo Bancario
+Icono=0
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+VistaEspecial=S
+Parametros1=info.id
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1320
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado
+
+VentanaIzquierda=23
+VentanaArriba=0
+VentanaAltura=784
+VentanaAncho=1320
+PanelArriba=154
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=2.45
+Renglones=7
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=2
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Vista]
+Icono=0
+Clave=CDICargoBancario
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=xpCDICargoBancario {info.id}
+[id]
+Clave=id
+Nombre=id
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+ClaveBDE=id
+
+[socio]
+Clave=socio
+Nombre=socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=socio
+
+[nombre]
+Clave=nombre
+Nombre=nombre
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=nombre
+
+[Fechaemision]
+Clave=Fechaemision
+Nombre=Fechaemision
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=Fechaemision
+
+[NoTarjeta]
+Clave=NoTarjeta
+Nombre=NoTarjeta
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=16
+TipoDatos=Texto
+Tamano=16
+ClaveBDE=NoTarjeta
+
+[Vigencia]
+Clave=Vigencia
+Nombre=Vigencia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=Vigencia
+
+[Institucion]
+Clave=Institucion
+Nombre=Institucion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=Institucion
+
+[NoSeguridad]
+Clave=NoSeguridad
+Nombre=NoSeguridad
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=NoSeguridad
+
+[CtaBancariaDom]
+Clave=CtaBancariaDom
+Nombre=CtaBancariaDom
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=CtaBancariaDom
+
+[VigenciaDom]
+Clave=VigenciaDom
+Nombre=VigenciaDom
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=VigenciaDom
+
+[institucionDom]
+Clave=institucionDom
+Nombre=institucionDom
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=institucionDom
+
+[Amex]
+Clave=Amex
+Nombre=Amex
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+ClaveBDE=Amex
+
+[NoSeguridadAmex]
+Clave=NoSeguridadAmex
+Nombre=NoSeguridadAmex
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=4
+TipoDatos=Texto
+Tamano=4
+ClaveBDE=NoSeguridadAmex
+
+[VigenciaAMEX]
+Clave=VigenciaAMEX
+Nombre=VigenciaAMEX
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=VigenciaAMEX
+
+[NombreTarjeta]
+Clave=NombreTarjeta
+Nombre=NombreTarjeta
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=NombreTarjeta
+
+
+
+[Vista.ListaCampos]
+(Inicio)=id
+id=socio
+socio=nombre
+nombre=Fechaemision
+Fechaemision=NoTarjeta
+NoTarjeta=Vigencia
+Vigencia=Institucion
+Institucion=NoSeguridad
+NoSeguridad=CtaBancariaDom
+CtaBancariaDom=VigenciaDom
+VigenciaDom=institucionDom
+institucionDom=Amex
+Amex=NoSeguridadAmex
+NoSeguridadAmex=VigenciaAMEX
+VigenciaAMEX=NombreTarjeta
+NombreTarjeta=(Fin)
+
+[Linea3]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea4]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea5]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea6]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3.21
+AnchoTexto=17
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=16.11
+AnchoTexto=87
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+[A4]
+Celda=A4
+Alineacion=Centrado
+AnchoEnCm=19.29
+AnchoTexto=104
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>CARTA AUTORIZACION DE CARGO AUTOMATICO CON TARJETA DE <BR>CREDITO<T>
+
+[A6]
+Celda=A6
+Alineacion=Derecha
+AnchoEnCm=18
+AnchoTexto=97
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Fechaemision
+
+FormatoValidacion=dddddd
+[Linea7]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea8]
+Clave=Encabezado
+Objetos=4
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[A8]
+Celda=A8
+Alineacion=Izquierda
+AnchoEnCm=1.8
+AnchoTexto=10
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Nombre:<T>
+
+[B8]
+Celda=B8
+Alineacion=Izquierda
+AnchoEnCm=11.1
+AnchoTexto=60
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=nombre
+
+[C8]
+Celda=C8
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>No. Socio:<T>
+
+[D8]
+Celda=D8
+Alineacion=Izquierda
+AnchoEnCm=3.39
+AnchoTexto=18
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=socio
+
+[Linea9]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea10]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=2
+Renglones=5
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea11]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea12]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea13]
+Clave=Encabezado
+Objetos=5
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea14]
+Clave=Encabezado
+Objetos=5
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Visible=condatos(NoTarjeta)
+[A10]
+Celda=A10
+Alineacion=Izquierda
+AnchoEnCm=19.29
+TextoConFlujo=S
+AlturaVariable=S
+ExpresionMultiple=S
+AnchoTexto=104
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>En relación al contrato que regula el uso de mi Tarjeta de Crédito que tengo celebrado con el Banco Emisior, por este<T><BR><T>conducto me permito solicitarles  e instruirles expresamente para que con cargo a mi cuenta cuyo  numero se señala en<T><BR><T>esta carta, por  mi cuenta y  orden  paguen al  CENTRO DEPORTIVO ISRAELITA, A.C.,  las cantidades que me corresponden<T><BR><T>como asociado.<T>
+
+[A11]
+Celda=A11
+Alineacion=Centrado
+AnchoEnCm=19.29
+AnchoTexto=104
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>BANCO EMISOR<T>
+
+[A13]
+Celda=A13
+Alineacion=Izquierda
+AnchoEnCm=2.39
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+[B13]
+Celda=B13
+Alineacion=Centrado
+AnchoEnCm=4.5
+AnchoTexto=24
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Institución<T>
+
+Marco=S
+[A14]
+Celda=A14
+Alineacion=Centrado
+AnchoEnCm=2.39
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+[B14]
+Celda=B14
+Alineacion=Izquierda
+AnchoEnCm=4.5
+AnchoTexto=24
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Institucion
+
+Marco=S
+[Linea15]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=5
+Visible=condatos(Amex)
+[Linea16]
+Clave=Encabezado
+Objetos=0
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+
+[Linea17]
+Clave=Encabezado
+Objetos=0
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[C13]
+Celda=C13
+Alineacion=Centrado
+AnchoEnCm=4.39
+AnchoTexto=24
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>No. Tarjeta<T>
+
+Marco=S
+
+[D13]
+Celda=D13
+Alineacion=Izquierda
+AnchoEnCm=2.39
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>No. Seguridad<T>
+
+Marco=S
+[E13]
+Celda=E13
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.79
+AnchoTexto=15
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Vigencia<T>
+
+Marco=S
+[C14]
+Celda=C14
+Alineacion=Centrado
+AnchoEnCm=4.39
+AnchoTexto=24
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=NoTarjeta
+
+Marco=S
+[D14]
+Celda=D14
+Alineacion=Centrado
+AnchoEnCm=2.39
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=NoSeguridad
+
+Marco=S
+[E14]
+Celda=E14
+Alineacion=Centrado
+AnchoEnCm=2.79
+AnchoTexto=15
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Vigencia
+Marco=S
+
+FormatoValidacion=dd/mmm/aa
+[Linea18]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=9.5
+Renglones=26
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[A15]
+Celda=A15
+Alineacion=Centrado
+AnchoEnCm=2.39
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B15]
+Celda=B15
+Alineacion=Izquierda
+AnchoEnCm=4.5
+AnchoTexto=24
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Institucion
+
+[C15]
+Celda=C15
+Alineacion=Centrado
+AnchoEnCm=4.4
+AnchoTexto=24
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Amex
+
+[D15]
+Celda=D15
+Alineacion=Centrado
+AnchoEnCm=2.39
+AnchoTexto=13
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=NoSeguridadAmex
+
+[E15]
+Celda=E15
+Alineacion=Centrado
+AnchoEnCm=2.79
+AnchoTexto=15
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=VigenciaAMEX
+
+[A18]
+Celda=A18
+Alineacion=Izquierda
+AnchoEnCm=19.21
+TextoConFlujo=S
+ExpresionMultiple=S
+AnchoTexto=103
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Así mismo manifiesto mi conformidad de que en el cumplimiento de estas instrucciones me sujeto a las politicas establecidas<T><BR><T>por el Banco Emisor para este tipo de servicios, asi como a las siguientes reglas:<T><BR><T> <T><BR><T>      a. La suscripción de pagares a favor del Banco emisor para documentar la disposición, no sera necesaria los que<T><BR><T>         efectuen de manera automática y que aparezcan en el estado de mi tarjeta, haran prueba de la disposición<T><BR><T> <T><BR><T>      b. Que de acuerdo con las politcas del Banco emisor, mi cuenta se encuentre al corriente en todos los pagos que<T><BR><T>         deben hacer bajo la misma, y en caso de no ser asi, el Banco emisor no asumira responsabilidad alguna.<T><BR><T> <T><BR><T>      c. Los  pagos que se  realizen al amparo  de esta autorición  sera sin responsabilidad para el Banco emisor asi<T><BR><T>         como para el Centro Deportivo Israelita, AC<T><BR><T> <T><BR><T>Esta autorización se entiende como adición al contrato que regula el uso de la tarjeta antes mencionada.<T><BR><T> <T><BR><T>Queda entendido que el Banco emisor permanecerá ajeno a cualquier relación que en mi calidad de usuario se suscite<T><BR><T>con el Centro Deportivo Israelita, A.C.<T><BR><T> <T><BR><T>De igual manera, estoy enterado y conforme en que el Banco emisor dejara de prestarme el servicio de pago con cargo<T><BR><T>a la cuenta de mi tarjeta, cuando el contrato que regula el uso de la tarjeta rescinda o por cualquier causa se termine y<T><BR><T>deje de estar en vigor y por ello se cancele mi tarjeta.<T><BR><T> <T>
+
+AlturaVariable=N
+[Linea19]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=2.03
+Renglones=5
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea20]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[A19]
+Celda=A19
+Alineacion=Izquierda
+AnchoEnCm=19.21
+TextoConFlujo=S
+AlturaVariable=S
+ExpresionMultiple=S
+AnchoTexto=103
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>También  cesaran dichos  servicios  en caso  de que yo  no cubra con oportunidad todos los cargos que aparezcan en la<T><BR><T>cuenta de mi tarjeta, relacionados con el Centro Deportivo Israelita, A.C.<T><BR><T> <T><BR><T>Esta autorización quedara en vigor hasta nuevo aviso, ya que de cancelarla daré aviso por escrito con treinta<T><BR><T>días naturales de anticipación.<T><BR><T> <T><BR><T> <T><BR><T>                                         VoBo                                               ACEPTO<T><BR><T> <T><BR><T> <T><BR><T> <T><BR><T>                                ----------------------                         -----------------------------------------------------<T>
+
+[A20]
+Celda=A20
+Alineacion=Izquierda
+AnchoEnCm=19.2
+AnchoTexto=103
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>                                                                                                                <T>+ <BR>nombre

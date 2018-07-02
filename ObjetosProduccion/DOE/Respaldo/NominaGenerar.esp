@@ -1,0 +1,11 @@
+[NominaGenerar.frm/Acciones.Generar]
+ListaAccionesMultiples=(Lista)
+
+[NominaGenerar.frm/Acciones.Generar.Expresion]
+Expresion=Si<BR>  Confirmacion(<T>Desea Generar Borrador<T>+NuevaLinea+NuevaLinea+<BR>               <T>Nómina: <T>+Info.Nomina+NuevaLinea+<BR>               <T>Periodo: <T>+Si(Info.PeriodoEsp, <T>(Especial)<T>, Info.PeriodoTipo)+NuevaLinea+<BR>               <T>Del: <T>+FechaEnTexto(Info.FechaD, <T>dd/mmm/aaaa<T>)+NuevaLinea+<BR>               <T>Al: <T>+FechaEnTexto(Info.FechaA, <T>dd/mmm/aaaa<T>), BotonSi, BotonNo)=BotonSi<BR>Entonces<BR>  Asigna(Info.ID, Nulo)<BR>  Si<BR>    Info.MovNomAuto<BR>  Entonces<BR>    RegistrarSeleccion(<T>Lista<T>) <BR>    ProcesarSQL(<T>spNominaGenerar :nEstacion, :nID, :fFechaD, :fFechaA, :tPeriodoTipo, :fHoy<T>, EstacionTrabajo, Afectar.ID, Info.FechaD, Info.FechaA, Info.PeriodoTipo, FechaTrabajo)<BR>  Sino<BR>    Nomina.Generar(Afectar.ID, Info.Nomina, Info.PeriodoTipo, ListaSeleccion(<T>Lista<T>), Info.Fecha)<BR>  Fin<BR>Sino<BR>  AbortarOperacion<BR>Fin
+
+[NominaGenerar.frm/Acciones.Generar.ListaAccionesMultiples]
+(Inicio)=Expresion
+Expresion=Actualizar Forma
+Actualizar Forma=(Fin)
+

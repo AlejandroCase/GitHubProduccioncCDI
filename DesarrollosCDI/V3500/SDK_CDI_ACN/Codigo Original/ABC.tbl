@@ -1,0 +1,21 @@
+[Tabla]
+Icono=0
+Clave=ABC
+Archivo=ABC
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=ABC
+Nombre=Activity Base Cost
+Singular=Activity Base Cost
+LlavePrimaria=ABC
+SQL=SELECT<BR>  ABC<BR><BR>FROM<BR>  ABC
+
+[ABC]
+Clave=ABC
+Nombre=ABC
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50

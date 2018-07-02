@@ -1,0 +1,53 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.ListaCampos]
+RFC=Socio
+Socio=Membresia
+Membresia=(Fin)
+
+[Vista.CamposBusquedaRapida]
+Nombre=Socio
+Socio=Membresia
+Membresia=(Fin)
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Socio
+
+[Membresia]
+Clave=Membresia
+Nombre=Membresia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Membresia
+
+[Vista.SQL]
+(Inicio)=SELECT Cte.Cliente, Cte.Nombre, Cte.NombreCorto, Cte.Categoria, Cte.Familia, Cte.Grupo,  Cte.Direccion, Cte.Colonia, Cte.CodigoPostal,
+SELECT Cte.Cliente, Cte.Nombre, Cte.NombreCorto, Cte.Categoria, Cte.Familia, Cte.Grupo,  Cte.Direccion, Cte.Colonia, Cte.CodigoPostal,=Cte.Poblacion, Cte.Estado, Cte.Pais, Cte.Zona,  Cte.RFC,  Cte.Socio,   Cte.Membresia,
+Cte.Poblacion, Cte.Estado, Cte.Pais, Cte.Zona,  Cte.RFC,  Cte.Socio,   Cte.Membresia,='VentaMes'   <IGUAL>
+'VentaMes'   <IGUAL>=(SELECT Sum(Cargos) - Sum(Abonos)
+(SELECT Sum(Cargos) - Sum(Abonos)=FROM AcumRU
+FROM AcumRU=WHERE Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND
+WHERE Grupo <IGUAL> Cte.Cliente AND Moneda <IGUAL> SaldoRU.Moneda AND=Empresa <IGUAL> '{Empresa}' AND
+Empresa <IGUAL> '{Empresa}' AND=Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),
+Ejercicio<IGUAL>{EjercicioTrabajo} AND Periodo<IGUAL>{PeriodoTrabajo}),='VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),
+'VentaAcum'  <IGUAL> Sum(SaldoRU.Saldo),=SaldoRU.Moneda
+SaldoRU.Moneda=FROM
+FROM=Cte
+Cte=JOIN SaldoRU ON Cte.Cliente <IGUAL> SaldoRU.Grupo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'
+JOIN SaldoRU ON Cte.Cliente <IGUAL> SaldoRU.Grupo AND SaldoRU.Empresa <IGUAL> '{Empresa}' AND SaldoRU.Rama <IGUAL> 'VTAS'=GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,
+GROUP BY   SaldoRU.Moneda,  Cte.Cliente,   Cte.Nombre,  Cte.NombreCorto,=Cte.Categoria,  Cte.Familia,  Cte.Grupo,  Cte.Direccion,  Cte.Colonia,
+Cte.Categoria,  Cte.Familia,  Cte.Grupo,  Cte.Direccion,  Cte.Colonia,=Cte.CodigoPostal,  Cte.Poblacion,  Cte.Estado,  Cte.Pais,  Cte.Zona,
+Cte.CodigoPostal,  Cte.Poblacion,  Cte.Estado,  Cte.Pais,  Cte.Zona,=Cte.RFC,  Cte.Socio,  Cte.Membresia
+Cte.RFC,  Cte.Socio,  Cte.Membresia=(Fin)

@@ -1,0 +1,48 @@
+[GenerarOrdenCompra.dlg/Acciones.Otros5]
+
+Nombre=Otros5
+
+Boton=0
+
+NombreDesplegar=Generar Entrada Activo Fijo
+
+EnMenu=S
+
+EnBarraAcciones=S
+
+TipoAccion=Dialogos
+
+ClaveAccion=GenerarCompraPendiente
+
+Activo=S
+
+Antes=S
+
+Visible=S
+
+AntesExpresiones=Asigna(Afectar.GenerarMov, <T>Entrada Activo Fijo<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))
+
+[GenerarOrdenCompra.dlg/Acciones.Otros6]
+
+Nombre=Otros6
+
+Boton=0
+
+NombreDesplegar=Generar Cargo por Ajuste Proveedor 
+
+EnMenu=S
+
+EnBarraAcciones=S
+
+TipoAccion=Dialogos
+
+ClaveAccion=GenerarCompraPendiente
+
+Activo=S
+
+Antes=S
+
+Visible=S
+
+AntesExpresiones=Asigna(Afectar.GenerarMov, <T>Cargo por Aj. Provee<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))
+

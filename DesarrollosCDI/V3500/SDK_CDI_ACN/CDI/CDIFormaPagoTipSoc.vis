@@ -1,0 +1,55 @@
+
+[Vista]
+Icono=0
+Clave=CDIFormaPagoTipSoc
+Nombre=CDIFormaPagoTipSoc
+Modulos=(Todos)
+ListaTablas=CDIFormaPagoTipSoc
+TablaPrincipal=CDIFormaPagoTipSoc
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=(Lista)
+SQL=(Lista)
+[CDIFormaPagoTipSoc.Tipo]
+Clave=CDIFormaPagoTipSoc.Tipo
+Nombre=Tipo
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ValorPorOmision=Info.Tipo
+LigaTabla=CDIFormaPagoTipSoc
+LigaCampo=Tipo
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Tipo
+
+[CDIFormaPagoTipSoc.FormaPago]
+Clave=CDIFormaPagoTipSoc.FormaPago
+Nombre=Forma Pago
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Expresion
+AyudaRefrescar=S
+Formula=SQLEnLista(<T>SELECT FormaPago FROM FormaPago WHERE NOT EXISTS(SELECT 1 FROM CDIFormaPagoTipSoc fpt WHERE fpt.FormaPago = FormaPago.FormaPago AND Tipo = :tTipo)<T>, Info.Tipo)
+LigaTabla=CDIFormaPagoTipSoc
+LigaCampo=FormaPago
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=FormaPago
+
+[Vista.ListaCampos]
+(Inicio)=CDIFormaPagoTipSoc.Tipo
+CDIFormaPagoTipSoc.Tipo=CDIFormaPagoTipSoc.FormaPago
+CDIFormaPagoTipSoc.FormaPago=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDIFormaPagoTipSoc.Tipo,
+CDIFormaPagoTipSoc.Tipo,=CDIFormaPagoTipSoc.FormaPago
+CDIFormaPagoTipSoc.FormaPago=FROM CDIFormaPagoTipSoc
+FROM CDIFormaPagoTipSoc=(Fin)

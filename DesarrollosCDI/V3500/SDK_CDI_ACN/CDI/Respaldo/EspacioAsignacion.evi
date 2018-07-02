@@ -1,0 +1,34 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=EspacioAsignacion.ID,
+EspacioAsignacion.ID,=EspacioAsignacion.Empresa,
+EspacioAsignacion.Empresa,=EspacioAsignacion.Espacio,
+EspacioAsignacion.Espacio,=EspacioAsignacion.Fecha,
+EspacioAsignacion.Fecha,=EspacioAsignacion.Hora,
+EspacioAsignacion.Hora,=EspacioAsignacion.Cliente,
+EspacioAsignacion.Cliente,=EspacioAsignacion.Proyecto,
+EspacioAsignacion.Proyecto,=EspacioAsignacion.Estatus,
+EspacioAsignacion.Estatus,=Espacio.Espacio,
+Espacio.Espacio,=Espacio.Nombre,
+Espacio.Nombre,=Cte.Cliente,
+Cte.Cliente,=Cte.Nombre,
+Cte.Nombre,=Cte.Delegacion,
+Cte.Delegacion,=Cte.Colonia,
+Cte.Colonia,=Cte.CodigoPostal,
+Cte.CodigoPostal,=Cte.Poblacion,
+Cte.Poblacion,=Cte.Estado,
+Cte.Estado,=Cte.Pais,
+Cte.Pais,=Cte.Zona,
+Cte.Zona,=Cte.RFC,
+Cte.RFC,=Cte.Telefonos,
+Cte.Telefonos,=Cte.Categoria,
+Cte.Categoria,=Cte.Familia,
+Cte.Familia,=Cte.Grupo
+Cte.Grupo=FROM
+FROM=EspacioAsignacion
+EspacioAsignacion=JOIN Espacio ON EspacioAsignacion.Espacio<IGUAL>Espacio.Espacio
+JOIN Espacio ON EspacioAsignacion.Espacio<IGUAL>Espacio.Espacio=LEFT OUTER JOIN Cte ON EspacioAsignacion.Cliente<IGUAL>Cte.Cliente
+LEFT OUTER JOIN Cte ON EspacioAsignacion.Cliente<IGUAL>Cte.Cliente=(Fin)

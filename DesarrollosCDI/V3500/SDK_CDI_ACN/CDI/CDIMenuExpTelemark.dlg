@@ -1,0 +1,44 @@
+[Dialogo]
+Clave=CDIMenuExpTelemark
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=454
+PosicionInicialArriba=281
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=500
+
+[Acciones.LlamadasJai]
+Nombre=LlamadasJai
+Boton=0
+NombreDesplegar=Control Llamadas JAI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIJaiEx
+Activo=S
+Visible=S
+
+
+[Acciones.cambiar Situacion]
+Nombre=cambiar Situacion
+Boton=0
+NombreDesplegar=cambiar Situacion
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIAcceDiaUbic
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=LlamadasJai
+LlamadasJai=cambiar Situacion
+cambiar Situacion=(Fin)

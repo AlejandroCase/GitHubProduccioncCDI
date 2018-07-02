@@ -1,0 +1,41 @@
+[Vista]
+SQL=(Lista)
+
+[Clase.Descripcion]
+Nombre=
+Visible=
+TamanoValidacion=
+
+[Vista.ListaCampos]
+Cta.Descripcion=Cta.TieneMovimientos
+Cta.TieneMovimientos=Usuario.Nombre
+
+[Cta.TieneMovimientos]
+Clave=Cta.TieneMovimientos
+Nombre=Tiene Movimientos
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+LigaTabla=Cta
+LigaCampo=TieneMovimientos
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=TieneMovimientos
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=Clase.Modulo,
+Clase.Modulo,=Clase.Clase,
+Clase.Clase,=Clase.Orden,
+Clase.Orden,=Clase.Cuenta,
+Clase.Cuenta,=Clase.Responsable,
+Clase.Responsable,=Clase.Numero,
+Clase.Numero,=Clase.Descripcion,
+Clase.Descripcion,=Cta.Cuenta,
+Cta.Cuenta,=Cta.Descripcion,
+Cta.Descripcion,=Cta.TieneMovimientos,
+Cta.TieneMovimientos,=Usuario.Nombre
+Usuario.Nombre=FROM Clase
+FROM Clase=LEFT OUTER JOIN Cta ON Clase.Cuenta<IGUAL>Cta.Cuenta
+LEFT OUTER JOIN Cta ON Clase.Cuenta<IGUAL>Cta.Cuenta=LEFT OUTER JOIN Usuario ON Clase.Responsable<IGUAL>Usuario.Usuario
+LEFT OUTER JOIN Usuario ON Clase.Responsable<IGUAL>Usuario.Usuario=(Fin)

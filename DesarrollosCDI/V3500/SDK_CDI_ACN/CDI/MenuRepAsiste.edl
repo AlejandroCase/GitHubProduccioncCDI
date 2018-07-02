@@ -1,0 +1,20 @@
+[Dialogo]
+PosicionInicialIzquierda=516
+PosicionInicialArriba=317
+PosicionInicialAlturaCliente=138
+
+[Dialogo.ListaAcciones]
+Inasistencia=CDIAsistenciaDiaria
+CDIAsistenciaDiaria=(Fin)
+
+[Acciones.CDIAsistenciaDiaria]
+Nombre=CDIAsistenciaDiaria
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=&Comparativo Asistencia Diaria
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIFiltrosAsistenciaDiaria
+Activo=S
+Visible=S

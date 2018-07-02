@@ -1,0 +1,2 @@
+[Empresa.frm/Acciones.GenerarCFDI]
+ActivoCondicion=SQL(<T>SELECT ISNULL(eDoc, 0) FROM EmpresaGral WHERE Empresa = :tEmpresa<T>, Empresa:Empresa.Empresa) y(SQL(<T>SELECT ISNULL(CFDFlex, 0) FROM EmpresaGral WHERE Empresa = :tEmpresa<T>, Empresa:Empresa.Empresa))

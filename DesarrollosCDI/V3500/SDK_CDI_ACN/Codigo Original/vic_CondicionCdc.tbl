@@ -1,0 +1,46 @@
+[Tabla]
+Icono=0
+Clave=vic_CondicionCdc
+Archivo=vic_CondicionCdc
+Modulos=(Todos)
+TipoTabla=Maestros
+ListaCampos=(Lista)
+Nombre=Tipo de Condición
+Singular=Tipo de Condición
+LlavePrimaria=Tipocondicion
+
+SQL=SELECT<BR>  Tipocondicion,<BR>  TipocondicionMaestra,<BR>  Icono<BR><BR>FROM<BR>  vic_CondicionCdc
+[Tipocondicion]
+Clave=Tipocondicion
+Nombre=Tipo de Condición
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[TipocondicionMaestra]
+Clave=TipocondicionMaestra
+Nombre=Tipo de Condición Maestra
+Tamano=50
+TamanoValidacion=50
+TipoDatos=Texto
+
+[Icono]
+Clave=Icono
+Nombre=Icono
+OpcionesColumnas=1
+OpcionesRenglones=8
+TipoDatos=Numérico
+TamanoValidacion=10
+
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Tipocondicion
+Tipocondicion=TipocondicionMaestra
+TipocondicionMaestra=Icono
+Icono=(Fin)

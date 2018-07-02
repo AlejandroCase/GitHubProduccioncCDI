@@ -1,0 +1,26 @@
+
+[Vista]
+Icono=0
+Clave=AtributoTipo
+Nombre=Tipos
+Modulos=(Todos)
+Singular=Tipo
+ListaTablas=AtributoTipo
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=AtributoTipo.Tipo
+TablaPrincipal=AtributoTipo
+
+
+SQL=SELECT<BR>  AtributoTipo.Tipo<BR><BR>FROM<BR>  AtributoTipo
+[AtributoTipo.Tipo]
+Clave=AtributoTipo.Tipo
+LigaTabla=AtributoTipo
+LigaCampo=Tipo
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Tipo

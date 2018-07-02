@@ -1,0 +1,47 @@
+[Tabla]
+Icono=0
+Clave=CFDINominaContratoTipo
+Nombre=CFDINominaContratoTipo
+Archivo=CFDINominaContratoTipo
+Modulos=(Todos)
+Singular=CFDINominaContratoTipo
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=TipoContrato
+SQL=(Lista)
+[TipoContrato]
+Clave=TipoContrato
+Nombre=Tipo Contrato
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=TipoContrato
+TipoContrato=Descripcion
+Descripcion=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=TipoContrato,
+TipoContrato,=Descripcion
+Descripcion=FROM CFDINominaContratoTipo
+FROM CFDINominaContratoTipo=(Fin)

@@ -1,0 +1,3 @@
+[CDISubeArchAplic.frm/Acciones.Iniciar.Expresion]
+Expresion=Back.EjecutarSQL( <T>Archivo<T>, <T>spCDISubeArchAplic <T>& NumEnTexto(EstacionTrabajo)&<T>,<T>&Comillas(Usuario)&<T>,<T>&Comillas(Info.CDIRutaArchivo))
+

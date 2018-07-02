@@ -1,0 +1,32 @@
+[Art.frm/Forma.ListaAcciones]
+Otros9=PreciosPeriodo
+PreciosPeriodo=CampoArticulo
+CampoArticulo=(Fin)
+
+
+[Art.frm/Acciones.PreciosPeriodo]
+Nombre=PreciosPeriodo
+Boton=9
+NombreEnBoton=S
+NombreDesplegar=Precios Periodo
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIArtPrecioPeriodo
+Activo=S
+Antes=S
+AntesExpresiones=asigna(info.Articulo,Art:Art.Articulo)
+Visible=S
+
+[Art.frm/Acciones.CampoArticulo]
+Nombre=CampoArticulo
+Boton=95
+NombreEnBoton=S
+NombreDesplegar=&Desplegar Campos
+EnBarraHerramientas=S
+TipoAccion=formas
+ClaveAccion=CDICamposArt
+Activo=S
+Antes=S
+AntesExpresiones=asigna(Info.Articulo,Art:Art.Articulo)
+Visible=S

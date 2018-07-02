@@ -1,0 +1,2 @@
+;[Venta.frm/Detalle]
+;CondicionEdicion=(Venta:Venta.CDIPermiteEditar) y (Venta:Venta.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))<BR>Y ((Venta:Venta.Mov <> <T>Recibo<T>) y (Venta:Venta.Origen <><T>Solicitud Cargo<T>))

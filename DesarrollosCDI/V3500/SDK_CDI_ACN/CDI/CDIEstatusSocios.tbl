@@ -1,0 +1,53 @@
+
+[Tabla]
+Icono=0
+Clave=CDIEstatusSocios
+Archivo=CDIEstatusSocios
+Modulos=(Todos)
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=Estatus
+SQL=(Lista)
+[Estatus]
+Clave=Estatus
+Nombre=Estatus
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=20
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista( <T>SELECT Estatus FROM Estatus <T> )
+[Orden]
+Clave=Orden
+Nombre=Orden
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+Requerido=S
+
+
+
+
+AyudaEnCaptura=Calculadora
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Estatus
+Estatus=Orden
+Orden=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Estatus,
+Estatus,=Orden
+Orden=FROM CDIEstatusSocios
+FROM CDIEstatusSocios=(Fin)

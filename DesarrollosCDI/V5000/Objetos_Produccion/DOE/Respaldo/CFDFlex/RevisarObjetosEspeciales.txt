@@ -1,0 +1,1259 @@
+Analizador de Conflictos de Objetos Especiales
+Ruta de análisis: \\10.10.10.212\Intelisis 3500\Reportes\
+Fecha de análisis: 09/ene/2015 12:13
+
+--- ESP Repetidos ---
+[(Variables).Info.CDIConceptoLista] - CDIMembresiaSocioFechaConcep.esp - CDIFechasConcepto.esp
+[(Variables).Info.CDIEstatusSocio] - CDISocioEstatusporTipo.esp - CDISocioEstatus.esp
+[(Variables).Info.CDIMembresiaListaA] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[(Variables).Info.CDIMembresiaListaD] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[(Variables).Info.CDISocioListaA] - CDISocioEstatusporTipo.esp - CDIMembresiaSocioFechaConcep.esp
+[(Variables).Info.CDISocioListaD] - CDISocioEstatusporTipo.esp - CDIMembresiaSocioFechaConcep.esp
+[(Variables).Info.FechaA] - CDIFechasConcepto.esp - CDIFechaEstatusmov.esp
+[(Variables).Info.FechaD] - CDIFechasConcepto.esp - CDIFechaEstatusmov.esp
+[(Variables).ListaEnCaptura] - CDIFechasConcepto.esp - CDIFechaEstatusmov.esp
+[(Variables).ListaEnCaptura] - CDIMembresias.esp - CDIMarbetes.esp
+[(Variables).ListaEnCaptura] - CDIProyProgCEPlan.esp - CDIMembresiaSocioFechaConcep.esp
+[(Variables)] - CDIFechasConcepto.esp - CDIFechaEstatusmov.esp
+[(Variables)] - CDIMembresias.esp - CDIMarbetes.esp
+[(Variables)] - CDIProyProgCEPlan.esp - CDIMembresiaSocioFechaConcep.esp
+[(Variables)] - CDISocioEstatus.esp - CDISocioCategoria.esp
+[Acciones.Cerrar] - CDIFechaEstatusmov.esp - CDIAccesoxSocio.esp
+[Acciones.Cerrar] - CDIMarbetes.esp - CDIFechasConcepto.esp
+[Acciones.Cerrar] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[Acciones.Cerrar] - CDISocioCategoria.esp - CDIProyProgCEPlan.esp
+[Acciones.Cerrar] - CDISocioEstatusporTipo.esp - CDISocioEstatus.esp
+[Acciones.Preliminar] - CDIFechaEstatusmov.esp - CDIAccesoxSocio.esp
+[Acciones.Preliminar] - CDIMarbetes.esp - CDIFechasConcepto.esp
+[Acciones.Preliminar] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[Acciones.Preliminar] - CDISocioCategoria.esp - CDIProyProgCEPlan.esp
+[Acciones.Preliminar] - CDISocioEstatusporTipo.esp - CDISocioEstatus.esp
+[AsistenteCursoCCPM.frm/Acciones.CDIPaqInsc] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Acciones.Descuentos] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Acciones.Generar] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Acciones.Planes] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Forma.ListaAcciones] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Lista.AsistenteCursoCCPM.CDIPaqIns] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Lista.Columnas] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Lista.ListaEnCaptura] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.frm/Otros.ListaEnCaptura] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/CDIPaqIns.ListaRefrescar] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/CDIPaqIns] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/CEPlan] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/CEPrograma] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/Grupo] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/Materia] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/Tabla.ListaCampos] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.tbl/Tabla.SQL] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.vis/AsistenteCursoCCPM.CDIPaqIns] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.vis/Vista.ListaCampos] - ce20143.esp - AsistenteCursoCCPM.esp
+[AsistenteCursoCCPM.vis/Vista.SQL] - ce20143.esp - AsistenteCursoCCPM.esp
+[CDIMenuCfgSocios.dlg/Acciones.CDIExcepDesbReins] - ce20143.esp - CDIAccCfgDesblExcep.esp
+[CDIMenuCfgSocios.dlg/Dialogo.ListaAcciones] - ce20143.esp - CDIAccCfgDesblExcep.esp
+[CDIMenuCfgSocios.dlg/Dialogo] - ce20143.esp - CDIAccCfgDesblExcep.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.CuotaOriginal] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.ImporteAnualidad] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.ImporteSubsidio] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.Cte.CDICuotaMembresia] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CDISocio.vis/CategoriaCal] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CDISocio.vis/FormaDePAgoCal] - CDIModuloSociosCambios.esp - CDIModuloSociosCambios.esp
+[CE.frm/CDICobertura.Columnas] - ce20143.esp - ce20143.esp
+[CE.frm/CDIPreRegisDet.Columnas] - ce20143.esp - ce20143.esp
+[CEPlan.frm/Forma] - CEPLAN.esp - ce20143.esp
+[Cxc.frm/Forma] - ZCFDFlex1.ESP - Tableros y Autorizacion.esp
+[ExplorarCxcMov.frm/Lista] - ExplorarCxcMov2.esp - ExplorarCXC3.esp
+[Forma.ListaAcciones] - CDIFechaEstatusmov.esp - CDIAccesoxSocio.esp
+[Forma.ListaAcciones] - CDIMarbetes.esp - CDIFechasConcepto.esp
+[Forma.ListaAcciones] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[Forma.ListaAcciones] - CDISocioCategoria.esp - CDIProyProgCEPlan.esp
+[Forma.ListaAcciones] - CDISocioEstatusporTipo.esp - CDISocioEstatus.esp
+[Forma] - CDIFechaEstatusmov.esp - CDIAccesoxSocio.esp
+[Forma] - CDIMarbetes.esp - CDIFechasConcepto.esp
+[Forma] - CDIMembresiaSocioFechaConcep.esp - CDIMembresias.esp
+[Forma] - CDISocioCategoria.esp - CDIProyProgCEPlan.esp
+[Forma] - CDISocioEstatusporTipo.esp - CDISocioEstatus.esp
+[Lista.Columnas] - CDIFechasConcepto.esp - CDIAccesoxSocio.esp
+[Lista.Columnas] - CDISocioCategoria.esp - CDIProyProgCEPlan.esp
+[MenuPrincipal.dlg/Acciones.CDIMenuExpTelemark] - MenuPrincipalEspCambios.esp - Menuprincipal.esp
+[MenuPrincipal.dlg/Acciones.Mov.MenuTorneos] - MenuPrincipalEspCambios.esp - Menuprincipal.esp
+[MenuPrincipal.dlg/Dialogo.ListaAcciones] - MenuPrincipalEspCambios.esp - Menuprincipal.esp
+[mis_RepCxcAnalisisMov.frm/(Variables).Info.CtaDinero] - mis_RepCxcAnalisisMov.esp - mis_RepCxcAnalisisMov.esp
+[Soporte.frm/Forma] - Tableros y Autorizacion.esp - CDISoporte.esp
+[Venta.frm/Forma] - ZCFDFlex1.ESP - Tableros y Autorizacion.esp
+
+--- ESP Secciones ---
+[ - CDIArtCargosRecurrentes.esp
+[(Variables).Info.Almacen] - CDIMarbetes.esp
+[(Variables).Info.ArtCat] - CDIMarbetes.esp
+[(Variables).Info.CDIComite] - CDIProyProgCEPlan.esp
+[(Variables).Info.CDIMembresiaListaA] - CDISocioEstatusporTipo.esp
+[(Variables).Info.CDIMembresiaListaD] - CDISocioEstatusporTipo.esp
+[(Variables).Info.CDIPlan] - CDIProyProgCEPlan.esp
+[(Variables).Info.CteCat] - CDISocioCategoria.esp
+[(Variables).Info.CteTipo] - CDISocioEstatusporTipo.esp
+[(Variables).Info.Estatus] - CDIFechaEstatusmov.esp
+[(Variables).Info.FechaA] - CDIMembresiaSocioFechaConcep.esp
+[(Variables).Info.FechaD] - CDIMembresiaSocioFechaConcep.esp
+[(Variables).Info.Programa] - CDIProyProgCEPlan.esp
+[(Variables).ListaEnCaptura] - CDISocioEstatusporTipo.esp
+[(Variables)] - CDISocioEstatusporTipo.esp
+[Acciones.Exp.CE2] - Menuprincipal.esp
+[Acciones.Otros1] - Art.esp
+[ActivoFijo.frm/(Carpeta Abrir).Columnas] - Tableros y Autorizacion.esp
+[ActivoFijo.frm/Acciones.CDIAutorizar] - Tableros y Autorizacion.esp
+[ActivoFijo.frm/Forma.ListaAcciones] - Tableros y Autorizacion.esp
+[ActivoFijo.frm/Forma] - Tableros y Autorizacion.esp
+[AsistenteCursoCCPM.frm/aBC.CDISocInsc.Ceplan] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.CDISocInsc.FechaEmision] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.CDISocInsc.Mov] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.CDISocInsc.MovId] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.CDISocInsc.programa] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.Columnas] - ce20143.esp
+[AsistenteCursoCCPM.frm/aBC.ListaEnCaptura] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.Cte.FechaNacimiento] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.Cte.RutaImagen] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.Edad] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.Foto] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.ListaEnCaptura] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2.Meses] - ce20143.esp
+[AsistenteCursoCCPM.frm/AsistenteCursoCCPM2] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.CDISocioFinan.Articulo] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.CDISocioFinan.FechaEmision] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.CDISocioFinan.mov] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.CDISocioFinan.movid] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.CDISocioFinan.precio] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.Columnas] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan.ListaEnCaptura] - ce20143.esp
+[AsistenteCursoCCPM.frm/CDISocioFinan] - ce20143.esp
+[AsistenteCursoCCPM.frm/Cobertura.Cobertura] - ce20143.esp
+[AsistenteCursoCCPM.frm/Forma.ListaCarpetas] - ce20143.esp
+[AsistenteCursoCCPM.frm/Forma] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.Ceplan] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.Estatus] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.FechaEmision] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.Mov] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.MovId] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.CDISocInsc.programa] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.Columnas] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip.ListaEnCaptura] - ce20143.esp
+[AsistenteCursoCCPM.frm/inscrip] - ce20143.esp
+[AsistenteCursoCCPM.frm/Lista.AsistenteCursoCCPM.CDIPrecio] - ce20143.esp
+[AsistenteCursoCCPM.frm/Lista] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.AsistenteCursoCCPM.CDICondicionFisica] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.AsistenteCursoCCPM.CDIEvaluacionProfesor] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.AsistenteCursoCCPM.CDIEvaluacionPsicologica] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.CEPlan.CDICobertura] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.CEPlan.CDIEdadMaxima] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.CEPlan.CDIEdadMinima] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.CEPlan.CDIPeriodo] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros.CEPlan.CDISexo] - ce20143.esp
+[AsistenteCursoCCPM.frm/Otros] - ce20143.esp
+[AsistenteCursoCCPM.vis/AsistenteCursoCCPM.CDIDescuento2] - ce20143.esp
+[AsistenteCursoCCPM.vis/CEPlan.CDICobertura] - ce20143.esp
+[AsistenteCursoCCPM.vis/CEPlan.CDIEdadMaxima] - ce20143.esp
+[AsistenteCursoCCPM.vis/CEPlan.CDIEdadMinima] - ce20143.esp
+[AsistenteCursoCCPM.vis/CEPlan.CDIPeriodo] - ce20143.esp
+[AsistenteCursoCCPM.vis/CEPlan.CDISexo] - ce20143.esp
+[AsistenteCursoCCPM.vis/Cobertura] - ce20143.esp
+[AsistenteCursoCCPM.vis/Cte.FechaNacimiento] - ce20143.esp
+[AsistenteCursoCCPM.vis/Cte.RutaImagen] - ce20143.esp
+[AsistenteCursoCCPM.vis/Edad] - ce20143.esp
+[AsistenteCursoCCPM.vis/Foto] - ce20143.esp
+[AsistenteCursoCCPM.vis/Meses] - ce20143.esp
+[AsistenteCursoCCPM.vis/Vista.ListaCalculados] - ce20143.esp
+[CancelarPendiente.dlg/Acciones.Pendiente] - CompraCancelarPendiente.esp
+[CDIAccesoIp.frm/Forma] - CDIAccesoIp.esp
+[CDIAccesoIp.frm/Ipes.CDIAccesoIp.Torniquete] - CDIAccesoIp.esp
+[CDIAccesoIp.frm/Ipes.CDIAccesoIp.Ubicacion] - CDIAccesoIp.esp
+[CDIAccesoIp.frm/Ipes.Columnas] - CDIAccesoIp.esp
+[CDIAccesoIp.frm/Ipes.ListaEnCaptura] - CDIAccesoIp.esp
+[CDIAccesoIp.tbl/Tabla.ListaCampos] - CDIAccesoIp.esp
+[CDIAccesoIp.tbl/Tabla.SQL] - CDIAccesoIp.esp
+[CDIAccesoIp.tbl/Torniquete] - CDIAccesoIp.esp
+[CDIAccesoIp.tbl/Ubicacion.ListaOpciones] - CDIAccesoIp.esp
+[CDIAccesoIp.tbl/Ubicacion] - CDIAccesoIp.esp
+[CDIAccesoIp.vis/CDIAccesoIp.Torniquete] - CDIAccesoIp.esp
+[CDIAccesoIp.vis/CDIAccesoIp.Ubicacion] - CDIAccesoIp.esp
+[CDIAccesoIp.vis/Vista.ListaCampos] - CDIAccesoIp.esp
+[CDIAccesoIp.vis/Vista.SQL] - CDIAccesoIp.esp
+[CDIAccesoxSocio.Info.FechaA] - CDIAccesoxSocio.esp
+[CDIAccesoxSocio.Info.FechaD] - CDIAccesoxSocio.esp
+[CDIAccesoxSocio.Info.Membresia] - CDIAccesoxSocio.esp
+[CDIAccesoxSocio.Info.Socio] - CDIAccesoxSocio.esp
+[CDIAccesoxSocio.ListaEnCaptura] - CDIAccesoxSocio.esp
+[CDIAccesoxSocio] - CDIAccesoxSocio.esp
+[CDIArtCargosRecurrentes.frm/Acciones.CDIBitaArtCargRec] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Acciones.Eliminar] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Forma.ListaAcciones] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Forma] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista.Automatico] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista.CDIArtCargosRecurrentes.casillero] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista.CDIArtCargosRecurrentes.Ubicacion] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista.Columnas] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista.ListaEnCaptura] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.frm/Lista] - CDICasillerosVCDI.esp
+[CDIArtCargosRecurrentes.tbl/casillero] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.tbl/Tabla.ListaCampos] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.tbl/Tabla.SQL] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.tbl/Ubicacion] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/Automatico] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/CDIArtCargosRecurrentes.casillero] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/CDIArtCargosRecurrentes.Ubicacion] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/Vista.ListaCalculados] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/Vista.ListaCampos] - CDIArtCargosRecurrentes.esp
+[CDIArtCargosRecurrentes.vis/Vista.SQL] - CDIArtCargosRecurrentes.esp
+[CDIArticulosCargos.frm/Acciones.Eliminar] - CDICargosTarjetaBAncaria.esp
+[CDIArticulosCargos.frm/Acciones.GuardarCerrar] - CDICargosTarjetaBAncaria.esp
+[CDIArticulosCargos.frm/Forma] - CDICargosTarjetaBAncaria.esp
+[CDIArticulosCargos.frm/Lista.CDIArticulosCargos.NoTarjeta] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.frm/Lista.Columnas] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.frm/Lista.ListaEnCaptura] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.frm/Lista] - CDICargosTarjetaBAncaria.esp
+[CDIArticulosCargos.tbl/NoTarjeta] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.tbl/Tabla.ListaCampos] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.tbl/Tabla.SQL] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.vis/CDIArticulosCargos.NoTarjeta] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.vis/Vista.ListaCampos] - CDIArticulosCargosCambios.esp
+[CDIArticulosCargos.vis/Vista.SQL] - CDIArticulosCargosCambios.esp
+[CDICEAsistencia.frm/(Variables).Info.CDIPago] - CDICEAsistencia.esp
+[CDICEAsistencia.frm/(Variables).ListaEnCaptura] - CDICEAsistencia.esp
+[CDICEAsistencia.frm/Forma] - CDICEAsistencia.esp
+[CDICeMovPlanPendientes.CDICEMovPlanCont.Impuesto1] - ce20143.esp
+[CDIClas.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDICteExpl.vis/Cte.Descripcion13] - CDIExpSoc.esp
+[CDICteExpl.vis/Cte.Descripcion15] - CDIExpSoc.esp
+[CDICteExpl.vis/Vista.ListaCampos] - CDIExpSoc.esp
+[CDICteExpl.vis/Vista.SQL] - CDIExpSoc.esp
+[CDIDatosBancarios.frm/Acciones.Cerrar] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Acciones.ConsultaNoSeguridad] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Acciones.Registro Eliminar] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Acciones.Registro Insertar] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.AMEX] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.CtaBancariaDom] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.DefCargAuto] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.Estatus] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.Institucion] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.InstitucionDom] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.NombreTarjeta] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.NoSeguridad] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.NoTarjeta] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.Vigencia] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.VigenciaAMEX] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.CDIDatosBancarios.VigenciaDom] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle.ListaEnCaptura] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Detalle] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Forma.ListaAcciones] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Forma] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Lista.Columnas] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Lista.ListaEnCaptura] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.frm/Lista] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.tbl/Estatus] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.tbl/Tabla.ListaCampos] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.tbl/Tabla.SQL] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.vis/CDIDatosBancarios.DefCargAuto] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.vis/CDIDatosBancarios.Estatus] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.vis/Vista.ListaCampos] - CDICargosTarjetaBAncaria.esp
+[CDIDatosBancarios.vis/Vista.SQL] - CDICargosTarjetaBAncaria.esp
+[CDIExplorarModSocio.frm/Forma] - CDIModuloSociosCambios.esp
+[CDIExplorarModSocio.frm/Lista.Cte.Estatus] - CDIModuloSociosCambios.esp
+[CDIExplorarModSocio.frm/Lista.Cte.Tipo] - CDIModuloSociosCambios.esp
+[CDIExplorarModSocio.frm/Lista.Cte.Tipo0] - CDIModuloSociosCambios.esp
+[CDIExplorarModSocio.frm/Lista.EstatusCte] - CDIModuloSociosCambios.esp
+[CDIExplorarModSocio.frm/Lista.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIExplorarSocio.frm/Forma] - CDIExpSoc.esp
+[CDIExplorarSocio.frm/Lista.Columnas] - CDIExpSoc.esp
+[CDIExplorarSocio.frm/Lista.Cte.Descripcion13] - CDIExpSoc.esp
+[CDIExplorarSocio.frm/Lista.Cte.Descripcion15] - CDIExpSoc.esp
+[CDIExplorarSocio.frm/Lista.ListaEnCaptura] - CDIExpSoc.esp
+[CDIExplorarSocio.frm/Lista] - CDIExpSoc.esp
+[CDIExplorarSoporteClaseComite.frm/Acciones.Bitacora] - CDIExplorarSoporteClase.esp
+[CDIExplorarSoporteClaseComite.frm/Forma.ListaAcciones] - CDIExplorarSoporteClase.esp
+[CDIMenuCfgEspecial.dlg/Acciones.ActiSocio] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CatFormato] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CatSituacion] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CDICausasBloq] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CDIEjecAuto] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CDIFormaPagoParcial] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.CDIRefPAses] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.ClaseSocios] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.SedesSocios] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Acciones.SubCatSocio] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Dialogo.ListaAcciones] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgEspecial.dlg/Dialogo] - CDIMenuCFGEspecial.esp
+[CDIMenuCfgSocios.dlg/Acciones.CDICobertura] - ce20143.esp
+[CDIMenuCfgSocios.dlg/Acciones.DesctosVolumen] - ce20143.esp
+[CDIMenuConfigCasilleros.dlg/Acciones.CasillerosVCDI] - CDICasillerosVCDI.esp
+[CDIMenuConfigCasilleros.dlg/Dialogo.ListaAcciones] - CDICasillerosVCDI.esp
+[CDIModuloSocios.frm/(Carpeta Abrir).Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Afectar] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Cancelar] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDIBajaTarjeta.Actualizar Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDIBajaTarjeta.cdiBajaTar] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDIBajaTarjeta.ListaAccionesMultiples] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDIBajaTarjeta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDICargoRec.Actualizar Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDICargoRec.CDisp] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDICargoRec.ListaAccionesMultiples] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CDICargoRec] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.CteInfo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion.Actualizar Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion.Actualizar Vista] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion.Expresion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion.Expresion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion.ListaAccionesMultiples] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion1.Actualizar Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion1.Expresion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion1.ListaAccionesMultiples] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Expresion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Membresia.Actualizar Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Membresia.Actualizar Vista] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Membresia.Expresion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.Membresia.ListaAccionesMultiples] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Acciones.RepPantalla] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.Art.Descripcion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.CDISociosCargoRecD.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.CDISociosCargoRecD.FechaFin] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.CDISociosCargoRecD.FechaInicio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.CDISociosCargoRecD.TarjetaBancaria] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/AltaCargoBancario] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.Art.Descripcion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.CDISociosCargoRecD.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.CDISociosCargoRecD.Baja] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.CDISociosCargoRecD.FechaFin] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.CDISociosCargoRecD.FechaInicio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.CDISociosCargoRecD.TarjetaBancaria] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/BajaCargoBancario] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIActividad.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaArtTarBanca.CDISocioArticulos.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaArtTarBanca.CDISocioArticulos.Baja] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaArtTarBanca.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaArtTarBanca.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaCargoBancario.Art.Descripcion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaCargoBancario.CDIArticulosCargos.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaCargoBancario.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIBajaCargoBancario.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.Cliente] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.EstatusSoc] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.Membresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.Socio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.TitularAct] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.CDICambioTitular.TitularNvo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.Cte.Nombre] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular.ListaOrden] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambioTitular] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Cliente] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.CrearMembresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Descripcion13] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Descripcion15] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Estatus] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.LlevarCargos] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Membresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.MembresiaNva] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Socio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.CDICambMembr.Titular] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.Cte.Nombre] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICambMembr] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.ActividadCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.AportaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CategoriaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Actividad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Aporta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Categoria] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Clase] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.FormaPago] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Sede] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.SubCategoria] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.CDISocio.Tipo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.ClaseCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.SedeCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.SubCategoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas.TipoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIClaseLista.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDICteMembLst.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDIDatosBancarios.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISedesLista.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIFacturarA] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedAlergia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedAlergias] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedAvisar] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedCelular] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedDonador] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedEnfermedad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedEnfermo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedMedicamento] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedMedicamentos] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedTelefono] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CDIMedTipoSangre] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.CodigoPostal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Colonia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Delegacion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Descripcion19] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Direccion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.DireccionNumero] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.DireccionNumeroInt] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.eMail1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.EntreCalles] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Estado] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.EstadoCivil] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.FechaNacimiento] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Nacionalidad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Ocupacion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Pais] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Parentesco] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.PersonalApellidoMaterno] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.PersonalApellidoPaterno] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.PersonalNombres] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.PersonalPais] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Poblacion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.RFC] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Sexo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Telefonos] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.TelefonosLada] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.CDISocioCte.Tipo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioCte] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.Art.Descripcion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.CDISociosCargoRecD.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.CDISociosCargoRecD.Cantidad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.CDISociosCargoRecD.EsCuota] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.CDISociosCargoRecD.FechaFin] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.CDISociosCargoRecD.FechaInicio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecD] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.Art.Descripcion1] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.Baja] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.Cantidad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.EsCuota] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.FechaFin] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.CDISociosCargoRecD.FechaInicio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosCargoRecDBaja] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.CtaBancariaDom] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.Institucion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.InstitucionDom] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.NombreTarjeta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.NoSeguridad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.NoSeguridadB] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.NoTarjeta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.Vigencia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.CDISociosDatosBancarios.VigenciaDom] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios.ListaOrden] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancarios] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.BAJA] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.DefCargAuto] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.Estatus] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.Institucion] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.NombreTarjeta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.NoTarjeta] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.CDISociosDatosBancarios.Vigencia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISociosDatosBancariosBaja] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISocioSubsidioLista.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/CDISubcategoriaLista.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.ActividadCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.AportaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CategoriaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.CuotaOriginal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.Descuento] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.Ejecutivo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.FechaIngreso] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.FechaVigencia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.Formato] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.ImporteAnualidad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.ImporteSubsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.Recomendado] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.SituacionM] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.Subsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.CDISocio.TipoSubsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.ClaseCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.Cte.CDICuotaMembresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.Cte.CDISubsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.FormaDePAgoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.SedeCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.SubCategoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre.TipoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/DescuentoMembre] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Detalle.CDISocioD.RFC] - CDISociosD.esp
+[CDIModuloSocios.frm/Detalle.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Detalle.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Detalle] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Forma.ListaAcciones] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Forma.ListaCarpetas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Forma] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/InteresadoEn.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/InteresadoEn] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CategoriaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Causa] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Cliente] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Concepto] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.CuotaOriginal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.FormaPago] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Membresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.NIPCDI] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Observaciones] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Referencia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.RefMovPrevio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Socio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.CDISocio.Subsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.FormaDePAgoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista.NombreSocio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/Lista] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.ActividadCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.AportaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CategoriaCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDICuotaC] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.Ejecutivo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.FechaIngreso] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.FechaVigencia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.Formato] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.Recomendado] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.SituacionM] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.Subsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CDISocio.TipoSubsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.ClaseCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.Cte.CDISubsidio] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.CuotaOriginalC] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.FormaDePAgoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.SedeCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.SubCategoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.SubsidioC] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia.TipoCal] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/SubsidioMembresia] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.CDIVPuntosMembresia.Articulo] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.CDIVPuntosMembresia.Cantidad] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.CDIVPuntosMembresia.FechaEmision] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.CDIVPuntosMembresia.Mov] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.CDIVPuntosMembresia.movid] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.Columnas] - CDIModuloSociosCambios.esp
+[CDIModuloSocios.frm/VistaPuntos.ListaEnCaptura] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Actividad] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Aporta] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/BloquearDemandado] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/BloquearDemandante] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Categoria] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Causa] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/CitaHonorJusticia] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Clase] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/ClaveDemandado] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/ClaveDemandante] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Cliente.ListaRefrescar] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Cliente] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/ClienteAnt] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Comentarios] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Concepto] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/CuotaOriginal] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/DemandadoTipo] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/DemandanteTipo] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Descuento] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Edad] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Ejecutivo] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/FechaAplicacion] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/FechaIngreso] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/FechaVigencia] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/FormaPago.ListaOpciones] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/FormaPago] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Formato] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/HoraHonorJusticia] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/ListaPreciosCuotaA] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/ListaPreciosCuotaM] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Membresia] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Moneda] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Mov.ListaRefrescar] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NIPCDI] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NoDiasDemandado] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NoDiasDemandante] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NombreDemandado] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NombreDemandante] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/NombreEquipo] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Observaciones] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Proyecto] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Recomendado] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/RefMovPrevio] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Relaciones.CARGOSBA] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Sede] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/SituacionM] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Socio.ListaRefrescar] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Socio.ListaRefrescarCondiciones] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Socio] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/SubCategoria] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Subsidio] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Sucursal] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Tabla.ListaCampos] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Tabla.ListaRelaciones] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Tabla.SQL] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/Tipo] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/TipoCambio] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/TipoSubsidio] - CDIModuloSociosCambios.esp
+[CDISocio.tbl/UEN] - CDIModuloSociosCambios.esp
+[CDISocio.vis/ActividadCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/AportaCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDICuotaC] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Actividad] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Aporta] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Clase] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Descuento] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Ejecutivo] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Formato] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Recomendado] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.RefMovPrevio] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Sede] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.SituacionM] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.SubCategoria] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CDISocio.Tipo] - CDIModuloSociosCambios.esp
+[CDISocio.vis/ClaseCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Cte.Estatus] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Cte.Tipo] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Cte.Tipo0] - CDIModuloSociosCambios.esp
+[CDISocio.vis/CuotaOriginalC] - CDIModuloSociosCambios.esp
+[CDISocio.vis/EstatusCte] - CDIModuloSociosCambios.esp
+[CDISocio.vis/NombreSocioBaja] - CDIModuloSociosCambios.esp
+[CDISocio.vis/NvaMem] - CDIModuloSociosCambios.esp
+[CDISocio.vis/SedeCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/SubCategoCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/SubsidioC] - CDIModuloSociosCambios.esp
+[CDISocio.vis/TipoCal] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Vista.ListaCalculados] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Vista.ListaCampos] - CDIModuloSociosCambios.esp
+[CDISocio.vis/Vista.SQL] - CDIModuloSociosCambios.esp
+[CDISocioArticulos.tbl/Baja] - CDISocioArticulosA.esp
+[CDISocioArticulos.tbl/ID] - CDISocioArticulosA.esp
+[CDISocioArticulos.tbl/Tabla.ListaCampos] - CDISocioArticulosA.esp
+[CDISocioArticulos.tbl/Tabla.SQL] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.Articulo] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.Baja] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.Cantidad] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.ID] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.Precio] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/CDISocioArticulos.RenglonTipo] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/Vista.ListaCampos] - CDISocioArticulosA.esp
+[CDISocioArticulos.vis/Vista.SQL] - CDISocioArticulosA.esp
+[CDISocioD.tbl/RFC] - CDISociosD.esp
+[CDISocioD.tbl/Tabla.ListaCampos] - CDISociosD.esp
+[CDISocioD.tbl/Tabla.SQL] - CDISociosD.esp
+[CDISocioD.vis/CDISocioD.RFC] - CDISociosD.esp
+[CDISocioD.vis/Cte.RFC] - CDISociosD.esp
+[CDISocioD.vis/Vista.ListaCampos] - CDISociosD.esp
+[CDISocioD.vis/Vista.SQL] - CDISociosD.esp
+[CDISocios.frm/Acciones.Guardar.ListaAccionesMultiples] - CDISocios.esp
+[CDISocios.frm/Acciones.Guardar.SocioDuplicado] - CDISocios.esp
+[CDISocios.frm/CDICargRec.Automatico] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.Articulo] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.Cantidad] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.casillero] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.FechaFin] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.FechaInicio] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.CDIArtCargosRecurrentes.Ubicacion] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.Columnas] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.Descripcion1] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.ListaEnCaptura] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec.PrecioLista] - CDISociosCte3_2.esp
+[CDISocios.frm/CDICargRec] - CDISociosCte3_2.esp
+[CDISocios.frm/DatosBancarios.Cte.CDIAutorizacionCargos] - CDICargosTarjetaBAncaria.esp
+[CDISocios.frm/Ficha.Cte.Categoria] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.Cliente] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.Membresia] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.Parentesco] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.RFC] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.Socio] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.Cte.Titular] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha.ListaEnCaptura] - CDISociosCte3_2.esp
+[CDISocios.frm/Ficha] - CDISociosCte3_2.esp
+[CDISocios.frm/Forma.ListaCarpetas] - CDISociosCte3_2.esp
+[CDISocios.frm/Forma] - CDISociosCte3_2.esp
+[CDISocios.frm/Preferencias] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Actividad] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Aporta] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.CargoCDI] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Categoria] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Categoria0] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.CDICuotaMembresia] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.CDIFormaPago] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.CDISubsidio] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Clase] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Descuento] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Formato] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Membresia] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Recomendado] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Sede] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Situacion] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Socio] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.SubCategoria] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Tipo] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.CDICteCat.Tipo0] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Agente] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.CDICargosRecurrentes] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.CDICuotaMembresia] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.CDIFacturarA] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.CreditoEspecial] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Descripcion13] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Descripcion15] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Descripcion17] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Descripcion19] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Estatus] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Nombre] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.RFC] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Cte.Titular] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.Edad] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.FechaVigencia] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg.ListaEnCaptura] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNeg] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Actividad] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Aporta] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Categoria0] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.CDICargosRecurrentes] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.CDIFacturarA] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.CDIFormaPago] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Clase] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Sede] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.SubCategoria] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Tipo] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.Cte.Tipo0] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio.ListaEnCaptura] - CDISociosCte3_2.esp
+[CDISocios.frm/ReglaNegocio] - CDISociosCte3_2.esp
+[CDISocios.frm/SociosCDI] - CDISociosCte3_2.esp
+[CDISubeArchAplic.frm/Acciones.Iniciar.Expresion] - CDISubeArchApli.esp
+[CDIUsuarioCFG.tbl/CDISupervisor] - CDIusuario_2.esp
+[CDIUsuarioCFG.tbl/CDIVerNoSeguridadTB] - CDIusuario_2.esp
+[CDIUsuarioCFG.tbl/Tabla.ListaCampos] - CDIusuario_2.esp
+[CDIUsuarioCFG.tbl/Tabla.SQL] - CDIusuario_2.esp
+[CDIUsuarioCFG.vis/CDIUsuarioCFG.CDISupervisor] - CDIusuario_2.esp
+[CDIUsuarioCFG.vis/CDIUsuarioCFG.CDIVerNoSeguridadTB] - CDIusuario_2.esp
+[CDIUsuarioCFG.vis/Vista.ListaCampos] - CDIusuario_2.esp
+[CDIUsuarioCFG.vis/Vista.SQL] - CDIusuario_2.esp
+[CE.frm/(Carpeta Abrir)] - ce20143.esp
+[CE.frm/Acciones.Afectar] - ce20143.esp
+[CE.frm/Acciones.CDICePlanPerPrecioDescto] - ce20143.esp
+[CE.frm/Acciones.HHCECambio] - ce20143.esp
+[CE.frm/Acciones.PreRegistros] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaEspacio] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaGrupo] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaHorario] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaMateria] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaPlan] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaProfesor] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.AltaPrograma] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaCDIBeca] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaDescuentoLineal] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaMovimiento] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaMovimientoId] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaPlan] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaPrecio] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.BajaPrograma] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.MovBajaGenerado] - ce20143.esp
+[CE.frm/CDICeCambioMov.CDICeCambioMov.MovPreRGenerado] - ce20143.esp
+[CE.frm/CDICeCambioMov.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICeCambioMov] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Area] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDICentroCostos] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDICobertura] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDICoberturaMedica] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIComite] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIConcepto] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDICondicionFisica] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIDatosMedicos] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIDatosTransporte] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIDiasVigenciaPreRegistro] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIEdadMaxima] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIEdadMinima] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIEstaturaMinima] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIEvaluacionProfesor] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIEvaluacionPsicologica] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIGeneraCargoRecurrente] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDILimiteMesesDatosMedicos] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIMaximoEdadPermitido] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIMinimoEdadPermitido] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIMostrarInternet] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIPeriodo] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIPermiteBeca] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDIPesoMinimo] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CDISexo] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CePlan] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Condicion] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Coordinacion] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CreditoDirecto] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Creditos] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.CreditosOpcional] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Descripcion] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.HorarioVariable] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Impuesto1] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Inscripcion] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.MonedaPrecio] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Nivel] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.Precio] - ce20143.esp
+[CE.frm/CDICECamPlan.CDICEMovPlan.PreciosPeriodo] - ce20143.esp
+[CE.frm/CDICECamPlan.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICECamPlan] - ce20143.esp
+[CE.frm/CDICECamPlanBaja.CE.CEPlan] - ce20143.esp
+[CE.frm/CDICEMovPend.CDICEMovPlan.CDICentroCostos] - ce20143.esp
+[CE.frm/CDICEMovPend.CDICEMovPlan.CDIClavePresupuestal] - ce20143.esp
+[CE.frm/CDICEMovPend.CDICEMovPlan.CDICobertura] - ce20143.esp
+[CE.frm/CDICEMovPend.CDICEMovPlan.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CE.frm/CDICEMovPend.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Area] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDICentroCostos] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDICobertura] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDICoberturaMedica] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIComite] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIConcepto] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDICondicionFisica] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIDatosMedicos] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIDatosTransporte] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIDiasVigenciaPreRegistro] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIEdadMaxima] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIEdadMinima] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIEstaturaMinima] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIEvaluacionProfesor] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIEvaluacionPsicologica] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIGeneraCargoRecurrente] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDILimiteMesesDatosMedicos] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIMaximoEdadPermitido] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIMinimoEdadPermitido] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIMostrarInternet] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIPeriodo] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIPermiteBeca] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDIPesoMinimo] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CDISexo] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CePlan] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Condicion] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Coordinacion] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CreditoDirecto] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Creditos] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.CreditosOpcional] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Descripcion] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.HorarioVariable] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.Nivel] - ce20143.esp
+[CE.frm/CDICEMovPlan.CDICEMovPlan.PreciosPeriodo] - ce20143.esp
+[CE.frm/CDICEMovPlan.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICEMovPlan] - ce20143.esp
+[CE.frm/CDICEMovPlanBaja.CE.CEPlan] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.CDICEMovPlan.CDIClavePresupuestal] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.CDICEMovPlan.CDIClavePresupuestalDev] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.CDICEMovPlan.Impuesto1] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.CDICEMovPlan.MonedaPrecio] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.CDICEMovPlan.Precio] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.Columnas] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICEMovPlanCambioContra] - ce20143.esp
+[CE.frm/CDICeMovPlanPend.CDICEMovPlan.CDIClavePresupuestal] - ce20143.esp
+[CE.frm/CDICeMovPlanPend.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes.CDICEMovPlanCont.CDIClavePresupuestal] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes.CDICEMovPlanCont.CDIClavePresupuestalDev] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes.CDICEMovPlanCont.MonedaPrecio] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes.CDICEMovPlanCont.Precio] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes.ListaEnCaptura] - ce20143.esp
+[CE.frm/CDICeMovPlanPendientes] - ce20143.esp
+[CE.frm/Contactos.CE.Cliente2] - CE.esp
+[CE.frm/Contactos.CE.Porcentaje] - CE.esp
+[CE.frm/Contactos.CE.Porcentaje2] - CE.esp
+[CE.frm/Contactos] - CE.esp
+[CE.frm/Detalle] - ce20143.esp
+[CE.frm/Ficha.CE.CEPlan] - ce20143.esp
+[CE.frm/Ficha.ListaEnCaptura] - ce20143.esp
+[CE.frm/Forma.ListaAcciones] - ce20143.esp
+[CE.frm/Forma.ListaCarpetas] - ce20143.esp
+[CE.frm/Forma] - ce20143.esp
+[CE.frm/Lista.Columnas] - ce20143.esp
+[CE.tbl/CEPlan] - ce20143.esp
+[CE.tbl/ID] - ce20143.esp
+[CE.tbl/Programa.ListaRefrescar] - ce20143.esp
+[CE.tbl/Programa] - ce20143.esp
+[CE.tbl/Proyecto] - ce20143.esp
+[CentroCostosRama.frm/Acciones.Otros1] - CentroCostos.esp
+[CEPlan.Columnas] - CDIProyProgCEPlan.esp
+[CEPlan.frm/Acciones.Eliminar] - ce20143.esp
+[CEPlan.frm/Acciones.GenerarPlan] - ce20143.esp
+[CEPlan.frm/Acciones.Guardar] - ce20143.esp
+[CEPlan.frm/Acciones.Nuevo] - ce20143.esp
+[CEPlan.frm/Detalle] - ce20143.esp
+[CEPlan.frm/Forma.ListaAcciones] - ce20143.esp
+[CEPlan.frm/Lista.Columnas] - CEPLAN.esp
+[CEPlan.frm/Otros.CentroCostos.Descripcion] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIClavePresupuestalDev] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDICobertura] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIGeneraCargoRecurrente] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDILimiteMesesDatosMedicos] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIMaximoEdadPermitido] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIMinimoEdadPermitido] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIPeriodo] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPlan.frm/Otros.CEPlan.PreciosPeriodo] - ce20143.esp
+[CEPlan.frm/Otros.ClavePresupuestal.Descripcion] - ce20143.esp
+[CEPlan.frm/Otros.ListaEnCaptura] - ce20143.esp
+[CEPlan.frm/Otros] - ce20143.esp
+[CEPlan.tbl/CDIClavePresupuestal] - CEPLAN.esp
+[CEPlan.tbl/CDIClavePresupuestalDev] - ce20143.esp
+[CEPlan.tbl/CDICobertura] - ce20143.esp
+[CEPlan.tbl/CDIComite] - CEPLAN.esp
+[CEPlan.tbl/CDIConcepto]	 - CEPLAN.esp
+[CEPlan.tbl/CDIGeneraCargoRecurrente] - ce20143.esp
+[CEPlan.tbl/CDIMaximoEdadPermitido] - ce20143.esp
+[CEPlan.tbl/CDIMinimoEdadPermitido] - ce20143.esp
+[CEPlan.tbl/CDIPeriodo] - ce20143.esp
+[CEPlan.tbl/CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPlan.tbl/Coordinacion] - CEPLAN.esp
+[CEPlan.tbl/Id] - ce20143.esp
+[CEPlan.tbl/PreciosPeriodo] - ce20143.esp
+[CEPlan.tbl/Tabla.ListaCampos] - ce20143.esp
+[CEPlan.tbl/Tabla.SQL] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIClavePresupuestalDev] - ce20143.esp
+[CEPlan.vis/CEPlan.CDICobertura] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIGeneraCargoRecurrente] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIMaximoEdadPermitido] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIMinimoEdadPermitido] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIPeriodo] - ce20143.esp
+[CEPlan.vis/CEPlan.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPlan.vis/CEPlan.Id] - ce20143.esp
+[CEPlan.vis/CEPlan.PreciosPeriodo] - ce20143.esp
+[CEPlan.vis/Vista.ListaCampos] - ce20143.esp
+[CEPlan.vis/Vista.SQL] - ce20143.esp
+[CEPrograma.Columnas] - CDIProyProgCEPlan.esp
+[CEPrograma.frm/Acciones.CDICeProgPerPrecioDescto] - ce20143.esp
+[CEPrograma.frm/Detalles.CEPrograma.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPrograma.frm/Detalles.ListaEnCaptura] - ce20143.esp
+[CEPrograma.frm/Forma.ListaAcciones] - ce20143.esp
+[CEPrograma.frm/Forma] - ce20143.esp
+[CEPrograma.tbl/CDIPeriodoPreciosYdescuentos.ListaOpciones] - ce20143.esp
+[CEPrograma.tbl/CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPrograma.tbl/Tabla.ListaCampos] - ce20143.esp
+[CEPrograma.tbl/Tabla.SQL] - ce20143.esp
+[CEPrograma.vis/CEPrograma.CDIPeriodoPreciosYdescuentos] - ce20143.esp
+[CEPrograma.vis/Vista.ListaCampos] - ce20143.esp
+[CEPrograma.vis/Vista.SQL] - ce20143.esp
+[CEProgramaLista.frm/CEPrograma] - CEProgramaLista.esp
+[CEProgramaLista.frm/Forma] - CEProgramaLista.esp
+[ClavePresupuestal.tbl/ClavesRelacionadas] - ClavePresupuestal.esp
+[Compra.frm/(Carpeta Abrir)] - Tableros y Autorizacion.esp
+[Compra.frm/Forma] - Tableros y Autorizacion.esp
+[CompraD.tbl/ClavePresupuestal] - ClavePresupuestalObligatoriaComprasGastos.esp
+[CompraExplorarD.vis/SELECT] - CompraExplorarD.esp
+[Condicion.frm/CFD] - ZCFDFlex1.ESP
+[Cte.frm/Acciones.CteCFD] - ZCFDFlex1.ESP
+[Cte.tbl/Actividad] - CDISociosCte1_1.esp
+[Cte.tbl/Aporta] - CDISociosCte1_1.esp
+[Cte.tbl/CargoCDI] - CDISociosCte1_1.esp
+[Cte.tbl/Categoria0] - CDISociosCte1_1.esp
+[Cte.tbl/CDICargosRecurrentes] - CDISociosCte1_1.esp
+[Cte.tbl/CdiEstaPresente] - CDISociosCte1_1.esp
+[Cte.tbl/CDIFacturarA] - CDISociosCte1_1.esp
+[Cte.tbl/CDILog1] - CDISociosCte1_1.esp
+[Cte.tbl/CDILog2] - CDISociosCte1_1.esp
+[Cte.tbl/CDILog3] - CDISociosCte1_1.esp
+[Cte.tbl/CDIMedUltimoCambio] - CDISociosCte1_1.esp
+[Cte.tbl/RFC] - CDISociosCte1_1.esp
+[Cte.tbl/Sede] - CDISociosCte1_1.esp
+[Cte.tbl/SubCategoria] - CDISociosCte1_1.esp
+[Cte.tbl/Tabla.ListaCampos] - CDISociosCte1_1.esp
+[Cte.tbl/Tabla.ListaRelaciones] - CDISociosCte1_1.esp
+[Cte.tbl/Tabla.SQL] - CDISociosCte1_1.esp
+[Cte.tbl/Tipo0] - CDISociosCte1_1.esp
+[Cte.vis/Cte.Actividad] - CDISociosCte2_1.esp
+[Cte.vis/Cte.Aporta] - CDISociosCte2_1.esp
+[Cte.vis/Cte.CargoCDI] - CDISociosCte2_1.esp
+[Cte.vis/Cte.Categoria0] - CDISociosCte2_1.esp
+[Cte.vis/Cte.CDIFormaPago] - CDISociosCte2_1.esp
+[Cte.vis/Cte.CDILog1] - CDISociosCte2_1.esp
+[Cte.vis/Cte.CDILog2] - CDISociosCte2_1.esp
+[Cte.vis/Cte.CDILog3] - CDISociosCte2_1.esp
+[cte.vis/Cte.Sede] - CDISociosCte2_1.esp
+[Cte.vis/Cte.SubCategoria] - CDISociosCte2_1.esp
+[Cte.vis/Cte.Tipo0] - CDISociosCte2_1.esp
+[Cte.vis/Vista.ListaCampos] - CDISociosCte2_1.esp
+[Cte.vis/Vista.SQL] - CDISociosCte2_1.esp
+[CteEmpresaCFD.frm/Acciones.CteCFDFormaPago] - ZCFDFlex1.ESP
+[CteEmpresaCFD.frm/Forma] - ZCFDFlex1.ESP
+[CteEmpresaCFD.frm/Lista.CteEmpresaCFD.InfoFormaPago] - ZCFDFlex1.ESP
+[CteEmpresaCFD.frm/Lista] - ZCFDFlex1.ESP
+[CteEmpresaCFD.tbl/InfoFormaPago] - ZCFDFlex1.ESP
+[CteEmpresaCFD.tbl/Tabla] - ZCFDFlex1.ESP
+[CteEmpresaCFD.vis/CteEmpresaCFD.InfoFormaPago] - ZCFDFlex1.ESP
+[CteEmpresaCFD.vis/Vista] - ZCFDFlex1.ESP
+[CteEnviarA.frm/Acciones.CteEnviarACFD] - ZCFDFlex1.ESP
+[CteEnviarA.frm/Forma] - ZCFDFlex1.ESP
+[Cxc.frm/(Carpeta Abrir).Cxc.Cliente] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).Cxc.Concepto] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).Cxc.FechaEmision] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).Cxc.Referencia] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).Cxc.Saldo] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).Cxc.Vencimiento] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir).ImporteTotal] - Tableros y Autorizacion.esp
+[Cxc.frm/(Carpeta Abrir)] - Tableros y Autorizacion.esp
+[Cxc.frm/Acciones.Cancelar] - ZCFDFlex1.ESP
+[Cxc.frm/Acciones.GenerarCFDFlex] - ZCFDFlex1.ESP
+[Cxc.frm/Acciones.Imprimir] - ZCFDFlex1.ESP
+[Cxc.frm/Acciones.RepPantalla] - ZCFDFlex1.ESP
+[Cxc.tbl/FormaCobro] - ZCFDFlex1.ESP
+[CxcAnticiposPendientes.frm/Lista.Cxc.Moneda] - ZCFDFlex1.ESP
+[CxcAnticiposPendientes.frm/Lista] - ZCFDFlex1.ESP
+[CxcAnticiposPendientes.vis/Vista] - ZCFDFlex1.ESP
+[CxcExplorar.vis/CDICteCat.Actividad] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.Aporta] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.Categoria] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.Clase] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.Sede] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.SubCategoria] - ExplorarCXC3.esp
+[CxcExplorar.vis/CDICteCat.Tipo] - ExplorarCXC3.esp
+[CxcExplorar.vis/Relaciones.CDICteCat.cte] - ExplorarCXC3.esp
+[CxcExplorar.vis/Relaciones.Cte.CDICteCat] - ExplorarCXC3.esp
+[CxcExplorar.vis/Relaciones.Cte.CteEnviarA] - ExplorarCXC3.esp
+[CxcExplorar.vis/Relaciones.CxcInfo.CDICteCat] - ExplorarCXC3.esp
+[CxcExplorar.vis/Relaciones.CxcInfo.CteEnviarA] - ExplorarCXC3.esp
+[CxcExplorar.vis/Vista.ListaCampos] - ExplorarCXC3.esp
+[CxcExplorar.vis/Vista.ListaRelaciones] - ExplorarCXC3.esp
+[CxcExplorar.vis/Vista.ListaTablas] - ExplorarCXC3.esp
+[CxcExplorar.vis/Vista.SQL] - ExplorarCXC3.esp
+[CxcExplorar.vis/Vista] - ExplorarCXC3.esp
+[CxcInfo.tbl/Relaciones.CDICteCat] - ExplorarCXC3.esp
+[CxcInfo.tbl/Tabla.ListaRelaciones] - ExplorarCXC3.esp
+[CxcInfo.tbl/Tabla] - ExplorarCXC3.esp
+[CxcT.vis/SELECT] - CxcT.esp
+[Cxp.frm/Acciones.Imprimir] - CXP.ESP
+[Cxp.frm/Acciones.RepPantalla] - CXP.ESP
+[CxpAuxConcentrado.rep/Reporte.ListaOrden] - CDICxpAux.esp
+[CxpAuxConcentrado.rep/Reporte] - CDICxpAux.esp
+[CxpAuxDia.rep/Reporte.ListaOrden] - CDICxpAux.esp
+[CxpAuxDia.rep/Reporte] - CDICxpAux.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.BeneficiarioNombre] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.CtaDinero] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.CtaDineroDestino] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.FechaEmision] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.Moneda] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.Referencia] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).Dinero.Saldo] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir).ImporteTotal] - Tableros y Autorizacion.esp
+[Dinero.frm/(Carpeta Abrir)] - Tableros y Autorizacion.esp
+[Dinero.frm/MovImpuesto] - Dinero.esp
+[Dinero.tbl/BeneficiarioNombre] - Dinero.esp
+[Empresa.frm/Acciones.GenerarCFDI] - Empresa.esp
+[Empresa.tbl/CFD] - ZCFDFlex1.ESP
+[ExplorarCE.frm/Forma] - ExplorarCE.esp
+[ExplorarCE.frm/Lista] - ExplorarCE.esp
+[ExplorarCFD.frm/Acciones.ReporteMensual] - ExplorarCFD.esp
+[ExplorarCxc.frm/Lista] - ExplorarCxc.esp
+[ExplorarCxcMov.frm/Forma] - ExplorarCXC3.esp
+[Gasto.frm/Forma] - Gasto.esp
+[GastoD.tbl/ClavePresupuestal] - ClavePresupuestalObligatoriaComprasGastos.esp
+[GenerarCotizacion.dlg/Acciones.SolicitudCargo] - dial.esp
+[GenerarCotizacion.dlg/Dialogo] - dial.esp
+[GenerarCxcAnticipo.dlg/Acciones.Otros4] - GenerarCxcAnticipo.esp
+[GenerarCxcAnticipo.dlg/Acciones.Otros5] - GenerarCxcAnticipo.esp
+[GenerarCxcAnticipo.dlg/Dialogo.ListaAcciones] - GenerarCxcAnticipo.esp
+[GenerarCxcAnticipo.dlg/Dialogo] - GenerarCxcAnticipo.esp
+[GenerarCxcCobro.dlg/Acciones.Otros1] - GenerarCxcCobro.esp
+[GenerarCxcCobro.dlg/Dialogo.ListaAcciones] - GenerarCxcCobro.esp
+[GenerarCxcCobro.dlg/Dialogo] - GenerarCxcCobro.esp
+[GenerarDineroEgreso.dlg/Acciones.Otros1] - cheques.ESP
+[GenerarDineroEgreso.dlg/Acciones.Otros2] - cheques.ESP
+[GenerarDineroEgreso.dlg/Acciones.Otros3] - cheques.ESP
+[GenerarDineroEgreso.dlg/Acciones.Otros4] - cheques.ESP
+[GenerarDineroEgreso.dlg/Acciones.Otros5] - cheques.ESP
+[GenerarDineroIngreso.dlg/Acciones.Otros1] - cheques.ESP
+[GenerarDineroTraspaso.dlg/Acciones.Otros1] - GenerarDineroTraspaso.esp
+[GenerarDineroTraspaso.dlg/Dialogo] - GenerarDineroTraspaso.esp
+[GenerarGastoSolicitud.dlg/Acciones.Otros1] - cheques.ESP
+[GenerarOrdenCompra.dlg/Acciones.Otros5] - DCOMS.esp
+[GenerarOrdenCompra.dlg/Acciones.Otros6] - DCOMS.esp
+[GenerarPedido.dlg/Acciones.Otros1] - dial.esp
+[GenerarPedido.dlg/Acciones.Otros2] - dial.esp
+[GenerarPedido.dlg/Acciones.Recibo] - dial.esp
+[GenerarPedido.dlg/Dialogo] - dial.esp
+[GenerarSolicitud.dlg/Acciones.Otros1] - GenerarInventario.esp
+[GenerarSolicitud.dlg/Dialogo.ListaAcciones] - GenerarInventario.esp
+[GenerarSolicitud.dlg/Dialogo] - GenerarInventario.esp
+[GenerarSolicitudDevolucion.dlg/Acciones.DevVtaSI] - GenerarDevolucionVenta.esp
+[GenerarSolicitudDevolucion.dlg/Dialogo.ListaAcciones] - GenerarDevolucionVenta.esp
+[GenerarSolicitudDevolucion.dlg/Dialogo] - GenerarDevolucionVenta.esp
+[Info.eDoc] - Variables.esp
+[Inv.frm/(Carpeta Abrir)] - Tableros y Autorizacion.esp
+[Lista.Columnas] - CDISocioEstatusporTipo.esp
+[ListaMembresia.Columnas] - CDISocioEstatusporTipo.esp
+[MenuExpCxc.dlg/Acciones.CDICobrosInsc] - MenuExpDialCxCCDI.ESP
+[MenuExpCxc.dlg/Acciones.ExpCxcAplicaCDi] - MenuExpDialCxCCDI.ESP
+[MenuExpCxc.dlg/Dialogo.ListaAcciones] - MenuExpDialCxCCDI.ESP
+[MenuExpFiscal.dlg/Acciones.ExplorarCFD] - ExploradorCFD.esp
+[MenuExpNomina.dlg/Acciones.MovsPersonal] - MenuExpNomina.esp
+[MenuExpNomina.dlg/Dialogo.ListaAcciones] - MenuExpNomina.esp
+[MenuExpSocio.dlg/Acciones.CDIAccesosSocPeriodo] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.cdiclascxc] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.CDIClasVenta] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.LlamadasJai] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.MemActivas] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.SociosClas] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Acciones.SociosClasT] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Dialogo.ListaAcciones] - MenuExlpSocJai.esp
+[MenuExpSocio.dlg/Dialogo] - MenuExlpSocJai.esp
+[MenuHerramientaCxc.dlg/Acciones.GenerarCFDLote] - GenerarCFDLote.esp
+[MenuHerramientaCxc.dlg/Dialogo] - GenerarCFDLote.esp
+[MenuHerramientasVenta.dlg/Acciones.GenerarCFDLote] - GenerarCFDLote.esp
+[MenuHerramientasVenta.dlg/Dialogo] - GenerarCFDLote.esp
+[MenuPrincipal.dlg/Acciones.Config.CFDFlex1] - ZCFDFlex1.ESP
+[MenuPrincipal.dlg/Acciones.Config.eDoc] - ZMenuPrincipal.esp
+[MenuPrincipal.dlg/Acciones.Config.eDoc1] - ZCFDFlex1.ESP
+[MenuPrincipal.dlg/Acciones.Exp.CDIInscritosSI] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Exp.CDIInscritosSICom] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Exp.CE2] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Herramienta.CFDFlex] - ZMenuPrincipal.esp
+[MenuPrincipal.dlg/Acciones.Herramienta.CFDFlex1] - ZCFDFlex1.ESP
+[MenuPrincipal.dlg/Acciones.Herramienta.GenCargAutom8] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Herramienta.Paginas] - CFDINomina.esp
+[MenuPrincipal.dlg/Acciones.Mov.CDIMemREv] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Mov.CDIPases] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Mov.DiaSocio] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Acciones.Mov.GestionPuntos] - MenuPrincipalEspCambios.esp
+[MenuPrincipal.dlg/Dialogo] - ZMenuPrincipal.esp
+[MenuRepNomina.dlg/Dialogo] - NomRepMenu.esp
+[mis_RepCxcAnalisisMov.frm/(Variables).ListaEnCaptura] - mis_RepCxcAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.AcreedorA] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.AcreedorD] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.Desglosar] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.Estatus] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.FechaA] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.FechaD] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.Moneda] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.MovClaveAfecta] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.ProvCat] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.ProvFam] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.Proyecto] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.Sucursal] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).Info.UEN] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/(Variables).ListaEnCaptura] - mis_RepGastoAnalisisMov.esp
+[mis_RepGastoAnalisisMov.frm/Forma] - mis_RepGastoAnalisisMov.esp
+[Nomina.frm/Ficha.Nomina.Proyecto] - Nomina1.esp
+[Nomina.tbl/Proyecto] - Nomina1.esp
+[NominaGenerar.frm/Acciones.Generar.Expresion] - NominaGenerar.esp
+[NominaGenerar.frm/Acciones.Generar.ListaAccionesMultiples] - NominaGenerar.esp
+[NominaGenerar.frm/Acciones.Generar] - NominaGenerar.esp
+[NominaGenerar.frm/Forma] - Generar Nomina.esp
+[NominaGenerar.frm/Lista.Columnas] - Generar Nomina.esp
+[NominaGenerar.frm/Lista.EstatusNombre] - Generar Nomina.esp
+[NominaGenerar.frm/Lista.NombreCompleto] - Generar Nomina.esp
+[NominaGenerar.frm/Lista.Personal.Tipo] - Generar Nomina.esp
+[NominaGenerar.frm/Lista.Personal.UltimoPago] - Generar Nomina.esp
+[NominaGenerar.frm/Lista] - Generar Nomina.esp
+[NominaT.vis/SELECT] - NominaT.esp
+[PlantillaOfficeD.tbl/Expresion] - PlantillaOfficeD.esp
+[PlantillaOfficeD.tbl/Tabla.LlavePrimaria] - PlantillaOfficeD.esp
+[PlantillaOfficeD.tbl/Tabla] - PlantillaOfficeD.esp
+[RepCxpAux.frm/(Variables).Info.FechaA] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.FechaD] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.Moneda] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.ProvCat] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.ProveedorA] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.ProveedorD] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.ProvFam] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Info.ProvTipo] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).ListaEnCaptura] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Rep.Aux] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Rep.MovEspecifico] - CDICxpAux.esp
+[RepCxpAux.frm/(Variables).Rep.Titulo] - CDICxpAux.esp
+[RepCxpAux.frm/Forma] - CDICxpAux.esp
+[RepCxpAux.frm/Lista.Columnas] - CDICxpAux.esp
+[Soporte.frm/(Carpeta Abrir).Atraso] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Dias] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.Cliente] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.Estado] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.FechaConclusion] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.FechaEmision] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.Titulo] - Tableros y Autorizacion.esp
+[Soporte.frm/(Carpeta Abrir).Soporte.Vencimiento] - Tableros y Autorizacion.esp
+[Soporte.frm/Acciones.Afectar] - CDISoporte.esp
+[Soporte.frm/Acciones.AgenteInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.ArtInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.CDIAutorizar] - Tableros y Autorizacion.esp
+[Soporte.frm/Acciones.CteInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.CtoInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.PersonalInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.ProvInfo] - CDISoporte.esp
+[Soporte.frm/Acciones.ProyInfo] - CDISoporte.esp
+[Soporte.frm/Ficha.Art.Descripcion1] - CDISoporte.esp
+[Soporte.frm/Ficha.Espacio.Nombre] - CDISoporte.esp
+[Soporte.frm/Ficha.ListaEnCaptura] - CDISoporte.esp
+[Soporte.frm/Ficha.NombreCompleto] - CDISoporte.esp
+[Soporte.frm/Ficha.NombreSucursalTrabajo] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Articulo] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Clase] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Concepto] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Contacto] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Elemento] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.eMail] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Espacio] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Extencion] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Fax] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.FechaConclusion] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.FechaEmision] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Medio] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Mov] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.MovID] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Observaciones] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Personal] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Proyecto] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.ProyectoFolio] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Referencia] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.ReferenciaInicial] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.SerieLote] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Subclase] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Telefono] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.UEN] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.Usuario] - CDISoporte.esp
+[Soporte.frm/Ficha.Soporte.UsuarioResponsable] - CDISoporte.esp
+[Soporte.frm/Ficha.UsuarioCopia.Nombre] - CDISoporte.esp
+[Soporte.frm/Ficha.UsuarioRelacion.Nombre] - CDISoporte.esp
+[Soporte.frm/Forma.ListaAcciones] - Tableros y Autorizacion.esp
+[Soporte.frm/Lista.Columnas] - CDISoporte.esp
+[Soporte.tbl/Avance] - CDISoporte.esp
+[Soporte.tbl/Calificacion] - CDISoporte.esp
+[Soporte.tbl/CondicionEntrega] - CDISoporte.esp
+[Soporte.tbl/CondicionPago] - CDISoporte.esp
+[Soporte.tbl/Estado] - CDISoporte.esp
+[Soporte.tbl/FechaAprobacion] - CDISoporte.esp
+[Soporte.tbl/FechaFinEst] - CDISoporte.esp
+[Soporte.tbl/FechaInicio] - CDISoporte.esp
+[Soporte.tbl/FechaInicioEst] - CDISoporte.esp
+[Soporte.tbl/FechaRevision] - CDISoporte.esp
+[Soporte.tbl/FechaTermino] - CDISoporte.esp
+[Soporte.tbl/Importe] - CDISoporte.esp
+[Soporte.tbl/Tiempo] - CDISoporte.esp
+[Soporte.tbl/TiempoUnidad] - CDISoporte.esp
+[Soporte.tbl/Version] - CDISoporte.esp
+[Temp.eDoc] - Variables.esp
+[Temp.Modulo] - Variables.esp
+[Usuario.frm/CDICfgOtros.CDIUsuarioCFG.CDISupervisor] - CDIusuario_2.esp
+[Usuario.frm/CDICfgOtros.CDIUsuarioCFG.CDIVerNoSeguridadTB] - CDIusuario_2.esp
+[Usuario.frm/CDICfgOtros.ListaEnCaptura] - CDIusuario_2.esp
+[Variables] - Variables.esp
+[Venta.frm/(Carpeta Abrir).ListaEnCaptura] - Tableros y Autorizacion.esp
+[Venta.frm/(Carpeta Abrir)] - Tableros y Autorizacion.esp
+[Venta.frm/Acciones.Cancelar] - ZCFDFlex1.ESP
+[Venta.frm/Acciones.GenerarCFDFlex] - ZCFDFlex1.ESP
+[Venta.frm/Acciones.Imprimir] - ZCFDFlex1.ESP
+[Venta.frm/Acciones.RepPantalla] - ZCFDFlex1.ESP
+[Venta.frm/Acciones.TraePrecio] - ZCFDFlex1.ESP
+[Venta.frm/Detalle.Columnas] - Tableros y Autorizacion.esp
+[Venta.frm/Lista.Columnas] - Tableros y Autorizacion.esp
+[Venta.tbl/Concepto] - ZCFDFlex1.ESP
+[VentaExplorarD.vis/SELECT] - VentaExplorarD.esp
+[VentaT.vis/SELECT] - VentaT.esp
+
+
+***  Fin del análisis  ***

@@ -1,0 +1,2009 @@
+[Tabla]
+EstatusDefault=CONFIRMAR
+
+[Cliente]
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+ConRefrescar=S
+ListaRefrescar=(Lista)
+Requerido=S
+
+[Nombre]
+Requerido=
+ValorPorOmision=Cte:Cte.Cliente
+ValorRefrescar=PersonalNombres + <T> <T> + PersonalApellidoPaterno + <T> <T> + PersonalApellidoMaterno
+ConRefrescarCondiciones=S
+
+[Direccion]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Colonia]
+CondicionEdicion=MismaDireccion = FALSO
+
+[CodigoPostal]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Poblacion]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Estado]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Pais]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Zona]
+CondicionEdicion=MismaDireccion = FALSO
+
+[RFC]
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=NIPCDI
+ConRefrescar=S
+ListaRefrescar=NIPCDI
+ValorPorOmision=<T>XAXX010101000<T>
+
+[Estatus]
+CondicionEdicion=
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Agente]
+Nombre=Gestor
+
+[NombreCorto]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Tipo]
+ValorPorOmision=Si<BR>  Info.Numero = 1<BR>Entonces<BR>  <T>Socio<T><BR>Sino<BR>  <T>Prospecto<T><BR>Fin
+
+[EntreCalles]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Plano]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Observaciones]
+CondicionEdicion=MismaDireccion = FALSO
+
+[CreditoEspecial]
+ValorPorOmision=Verdadero
+
+[Delegacion]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Descripcion11]
+Nombre=Ultimo Cambio Bloqueo
+AyudaEnCaptura=
+AyudaRefrescar=
+Formula=
+
+[Descripcion12]
+Nombre=Ultimo Cambio Estatus
+AyudaEnCaptura=
+AyudaRefrescar=
+Formula=
+
+[Descripcion13]
+Nombre=Bloqueado
+AyudaEnCaptura=Lista de Opciones
+AyudaRefrescar=
+Formula=
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
+ValorPorOmision=<T>No<T>
+OpcionesUnicamente=S
+ValorRefrescar=Vacio(Descripcion13, <T>No<T>)
+
+[Descripcion14]
+Nombre=Condiciones de Cobro
+AyudaEnCaptura=
+AyudaRefrescar=
+Formula=
+
+[Descripcion15]
+Nombre=Motivo Bloqueo
+AyudaEnCaptura=Vista
+Formula=
+AyudaForma=CDICondPagoCte
+AyudaVista=CDICondPagoCte
+AyudaCampo=CDICondPagoCte.Cliente
+AyudaBusquedaRapida=Asigna(Info.Cliente,Cliente)
+ConAyudaBusquedaRapida=S
+
+[Descripcion16]
+Nombre=Formas de Pago
+AyudaEnCaptura=Vista
+Formula=
+AyudaForma=CDIFormaPagoCte
+AyudaVista=CDIFormaPagoCte
+AyudaCampo=CDIFormaPagoCte.Cliente
+AyudaBusquedaRapida=Asigna(Info.Cliente,Cliente)
+ConAyudaBusquedaRapida=S
+
+[Descripcion17]
+Nombre=Cargos Recurrentes
+AyudaEnCaptura=Vista
+AyudaMemRenglones=
+Formula=
+CondicionDespliege=CDICargosRecurrentes
+AyudaForma=CDIArtCargosRecurrentes
+AyudaVista=CDIArtCargosRecurrentes
+AyudaCampo=CDIArtCargosRecurrentes.Cliente
+ConAyudaBusquedaRapida=S
+AyudaBusquedaRapida=Asigna( Info.Cliente, Cliente )
+
+[Descripcion18]
+Nombre=Relacion con NIPCDI
+AyudaEnCaptura=Vista
+Formula=
+AyudaForma=CDIRelacionClienteNIPCDI
+AyudaVista=CDIRelacionClienteNIPCDI
+AyudaCampo=CDIRelacionClienteNIPCDI.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+
+[Descripcion19]
+Nombre=Sector Comunitario
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT DISTINCT SectorComunitario FROM CDISectorComunitario<T>)
+
+[Descripcion20]
+Nombre=Articulos Cargos Automaticos
+AyudaEnCaptura=Vista
+Formula=
+AyudaForma=CDIArticulosCargos
+AyudaVista=CDIArticulosCargos
+AyudaCampo=CDIArticulosCargos.Cliente
+ConAyudaBusquedaRapida=S
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+CondicionDespliege=CDIAutorizacionCargos = VERDADERO
+
+[PersonalPais]
+Nombre=País de Nacimiento
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+
+[FechaNacimiento]
+ConRefrescar=S
+ListaRefrescar=NIPCDI
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ValidacionConCondiciones=S
+ValidacionCondicion=FechaNacimiento < FechaTrabajo
+ValidacionMensajeError=<T>Invalida<T>
+
+[Parentesco]
+Nombre=Parentesco (*)
+CondicionDespliege=Si<BR>  Info.CDINumero = 2<BR>Entonces<BR>  VERDADERO<BR>Sino<BR>  Titular = FALSO<BR>Fin
+
+[Fecha1]
+Nombre=Fecha Vigencia
+
+[Fecha2]
+Nombre=Fecha Baja
+
+[PersonalNombres]
+Mayusculas=S
+ConRefrescar=S
+ListaRefrescar=Nombre
+
+[PersonalApellidoPaterno]
+Mayusculas=S
+ConRefrescar=S
+ListaRefrescar=Nombre
+
+[PersonalApellidoMaterno]
+Mayusculas=S
+ConRefrescar=S
+ListaRefrescar=Nombre
+
+[DireccionNumero]
+CondicionEdicion=MismaDireccion = FALSO
+
+[DireccionNumeroInt]
+CondicionEdicion=MismaDireccion = FALSO
+
+[Estatus.ListaOpciones]
+BAJA=ASPIRANTE
+ASPIRANTE=BLOQUEADO
+BLOQUEADO=RECHAZADO
+RECHAZADO=(Fin)
+
+[Relaciones.CtaSituacion.LlaveLocal]
+(Inicio)={Comillas('CXC')}
+{Comillas(<T>CXC<T>)}=
+{Comillas('CXC')}=Situacion
+
+[Tabla.ListaCampos]
+DeducibleMoneda=Alergias
+Espacio=Religion
+Alergias=Coaseguro
+TipoRegistro=Titular
+Titular=Membresia
+Membresia=Nacionalidad
+Nacionalidad=Ocupacion
+Ocupacion=MismaDireccion
+MismaDireccion=DireccionOtroSocio
+DireccionOtroSocio=RutaImagen
+RutaImagen=Socio
+Socio=OtrosTelefonos
+OtrosTelefonos=OtrasDirecciones
+OtrasDirecciones=DireccionEnSuPais
+DireccionEnSuPais=NumeroPasaporte
+NumeroPasaporte=DireccionUltimoEmpleo
+DireccionUltimoEmpleo=InstitucionEnSuPais
+InstitucionEnSuPais=CDIEcoSocioEmpresa
+CDIEcoSocioEmpresa=CDIEcoPropietarioEmpresa
+CDIEcoPropietarioEmpresa=CDIEcoAccionistaEmpresa
+CDIEcoAccionistaEmpresa=CDIEcoEmpleadoEmpresa
+CDIEcoEmpleadoEmpresa=CDIEcoNombreEmpresa
+CDIEcoNombreEmpresa=CDIEcoNombreGiro
+CDIEcoNombreGiro=CDIEcoDireccion
+CDIEcoDireccion=CDIEcoDireccionNumero
+CDIEcoDireccionNumero=CDIEcoDireccionNumeroInt
+CDIEcoDireccionNumeroInt=CDIEcoEntreCalles
+CDIEcoEntreCalles=CDIEcoPlano
+CDIEcoPlano=CDIEcoObservaciones
+CDIEcoObservaciones=CDIEcoDelegacion
+CDIEcoDelegacion=CDIEcoColonia
+CDIEcoColonia=CDIEcoPoblacion
+CDIEcoPoblacion=CDIEcoEstado
+CDIEcoEstado=CDIEcoPais
+CDIEcoPais=CDIEcoCodigoPostal
+CDIEcoCodigoPostal=CDIEcoMail
+CDIEcoMail=CDIEcoTelefono
+CDIEcoTelefono=CDIEcoFax
+CDIEcoFax=CDIEcoIngresos
+CDIEcoIngresos=CDIEcoCasa
+CDIEcoCasa=CDIEcoMontoColegiatura
+CDIEcoMontoColegiatura=CDIEcoColegio
+CDIEcoColegio=CDIEcoGastosMensules
+CDIEcoGastosMensules=CDIEcoAutomoviles
+CDIEcoAutomoviles=CDIEcoMontoRenta
+CDIEcoMontoRenta=CDIMedEstatura
+CDIMedEstatura=CDIMEdPeso
+CDIMEdPeso=CDIMedTipoSangre
+CDIMedTipoSangre=CDIMedDonador
+CDIMedDonador=CDIMedEnfermo
+CDIMedEnfermo=CDIMedEnfermedad
+CDIMedEnfermedad=CDIMedAlergia
+CDIMedAlergia=CDIMedAlergias
+CDIMedAlergias=CDIMedMedicamento
+CDIMedMedicamento=CDIMedMedicamentos
+CDIMedMedicamentos=CDIMedSolicitudes
+CDIMedSolicitudes=CDIMedAvisar
+CDIMedAvisar=CDIMedTelefono
+CDIMedTelefono=CDIMedCelular
+CDIMedCelular=CDIMedNombreMedico
+CDIMedNombreMedico=CDIMedTeleMedico
+CDIMedTeleMedico=CDIMedCapacidades
+CDIMedCapacidades=CDIMedCuidados
+CDIMedCuidados=CDIMedRecomenda
+CDIMedRecomenda=CDIMedNoTarjeton
+CDIMedNoTarjeton=CDIMedVigencia
+CDIMedVigencia=CDITransServicio
+CDITransServicio=CDITransHoraAscenso
+CDITransHoraAscenso=CDITransMismaDir
+CDITransMismaDir=CDITransDirOtroSocio
+CDITransDirOtroSocio=CDITransDireccion
+CDITransDireccion=CDITransNumero
+CDITransNumero=CDITransNumeroInt
+CDITransNumeroInt=CDITransEntreCalles
+CDITransEntreCalles=CDITransPlano
+CDITransPlano=CDITransCodigoPostal
+CDITransCodigoPostal=CDITransDelegacion
+CDITransDelegacion=CDITransColonia
+CDITransColonia=CDITransPoblacion
+CDITransPoblacion=CDITransEstado
+CDITransEstado=CDITransNombreResp
+CDITransNombreResp=CDITransTelefono
+CDITransTelefono=CDITransLLevarDom
+CDITransLLevarDom=CDITransHoraSalida
+CDITransHoraSalida=CDITransMismaDir2
+CDITransMismaDir2=CDITransDirOtroSocio2
+CDITransDirOtroSocio2=CDITransDireccion2
+CDITransDireccion2=CDITransNumero2
+CDITransNumero2=CDITransNumeroInt2
+CDITransNumeroInt2=CDITransEntreCalles2
+CDITransEntreCalles2=CDITransPlano2
+CDITransPlano2=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransDelegacion2
+CDITransDelegacion2=CDITransColonia2
+CDITransColonia2=CDITransPoblacion2
+CDITransPoblacion2=CDITransEstado2
+CDITransEstado2=CDITransNombreResp2
+CDITransNombreResp2=CDITransTelefono2
+CDITransTelefono2=CDIDatosBancarios
+CDIDatosBancarios=NIPCDI
+NIPCDI=CDISubsidio
+CDISubsidio=CDICuotaMembresia
+CDICuotaMembresia=CDIAutorizacionCargos
+CDIAutorizacionCargos=CDISocio
+CDISocio=CECliente
+CECliente=CEClientePorcentaje
+CEClientePorcentaje=CDICargosRecurrentes
+CDICargosRecurrentes=CDIFacturarA
+CDIFacturarA=CDIMedUltimoCambio
+CDIMedUltimoCambio=CdiEstaPresente
+CdiEstaPresente=CDIFormaPago
+CDIFormaPago=CDILog1
+CDILog1=CDILog2
+CDILog2=CDILog3
+CDILog3=Tipo0
+Tipo0=Categoria0
+Categoria0=SubCategoria
+SubCategoria=Aporta
+Aporta=Sede
+Sede=Actividad
+Actividad=CargoCDI
+CargoCDI=(Fin)
+
+[Tabla.SQL]
+FueraLinea,=TipoRegistro,
+TipoRegistro=
+FROM=
+Cte=
+TipoRegistro,=Titular,
+Titular,=Membresia,
+Membresia,=Socio,
+Socio,=Nacionalidad,
+Nacionalidad,=Ocupacion,
+Ocupacion,=MismaDireccion,
+MismaDireccion,=DireccionOtroSocio,
+DireccionOtroSocio,=RutaImagen,
+RutaImagen,=OtrosTelefonos,
+OtrosTelefonos,=OtrasDirecciones,
+OtrasDirecciones,=DireccionEnSuPais,
+DireccionEnSuPais,=NumeroPasaporte,
+NumeroPasaporte,=DireccionUltimoEmpleo,
+DireccionUltimoEmpleo,=InstitucionEnSuPais,
+InstitucionEnSuPais,=CDIEcoSocioEmpresa,
+CDIEcoSocioEmpresa,=CDIEcoPropietarioEmpresa,
+CDIEcoPropietarioEmpresa,=CDIEcoAccionistaEmpresa,
+CDIEcoAccionistaEmpresa,=CDIEcoEmpleadoEmpresa,
+CDIEcoEmpleadoEmpresa,=CDIEcoNombreEmpresa,
+CDIEcoNombreEmpresa,=CDIEcoNombreGiro,
+CDIEcoNombreGiro,=CDIEcoDireccion,
+CDIEcoDireccion,=CDIEcoDireccionNumero,
+CDIEcoDireccionNumero,=CDIEcoDireccionNumeroInt,
+CDIEcoDireccionNumeroInt,=CDIEcoEntreCalles,
+CDIEcoEntreCalles,=CDIEcoPlano,
+CDIEcoPlano,=CDIEcoObservaciones,
+CDIEcoObservaciones,=CDIEcoDelegacion,
+CDIEcoDelegacion,=CDIEcoColonia,
+CDIEcoColonia,=CDIEcoPoblacion,
+CDIEcoPoblacion,=CDIEcoEstado,
+CDIEcoEstado,=CDIEcoPais,
+CDIEcoPais,=CDIEcoMail,
+CDIEcoMail,=CDIEcoTelefono,
+CDIEcoTelefono,=CDIEcoFax,
+CDIEcoFax,=CDIEcoCodigoPostal,
+CDIEcoCodigoPostal,=CDIEcoIngresos,
+CDIEcoIngresos,=CDIEcoCasa,
+CDIEcoCasa,=CDIEcoMontoRenta,
+CDIEcoMontoRenta,=CDIEcoMontoColegiatura,
+CDIEcoMontoColegiatura,=CDIEcoColegio,
+CDIEcoColegio,=CDIEcoGastosMensules,
+CDIEcoGastosMensules,=CDIEcoAutomoviles,
+CDIEcoAutomoviles,=CDIMedEstatura,
+CDIMedEstatura,=CDIMEdPeso,
+CDIMEdPeso,=CDIMedTipoSangre,
+CDIMedTipoSangre,=CDIMedDonador,
+CDIMedDonador,=CDIMedEnfermo,
+CDIMedEnfermo,=CDIMedEnfermedad,
+CDIMedEnfermedad,=CDIMedAlergia,
+CDIMedAlergia,=CDIMedAlergias,
+CDIMedAlergias,=CDIMedMedicamento,
+CDIMedMedicamento,=CDIMedMedicamentos,
+CDIMedMedicamentos,=CDIMedSolicitudes,
+CDIMedSolicitudes,=CDIMedAvisar,
+CDIMedAvisar,=CDIMedTelefono,
+CDIMedTelefono,=CDIMedCelular,
+CDIMedCelular,=CDIMedNombreMedico,
+CDIMedNombreMedico,=CDIMedTeleMedico,
+CDIMedTeleMedico,=CDIMedCapacidades,
+CDIMedCapacidades,=CDIMedCuidados,
+CDIMedCuidados,=CDIMedRecomenda,
+CDIMedRecomenda,=CDIMedNoTarjeton,
+CDIMedNoTarjeton,=CDIMedVigencia,
+CDIMedVigencia,=CDITransServicio,
+CDITransServicio,=CDITransHoraAscenso,
+CDITransHoraAscenso,=CDITransMismaDir,
+CDITransMismaDir,=CDITransDirOtroSocio,
+CDITransDirOtroSocio,=CDITransDireccion,
+CDITransDireccion,=CDITransNumero,
+CDITransNumero,=CDITransNumeroInt,
+CDITransNumeroInt,=CDITransEntreCalles,
+CDITransEntreCalles,=CDITransPlano,
+CDITransPlano,=CDITransCodigoPostal,
+CDITransCodigoPostal,=CDITransDelegacion,
+CDITransDelegacion,=CDITransColonia,
+CDITransColonia,=CDITransPoblacion,
+CDITransPoblacion,=CDITransEstado,
+CDITransEstado,=CDITransNombreResp,
+CDITransNombreResp,=CDITransTelefono,
+CDITransTelefono,=CDITransLLevarDom,
+CDITransLLevarDom,=CDITransHoraSalida,
+CDITransHoraSalida,=CDITransMismaDir2,
+CDITransMismaDir2,=CDITransDirOtroSocio2,
+CDITransDirOtroSocio2,=CDITransDireccion2,
+CDITransDireccion2,=CDITransNumero2,
+CDITransNumero2,=CDITransNumeroInt2,
+CDITransNumeroInt2,=CDITransEntreCalles2,
+CDITransEntreCalles2,=CDITransPlano2,
+CDITransPlano2,=CDITransCodigoPostal2,
+CDITransCodigoPostal2,=CDITransDelegacion2,
+CDITransDelegacion2,=CDITransColonia2,
+CDITransColonia2,=CDITransPoblacion2,
+CDITransPoblacion2,=CDITransEstado2,
+CDITransEstado2,=CDITransNombreResp2,
+CDITransNombreResp2,=CDITransTelefono2,
+CDITransTelefono2,=CDIDatosBancarios,
+CDIDatosBancarios,=CDIAutorizacionCargos,
+CDIAutorizacionCargos,=NIPCDI,
+NIPCDI,=CDISubsidio,
+CDISubsidio,=CDICuotaMembresia,
+CDICuotaMembresia,=CDISocio,
+CDISocio,=CECliente,
+CECliente,=CEClientePorcentaje,
+CEClientePorcentaje,=CDICargosRecurrentes,
+CDICargosRecurrentes,=CDIMedUltimoCambio,
+CDIMedUltimoCambio,=CdiEstaPresente,
+CdiEstaPresente,=CDIFacturarA,
+CDIFacturarA,=CDIFormaPago,
+CDIFormaPago,=CDILog1,
+CDILog1,=CDILog2,
+CDILog2,=CDILog3,
+CDILog3,=Tipo0,
+Tipo0,=Categoria0,
+Categoria0,=SubCategoria,
+SubCategoria,=Aporta,
+Aporta,=Sede,
+Sede,=Actividad,
+Actividad,=CargoCDI
+CargoCDI=FROM Cte
+FROM Cte=(Fin)
+
+[Tabla.ListaRelaciones]
+CteOportunidad=Parentesco
+Parentesco=CDISocios
+CDISocios=CteCE
+CteCE=CDICteSocio
+CDICteSocio=CDIMovsBaja
+CDIMovsBaja=CteDestino
+CteDestino=jai
+jai=CDICteComer
+CDICteComer=CDICteCat
+CDICteCat=(Fin)
+
+[Titular]
+Clave=Titular
+Nombre=Titular (*)
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+CondicionEdicion=Estatus= nulo
+
+[Membresia]
+Clave=Membresia
+Nombre=Membresía
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+AyudaEnCaptura=Vista
+
+[Relaciones.Parentesco]
+TipoRelacion=Opcional
+LlaveLocal=Parentesco
+Clave=Parentesco
+TablaRemota=Parentesco
+LlaveRemota=Parentesco
+
+[Nacionalidad]
+Clave=Nacionalidad
+Nombre=Nacionalidad
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Vista
+AyudaForma=CDINacionalidad
+AyudaVista=CDINacionalidad
+AyudaCampo=CDINacionalidad.Cliente
+ValorPorOmision=Cte:Cte.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Ocupacion]
+Clave=Ocupacion
+Nombre=Ocupacion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+
+[MismaDireccion]
+Clave=MismaDireccion
+Nombre=Misma Dirección
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+ConRefrescar=S
+ListaRefrescar=DireccionOtroSocio
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[DireccionOtroSocio]
+Clave=DireccionOtroSocio
+Nombre=Direccion Otro Socio
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+CondicionDespliege=MismaDireccion = VERDADERO
+AyudaEnCaptura=Vista
+AyudaForma=CDICteMismaDireccion
+AyudaVista=Cte
+AyudaCampo=Cte.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )<BR>Asigna( Info.Numero, 1 )
+ConAyudaBusquedaRapida=S
+
+[RutaImagen]
+Clave=RutaImagen
+Nombre=Ruta Imagen
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+AyudaEnCaptura=Buscar Archivo
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CDISocioLista
+AyudaVista=CteA
+AyudaCampo=Cte.Socio
+
+[OtrosTelefonos]
+Clave=OtrosTelefonos
+Nombre=OtrosTelefonos
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CteTel
+AyudaVista=CteTel
+AyudaCampo=CteTel.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+ValorPorOmision=Cte:Cte.Cliente
+AyudaRefrescar=S
+
+[OtrasDirecciones]
+Clave=OtrasDirecciones
+Nombre=Otras Direcciones
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CDIOtrasDirecciones
+AyudaVista=CDIOtrasDirecciones
+AyudaCampo=CDIOtrasDirecciones.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+ValorPorOmision=Cte:Cte.Cliente
+AyudaRefrescar=S
+
+[DireccionEnSuPais]
+Clave=DireccionEnSuPais
+Nombre=Dirección en su país
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+CondicionDespliege=PersonalPais <> <T>Mexico<T>
+
+[NumeroPasaporte]
+Clave=NumeroPasaporte
+Nombre=No Pasaporte
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=PersonalPais <> <T>Mexico<T>
+
+[DireccionUltimoEmpleo]
+Clave=DireccionUltimoEmpleo
+Nombre=Dirección empleo
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+CondicionDespliege=PersonalPais <> <T>Mexico<T>
+
+[InstitucionEnSuPais]
+Clave=InstitucionEnSuPais
+Nombre=Institución en su país
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=PersonalPais <> <T>Mexico<T>
+
+[Pais.ListaRefrescarCondiciones]
+(Inicio)=DireccionEnSuPais
+DireccionEnSuPais=NumeroPasaporte
+NumeroPasaporte=DireccionUltimoEmpleo
+DireccionUltimoEmpleo=InstitucionEnSuPais
+InstitucionEnSuPais=(Fin)
+
+[CDIEcoSocioEmpresa]
+Clave=CDIEcoSocioEmpresa
+Nombre=Socio de empresa
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[CDIEcoPropietarioEmpresa]
+Clave=CDIEcoPropietarioEmpresa
+Nombre=Propietario de empresa
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[CDIEcoAccionistaEmpresa]
+Clave=CDIEcoAccionistaEmpresa
+Nombre=Accionista de empresa
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[CDIEcoEmpleadoEmpresa]
+Clave=CDIEcoEmpleadoEmpresa
+Nombre=Empleado de empresa
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+
+[CDIEcoNombreEmpresa]
+Clave=CDIEcoNombreEmpresa
+Nombre=Nombre de empresa
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoNombreGiro]
+Clave=CDIEcoNombreGiro
+Nombre=Giro
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoDireccion]
+Clave=CDIEcoDireccion
+Nombre=Dirección
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoDireccionNumero]
+Clave=CDIEcoDireccionNumero
+Nombre=No Exterior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+[CDIEcoDireccionNumeroInt]
+Clave=CDIEcoDireccionNumeroInt
+Nombre=No Interior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+[CDIEcoEntreCalles]
+Clave=CDIEcoEntreCalles
+Nombre=Entre las calles
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoPlano]
+Clave=CDIEcoPlano
+Nombre=Plano
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+
+[CDIEcoObservaciones]
+Clave=CDIEcoObservaciones
+Nombre=Observaciones
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoDelegacion]
+Clave=CDIEcoDelegacion
+Nombre=Delegación
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Delegacion
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Delegacion, Delegacion)
+
+[CDIEcoColonia]
+Clave=CDIEcoColonia
+Nombre=Colonia
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Colonia
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Colonia, Colonia)
+
+[CDIEcoPoblacion]
+Clave=CDIEcoPoblacion
+Nombre=Poblacion
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoEstado]
+Clave=CDIEcoEstado
+Nombre=Estado
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=PaisEstadoMexico
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+ValorRefrescar=Si(Info.Copiar, Info.Estado, Estado)
+
+[CDIEcoPais]
+Clave=CDIEcoPais
+Nombre=Pais
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Paises
+ValorRefrescar=Si(Info.Copiar, Info.Pais, Pais)
+
+[CDIEcoMail]
+Clave=CDIEcoMail
+Nombre=Correo Electronico
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIEcoTelefono]
+Clave=CDIEcoTelefono
+Nombre=Telefono
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoFax]
+Clave=CDIEcoFax
+Nombre=Fax
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIEcoCodigoPostal]
+Clave=CDIEcoCodigoPostal
+Nombre=CP
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.CodigoPostal
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.CodigoPostal, CodigoPostal)
+
+[CDIEcoDelegacion.ListaRefrescar]
+(Inicio)=CDIEcoColonia
+CDIEcoColonia=CDIEcoEstado
+CDIEcoEstado=CDIEcoPais
+CDIEcoPais=CDIEcoCodigoPostal
+CDIEcoCodigoPostal=(Fin)
+
+[CDIEcoColonia.ListaRefrescar]
+(Inicio)=CDIEcoDelegacion
+CDIEcoDelegacion=CDIEcoEstado
+CDIEcoEstado=CDIEcoPais
+CDIEcoPais=CDIEcoCodigoPostal
+CDIEcoCodigoPostal=(Fin)
+
+[CDIEcoCodigoPostal.ListaRefrescar]
+(Inicio)=CDIEcoDelegacion
+CDIEcoDelegacion=CDIEcoColonia
+CDIEcoColonia=CDIEcoEstado
+CDIEcoEstado=CDIEcoPais
+CDIEcoPais=(Fin)
+
+[CDIEcoIngresos]
+Clave=CDIEcoIngresos
+Nombre=Ingresos Mensuales
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[CDIEcoCasa]
+Clave=CDIEcoCasa
+Nombre=Casa
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+
+[CDIEcoMontoColegiatura]
+Clave=CDIEcoMontoColegiatura
+Nombre=Monto colegiatura
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[CDIEcoColegio]
+Clave=CDIEcoColegio
+Nombre=Colegio/Instituto
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIEcoGastosMensules]
+Clave=CDIEcoGastosMensules
+Nombre=Gastos Mensuales
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[CDIEcoAutomoviles]
+Clave=CDIEcoAutomoviles
+Nombre=Automoviles
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CDIAutomovil
+AyudaVista=CDIAutomovil
+AyudaCampo=CDIAutomovil.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+
+[CDIEcoMontoRenta]
+Clave=CDIEcoMontoRenta
+Nombre=Monto renta mensual
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[CDIEcoCasa.ListaOpciones]
+(Inicio)=Propia
+Propia=Renta
+Renta=(Fin)
+
+[Relaciones.CDISocios]
+TipoRelacion=Opcional
+LlaveLocal=Cliente
+Clave=CDISocios
+TablaRemota=CDISocios
+LlaveRemota=Cliente
+
+[CDIMedEstatura]
+Clave=CDIMedEstatura
+Nombre=Estatura (mts)
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[CDIMEdPeso]
+Clave=CDIMEdPeso
+Nombre=Peso (kg)
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[CDIMedTipoSangre]
+Clave=CDIMedTipoSangre
+Nombre=Tipo Sangre
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Expresion
+AyudaMemOpc=Consulta opcional
+Formula=SQLEnLista(<T>SELECT TipoSangre FROM CDITipoSangre<T>)
+
+[CDIMedDonador]
+Clave=CDIMedDonador
+Nombre=Donador
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+
+[CDIMedEnfermo]
+Clave=CDIMedEnfermo
+Nombre=Padece Enfermedad
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=CDIMedEnfermedad
+
+[CDIMedEnfermedad]
+Clave=CDIMedEnfermedad
+Nombre=Cual
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+CondicionDespliege=CDIMedEnfermo = <T>Si<T>
+AyudaEnCaptura=Vista
+AyudaForma=CDIEnfermedades
+AyudaVista=CDIEnfermedades
+AyudaCampo=CDIEnfermedades.Cliente
+ConAyudaBusquedaRapida=S
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+AyudaRefrescar=S
+
+[CDIMedAlergia]
+Clave=CDIMedAlergia
+Nombre=Padece Alergias
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=CDIMedAlergias
+
+[CDIMedAlergias]
+Clave=CDIMedAlergias
+Nombre=Cual
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+CondicionDespliege=CDIMedAlergia = <T>Si<T>
+AyudaEnCaptura=Vista
+AyudaForma=CDIAlergias
+AyudaVista=CDIAlergias
+AyudaCampo=CDIAlergias.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+
+[CDIMedMedicamento]
+Clave=CDIMedMedicamento
+Nombre=Toma Medicamento
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=CDIMedMedicamentos
+
+[CDIMedMedicamentos]
+Clave=CDIMedMedicamentos
+Nombre=Cual
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+CondicionDespliege=CDIMedMedicamento = <T>Si<T>
+AyudaEnCaptura=Vista
+AyudaForma=CDIMedicamentos
+AyudaVista=CDIMedicamentos
+AyudaCampo=CDIMedicamentos.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+
+[CDIMedSolicitudes]
+Clave=CDIMedSolicitudes
+Nombre=Solicitud Donación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=2
+TipoDatos=Texto
+Tamano=2
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+
+[CDIMedAvisar]
+Clave=CDIMedAvisar
+Nombre=Avisar Emergencia
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIMedTelefono]
+Clave=CDIMedTelefono
+Nombre=Telefono
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIMedCelular]
+Clave=CDIMedCelular
+Nombre=Celular
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIMedNombreMedico]
+Clave=CDIMedNombreMedico
+Nombre=Nombre Medico
+Visible=S
+TamanoValidacion=60
+TipoDatos=Texto
+Tamano=60
+
+[CDIMedTeleMedico]
+Clave=CDIMedTeleMedico
+Nombre=Telefono Medico
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CDIMedCapacidades]
+Clave=CDIMedCapacidades
+Nombre=Capacidades Diferentes
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[CDIMedCuidados]
+Clave=CDIMedCuidados
+Nombre=Cuidados Especiales
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[CDIMedRecomenda]
+Clave=CDIMedRecomenda
+Nombre=Recomendaciones
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[CDIMedNoTarjeton]
+Clave=CDIMedNoTarjeton
+Nombre=No. de Tarjetón
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+
+[CDIMedVigencia]
+Clave=CDIMedVigencia
+Nombre=Vigencia
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario sin Hora
+FormatoValidacion=dd/mmm/aaaa
+
+[Cliente.ListaRefrescar]
+(Inicio)=Nombre
+Nombre=Nacionalidad
+Nacionalidad=OtrosTelefonos
+OtrosTelefonos=OtrasDirecciones
+OtrasDirecciones=(Fin)
+
+[Cliente.ListaRefrescarCondiciones]
+(Inicio)=Nombre
+Nombre=Nacionalidad
+Nacionalidad=OtrosTelefonos
+OtrosTelefonos=OtrasDirecciones
+OtrasDirecciones=(Fin)
+
+[CDITransServicio]
+Clave=CDITransServicio
+Nombre=Servicio de Transporte
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+
+[CDITransHoraAscenso]
+Clave=CDITransHoraAscenso
+Nombre=Hora de Ascenso
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Horas
+CondicionDespliege=CDITransServicio = VERDADERO
+
+[CDITransMismaDir]
+Clave=CDITransMismaDir
+Nombre=Misma Dirección
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[CDITransDirOtroSocio]
+Clave=CDITransDirOtroSocio
+Nombre=Dirección Otro Socio
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ValorPorOmision=0
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransMismaDir = VERDADERO
+AyudaEnCaptura=Vista
+AyudaForma=CDICteMismaDireccion
+AyudaVista=Cte
+AyudaCampo=Cte.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )<BR>Asigna( Info.Numero, 2 )
+ConAyudaBusquedaRapida=S
+
+[CDITransDireccion]
+Clave=CDITransDireccion
+Nombre=Dirección
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransNumero]
+Clave=CDITransNumero
+Nombre=No Exterior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransNumeroInt]
+Clave=CDITransNumeroInt
+Nombre=No Interior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransEntreCalles]
+Clave=CDITransEntreCalles
+Nombre=Entre Calles
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransPlano]
+Clave=CDITransPlano
+Nombre=Plano
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransCodigoPostal]
+Clave=CDITransCodigoPostal
+Nombre=CP
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.CodigoPostal
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.CodigoPostal, CDITransCodigoPostal)
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransDelegacion]
+Clave=CDITransDelegacion
+Nombre=Delegación
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Delegacion
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Delegacion, CDITransDelegacion)
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransColonia]
+Clave=CDITransColonia
+Nombre=Colonia
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Colonia
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Colonia, CDITransColonia)
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransPoblacion]
+Clave=CDITransPoblacion
+Nombre=Población
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransEstado]
+Clave=CDITransEstado
+Nombre=Estado
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=PaisEstadoMexico
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Estado, CDITransEstado)
+CondicionEdicion=CDITransMismaDir = FALSO
+
+[CDITransNombreResp]
+Clave=CDITransNombreResp
+Nombre=Nombre del Responsable
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO
+
+[CDITransTelefono]
+Clave=CDITransTelefono
+Nombre=Telefono
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+CondicionDespliege=CDITransServicio = VERDADERO
+
+[CDITransLLevarDom]
+Clave=CDITransLLevarDom
+Nombre=LLevar a Domicilio
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+CondicionDespliege=CDITransServicio = VERDADERO
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+
+[CDITransHoraSalida]
+Clave=CDITransHoraSalida
+Nombre=Hora de Salida
+Visible=S
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Horas
+OpcionesRenglones=8
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+
+[CDITransMismaDir2]
+Clave=CDITransMismaDir2
+Nombre=Misma Dirección
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[CDITransDirOtroSocio2]
+Clave=CDITransDirOtroSocio2
+Nombre=Dirección Otro Socio
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO y CDITransMismaDir2 = VERDADERO
+AyudaEnCaptura=Vista
+AyudaForma=CDICteMismaDireccion
+AyudaVista=Cte
+AyudaCampo=Cte.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )<BR>Asigna( Info.Numero, 3 )
+ConAyudaBusquedaRapida=S
+
+[CDITransDireccion2]
+Clave=CDITransDireccion2
+Nombre=Dirección
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransNumero2]
+Clave=CDITransNumero2
+Nombre=No Exterior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransNumeroInt2]
+Clave=CDITransNumeroInt2
+Nombre=No Interior
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransEntreCalles2]
+Clave=CDITransEntreCalles2
+Nombre=Entre Calles
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransPlano2]
+Clave=CDITransPlano2
+Nombre=Plano
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransCodigoPostal2]
+Clave=CDITransCodigoPostal2
+Nombre=CP
+Visible=S
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.CodigoPostal
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.CodigoPostal, CDITransCodigoPostal2)
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransDelegacion2]
+Clave=CDITransDelegacion2
+Nombre=Delegación
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Delegacion
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Delegacion, CDITransDelegacion2)
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransColonia2]
+Clave=CDITransColonia2
+Nombre=Colonia
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+AyudaEnCaptura=Vista
+AyudaForma=CodigoPostalLista
+AyudaVista=CodigoPostal
+AyudaCampo=CodigoPostal.Colonia
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Colonia, CDITransColonia2)
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransPoblacion2]
+Clave=CDITransPoblacion2
+Nombre=Población
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransEstado2]
+Clave=CDITransEstado2
+Nombre=Estado
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=PaisEstadoMexico
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+ConRefrescar=S
+ListaRefrescar=(Lista)
+ValorRefrescar=Si(Info.Copiar, Info.Estado, CDITransEstado2)
+CondicionEdicion=CDITransMismaDir2 = FALSO
+
+[CDITransNombreResp2]
+Clave=CDITransNombreResp2
+Nombre=Nombre del Responsable
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+
+[CDITransTelefono2]
+Clave=CDITransTelefono2
+Nombre=Telefono
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+CondicionDespliege=CDITransServicio = VERDADERO y CDITransLLevarDom = VERDADERO
+
+[CDITransServicio.ListaRefrescarCondiciones]
+(Inicio)=CDITransHoraAscenso
+CDITransHoraAscenso=CDITransMismaDir
+CDITransMismaDir=CDITransDirOtroSocio
+CDITransDirOtroSocio=CDITransDireccion
+CDITransDireccion=CDITransNumero
+CDITransNumero=CDITransNumeroInt
+CDITransNumeroInt=CDITransEntreCalles
+CDITransEntreCalles=CDITransPlano
+CDITransPlano=CDITransCodigoPostal
+CDITransCodigoPostal=CDITransDelegacion
+CDITransDelegacion=CDITransColonia
+CDITransColonia=CDITransPoblacion
+CDITransPoblacion=CDITransEstado
+CDITransEstado=CDITransNombreResp
+CDITransNombreResp=CDITransTelefono
+CDITransTelefono=CDITransLLevarDom
+CDITransLLevarDom=CDITransHoraSalida
+CDITransHoraSalida=CDITransMismaDir2
+CDITransMismaDir2=CDITransDirOtroSocio2
+CDITransDirOtroSocio2=CDITransDireccion2
+CDITransDireccion2=CDITransNumero2
+CDITransNumero2=CDITransNumeroInt2
+CDITransNumeroInt2=CDITransEntreCalles2
+CDITransEntreCalles2=CDITransPlano2
+CDITransPlano2=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransDelegacion2
+CDITransDelegacion2=CDITransColonia2
+CDITransColonia2=CDITransPoblacion2
+CDITransPoblacion2=CDITransEstado2
+CDITransEstado2=CDITransNombreResp2
+CDITransNombreResp2=CDITransTelefono2
+CDITransTelefono2=(Fin)
+
+[CDITransLLevarDom.ListaRefrescarCondiciones]
+(Inicio)=CDITransHoraSalida
+CDITransHoraSalida=CDITransMismaDir2
+CDITransMismaDir2=CDITransDirOtroSocio2
+CDITransDirOtroSocio2=CDITransDireccion2
+CDITransDireccion2=CDITransNumero2
+CDITransNumero2=CDITransNumeroInt2
+CDITransNumeroInt2=CDITransEntreCalles2
+CDITransEntreCalles2=CDITransPlano2
+CDITransPlano2=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransDelegacion2
+CDITransDelegacion2=CDITransColonia2
+CDITransColonia2=CDITransPoblacion2
+CDITransPoblacion2=CDITransEstado2
+CDITransEstado2=CDITransNombreResp2
+CDITransNombreResp2=CDITransTelefono2
+CDITransTelefono2=(Fin)
+
+[CDIDatosBancarios]
+Clave=CDIDatosBancarios
+Nombre=Datos Bancarios
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CDIDatosBancarios
+AyudaVista=CDIDatosBancarios
+AyudaCampo=CDIDatosBancarios.Cliente
+AyudaBusquedaRapida=GuardarCambios<BR>Asigna( Info.Cliente, Cliente )
+ConAyudaBusquedaRapida=S
+AyudaRefrescar=S
+
+[CDIAcadeColonia.ListaRefrescar]
+(Inicio)=CDIAcadeCodigoPostal
+CDIAcadeCodigoPostal=CDIAcadeDelegacion
+CDIAcadeDelegacion=CDIAcadeEstado
+CDIAcadeEstado=CDIAcadePais
+CDIAcadePais=(Fin)
+
+[CDIAcadeDelegacion.ListaRefrescar]
+(Inicio)=CDIAcadeCodigoPostal
+CDIAcadeCodigoPostal=CDIAcadeColonia
+CDIAcadeColonia=CDIAcadeEstado
+CDIAcadeEstado=CDIAcadePais
+CDIAcadePais=(Fin)
+
+[CDIAcadeCodigoPostal.ListaRefrescar]
+(Inicio)=CDIAcadeDelegacion
+CDIAcadeDelegacion=CDIAcadeColonia
+CDIAcadeColonia=CDIAcadeEstado
+CDIAcadeEstado=CDIAcadePais
+CDIAcadePais=(Fin)
+
+[NIPCDI]
+Clave=NIPCDI
+Nombre=NIPCDI
+Visible=S
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+ValorRefrescar=Si<BR>  ConDatos(FechaNacimiento)<BR>Entonces<BR>  SQL(<T>spRegistroSugerirCDI :tCual, :tRegistro, :tNombre, :tPaterno, :tMaterno, :fNacimiento, :tCliente, :tNacional<T>, <T>Socio<T>, NIPCDI, PersonalNombres, PersonalApellidoPaterno, PersonalApellidoMaterno, FechaNacimiento, Cliente, Nulo)<BR>Sino<BR>  RFC<BR>Fin
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[CDISubsidio]
+Clave=CDISubsidio
+Nombre=Subsidio
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+AyudaEnCaptura=Calculadora
+Monetario=S
+
+[CDICuotaMembresia]
+Clave=CDICuotaMembresia
+Nombre=Cuota Membresia
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+AyudaEnCaptura=Calculadora
+Monetario=S
+
+[CDIAutorizacionCargos]
+Clave=CDIAutorizacionCargos
+Nombre=Autorizacion Cargos Automaticos
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[CDISocio]
+Clave=CDISocio
+Nombre=CDISocio
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Si<BR>  Info.Numero = 1<BR>Entonces<BR>  1<BR>Sino<BR>  0<BR>Fin
+
+[CDITransCodigoPostal.ListaRefrescar]
+(Inicio)=CDITransDelegacion
+CDITransDelegacion=CDITransColonia
+CDITransColonia=CDITransEstado
+CDITransEstado=(Fin)
+
+[CDITransDelegacion.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal
+CDITransCodigoPostal=CDITransColonia
+CDITransColonia=CDITransEstado
+CDITransEstado=(Fin)
+
+[CDITransColonia.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal
+CDITransCodigoPostal=CDITransDelegacion
+CDITransDelegacion=CDITransEstado
+CDITransEstado=(Fin)
+
+[CDITransEstado.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal
+CDITransCodigoPostal=CDITransDelegacion
+CDITransDelegacion=CDITransColonia
+CDITransColonia=(Fin)
+
+[CDITransCodigoPostal2.ListaRefrescar]
+(Inicio)=CDITransDelegacion2
+CDITransDelegacion2=CDITransColonia2
+CDITransColonia2=CDITransEstado2
+CDITransEstado2=(Fin)
+
+[CDITransDelegacion2.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransColonia2
+CDITransColonia2=CDITransEstado2
+CDITransEstado2=(Fin)
+
+[CDITransColonia2.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransDelegacion2
+CDITransDelegacion2=CDITransEstado2
+CDITransEstado2=(Fin)
+
+[CDITransEstado2.ListaRefrescar]
+(Inicio)=CDITransCodigoPostal2
+CDITransCodigoPostal2=CDITransDelegacion2
+CDITransDelegacion2=CDITransColonia2
+CDITransColonia2=(Fin)
+
+[Titular.ListaRefrescar]
+(Inicio)=Membresia
+Membresia=Socio
+Socio=(Fin)
+
+[Titular.ListaRefrescarCondiciones]
+(Inicio)=Membresia
+Membresia=Socio
+Socio=Parentesco
+Parentesco=(Fin)
+
+[CECliente]
+Clave=CECliente
+Nombre=Cliente (a Facturar)
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=CteLista
+AyudaVista=CteA
+AyudaCampo=Cte.Cliente
+ValidacionUsaTabla=S
+ValidacionTablas=CteCE
+
+[CEClientePorcentaje]
+Clave=CEClientePorcentaje
+Nombre=% Factura
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[Relaciones.CteCE]
+TipoRelacion=Opcional
+LlaveLocal=CECliente
+Clave=CteCE
+TablaRemota=CteCE
+LlaveRemota=Cliente
+
+[CDICargosRecurrentes]
+Clave=CDICargosRecurrentes
+Nombre=Autorización Cargos Recurrentes
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ConRefrescarCondiciones=S
+ValorPorOmision=Falso
+RefrescarTodoCondiciones=S
+
+[Relaciones.CDICteSocio]
+TipoRelacion=Opcional
+LlaveLocal=Socio
+Clave=CDICteSocio
+TablaRemota=CDICteSocio
+LlaveRemota=Socio
+
+[PersonalPais.ListaRefrescarCondiciones]
+(Inicio)=DireccionEnSuPais
+DireccionEnSuPais=NumeroPasaporte
+NumeroPasaporte=DireccionUltimoEmpleo
+DireccionUltimoEmpleo=InstitucionEnSuPais
+InstitucionEnSuPais=(Fin)
+
+[Relaciones.CDIMovsBaja]
+TipoRelacion=Opcional
+LlaveLocal=Cliente
+Clave=CDIMovsBaja
+TablaRemota=CDIMovsBaja
+LlaveRemota=Cliente
+
+[Ocupacion.ListaOpciones]
+(Inicio)=Estudiante
+Estudiante=Empleado
+Empleado=Empresario
+Empresario=(Fin)
+
+[CDIFacturarA]
+Clave=CDIFacturarA
+Nombre=Facturar A
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CteLista
+AyudaVista=CteA
+AyudaCampo=Cte.Cliente
+ValidacionUsaTabla=S
+ValidacionTablas=CteDestino
+ValorPorOmision=<T>CTEPUBGRAL<T>
+
+[Relaciones.CteDestino]
+TipoRelacion=Opcional
+LlaveLocal=CDIFacturarA
+Clave=CteDestino
+TablaRemota=CteDestino
+LlaveRemota=Cliente
+
+[CDIMedUltimoCambio]
+Clave=CDIMedUltimoCambio
+Nombre=CDIMedUltimoCambio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+[CdiEstaPresente]
+Clave=CdiEstaPresente
+Nombre=CdiEstaPresente
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[CDIFormaPago]
+Clave=CDIFormaPago
+Nombre=Forma de Pago
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+
+[Relaciones.jai]
+TipoRelacion=Opcional
+LlaveLocal=Cliente
+Clave=jai
+TablaRemota=CDISocAporJai
+LlaveRemota=Cliente
+ValidarSinDatos=S
+
+[CDILog1]
+Clave=CDILog1
+Nombre=Participa Jai
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[CDILog2]
+Clave=CDILog2
+Nombre=Llamar Despues
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[CDILog3]
+Clave=CDILog3
+Nombre=Llamado
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[Relaciones.CDICteComer]
+TipoRelacion=Forzosa
+LlaveLocal=Cliente
+Clave=CDICteComer
+TablaRemota=CDICteComer
+LlaveRemota=Cliente
+
+[Tipo0]
+Clave=Tipo0
+Nombre=Tipo0
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+
+[Categoria0]
+Clave=Categoria0
+Nombre=Categoria0
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[SubCategoria]
+Clave=SubCategoria
+Nombre=SubCategoria
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[Aporta]
+Clave=Aporta
+Nombre=Aporta
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=2
+
+[Sede]
+Clave=Sede
+Nombre=Sede
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[Actividad]
+Clave=Actividad
+Nombre=Actividad
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[CargoCDI]
+Clave=CargoCDI
+Nombre=CargoCDI
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+[Relaciones.CDICteCat]
+TipoRelacion=Forzosa
+LlaveLocal=Cliente
+Clave=CDICteCat
+TablaRemota=CDICteCat
+LlaveRemota=Cliente

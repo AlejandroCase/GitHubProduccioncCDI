@@ -1,0 +1,30 @@
+
+[Vista]
+Icono=0
+Clave=CDIGrupos
+Nombre=Grupos
+Modulos=(Todos)
+ListaTablas=CDIGrupos
+TablaPrincipal=CDIGrupos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SQL=(Lista)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDIGrupos.id_Grupo,
+CDIGrupos.id_Grupo,=CDIGrupos.Promedio
+CDIGrupos.Promedio=FROM  CDIGrupos
+FROM  CDIGrupos=(Fin)

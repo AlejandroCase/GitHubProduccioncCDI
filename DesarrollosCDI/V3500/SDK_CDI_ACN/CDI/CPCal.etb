@@ -1,0 +1,46 @@
+[Tabla]
+SQL=(Lista)
+
+[Periodo]
+OpcionesColumnas=
+OpcionesRenglones=
+AyudaEnCaptura=Expresion
+OpcionesUnicamente=
+OpcionesPredefinidas=
+AyudaMemOpc=Consulta opcional
+AyudaMemRenglones=13
+ValidacionConCondiciones=S
+ValidacionCondicion=Si SQL(<T>SELECT SubClave FROM MovTipo WHERE Modulo = :tMod AND Mov = :tMov<T>, <T>CP<T>, Info.Mov) = <T>CP.TAMTR<T><BR>Entonces Periodo <=13<BR>Sino Periodo <=12<BR>Fin
+ValidacionMensajeError=<T>Periodo no valido...<T>
+Formula=Si SQL(<T>SELECT SubClave FROM MovTipo WHERE Modulo = :tMod AND Mov = :tMov<T>, <T>CP<T>, Info.Mov) = <T>CP.TAMTR<T><BR>Entonces Lista(<T>1<T>,<T>2<T>,<T>3<T>,<T>4<T>,<T>5<T>,<T>6<T>,<T>7<T>,<T>8<T>,<T>9<T>,<T>10<T>,<T>11<T>,<T>12<T>,<T>13<T>)<BR>Sino Lista(<T>1<T>,<T>2<T>,<T>3<T>,<T>4<T>,<T>5<T>,<T>6<T>,<T>7<T>,<T>8<T>,<T>9<T>,<T>10<T>,<T>11<T>,<T>12<T>)<BR>Fin
+
+[Periodo.ListaOpciones]
+(Inicio)=1
+1=2
+2=3
+3=4
+4=5
+5=6
+6=7
+7=8
+8=9
+9=10
+10=11
+11=12
+12=13
+13=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=ID,
+ID,=ClavePresupuestal,
+ClavePresupuestal,=Tipo,
+Tipo,=Ejercicio,
+Ejercicio,=Periodo,
+Periodo,=Importe,
+Importe,=EnMov,
+EnMov,=Sucursal,
+Sucursal,=SucursalOrigen
+SucursalOrigen=FROM
+FROM=CPCal
+CPCal=(Fin)

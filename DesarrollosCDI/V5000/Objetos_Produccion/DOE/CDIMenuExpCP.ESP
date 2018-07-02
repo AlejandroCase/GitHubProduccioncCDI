@@ -1,0 +1,14 @@
+[CDIMenuExpCP.dlg/Dialogo.ListaAcciones]
+ExploradorHistoricoPR=ExplngresosEgresos
+ExplngresosEgresos=(Fin)
+
+[CDIMenuExpCP.dlg/Acciones.ExplngresosEgresos]
+Nombre=ExplngresosEgresos
+Boton=0
+NombreDesplegar=Egresos VS Ingresos por Ejercicio
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=formas
+Activo=S
+Visible=S
+ClaveAccion=CDIComparativoExplora

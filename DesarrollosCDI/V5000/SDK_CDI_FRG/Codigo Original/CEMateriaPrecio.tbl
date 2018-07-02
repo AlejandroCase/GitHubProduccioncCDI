@@ -1,0 +1,55 @@
+[Tabla]
+Icono=0
+Clave=CEMateriaPrecio
+Nombre=CEMateriaPrecio
+Archivo=CEMateriaPrecio
+Modulos=(Todos)
+Singular=CEMateriaPrecio
+TipoTabla=General
+ListaCampos=Materia<BR>ClienteTipo<BR>Rama<BR>Precio
+ListaRelaciones=Cte
+LlavePrimaria=Materia<BR>ClienteTipo<BR>Rama
+SQL=SELECT<BR>  Materia,<BR>  ClienteTipo,<BR>  Rama,<BR>  Precio<BR><BR>FROM<BR>  CEMateriaPrecio
+[Materia]
+Clave=Materia
+Nombre=Materia
+Visible=S
+TamanoValidacion=10
+Tamano=10
+ValorPorOmision=Info.Materia
+[ClienteTipo]
+Clave=ClienteTipo
+Nombre=Tipo de Cliente
+Visible=S
+TamanoValidacion=15
+Tamano=15
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Unicamente opciones listadas
+Formula=SQLEnLista(<T>SELECT Tipo FROM CteTipo Order by Orden<T>)
+[Rama]
+Clave=Rama
+Nombre=Rama
+Visible=S
+TamanoValidacion=10
+Tamano=10
+AyudaEnCaptura=Vista
+AyudaForma=CteRama
+AyudaVista=Cte2
+AyudaCampo=Cte.Cliente
+ValidacionUsaTabla=S
+ValidacionTablas=Cte
+Mayusculas=S
+[Precio]
+Clave=Precio
+Nombre=Precio
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+[Relaciones.Cte]
+TipoRelacion=Forzosa
+LlaveLocal=Rama
+Clave=Cte
+TablaRemota=Cte
+LlaveRemota=Cliente

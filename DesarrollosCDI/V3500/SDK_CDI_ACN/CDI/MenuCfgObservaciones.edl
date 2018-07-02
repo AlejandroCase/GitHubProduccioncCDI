@@ -1,0 +1,49 @@
+[Dialogo]
+PosicionInicialIzquierda=510
+PosicionInicialArriba=138
+PosicionInicialAlturaCliente=714
+
+[Dialogo.ListaAcciones]
+RE=CE
+CE=CA
+CA=SOC
+SOC=(Fin)
+
+[Acciones.CE]
+Nombre=CE
+Boton=0
+NombreDesplegar=Control Esco&lar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=Observacion
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.Modulo, <T>CE<T>)<BR>Asigna(Info.Descripcion, <T>Control Escolar<T>)
+
+[Acciones.SOC]
+Nombre=SOC
+Boton=0
+NombreDesplegar=Socios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=Observacion
+Activo=S
+Antes=S
+Visible=S
+AntesExpresiones=Asigna(Info.Modulo, <T>SOC<T>)<BR>Asigna(Info.Descripcion, <T>Socios<T>)
+
+[Acciones.CA]
+Nombre=CA
+Boton=0
+NombreDesplegar=Control Acadé&mico
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=Observacion
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>CA<T>)<BR>Asigna(Info.Descripcion, <T>Control Académico<T>)
+Visible=S

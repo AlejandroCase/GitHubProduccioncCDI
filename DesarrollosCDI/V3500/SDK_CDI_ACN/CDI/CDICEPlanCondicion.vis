@@ -1,0 +1,57 @@
+
+[Vista]
+Icono=0
+Clave=CDICEPlanCondicion
+Nombre=CDICEPlanCondicion
+Modulos=(Todos)
+ListaTablas=CDICEPlanCondicion
+TablaPrincipal=CDICEPlanCondicion
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=(Lista)
+SQL=(Lista)
+[CDICEPlanCondicion.CEPlan]
+Clave=CDICEPlanCondicion.CEPlan
+Nombre=CEPlan
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ValorPorOmision=Info.Plan
+LigaTabla=CDICEPlanCondicion
+LigaCampo=CEPlan
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CEPlan
+
+[CDICEPlanCondicion.Condicion]
+Clave=CDICEPlanCondicion.Condicion
+Nombre=Condición de Pago
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+AyudaEnCaptura=Validaciones Memoria
+AyudaMemTabla=Condicion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+LigaTabla=CDICEPlanCondicion
+LigaCampo=Condicion
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Condicion
+
+[Vista.ListaCampos]
+(Inicio)=CDICEPlanCondicion.CEPlan
+CDICEPlanCondicion.CEPlan=CDICEPlanCondicion.Condicion
+CDICEPlanCondicion.Condicion=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDICEPlanCondicion.CEPlan,
+CDICEPlanCondicion.CEPlan,=CDICEPlanCondicion.Condicion
+CDICEPlanCondicion.Condicion=FROM CDICEPlanCondicion
+FROM CDICEPlanCondicion=(Fin)

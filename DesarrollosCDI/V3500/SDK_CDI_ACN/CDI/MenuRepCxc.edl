@@ -1,0 +1,45 @@
+[Dialogo]
+PosicionInicialIzquierda=519
+PosicionInicialArriba=149
+PosicionInicialAlturaCliente=474
+
+[Dialogo.ListaAcciones]
+EstadoCuentaSucursal=Cancelaciones
+Cancelaciones=CargosTC
+CargosTC=CDIRepPagosNoRec
+CDIRepPagosNoRec=(Fin)
+
+[Acciones.Cancelaciones]
+Nombre=Cancelaciones
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=Reporte de Cancelaciones
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIRepCancelacionesCxc
+Activo=S
+Visible=S
+
+[Acciones.CargosTC]
+Nombre=CargosTC
+Boton=0
+NombreDesplegar=Cargos a Tarjeta de Crédito
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Reportes Pantalla
+ClaveAccion=CDIRepCargosTC
+Activo=S
+Visible=S
+
+[Acciones.CDIRepPagosNoRec]
+Nombre=CDIRepPagosNoRec
+Boton=0
+NombreEnBoton=S
+NombreDesplegar=&Pagos No Recuperables
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIFiltrosPagosNoRecuperables
+Activo=S
+Visible=S

@@ -1,0 +1,23 @@
+[Condicion.tbl/CFD_formaDePago]
+TipoDatos=Texto
+
+[Condicion.tbl/CFD_metodoDePago]
+TipoDatos=Texto
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+ValidacionConCondiciones=S
+ValidacionCondicion=SQL(<T>SELECT 1 FROM SATFormaPago WHERE Descripcion = :tDesc<T>, CFD_metodoDePago) > 0
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+Formula=SQLEnLista(<T>SELECT Descripcion FROM SATFormaPago<T>)
+
+
+[Condicion.tbl/CFD_formaDePago]
+TipoDatos=Texto
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>Valor Incorrecto<T>
+ValidacionCondicion=SQL(<T>SELECT 1 FROM SATMetodoPago WHERE Clave = :tClave<T>, CFD_formaDePago) > 0
+Formula=SQLEnLista(<T>SELECT Clave FROM SATMetodoPago<T>)

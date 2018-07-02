@@ -1,0 +1,30 @@
+
+[Vista]
+Icono=0
+Clave=HHCEInscripcionVentaExcluir
+Nombre=HHCEInscripcionVentaExcluir
+Modulos=(Todos)
+ListaTablas=HHCEInscripcionVentaExcluir
+TablaPrincipal=HHCEInscripcionVentaExcluir
+UsoCapturas=S
+UsoReportes=S
+
+ListaCampos=HHCEInscripcionVentaExcluir.Mov
+SQL=SELECT<BR>  HHCEInscripcionVentaExcluir.Mov<BR><BR>FROM<BR>  HHCEInscripcionVentaExcluir
+[HHCEInscripcionVentaExcluir.Mov]
+Clave=HHCEInscripcionVentaExcluir.Mov
+Nombre=Mov
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Modulo = :tModulo AND Clave in (:tC1, :tC2)<T>, <T>CE<T>, <T>CE.I<T>, <T>CE.P<T>)
+LigaTabla=HHCEInscripcionVentaExcluir
+LigaCampo=Mov
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Mov

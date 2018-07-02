@@ -1,0 +1,60 @@
+[Vista]
+SQL=(Lista)
+
+[ActivoFCat.PorcentajeDeducible]
+Nombre=
+Visible=
+TamanoValidacion=
+
+[Vista.ListaCampos]
+Cta.Descripcion=Cta.TieneMovimientos
+Cta.TieneMovimientos=CtaDestino.Cuenta
+
+[Cta.TieneMovimientos]
+Clave=Cta.TieneMovimientos
+Nombre=Tiene Movimientos
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+LigaTabla=Cta
+LigaCampo=TieneMovimientos
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=TieneMovimientos
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=ActivoFCat.Categoria,
+ActivoFCat.Categoria,=ActivoFCat.Propietario,
+ActivoFCat.Propietario,=ActivoFCat.Cuenta,
+ActivoFCat.Cuenta,=ActivoFCat.CuentaFiscal,
+ActivoFCat.CuentaFiscal,=ActivoFCat.MantenimientoPeriodicidad,
+ActivoFCat.MantenimientoPeriodicidad,=ActivoFCat.Formula,
+ActivoFCat.Formula,=ActivoFCat.DepreciacionAnual,
+ActivoFCat.DepreciacionAnual,=ActivoFCat.MetodoDepreciacion,
+ActivoFCat.MetodoDepreciacion,=ActivoFCat.VidaUtil,
+ActivoFCat.VidaUtil,=ActivoFCat.InicioDepreciacion,
+ActivoFCat.InicioDepreciacion,=ActivoFCat.ValorDesecho,
+ActivoFCat.ValorDesecho,=ActivoFCat.DepreciacionAnualAjustada,
+ActivoFCat.DepreciacionAnualAjustada,=ActivoFCat.DepreciacionAnualF,
+ActivoFCat.DepreciacionAnualF,=ActivoFCat.VidaUtilF,
+ActivoFCat.VidaUtilF,=ActivoFCat.InicioDepreciacionF,
+ActivoFCat.InicioDepreciacionF,=ActivoFCat.MetodoDepreciacionF,
+ActivoFCat.MetodoDepreciacionF,=ActivoFCat.ValorDesechoF,
+ActivoFCat.ValorDesechoF,=ActivoFCat.DepreciacionAnualAjustadaF,
+ActivoFCat.DepreciacionAnualAjustadaF,=ActivoFCat.DepreciacionAnualF2,
+ActivoFCat.DepreciacionAnualF2,=ActivoFCat.VidaUtilF2,
+ActivoFCat.VidaUtilF2,=ActivoFCat.InicioDepreciacionF2,
+ActivoFCat.InicioDepreciacionF2,=ActivoFCat.MetodoDepreciacionF2,
+ActivoFCat.MetodoDepreciacionF2,=ActivoFCat.ValorDesechoF2,
+ActivoFCat.ValorDesechoF2,=ActivoFCat.DepreciacionAnualAjustadaF2,
+ActivoFCat.DepreciacionAnualAjustadaF2,=ActivoFCat.PorcentajeDeducible,
+ActivoFCat.PorcentajeDeducible,=Cta.Cuenta,
+Cta.Cuenta,=Cta.Descripcion,
+Cta.Descripcion,=Cta.TieneMovimientos,
+Cta.TieneMovimientos,=CtaDestino.Cuenta,
+CtaDestino.Cuenta,=CtaDestino.Descripcion
+CtaDestino.Descripcion=FROM ActivoFCat
+FROM ActivoFCat=LEFT OUTER JOIN Cta ON ActivoFCat.Cuenta<IGUAL>Cta.Cuenta
+LEFT OUTER JOIN Cta ON ActivoFCat.Cuenta<IGUAL>Cta.Cuenta=LEFT OUTER JOIN Cta CtaDestino ON ActivoFCat.CuentaFiscal<IGUAL>CtaDestino.Cuenta
+LEFT OUTER JOIN Cta CtaDestino ON ActivoFCat.CuentaFiscal<IGUAL>CtaDestino.Cuenta=(Fin)

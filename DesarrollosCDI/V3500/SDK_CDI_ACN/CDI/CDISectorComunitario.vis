@@ -1,0 +1,34 @@
+
+[Vista]
+Icono=0
+Clave=CDISectorComunitario
+Nombre=CDISectorComunitario
+Modulos=(Todos)
+Singular=CDISectorComunitario
+ListaTablas=CDISectorComunitario
+TablaPrincipal=CDISectorComunitario
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=CDISectorComunitario.SectorComunitario
+SQL=(Lista)
+CamposBusquedaRapida=CDISectorComunitario.SectorComunitario
+[CDISectorComunitario.SectorComunitario]
+Clave=CDISectorComunitario.SectorComunitario
+Nombre=Sector Comunitario
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+LigaTabla=CDISectorComunitario
+LigaCampo=SectorComunitario
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=SectorComunitario
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDISectorComunitario.SectorComunitario
+CDISectorComunitario.SectorComunitario=FROM CDISectorComunitario
+FROM CDISectorComunitario=(Fin)

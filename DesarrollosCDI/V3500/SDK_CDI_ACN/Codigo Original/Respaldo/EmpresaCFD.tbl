@@ -1,0 +1,517 @@
+[Tabla]
+Icono=0
+Clave=EmpresaCFD
+Archivo=EmpresaCFD
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=(Lista)
+Nombre=CFD
+Singular=CFD
+LlavePrimaria=Empresa
+ControlEmpresas=S
+CampoEmpresa=Empresa
+SQL=SELECT<BR>  Empresa,<BR>  noCertificado,<BR>  version,<BR>  versionFecha,<BR>  versionAnterior,<BR>  EAN13,<BR>  DUN14,<BR>  SKU,<BR>  SKUCodigoInterno,<BR>  Llave,<BR>  Certificado,<BR>  ContrasenaSello,<BR>  ModoPruebas,<BR>  SAT_MN,<BR>  Nombre,<BR>  Reporte,<BR>  Validar,<BR>  ValidarSchema,<BR>  Almacenar,<BR>  AlmacenarXML,<BR>  AlmacenarPDF,<BR>  AlmacenarRuta,<BR>  Enviar,<BR>  EnviarXML,<BR>  EnviarPDF,<BR>  EnviarMedio,<BR>  EnviarDireccion,<BR>  EnviarRuta,<BR>  EnviarUsuario,<BR>  EnviarContrasena,<BR>  EnviarDe,<BR>  EnviarAsunto,<BR>  EnviarMensaje,<BR>  EnviarAlAfectar,<BR>  SKUEmpresa,<BR>  CertificadoBase64,<BR>  XSL,<BR>  XSLAnterior,<BR>  ValidarSchemaAnterior<BR><BR>FROM<BR>  EmpresaCFD
+
+[Empresa]
+Clave=Empresa
+Nombre=Empresa
+Visible=S
+TamanoValidacion=5
+Tamano=5
+ValorPorOmision=Info.Empresa
+TipoDatos=Texto
+
+[noCertificado]
+Clave=noCertificado
+Nombre=Número Certificado
+Visible=S
+TamanoValidacion=20
+Tamano=20
+MascaraEdicion=00000000000000000000
+TipoDatos=Texto
+
+[version]
+Clave=version
+Nombre=Versión
+Visible=S
+TamanoValidacion=10
+Tamano=10
+TipoDatos=Texto
+
+[versionFecha]
+Clave=versionFecha
+Nombre=Vigente a partir del
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+FormatoValidacion=dd/mmm/aaaa
+AyudaEnCaptura=Calendario sin Hora
+
+[versionAnterior]
+Clave=versionAnterior
+Nombre=Versión Anterior
+Visible=S
+TamanoValidacion=10
+Tamano=10
+TipoDatos=Texto
+
+[EAN13]
+Clave=EAN13
+Nombre=EAN13
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=12
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[DUN14]
+Clave=DUN14
+Nombre=DUN14
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=12
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[SKU]
+Clave=SKU
+Nombre=SKU (Cliente)
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=12
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[SKUCodigoInterno]
+Clave=SKUCodigoInterno
+Nombre=Envir SKU Empresa (AMECE)
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[Llave]
+Clave=Llave
+Nombre=Llave (*.key)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[Certificado]
+Clave=Certificado
+Nombre=Certificado (*.cer)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[ContrasenaSello]
+Clave=ContrasenaSello
+Nombre=Contraseña Sello (Encriptada)
+Visible=S
+TamanoValidacion=100
+Tamano=100
+TipoDatos=Texto
+
+[Validar]
+Clave=Validar
+Nombre=Validar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Verdadero
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[ValidarSchema]
+Clave=ValidarSchema
+Nombre=comprobante.xsd
+Visible=S
+TamanoValidacion=255
+Tamano=255
+CondicionDespliege=Validar
+
+[Almacenar]
+Clave=Almacenar
+Nombre=Almacenar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[AlmacenarXML]
+Clave=AlmacenarXML
+Nombre=XML
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[AlmacenarPDF]
+Clave=AlmacenarPDF
+Nombre=PDF
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=Reporte
+
+[AlmacenarRuta]
+Clave=AlmacenarRuta
+Nombre=Ruta
+Visible=S
+TamanoValidacion=255
+Tamano=255
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Nombre]
+Clave=Nombre
+Nombre=Nombre Archivo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+Tamano=100
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Enviar]
+Clave=Enviar
+Nombre=Enviar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+CondicionEdicion=Almacenar
+
+[EnviarXML]
+Clave=EnviarXML
+Nombre=XML
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EnviarPDF]
+Clave=EnviarPDF
+Nombre=PDF
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[EnviarMedio]
+Clave=EnviarMedio
+Nombre=Medio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[Reporte]
+Clave=Reporte
+Nombre=Reporte (Parámetro ID)
+Visible=S
+TamanoValidacion=100
+Tamano=100
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Consulta opcional
+CondicionDespliege=AlmacenarPDF
+Formula=ListaReportes
+TipoDatos=Texto
+
+[EnviarDireccion]
+Clave=EnviarDireccion
+Nombre=Dirección (Servidor)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[EnviarRuta]
+Clave=EnviarRuta
+Nombre=Ruta (Servidor)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[EnviarUsuario]
+Clave=EnviarUsuario
+Nombre=Usuario
+Visible=S
+TamanoValidacion=100
+Tamano=100
+AyudaEnCaptura=Expresion
+ConRefrescar=S
+ListaRefrescar=EnviarContrasena
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Consulta opcional
+AyudaRefrescar=S
+Formula=Si(EnviarMedio=<T>FTP<T>, <T>anonymous<T>)
+TipoDatos=Texto
+
+[EnviarContrasena]
+Clave=EnviarContrasena
+Nombre=Contraseña
+Visible=S
+TamanoValidacion=100
+Tamano=100
+Contrasena=S
+ValorRefrescar=Si(EnviarUsuario=<T>anonymous<T>, EnviarUsuario)
+TipoDatos=Texto
+
+[EnviarDe]
+Clave=EnviarDe
+Nombre=De (usuario@empresa.com)
+Visible=S
+TamanoValidacion=100
+Tamano=100
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+ListaOpciones=(Lista)
+TipoDatos=Texto
+
+[EnviarAsunto]
+Clave=EnviarAsunto
+Nombre=Asunto (usar <Nombre> para desplegar el nombre del archivo)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[EnviarMensaje]
+Clave=EnviarMensaje
+Nombre=Mensaje (usar <Nombre> para desplegar el nombre del archivo)
+Visible=S
+TamanoValidacion=255
+Tamano=255
+TipoDatos=Texto
+
+[EnviarAlAfectar]
+Clave=EnviarAlAfectar
+Nombre=Enviar al Afectar
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[ModoPruebas]
+Clave=ModoPruebas
+Nombre=Modo Pruebas
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+
+[SAT_MN]
+Clave=SAT_MN
+Nombre=Información del SAT en Moneda Nacional
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Verdadero
+
+[SKUEmpresa]
+Clave=SKUEmpresa
+Nombre=SKU (Empresa)
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+ListaOpciones=(Lista)
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=12
+TipoDatos=Texto
+
+[CertificadoBase64]
+Clave=CertificadoBase64
+Nombre=Certificado (Base64)
+Visible=S
+TamanoValidacion=50x3
+TipoDatos=Memo
+
+[XSL]
+Clave=XSL
+Nombre=cadenaOrginal.xsl
+Visible=S
+TamanoValidacion=255
+Tamano=255
+
+[XSLAnterior]
+Clave=XSLAnterior
+Nombre=cadenaOrginal.xsl
+Visible=S
+TamanoValidacion=255
+Tamano=255
+
+[ValidarSchemaAnterior]
+Clave=ValidarSchemaAnterior
+Nombre=comprobante.xsd
+Visible=S
+TamanoValidacion=255
+Tamano=255
+CondicionDespliege=Validar
+
+[Tabla.ListaCampos]
+(Inicio)=Empresa
+Empresa=noCertificado
+noCertificado=version
+version=versionFecha
+versionFecha=versionAnterior
+versionAnterior=EAN13
+EAN13=DUN14
+DUN14=SKU
+SKU=SKUEmpresa
+SKUEmpresa=SKUCodigoInterno
+SKUCodigoInterno=Llave
+Llave=Certificado
+Certificado=ContrasenaSello
+ContrasenaSello=Nombre
+Nombre=Reporte
+Reporte=XSL
+XSL=XSLAnterior
+XSLAnterior=Validar
+Validar=ValidarSchema
+ValidarSchema=ValidarSchemaAnterior
+ValidarSchemaAnterior=Almacenar
+Almacenar=AlmacenarXML
+AlmacenarXML=AlmacenarPDF
+AlmacenarPDF=AlmacenarRuta
+AlmacenarRuta=Enviar
+Enviar=EnviarXML
+EnviarXML=EnviarPDF
+EnviarPDF=EnviarMedio
+EnviarMedio=EnviarDireccion
+EnviarDireccion=EnviarRuta
+EnviarRuta=EnviarUsuario
+EnviarUsuario=EnviarContrasena
+EnviarContrasena=EnviarDe
+EnviarDe=EnviarAsunto
+EnviarAsunto=EnviarMensaje
+EnviarMensaje=EnviarAlAfectar
+EnviarAlAfectar=ModoPruebas
+ModoPruebas=SAT_MN
+SAT_MN=CertificadoBase64
+CertificadoBase64=(Fin)
+
+[EAN13.ListaOpciones]
+(Inicio)=N/A
+N/A=Clave Articulo
+Clave Articulo=Clave Fabricante
+Clave Fabricante=Nombre Corto
+Nombre Corto=NOM
+NOM=Codigo Alterno
+Codigo Alterno=Codigo Barras (Mov)
+Codigo Barras (Mov)=Codigo Barras (CB)
+Codigo Barras (CB)=Idioma Cliente
+Idioma Cliente=Opcion Fabricante
+Opcion Fabricante=(Fin)
+
+[DUN14.ListaOpciones]
+(Inicio)=N/A
+N/A=Clave Articulo
+Clave Articulo=Clave Fabricante
+Clave Fabricante=Nombre Corto
+Nombre Corto=NOM
+NOM=Codigo Alterno
+Codigo Alterno=Codigo Barras (Mov)
+Codigo Barras (Mov)=Codigo Barras (CB)
+Codigo Barras (CB)=Idioma Cliente
+Idioma Cliente=Opcion Fabricante
+Opcion Fabricante=(Fin)
+
+[SKU.ListaOpciones]
+(Inicio)=N/A
+N/A=Clave Articulo
+Clave Articulo=Clave Fabricante
+Clave Fabricante=Nombre Corto
+Nombre Corto=NOM
+NOM=Codigo Alterno
+Codigo Alterno=Codigo Barras (Mov)
+Codigo Barras (Mov)=Codigo Barras (CB)
+Codigo Barras (CB)=Idioma Cliente
+Idioma Cliente=Opcion Fabricante
+Opcion Fabricante=(Fin)
+
+[AlmacenarRuta.ListaOpciones]
+(Inicio)=
+\\Servidor\CFD\<Cliente>
+\\Servidor\CFD\<Cliente>=\\Servidor\CFD\<Ejercicio>
+\\Servidor\CFD\<Ejercicio>=\\Servidor\CFD\<Ejercicio>\<Periodo>
+\\Servidor\CFD\<Ejercicio>\<Periodo>=\\Servidor\CFD\<Ejercicio>\<Periodo>\<Cliente>
+\\Servidor\CFD\<Ejercicio>\<Periodo>\<Cliente>=(Fin)
+
+[Nombre.ListaOpciones]
+(Inicio)=
+<Movimiento> <Serie><Folio>
+<Movimiento> <Serie><Folio>=<Cliente> <Serie><Folio>
+<Cliente> <Serie><Folio>=<Serie><Folio>
+<Serie><Folio>=(Fin)
+
+[EnviarMedio.ListaOpciones]
+(Inicio)=SQL Mail
+SQL Mail=SMTP
+SMTP=FTP
+FTP=(Fin)
+
+[EnviarDe.ListaOpciones]
+(Inicio)=
+(Usuario)
+(Usuario)=(Agente)
+(Agente)=(Fin)
+
+[SKUEmpresa.ListaOpciones]
+(Inicio)=N/A
+N/A=Clave Articulo
+Clave Articulo=Clave Fabricante
+Clave Fabricante=Nombre Corto
+Nombre Corto=NOM
+NOM=Codigo Alterno
+Codigo Alterno=Codigo Barras (Mov)
+Codigo Barras (Mov)=Codigo Barras (CB)
+Codigo Barras (CB)=Idioma Cliente
+Idioma Cliente=Opcion Fabricante
+Opcion Fabricante=(Fin)

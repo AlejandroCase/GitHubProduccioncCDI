@@ -1,0 +1,96 @@
+[Forma]
+PosicionInicialIzquierda=220
+PosicionInicialArriba=57
+PosicionInicialAncho=961
+PosicionInicialAlturaCliente=612
+PosicionSec2=446
+
+[Detalle.Columnas]
+Concepto=194
+
+[Detalle]
+CondicionEdicion=(Gasto:Gasto.CDIPermiteEditar) y (Gasto:Gasto.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))
+
+[Detalle.ListaCamposAValidar]
+Personal.ApellidoMaterno=CentroCostos.Descripcion
+CentroCostos.Descripcion=ClavePresupuestal.Descripcion
+ClavePresupuestal.Descripcion=(Fin)
+
+[Forma.ListaAcciones]
+Politica=Bitacora
+Otros9=CDIAutorizar
+Bitacora=MovPos
+CDIAutorizar=CDIInfo.CP
+CDIInfo.CP=(Fin)
+
+[Acciones.CDIAutorizar]
+Nombre=CDIAutorizar
+Boton=0
+Menu=&Edición
+UsaTeclaRapida=S
+TeclaRapida=Shift+Ctrl+A
+NombreDesplegar=Autorizar Flujo
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIMovAutorizar
+Visible=S
+ActivoCondicion=Gasto:Gasto.CDIFlujoAutorizacion
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>GAS<T>)<BR>Asigna(Info.ID, Gasto:Gasto.ID)<BR>Asigna(Info.Mov, Gasto:Gasto.Mov)
+DespuesGuardar=S
+
+[Acciones.Bitacora]
+Nombre=Bitacora
+Boton=0
+Menu=&Ver
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+B
+NombreDesplegar=&Bitácora
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=MovBitacora
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>GAS<T>)<BR>Asigna(Info.ID, Gasto:Gasto.ID)<BR>Asigna(Info.Mov, Gasto:Gasto.Mov)<BR>Asigna(Info.MovID, Gasto:Gasto.MovID)<BR>Asigna(Info.PuedeEditar, Gasto:Gasto.Estatus noen (EstatusConcluido, EstatusCancelado) y PuedeModificar(Gasto:Gasto.Usuario))
+DespuesGuardar=S
+Visible=S
+
+[Acciones.CDIInfo.CP.Variables Asignar]
+Nombre=Variables Asignar
+Boton=0
+TipoAccion=Controles Captura
+ClaveAccion=Variables Asignar
+Activo=S
+Visible=S
+
+[Acciones.CDIInfo.CP.Formas]
+Nombre=Formas
+Boton=0
+TipoAccion=Formas
+ClaveAccion=CDIInfoCP
+Activo=S
+Visible=S
+
+[Acciones.CDIInfo.CP]
+Nombre=CDIInfo.CP
+Boton=96
+NombreDesplegar=&Información Presupuestal
+GuardarAntes=S
+Multiple=S
+EnBarraHerramientas=S
+ListaAccionesMultiples=(Lista)
+Activo=S
+ConCondicion=S
+EjecucionConError=S
+Antes=S
+Visible=S
+EjecucionCondicion=Gasto:Gasto.Estatus <> (<T>SINAFECTAR<T>)
+EjecucionMensaje=SQL( <T>SELECT Descripcion FROM MensajeLista WHERE Mensaje =:nMensaje1<T>, 10015 )
+AntesExpresiones=Asigna(Info.Proyecto,Gasto:Gasto.Proyecto)<BR>Asigna(Info.ID,      Gasto:Gasto.ID)<BR>Asigna(Info.Modulo,  <T>GAS<T>)
+
+[Acciones.CDIInfo.CP.ListaAccionesMultiples]
+(Inicio)=Variables Asignar
+Variables Asignar=Formas
+Formas=(Fin)

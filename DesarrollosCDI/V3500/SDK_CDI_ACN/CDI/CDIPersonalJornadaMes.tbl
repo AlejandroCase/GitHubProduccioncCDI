@@ -1,0 +1,479 @@
+[Tabla]
+Icono=0
+Clave=CDIPersonalJornadaMes
+Nombre=CDIPersonalJornadaMes
+Archivo=PersonalJornadaMes
+Modulos=(Todos)
+Singular=CDIPersonalJornadaMes
+TipoTabla=General
+ListaCampos=(Lista)
+LlavePrimaria=ID
+CampoID=ID
+ListaRelaciones=personal
+ControlUsuarios=S
+CampoUsuario=USUARIO
+CampoPeriodo=Periodo
+CampoEjercicio=Ejercicio
+CamposBusquedaRapida=Personal
+ControlID=S
+SQL=SELECT<BR>  ID,<BR>  Personal,<BR>  PeriodoTipo,<BR>  FechaD,<BR>  FechaA,<BR>  Area,<BR>  Sucursal,<BR>  Empresa,<BR>  Usuario,<BR>  D01,<BR>  D02,<BR>  D03,<BR>  D04,<BR>  D05,<BR>  D06,<BR>  D07,<BR>  Estatus,<BR>  Bloqueado<BR><BR>FROM<BR>  PersonalJornadaMes
+[ID]
+Clave=ID
+Nombre=ID
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+[Personal]
+Clave=Personal
+Nombre=Personal
+Visible=S
+TamanoValidacion=10
+Tamano=10
+AyudaMemOpc=Validar captura en la lista
+CondicionEdicion=(bloqueado <1) o (usuario.departamento=<T>Planilla<T>)
+TipoDatos=Texto
+
+
+[D01]
+Clave=D01
+Nombre=<T> <T> +  Dia( Info.FechaD ) + <T>/<T> + MesNombre(Info.FechaD) + <T>/<T> + Año(Info.FechaD)
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+Alineacion=por Omisión
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d01 +<T> o no es rotativo<T>
+Mayusculas=S
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+NombreExpresion=S
+ValidacionCondicion=d01=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d01)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D02]
+Clave=D02
+Nombre=<T> <T> +  Dia( Info.FechaD + 1 ) + <T>/<T> + MesNombre(Info.FechaD + 1) + <T>/<T> + Año(Info.FechaD + 1)
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+Alineacion=por Omisión
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+Mayusculas=S
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d02 +<T> o no es rotativo<T>
+NombreExpresion=S
+ValidacionCondicion=d02=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d02)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D03]
+Clave=D03
+Nombre=<T> <T> +  Dia( Info.FechaD + 2 ) + <T>/<T> + MesNombre(Info.FechaD + 2) + <T>/<T> + Año(Info.FechaD  + 2)
+Visible=S
+TamanoValidacion=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d03 +<T> o no es rotativo<T>
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+Tamano=20
+NombreExpresion=S
+ValidacionCondicion=d03=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d03)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D04]
+Clave=D04
+Nombre=<T> <T> +  Dia( Info.FechaD + 3 ) + <T>/<T> + MesNombre(Info.FechaD + 3) + <T>/<T> + Año(Info.FechaD + 3)
+Visible=S
+TamanoValidacion=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d04 +<T> o no es rotativo<T>
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+Tamano=20
+NombreExpresion=S
+ValidacionCondicion=d04=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d04)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D05]
+Clave=D05
+Nombre=<T> <T> +  Dia( Info.FechaD + 4 ) + <T>/<T> + MesNombre(Info.FechaD+ 4 ) + <T>/<T> + Año(Info.FechaD+ 4 )
+Visible=S
+TamanoValidacion=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d05 +<T> o no es rotativo<T>
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+Tamano=20
+NombreExpresion=S
+ValidacionCondicion=d05=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d05)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D06]
+Clave=D06
+Nombre=<T> <T> +  Dia( Info.FechaD + 5 ) + <T>/<T> + MesNombre(Info.FechaD+ 5) + <T>/<T> + Año(Info.FechaD+ 5)
+Visible=S
+TamanoValidacion=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d06 +<T> o no es rotativo<T>
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+Tamano=20
+NombreExpresion=S
+ValidacionCondicion=d06=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d06)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[D07]
+Clave=D07
+Nombre=<T> <T> +  Dia( Info.FechaD + 6 ) + <T>/<T> + MesNombre(Info.FechaD+6) + <T>/<T> + Año(Info.FechaD+6)
+Visible=S
+TamanoValidacion=20
+AyudaEnCaptura=Expresion
+AyudaCampo=VerJornadaRotativo.Jornada
+AyudaMemOpc=Consulta opcional
+AyudaMemTabla=Jornada
+AyudaMemRenglones=7
+AyudaRefrescar=S
+ValidacionConCondiciones=S
+ValidacionMensajeError=<T>No existe la jornada <T>+ d07 +<T> o no es rotativo<T>
+CondicionEdicion=(bloqueado<1) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+
+TipoDatos=Texto
+Tamano=20
+
+
+
+
+
+
+
+
+NombreExpresion=S
+ValidacionCondicion=d07=sqlenlista(<T>select jornada from jornada where EsRotativa=1 and jornada =:tj<T>,d07)
+Formula=sqlenlista(<T>Select jornada from jornada where EsRotativa=1<T>)
+[Relaciones.personal]
+TipoRelacion=Forzosa
+LlaveLocal=Personal
+Clave=personal
+TablaRemota=Personal
+LlaveRemota=Personal
+[USUARIO]
+Clave=USUARIO
+Nombre=USUARIO
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+[Estatus]
+Clave=Estatus
+Nombre=Estatus
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+Tamano=15
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+OpcionesValidar=S
+ValorPorOmision=<T>SINAFECTAR<T>
+ValorRefrescar=<T>PENDIENTE<T>
+CondicionEdicion=(bloqueado<2) o (usuario.departamento=<T>501 Recursos Humanos<T>)
+ListaOpciones=SINAFECTAR<BR>PROCESADO
+TipoDatos=Texto
+[Bloqueado]
+Clave=Bloqueado
+Nombre=Bloqueado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[FechaD]
+Clave=FechaD
+Nombre=FechaD
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+[FEchaA]
+Clave=FEchaA
+Nombre=FEchaA
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+
+
+
+
+
+
+
+
+[PeriodoTipo]
+Clave=PeriodoTipo
+Nombre=PeriodoTipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+
+[Tabla.LlavePrimaria]
+(Inicio)=Personal
+Personal=Periodo
+Periodo=Ejercicio
+Ejercicio=(Fin)
+
+
+
+
+
+
+
+
+
+
+[Area]
+Clave=Area
+Nombre=Area
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=ID
+ID=Personal
+Personal=D01
+D01=D02
+D02=D03
+D03=D04
+D04=D05
+D05=D06
+D06=D07
+D07=USUARIO
+USUARIO=Estatus
+Estatus=Bloqueado
+Bloqueado=FechaD
+FechaD=FEchaA
+FEchaA=PeriodoTipo
+PeriodoTipo=Area
+Area=(Fin)

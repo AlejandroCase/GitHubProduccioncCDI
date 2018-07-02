@@ -1,0 +1,97 @@
+[Forma]
+PosicionInicialIzquierda=347
+PosicionInicialArriba=96
+
+[Detalle]
+CondicionEdicion=((Cxp:Cxp.Estatus en (EstatusSinAfectar, EstatusPorConfirmar)) o (MovTipoEn(<T>CXP<T>,Cxp:Cxp.Mov, (CXP.NC, CXP.NCD, CXP.NCF, CXP.NCP)) y (Cxp:Cxp.Estatus=EstatusPendiente))) y Cxp:Cxp.CDIPermiteEditar
+
+[Detalle.CxpD.Importe]
+ColorFuente=
+
+[Detalle.CxpD.Aplica]
+ColorFuente=
+
+[Detalle.CxpD.AplicaID]
+ColorFuente=
+
+[Acciones.RepPantalla]
+Expresion=//ReportePantalla(ReporteMovPantalla(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>si Cxp:Cxp.Mov = <T>Contra Recibo<T>,<BR>  entonces<BR>   ReportePantalla(ReporteMovPantalla(<T>CXPTerm<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>  sino<BR>   ReportePantalla(ReporteMovPantalla(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>Fin
+
+[Acciones.Imprimir]
+Expresion=si Cxp:Cxp.Mov = <T>Contra Recibo<T>,<BR>  entonces<BR>    ReporteImpresora(ReporteMovImpresora(<T>CXPTerm<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>  sino<BR>ReporteImpresora(ReporteMovImpresora(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>Fin
+
+[Detalle.CxpD.DescuentoRecargos]
+ColorFuente=
+
+[Detalle.ImporteIVAFiscal]
+ColorFuente=
+
+[Detalle.ImporteIEPSFiscal]
+ColorFuente=
+
+[Detalle.CxpD.InteresesOrdinarios]
+ColorFuente=
+
+[Detalle.CxpD.InteresesMoratorios]
+ColorFuente=
+
+[Detalle.CxpD.InteresesOrdinariosQuita]
+ColorFuente=
+
+[Detalle.CxpD.InteresesMoratoriosQuita]
+ColorFuente=
+
+[Detalle.CxpD.Retencion]
+ColorFuente=
+
+[Detalle.ListaOrden]
+(Inicio)=CxpD.Renglon	(Acendente)
+CxpD.Renglon<TAB>(Acendente)=
+CxpD.RenglonSub<TAB>(Acendente)=
+CxpD.Renglon	(Acendente)=CxpD.RenglonSub	(Acendente)
+CxpD.RenglonSub	(Acendente)=(Fin)
+
+[Forma.ListaAcciones]
+PoliticaConcepto=Bitacora
+Otros9=CDIAutorizar
+Bitacora=MovPos
+CDIAutorizar=(Fin)
+
+[Acciones.CDIAutorizar]
+Nombre=CDIAutorizar
+Boton=0
+Menu=&Edición
+UsaTeclaRapida=S
+TeclaRapida=Shift+Ctrl+A
+NombreDesplegar=Autorizar Flujo
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDIMovAutorizar
+ActivoCondicion=Cxp:Cxp.CDIFlujoAutorizacion
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>CXP<T>)<BR>Asigna(Info.ID, Cxp:Cxp.ID)<BR>Asigna(Info.Mov, Cxp:Cxp.Mov)
+DespuesGuardar=S
+Visible=S
+
+[Acciones.Bitacora]
+Nombre=Bitacora
+Boton=0
+Menu=&Ver
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+B
+NombreDesplegar=&Bitácota
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=MovBitacora
+Activo=S
+Antes=S
+AntesExpresiones=Asigna(Info.Modulo, <T>CXP<T>)<BR>Asigna(Info.ID, Cxp:Cxp.ID)<BR>Asigna(Info.Mov, Cxp:Cxp.Mov)<BR>Asigna(Info.MovID, Cxp:Cxp.MovID)<BR>Asigna(Info.PuedeEditar, Cxp:Cxp.Estatus noen (EstatusConcluido, EstatusCancelado) y PuedeModificar(Cxp:Cxp.Usuario))
+DespuesGuardar=S
+Visible=S
+
+[Lista.Columnas]
+0=84
+1=111
+2=-2

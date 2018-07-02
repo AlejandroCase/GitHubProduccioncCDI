@@ -1,0 +1,21 @@
+[Dialogo]
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=526
+PosicionInicialArriba=308
+PosicionInicialAlturaCliente=114
+
+[Acciones.MovsPersonal]
+Nombre=MovsPersonal
+Boton=0
+NombreDesplegar=Movimientos Personal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIMovsNomina
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=ExplorarNominaConcepto
+ExplorarNominaConcepto=MovsPersonal
+MovsPersonal=(Fin)

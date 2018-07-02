@@ -1,0 +1,66 @@
+[GenerarCotizacion.dlg/Dialogo]
+ListaAcciones.Cambios=Insertar<TAB>SolicitudCargo
+PosicionInicialIzquierda=508
+PosicionInicialArriba=302
+PosicionInicialAlturaCliente=162
+
+[GenerarCotizacion.dlg/Acciones.SolicitudCargo]
+Nombre=SolicitudCargo
+Boton=0
+NombreDesplegar=Solicitud Cargo
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+Visible=S
+NombreEnBoton=S
+TipoAccion=Expresion
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Solicitud Cargo<T>, Afectar.FormaCaptura)
+
+
+[GenerarPedido.dlg/Dialogo]
+ListaAcciones.Cambios=Insertar<TAB>Recibo
+PosicionInicialIzquierda=508
+PosicionInicialArriba=302
+PosicionInicialAlturaCliente=162
+
+[GenerarPedido.dlg/Acciones.Recibo]
+Nombre=Recibo
+Boton=0
+NombreDesplegar=Recibo
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+Visible=S
+NombreEnBoton=S
+TipoAccion=Expresion
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Recibo<T>, Afectar.FormaCaptura)
+
+
+[GenerarPedido.dlg/Acciones.Otros1]
+Nombre=ReciboSaldo
+Boton=0
+NombreDesplegar=Recibo Saldo
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+Visible=S
+NombreEnBoton=S
+TipoAccion=Expresion
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Recibo Saldo<T>, Afectar.FormaCaptura)
+
+
+[GenerarPedido.dlg/Acciones.Otros2]
+Nombre=OrdendeCobro
+Boton=0
+NombreDesplegar=Orden de Cobro
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+Visible=S
+NombreEnBoton=S
+TipoAccion=Expresion
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Orden de Cobro<T>, Afectar.FormaCaptura)
+
+
+
+

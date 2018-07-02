@@ -1,0 +1,27 @@
+[Dialogo]
+Clave=MenuRepEmbarque
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+PosicionInicialIzquierda=587
+PosicionInicialArriba=347
+PosicionInicialAltura=107
+PosicionInicialAncho=245
+ListaAcciones=General
+
+[Acciones.General]
+Nombre=General
+Boton=0
+NombreDesplegar=&General de Movimientos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepEmbarqueAnalisisMov
+Activo=S
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Embarque/General<T>)

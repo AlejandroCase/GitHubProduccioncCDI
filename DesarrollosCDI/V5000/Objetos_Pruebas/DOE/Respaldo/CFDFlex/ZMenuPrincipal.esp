@@ -1,0 +1,8 @@
+[MenuPrincipal.dlg/Dialogo]
+ListaAcciones.Cambios=Insertar<TAB>Config.CFDFlex1<TAB>239<BR>Insertar<TAB>Config.eDoc1<TAB>250<BR>Insertar<TAB>Herramienta.CFDFlex1<TAB>223
+
+[MenuPrincipal.dlg/Acciones.Config.eDoc]
+VisibleCondicion=
+
+[MenuPrincipal.dlg/Acciones.Herramienta.CFDFlex]
+VisibleCondicion=

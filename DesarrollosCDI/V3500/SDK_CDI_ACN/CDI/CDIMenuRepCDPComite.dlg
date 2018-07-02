@@ -1,0 +1,28 @@
+
+[Dialogo]
+Clave=CDIMenuRepCDPComite
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=CDIRepIntegracionComite
+PosicionInicialIzquierda=295
+PosicionInicialArriba=196
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=245
+[Acciones.CDIRepIntegracionComite]
+Nombre=CDIRepIntegracionComite
+Boton=0
+NombreDesplegar=Integración Partida Prespuestal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIFiltrosIntegracionPartidaPresComite
+Activo=S
+Visible=S

@@ -1,0 +1,25 @@
+
+[Tabla]
+Icono=0
+Clave=HHCEInscripcionVentaExcluir
+Nombre=HHCEInscripcionVentaExcluir
+Archivo=HHCEInscripcionVentaExcluir
+Modulos=(Todos)
+TipoTabla=General
+
+ListaCampos=Mov
+LlavePrimaria=Mov
+CampoMov=Mov
+SQL=SELECT<BR>  Mov<BR><BR>FROM<BR>  HHCEInscripcionVentaExcluir
+[Mov]
+Clave=Mov
+Nombre=Mov
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemOpc=Validar captura en la lista
+AyudaRefrescar=S
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Modulo = :tModulo AND Clave in (:tC1, :tC2)<T>, <T>CE<T>, <T>CE.I<T>, <T>CE.P<T>)

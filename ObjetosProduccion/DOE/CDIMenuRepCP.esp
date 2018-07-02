@@ -1,0 +1,15 @@
+[CDIMenuRepCP.dlg/Dialogo.ListaAcciones]
+GeneralGastos=ComparativoEjercicios
+ComparativoEjercicios=ComparativoIE
+
+
+[CDIMenuRepCP.DLG/Acciones.ComparativoEjercicios]
+Nombre=ComparativoEjercicios
+Boton=0
+NombreDesplegar=&Comparativos por Ejercicios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIComparativoEjercicio
+Activo=S
+Visible=S

@@ -1,0 +1,30 @@
+[Dialogo]
+Clave=MenuCfgFiscal
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=ObligacionFiscal
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=832
+PosicionInicialArriba=537
+PosicionInicialAlturaCliente=90
+PosicionInicialAncho=256
+
+[Acciones.ObligacionFiscal]
+Nombre=ObligacionFiscal
+Boton=0
+NombreDesplegar=&Obligaciones Fiscales
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ObligacionFiscal
+Activo=S
+Visible=S

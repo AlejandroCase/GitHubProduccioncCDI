@@ -1,0 +1,5 @@
+[Acciones.Otros1]
+Expresion=Asigna(Art:Art.HTML, EditorHTML.Directo(Art:Art.Articulo, Art:Art.HTML))
+
+[Art.tbl/wMostrar]
+ValorPorOmision=Falso

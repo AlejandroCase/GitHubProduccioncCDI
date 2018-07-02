@@ -1,0 +1,33 @@
+
+[Tabla]
+Icono=0
+Clave=CDIEstadoCivil
+Nombre=CDIEstadoCivil
+Archivo=CDIEstadoCivil
+Modulos=(Todos)
+Singular=CDIEstadoCivil
+
+TipoTabla=General
+ListaCampos=EstadoCivil
+
+LlavePrimaria=EstadoCivil
+SQL=(Lista)
+[EstadoCivil]
+Clave=EstadoCivil
+Nombre=Estado Civil
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+
+
+
+
+
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=EstadoCivil
+EstadoCivil=FROM CDIEstadoCivil
+FROM CDIEstadoCivil=(Fin)

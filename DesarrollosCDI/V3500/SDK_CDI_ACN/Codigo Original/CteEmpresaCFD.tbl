@@ -1,0 +1,86 @@
+[Tabla]
+Icono=0
+Clave=CteEmpresaCFD
+Archivo=CteEmpresaCFD
+Modulos=(Todos)
+TipoTabla=Cuentas
+ListaCampos=(Lista)
+Nombre=Datos CFD
+Singular=Datos CFD
+ListaRelaciones=Empresa
+LlavePrimaria=Cliente<BR>Empresa
+ControlEmpresas=S
+CampoEmpresa=Empresa
+SQL=SELECT<BR>  Cliente,<BR>  Empresa,<BR>  EmisorID,<BR>  ProveedorID,<BR>  InformacionCompra<BR><BR>FROM<BR>  CteEmpresaCFD
+
+[Cliente]
+Clave=Cliente
+Nombre=Cliente
+Visible=S
+TamanoValidacion=10
+Tamano=10
+ValorPorOmision=Info.Cliente
+TipoDatos=Texto
+
+[Empresa]
+Clave=Empresa
+Nombre=Empresa
+Visible=S
+TamanoValidacion=5
+Tamano=5
+AyudaEnCaptura=Vista
+AyudaForma=EmpresaLista
+AyudaVista=Empresa
+AyudaCampo=Empresa.Empresa
+AyudaMultiple=S
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Unicamente opciones listadas
+ValidacionUsaTabla=S
+ValidacionTablas=Empresa
+Mayusculas=S
+TipoDatos=Texto
+
+[EmisorID]
+Clave=EmisorID
+Nombre=Clave Emisor
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+TipoDatos=Texto
+
+[ProveedorID]
+Clave=ProveedorID
+Nombre=Clave Proveedor
+Visible=S
+TamanoValidacion=20
+Tamano=20
+Mayusculas=S
+TipoDatos=Texto
+
+[Relaciones.Empresa]
+TipoRelacion=Forzosa
+LlaveLocal=Empresa
+Clave=Empresa
+TablaRemota=Empresa
+LlaveRemota=Empresa
+
+[InformacionCompra]
+Clave=InformacionCompra
+Nombre=Datos Compra
+Visible=S
+TamanoValidacion=10
+Tamano=10
+AyudaForma=CteInfoCompraLista
+AyudaVista=CteInfoCompra
+AyudaCampo=CteInfoCompra.Clave
+Mayusculas=S
+
+[Tabla.ListaCampos]
+(Inicio)=Cliente
+Cliente=Empresa
+Empresa=EmisorID
+EmisorID=ProveedorID
+ProveedorID=InformacionCompra
+InformacionCompra=(Fin)

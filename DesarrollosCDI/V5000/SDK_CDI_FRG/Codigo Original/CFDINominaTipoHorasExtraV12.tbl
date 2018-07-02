@@ -1,0 +1,44 @@
+
+
+
+[Tabla]
+Icono=0
+Clave=CFDINominaTipoHorasExtraV12
+Nombre=CFDINominaTipoHorasExtraV12
+Archivo=CFDINominaTipoHorasExtra
+Modulos=(Todos)
+Singular=CFDINominaTipoHorasExtraV12
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=TipoHoras
+SQL=(Lista)
+[TipoHoras]
+Clave=TipoHoras
+Nombre=Tipo Hora Extra
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=TipoHoras
+TipoHoras=Descripcion
+Descripcion=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=TipoHoras,
+TipoHoras,=Descripcion
+Descripcion=FROM CFDINominaTipoHorasExtra
+FROM CFDINominaTipoHorasExtra=(Fin)

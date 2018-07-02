@@ -1,0 +1,1747 @@
+
+[Reporte]
+Clave=CIDCartaForPagCartaAutorizacion
+Nombre=Carta Socios Carta Autorización cargo automatico
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+ConFormaPrevia=S
+OtroOrden=S
+ListaOrden=Socio<TAB>(Acendente)
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1319
+FormaPrevia=CDITipoCteCatCte
+BarraHerramientas=S
+ListaAcciones=(Lista)
+Submenu=Especiales
+[Vista]
+Icono=0
+Clave=CIDCartaForPagCartaAutorizacion
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=CDIcartaAnuales2013Cas<T>{Info.CteTipo}<T>, <T>{Info.CteCat}<T>
+[CLIENTE]
+Clave=CLIENTE
+Nombre=CLIENTE
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=CLIENTE
+
+[Socio]
+Clave=Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Socio
+
+[Membresia]
+Clave=Membresia
+Nombre=Membresia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Membresia
+
+[tipo]
+Clave=tipo
+Nombre=tipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+ClaveBDE=tipo
+
+[Categoria]
+Clave=Categoria
+Nombre=Categoria
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Categoria
+
+[nombre]
+Clave=nombre
+Nombre=nombre
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=152
+TipoDatos=Texto
+Tamano=152
+ClaveBDE=nombre
+
+[Direccion]
+Clave=Direccion
+Nombre=Direccion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Direccion
+
+[DireccionNumero]
+Clave=DireccionNumero
+Nombre=DireccionNumero
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=DireccionNumero
+
+[DireccionNumeroInt]
+Clave=DireccionNumeroInt
+Nombre=DireccionNumeroInt
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=DireccionNumeroInt
+
+[colonia]
+Clave=colonia
+Nombre=colonia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=colonia
+
+[Estado]
+Clave=Estado
+Nombre=Estado
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=30
+TipoDatos=Texto
+Tamano=30
+ClaveBDE=Estado
+
+[CodigoPostal]
+Clave=CodigoPostal
+Nombre=CodigoPostal
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+ClaveBDE=CodigoPostal
+
+[Articulo]
+Clave=Articulo
+Nombre=Articulo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=Articulo
+
+[EsCuota]
+Clave=EsCuota
+Nombre=EsCuota
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+ClaveBDE=EsCuota
+
+[Descripcion1]
+Clave=Descripcion1
+Nombre=Descripcion1
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Descripcion1
+
+[Precio10]
+Clave=Precio10
+Nombre=Precio10
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Precio10
+
+[Titular]
+Clave=Titular
+Nombre=Titular
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+ClaveBDE=Titular
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio<BR>Inicio: Socio
+
+VentanaIzquierda=-8
+VentanaArriba=-8
+VentanaAltura=784
+VentanaAncho=1319
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=2.5
+Renglones=7
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=2
+Visible=1=0
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=3.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=0
+[Linea3]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+Grupo=
+AltoEnCm=0.87
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+EstiloMarco=0
+[Linea4]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.61
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=4
+EstiloMarco=3
+[Linea5]
+Clave=Inicio: Socio
+Objetos=2
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.82
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea6]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.55
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=2
+[Linea7]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea8]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=1.63
+Renglones=4
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=S
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=\\INTELISYSAPP\Intelisis 3500\Dibujos\Imagenes\Logo CDI.bmp
+
+BordeAbajo=S
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=15.79
+AnchoTexto=85
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas + Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+BordeAbajo=S
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=19.29
+AnchoTexto=104
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>CARTA AUTORIZACIÓN  DE  CARGO  AUTOMATICO  CON  <BR>TARJETA  DE  CREDITO<T>
+
+ExpresionMultiple=N
+EstiloMarco=0
+
+TextoConFlujo=S
+Marco=S
+[Linea9]
+Clave=Inicio: Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.5
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea10]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=1.42
+Renglones=4
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=9
+
+[Linea11]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+
+
+Objetos=0
+[A8]
+Celda=A8
+Alineacion=Izquierda
+AnchoEnCm=18.9
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>       En  relación al contrato que  regula el  uso de  mi tarjeta  de  Crédito  que  tengo  celebrado con  el Banco emisor  por este,<T><BR><T>       conducto me permito  solicitarles  e instruirles  expresamente  para que  con cargo a mi  cuenta  cuyo  número se señala en<T><BR><T>       esta carta, por mi  cuenta y orden  paguen al CENTRO DEPORTIVO ISRAELITA, A.C., las cantidades que me correspondan<T><BR><T>       como asociado.<T>
+
+ExpresionMultiple=S
+
+[Linea12]
+Clave=Inicio: Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.45
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea13]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.9
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=17
+
+
+
+[A12]
+Celda=A12
+Alineacion=Centrado
+AnchoEnCm=18.79
+ExpresionMultiple=N
+AnchoTexto=101
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>NUMERO DE TARJETA<T>
+
+
+
+
+[Acciones.CA]
+Nombre=CA
+Boton=4
+NombreDesplegar=CA
+EnBarraHerramientas=S
+TipoAccion=Reportes Impresora
+ClaveAccion=CIDCartaForPagCartaAutorizacion
+Activo=S
+Visible=S
+
+
+
+
+[Linea14]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea15]
+Clave=Inicio: Socio
+Objetos=4
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea16]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.9
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=10
+[Linea17]
+Clave=Inicio: Socio
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea18]
+Clave=Inicio: Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=9.58
+Renglones=26
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+
+[A15]
+Celda=A15
+Alineacion=Izquierda
+AnchoEnCm=4.7
+AnchoTexto=25
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B15]
+Celda=B15
+Alineacion=Centrado
+AnchoEnCm=3.29
+AnchoTexto=18
+Marco=N
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Clave Seguridad<T>
+
+[C15]
+Celda=C15
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+Marco=N
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[D15]
+Celda=D15
+Alineacion=Centrado
+AnchoEnCm=3.21
+AnchoTexto=17
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+Marco=N
+Expresion=<T>Fecha Vencimiento<T>
+
+
+
+
+
+
+
+[A5]
+Celda=A5
+Alineacion=Izquierda
+AnchoEnCm=2
+AnchoTexto=11
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Nombre : <T>
+
+[B5]
+Celda=B5
+Alineacion=Izquierda
+AnchoEnCm=16.8
+AnchoTexto=90
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=nombre
+
+
+
+[A9]
+Celda=A9
+Alineacion=Centrado
+AnchoEnCm=18.89
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Banco Emisor<T>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Linea19]
+Clave=Inicio: Socio
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=0
+
+
+
+
+
+
+[A4]
+Celda=A4
+Alineacion=Izquierda
+AnchoEnCm=13.5
+AnchoTexto=73
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+EstiloMarco=3
+[B4]
+Celda=B4
+Alineacion=Centrado
+AnchoEnCm=1.29
+AnchoTexto=7
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Dia( hoy )
+
+EstiloMarco=3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Vista.ListaCampos]
+(Inicio)=CLIENTE
+CLIENTE=Socio
+Socio=Membresia
+Membresia=tipo
+tipo=Categoria
+Categoria=nombre
+nombre=Direccion
+Direccion=DireccionNumero
+DireccionNumero=DireccionNumeroInt
+DireccionNumeroInt=colonia
+colonia=Estado
+Estado=CodigoPostal
+CodigoPostal=Articulo
+Articulo=EsCuota
+EsCuota=Descripcion1
+Descripcion1=Precio10
+Precio10=Titular
+Titular=(Fin)
+
+[Linea20]
+Clave=Inicio: Socio
+Objetos=4
+Seccion=Inicio Grupo
+Grupo=Socio
+AltoEnCm=2.32
+Renglones=6
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[C4]
+Celda=C4
+Alineacion=Centrado
+AnchoEnCm=2.71
+AnchoTexto=15
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=MesNombre( ahora )
+
+[D4]
+Celda=D4
+Alineacion=Izquierda
+AnchoEnCm=1.39
+AnchoTexto=7
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=EjercicioTrabajo
+
+[A6]
+Celda=A6
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>No. Socio :<T>
+
+[B6]
+Celda=B6
+Alineacion=Izquierda
+AnchoEnCm=2.5
+AnchoTexto=13
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>( <T>+Socio+<T> )<T>
+
+[A10]
+Celda=A10
+Alineacion=Izquierda
+AnchoEnCm=0.5
+AnchoTexto=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B10]
+Celda=B10
+Alineacion=Izquierda
+AnchoEnCm=3.39
+AnchoTexto=18
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>AMERICAN EXPRESS<T>
+
+[C10]
+Celda=C10
+Alineacion=Izquierda
+AnchoEnCm=1.89
+AnchoTexto=10
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[D10]
+Celda=D10
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=4
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[E10]
+Celda=E10
+Alineacion=Izquierda
+AnchoEnCm=2.29
+AnchoTexto=12
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>OTRO BANCO:<T>
+
+[F10]
+Celda=F10
+Alineacion=Izquierda
+AnchoEnCm=3.61
+AnchoTexto=19
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[G10]
+Celda=G10
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=4
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[H10]
+Celda=H10
+Alineacion=Izquierda
+AnchoEnCm=2.2
+AnchoTexto=12
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>TIPO TARJETA<T>
+
+[I10]
+Celda=I10
+Alineacion=Izquierda
+AnchoEnCm=3.11
+ExpresionMultiple=S
+AnchoTexto=17
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>CREDITO<T><BR><T>_________________ <T><BR><T> <T><BR><T>DEBÍTO<T>
+
+[A13]
+Celda=A13
+Alineacion=Izquierda
+AnchoEnCm=3.39
+AnchoTexto=18
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B13]
+Celda=B13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=9
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[C13]
+Celda=C13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[D13]
+Celda=D13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[E13]
+Celda=E13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[F13]
+Celda=F13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[G13]
+Celda=G13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[H13]
+Celda=H13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[I13]
+Celda=I13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[J13]
+Celda=J13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[K13]
+Celda=K13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[L13]
+Celda=L13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[M13]
+Celda=M13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[N13]
+Celda=N13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[O13]
+Celda=O13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=3
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[P13]
+Celda=P13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[Q13]
+Celda=Q13
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[A16]
+Celda=A16
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=27
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B16]
+Celda=B16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=4
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[C16]
+Celda=C16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[D16]
+Celda=D16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[E16]
+Celda=E16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[F16]
+Celda=F16
+Alineacion=Izquierda
+AnchoEnCm=3.39
+AnchoTexto=18
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[G16]
+Celda=G16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=5
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[H16]
+Celda=H16
+Alineacion=Izquierda
+AnchoEnCm=0.7
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[I16]
+Celda=I16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[J16]
+Celda=J16
+Alineacion=Izquierda
+AnchoEnCm=0.71
+AnchoTexto=16
+Marco=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[A18]
+Celda=A18
+Alineacion=Izquierda
+AnchoEnCm=18.79
+ExpresionMultiple=S
+AnchoTexto=101
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>       Asi manifiesto mi conformidad de que en el cumplimiento de estas instrucciones me sujeto a las politicas establecidas<T><BR><T>       por el banco emisor para este tipo de servicios, así como a las siguientes reglas:<T><BR><T> <T><BR><T>       A.- La  suscripción de  pagares a favor del banco emisor  para documentar la disposición, no sera necesaria los que<T><BR><T>            efectúen de manera automatica y que aparezcan en el estado de mi tarjeta, harán prueba de la disposición.<T><BR><T>       B.- Que  de  acuerdo con las  politicas del Banco emisor,  mi  cuenta se encuentre al corriente en todos los pagos que<T><BR><T>            deben hacer bajo la misma, y en caso de no ser así, el Banco emisor no asumira responsabilidad alguna.<T><BR><T>       C.- Los  pagos  que  se realicen al amparo de  esta autorización  seran sin responsabilidad  para el banco emisor asi<T><BR><T>            como para el Centro Deportivo Israelita, A.C.<T><BR><T> <T><BR><T>       Esta autorización se entiende como adición al contrato que regula el uso de la tarjeta antes mencionada.<T><BR><T> <T><BR><T>       Queda entendido que el Banco emisor permanecerá ajeno a cualquier relación que en mi calidad de usuario se suscite<T><BR><T>       con el Centro Deportivo Israelita, A.C.<T><BR><T> <T><BR><T>       De igual manera, estoy enterado y conforme en que el Banco emisor dejara de prestarme el servicio de pago con cargo<T><BR><T>       a la cuenta de mi tarjeta, cuando el contrato que regula el uso de la tarjeta rescinda o por cualquier causa se termine<T><BR><T>       y deje de estar en vigor y por ello se cancéle mi tarjeta.<T><BR><T> <T><BR><T>       También  cesaran dichos  servicios en caso de que yo  no cubra con oportunidad  todos los cargos que aparezcan en la<T><BR><T>       cuenta de mi tarjeta; relacionados con el Centro Deportivo Israelita, A.C.<T><BR><T> <T><BR><T>       Esta  autorización quedara  en vigor hasta  nuevo aviso, ya  que de cancelarla  daré aviso por escrito con treinta dias<T><BR><T>       naturales de anticipación<T>
+
+[A20]
+Celda=A20
+Alineacion=Izquierda
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B20]
+Celda=B20
+Alineacion=Centrado
+AnchoEnCm=5.5
+ExpresionMultiple=S
+AnchoTexto=30
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>VoBo<T><BR><T> <T><BR><T> <T><BR><T> <T><BR><T>------------------------------<T>
+
+[C20]
+Celda=C20
+Alineacion=Izquierda
+AnchoEnCm=2.21
+AnchoTexto=12
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[D20]
+Celda=D20
+Alineacion=Centrado
+AnchoEnCm=6.79
+ExpresionMultiple=S
+AnchoTexto=37
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>ACEPTO<T><BR><T> <T><BR><T> <T><BR><T> <T><BR><T>----------------------------------------------------<T><BR>nombre
+
+[Acciones.CDIcartaAnuales2013CasExcel]
+Nombre=CDIcartaAnuales2013CasExcel
+Boton=115
+NombreDesplegar=CDIcartaAnuales2013CasExcel
+EnBarraHerramientas=S
+TipoAccion=Reportes Excel
+ClaveAccion=CDIcartaAnuales2013CasExcel
+Activo=S
+Visible=S
+
+
+
+[Reporte.ListaAcciones]
+(Inicio)=CA
+CA=CDIcartaAnuales2013CasExcel
+CDIcartaAnuales2013CasExcel=(Fin)

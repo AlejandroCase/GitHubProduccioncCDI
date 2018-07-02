@@ -1,0 +1,15 @@
+[Forma]
+PosicionInicialIzquierda=243
+PosicionInicialAncho=793
+
+[Lista]
+FiltroGeneral=l.Empresa=<T>{Empresa}<T> AND Estacion={EstacionTrabajo}
+
+[Lista.OkRef]
+ColorFuente=
+
+[Lista.Descripcion]
+ColorFuente=
+
+[Lista.Columnas]
+2=384

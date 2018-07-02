@@ -1,0 +1,139 @@
+
+[Tabla]
+Icono=0
+Clave=CDISemE
+Nombre=CDISemE
+Archivo=CDISemE
+Modulos=(Todos)
+Singular=CDISemE
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=Id
+ControlID=S
+CampoID=Id
+SQL=(Lista)
+[Id]
+Clave=Id
+Nombre=Id
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+
+[FInicio]
+Clave=FInicio
+Nombre=Fecha Inicio
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+AyudaEnCaptura=Calendario sin Hora
+[FFin]
+Clave=FFin
+Nombre=Fecha Fin
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+
+AyudaEnCaptura=Calendario sin Hora
+
+
+[Semana.ListaOpciones]
+(Inicio)=Semana1
+Semana1=Semana2
+Semana2=Semana3
+Semana3=Semana4
+Semana4=(Fin)
+
+
+
+
+
+
+[Tabla.LlavePrimaria]
+(Inicio)=Semana
+Semana=Incluir
+Incluir=(Fin)
+
+
+
+
+
+
+
+[Semana1]
+Clave=Semana1
+Nombre=S1
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+[Semana2]
+Clave=Semana2
+Nombre=S2
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+[Semana3]
+Clave=Semana3
+Nombre=S3
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+[Semana4]
+Clave=Semana4
+Nombre=S4
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Lógico
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Si - No
+
+
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Id
+Id=FInicio
+FInicio=FFin
+FFin=Semana1
+Semana1=Semana2
+Semana2=Semana3
+Semana3=Semana4
+Semana4=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Id,
+Id,=FInicio,
+FInicio,=FFin,
+FFin,=Semana1,
+Semana1,=Semana2,
+Semana2,=Semana3,
+Semana3,=Semana4
+Semana4=FROM CDISemE
+FROM CDISemE=(Fin)

@@ -1,0 +1,29 @@
+
+[MenuHerramientaDinero.dlg/Dialogo.ListaAcciones]
+Reevaluacion=PagosElectronicos
+PagosElectronicos=TansWeb
+TansWeb=(Fin)
+
+
+[MenuHerramientaDinero.dlg/Acciones.PagosElectronicos]
+Nombre=PagosElectronicos
+Boton=0
+NombreDesplegar=Pagos Electronicos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIPagosElectronicos
+Activo=S
+Visible=S
+
+
+[MenuHerramientaDinero.dlg/Acciones.TansWeb]
+Nombre=TansWeb
+Boton=0
+NombreDesplegar=Transacciones WEB
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDITranWeb
+Activo=S
+Visible=S

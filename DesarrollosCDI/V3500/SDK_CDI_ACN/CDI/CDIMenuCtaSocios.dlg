@@ -1,0 +1,37 @@
+
+[Dialogo]
+Clave=CDIMenuCtaSocios
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+
+ListaAcciones=CDISocios
+PosicionInicialIzquierda=517
+PosicionInicialArriba=447
+PosicionInicialAlturaCliente=104
+PosicionInicialAncho=213
+[Acciones.CDISocios]
+Nombre=CDISocios
+Boton=0
+NombreDesplegar=Socios
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDISocios
+Activo=S
+Visible=S
+Antes=S
+AntesExpresiones=Asigna( Info.Numero, 1 )<BR>Asigna( Info.CDINumero, 0 )<BR>Asigna( Info.ID, 0 )
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=CDISocios
+CDISocios=CDISocios2
+CDISocios2=(Fin)

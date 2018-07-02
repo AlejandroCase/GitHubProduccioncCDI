@@ -1,0 +1,82 @@
+[Dialogo]
+Clave=pFiscalCfg
+Nombre=Configuración Módulo Fiscal
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialIzquierda=803
+PosicionInicialArriba=489
+PosicionInicialAlturaCliente=186
+PosicionInicialAncho=313
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+
+[Acciones.pFiscalMov]
+Nombre=pFiscalMov
+Boton=0
+NombreDesplegar=&Movimientos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pFiscalMov
+Activo=S
+Visible=S
+
+[Acciones.pObligacionFiscal]
+Nombre=pObligacionFiscal
+Boton=0
+NombreDesplegar=&Obligaciones Fiscal
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pObligacionFiscal
+Activo=S
+Visible=S
+
+[Acciones.pFiscalArt]
+Nombre=pFiscalArt
+Boton=0
+NombreDesplegar=Información Fiscal (&Artículos)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pFiscalArt
+Activo=S
+Visible=S
+
+[Acciones.pFiscalConcepto]
+Nombre=pFiscalConcepto
+Boton=0
+NombreDesplegar=Información Fiscal (&Conceptos)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pFiscalConcepto
+Activo=S
+Visible=S
+
+[Acciones.pFiscalMovTipo]
+Nombre=pFiscalMovTipo
+Boton=0
+NombreDesplegar=Información Fiscal (&Tipos Movimientos)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=pFiscalMovTipo
+Activo=S
+Visible=S
+
+[Dialogo.ListaAcciones]
+(Inicio)=pFiscalMov
+pFiscalMov=pObligacionFiscal
+pObligacionFiscal=pFiscalArt
+pFiscalArt=pFiscalConcepto
+pFiscalConcepto=pFiscalMovTipo
+pFiscalMovTipo=(Fin)

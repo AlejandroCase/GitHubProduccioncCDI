@@ -1,0 +1,57 @@
+[Cte.tbl/CDILog1]
+Clave=CDILog1
+Nombre=Participa Jai
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[Cte.tbl/CDILog2]
+Clave=CDILog2
+Nombre=Llamar Despues
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[Cte.tbl/CDILog3]
+Clave=CDILog3
+Nombre=Llamado
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+
+[Cte.vis/Cte.CDILog1]
+Clave=Cte.CDILog1
+Nombre=Participa Jai
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+LigaTabla=Cte
+LigaCampo=CDILog1
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CDILog1
+
+[Cte.vis/Cte.CDILog2]
+Clave=Cte.CDILog2
+Nombre=Llamar Despues
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+LigaTabla=Cte
+LigaCampo=CDILog2
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CDILog2
+
+[Cte.vis/Cte.CDILog3]
+Clave=Cte.CDILog3
+Nombre=Llamado
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+LigaTabla=Cte
+LigaCampo=CDILog3
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CDILog3

@@ -1,0 +1,143 @@
+;[AsistenteCursoCCPM.frm/Acciones.Generar]
+;AntesExpresiones=GuardarCambios<BR>Asigna(Temp.Reg,sql(<T>xpAsistenteCursoCCPMValCobMed :tE, :nS, :tU, :nE<T>,empresa, Sucursal, usuario, estaciontrabajo))<BR>caso Temp.Reg[1]<BR>  es 10060<BR>   entonces<BR>    Si(Confirmacion( <T>¿El socio No tiene Cobertura Medica, desea generar el preregistro incluyendo la cobertura?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion<T>, Empresa, Sucursal, Usuario, EstacionTrabajo) Forma(<T>ListaIDOK<T>))<BR>  es 2<BR>  entonces<BR>    Si(Confirmacion( <T>¿Esta seguro de generar los PreRegistros?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion<T>, Empresa, Sucursal, Usuario, EstacionTrabajo) Forma(<T>ListaIDOK<T>))<BR>  es 3<BR>  entonces informacion(Temp.Reg[2])<BR>fin
+
+[AsistenteCursoCCPM.frm/Lista.Columnas]
+CobMed=64
+CDIPaqIns=47
+
+[AsistenteCursoCCPM.frm/Acciones.Generar]
+;AntesExpresiones=GuardarCambios<BR>Asigna(Temp.Reg,sql(<T>xpAsistenteCursoCCPMValCobMed :tE, :nS, :tU, :nE<T>,empresa, Sucursal, usuario, estaciontrabajo))<BR>caso Temp.Reg[1]<BR>  es 10060<BR>   entonces<BR>    Si(Confirmacion( <T>¿El socio No tiene Cobertura Medica, desea generar el preregistro incluyendo la cobertura?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion<T>, Empresa, Sucursal, Usuario, EstacionTrabajo) Forma(<T>ListaIDOK<T>))<BR>  es 2<BR>  entonces<BR>    Si(Confirmacion( <T>¿Esta seguro de generar los PreRegistros?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion<T>, Empresa, Sucursal, Usuario, EstacionTrabajo) Forma(<T>ListaIDOK<T>))<BR>  es 3<BR>  entonces informacion(Temp.Reg[2])<BR>fin
+;AntesExpresiones=Asigna(Temp.Reg,sql(<T>xpAsistenteCursoCCPMValCobMed :tE, :nS, :tU, :nE<T>,empresa, Sucursal, usuario, estaciontrabajo))<BR>caso Temp.Reg[1]<BR>  es 10060<BR>   entonces<BR>    Si(Confirmacion( <T>¿El socio No tiene Cobertura Medica, desea generar el preregistro incluyendo la cobertura?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion, :tI<T>, Empresa, Sucursal, Usuario, EstacionTrabaj, <T>nulo<T>) Forma(<T>ListaIDOK<T>))<BR>  es 2<BR>  entonces<BR>    Si(Confirmacion( <T>¿Esta seguro de generar los PreRegistros?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacionn, :tI<T>, Empresa, Sucursal, Usuario, EstacionTrabajo, <T>nulo<T>) Forma(<T>ListaIDOK<T>))<BR>  es 3<BR>  entonces informacion(Temp.Reg[2])<BR>fin 
+ AntesExpresiones=Asigna(Temp.Reg,sql(<T>xpAsistenteCursoCCPMValCobMed :tE, :nS, :tU, :nE<T>,empresa, Sucursal, usuario, estaciontrabajo))<BR>caso Temp.Reg[1]<BR>  es 10060<BR>   entonces<BR>    Si(Confirmacion( <T>¿El socio No tiene Cobertura Medica, desea generar el preregistro incluyendo la cobertura?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion, :tI<T>, Empresa, Sucursal, Usuario, EstacionTrabajo, <T>x<T>) Forma(<T>ListaIDOK<T>))<BR>  es 2<BR>  entonces<BR>    Si(Confirmacion( <T>¿Esta seguro de generar los PreRegistros?<T>,  BotonSi ,  BotonNo ) =  BotonSi , ProcesarSQL(<T>xpAsistenteCursoCCPM :tEmpresa, :nSucursal, :tUsuario, :nEstacion, :tI<T>, Empresa, Sucursal, Usuario, EstacionTrabajo, <T>x<T>) Forma(<T>ListaIDOK<T>))      <BR>  es 3<BR>  entonces informacion(Temp.Reg[2])<BR>fin
+ 
+
+[AsistenteCursoCCPM.frm/Otros.ListaEnCaptura]
+Total=AsistenteCursoCCPM.CDIPaqIns
+AsistenteCursoCCPM.CDIPaqIns=(Fin)
+
+[AsistenteCursoCCPM.frm/Lista.ListaEnCaptura]
+AsistenteCursoCCPM.Cliente=AsistenteCursoCCPM.CDIPaqIns
+AsistenteCursoCCPM.CDIPaqIns=AsistenteCursoCCPM.CEPrograma
+
+[AsistenteCursoCCPM.frm/Forma.ListaAcciones]
+Info=CDIPaqInsc
+CDIPaqInsc=Descuentos
+Descuentos=Planes
+Planes=(Fin)
+
+[AsistenteCursoCCPM.frm/Lista.AsistenteCursoCCPM.CDIPaqIns]
+Carpeta=Lista
+Clave=AsistenteCursoCCPM.CDIPaqIns
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+ColorFondo=Blanco
+
+
+[AsistenteCursoCCPM.frm/Acciones.CDIPaqInsc]
+Nombre=CDIPaqInsc
+Boton=47
+NombreEnBoton=S
+NombreDesplegar=Subir Paquetes
+EnBarraHerramientas=S
+TipoAccion=Formas
+ClaveAccion=CDIPaqInsc
+Activo=S
+;Visible=S
+VisibleCondicion=asigna(Info.Observaciones,<T>Sistemas<T>)<BR>sql(<T>select GrupoTrabajo from usuario where usuario=:tU<T>,Usuario)=Info.Observaciones
+
+
+
+
+[AsistenteCursoCCPM.frm/Acciones.Descuentos]
+Nombre=Descuentos
+Boton=18
+NombreEnBoton=S
+NombreDesplegar=Descuentos
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIInscDesc
+Activo=S
+Visible=S
+
+
+
+
+
+[AsistenteCursoCCPM.frm/Acciones.Planes]
+Nombre=Planes
+Boton=47
+NombreEnBoton=S
+NombreDesplegar=Bajar Planes
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIPlanesBAjar
+Activo=S
+VisibleCondicion=asigna(Info.Observaciones,<T>Sistemas<T>)<BR>sql(<T>select GrupoTrabajo from usuario where usuario=:tU<T>,Usuario)=Info.Observaciones
+
+
+
+
+
+[AsistenteCursoCCPM.tbl/CEPrograma]
+ValorPorOmision=sql(<T>xpCDIPaqueteInscr :nP, :nC<T>, CDIPaqIns, 1)
+
+[AsistenteCursoCCPM.tbl/CEPlan]
+ValorPorOmision=sql(<T>xpCDIPaqueteInscr :nP, :nC<T>, CDIPaqIns, 2)
+
+[AsistenteCursoCCPM.tbl/Grupo]
+ValorPorOmision=sql(<T>xpCDIPaqueteInscr :nP, :nC<T>, CDIPaqIns, 4)
+
+[AsistenteCursoCCPM.tbl/Materia]
+ValorPorOmision=sql(<T>xpCDIPaqueteInscr :nP, :nC<T>, CDIPaqIns, 3)
+
+[AsistenteCursoCCPM.tbl/Tabla.ListaCampos]
+CDIDescuento2=CDIPaqIns
+CDIPaqIns=(Fin)
+
+[AsistenteCursoCCPM.tbl/Tabla.SQL]
+CDISocio,=CDIDescuento2,
+CDIDescuento2=
+CDIDescuento2,=CDIPaqIns
+CDIPaqIns=FROM AsistenteCursoCCPM
+
+[AsistenteCursoCCPM.tbl/CDIPaqIns]
+Clave=CDIPaqIns
+Nombre=Paquete
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+ConRefrescar=S
+;Requerido=S
+ListaRefrescar=(Lista)
+
+[AsistenteCursoCCPM.tbl/CDIPaqIns.ListaRefrescar]
+(Inicio)=CEPrograma
+CEPrograma=CEPlan
+CEPlan=Materia
+Materia=Grupo
+Grupo=CDIPrecio
+CDIPrecio=(Fin)
+
+
+[AsistenteCursoCCPM.vis/Vista.ListaCampos]
+AsistenteCursoCCPM.CDIDescuento2=AsistenteCursoCCPM.CDIPaqIns
+AsistenteCursoCCPM.CDIPaqIns=Cte.Cliente
+;Cte.Cliente=AsistenteCursoCCPM.CDIDescuento2
+
+[AsistenteCursoCCPM.vis/Vista.SQL]
+AsistenteCursoCCPM.CDIDescuento2,=AsistenteCursoCCPM.CDIPaqIns,
+AsistenteCursoCCPM.CDIPaqIns,=Cte.Cliente,
+;Cte.Cliente,=AsistenteCursoCCPM.Materia,
+
+[AsistenteCursoCCPM.vis/AsistenteCursoCCPM.CDIPaqIns]
+Clave=AsistenteCursoCCPM.CDIPaqIns
+LigaTabla=AsistenteCursoCCPM
+LigaCampo=CDIPaqIns
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Numérico
+ClaveBDE=CDIPaqIns

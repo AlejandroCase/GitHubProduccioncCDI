@@ -1,0 +1,4 @@
+[VentaT.vis/SELECT]
+Cte.Membresia, Cte.PersonalNombres, Cte.PersonalApellidoPaterno,
+Cte.PersonalApellidoMaterno, Venta.CDIFacturarA, Venta.Comentarios
+

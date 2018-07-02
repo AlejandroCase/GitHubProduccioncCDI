@@ -1,0 +1,1824 @@
+
+[Reporte]
+Clave=RepCDICorteCaja
+Nombre=<T>Reporte AnalÌtico de Corte de Caja<T>
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por OmisiÛn)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=27.9
+LargoPagina=21.6
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=Horizontal
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+PosicionInicialAlturaCliente=664
+PosicionInicialAncho=1288
+OtroOrden=S
+ListaOrden=(Lista)
+BarraHerramientas=S
+ListaAcciones=(Lista)
+[Vista]
+Icono=0
+Clave=RepCDICorteCaja
+
+VistaIndependiente=S
+
+
+
+
+
+
+
+
+
+
+ListaCampos=(Lista)
+
+CamposBusquedaRapida=(Lista)
+Nombre=RepCDICorteCaja
+SQL=(Lista)
+[Concepto]
+Clave=Concepto
+Nombre=Concepto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Concepto
+
+[Proyecto]
+Clave=Proyecto
+Nombre=Proyecto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Proyecto
+
+[CtaDinero]
+Clave=CtaDinero
+Nombre=CtaDinero
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=CtaDinero
+
+[Cajero]
+Clave=Cajero
+Nombre=Cajero
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=Cajero
+
+[Efectivo]
+Clave=Efectivo
+Nombre=Efectivo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Efectivo
+
+[TDebito]
+Clave=TDebito
+Nombre=TDebito
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=TDebito
+
+[Cheque]
+Clave=Cheque
+Nombre=Cheque
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Cheque
+
+[TCredito]
+Clave=TCredito
+Nombre=TCredito
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=TCredito
+
+[Transferencia]
+Clave=Transferencia
+Nombre=Transferencia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Transferencia
+
+[Otras]
+Clave=Otras
+Nombre=Otras
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Otras
+
+[Importe]
+Clave=Importe
+Nombre=Importe
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Importe
+
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>TÌtulo<BR>Inicio: Proyecto<BR>Inicio: CtaDinero<BR>Inicio: Cajero<BR>Inicio: Cajero<BR>Inicio: Cajero<BR>Detalle<BR>Fin: Cajero<BR>Fin: CtaDinero<BR>Fin: Proyecto<BR>Final<BR>Pie
+
+VentanaIzquierda=0
+VentanaArriba=11
+VentanaAltura=698
+VentanaAncho=1288
+PanelArriba=163
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado P·gina
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado P·gina
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 11, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea3]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado P·gina
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 11, Negro, [Negritas]}
+AVertical=Centrado
+
+[A2]
+Celda=A2
+Alineacion=Centrado
+AnchoEnCm=25.7
+AnchoTexto=138
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Reporte An·litico de Corte De Caja<T>
+
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=25.71
+AnchoTexto=138
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+Expresion=FechaEnTexto(Info.Fecha, <T>d mmmm aaaa<T>)
+[Linea4]
+Clave=TÌtulo
+Seccion=TÌtulo
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea5]
+Clave=Inicio: Proyecto
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=Proyecto
+AltoEnCm=0.7
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 10, Negro, [Negritas]}
+AVertical=Abajo
+
+[Linea6]
+Clave=Inicio: CtaDinero
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CtaDinero
+AltoEnCm=0.92
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 10, Negro, [Negritas]}
+AVertical=Abajo
+
+[A5]
+Celda=A5
+Alineacion=Centrado
+AnchoEnCm=25.71
+AnchoTexto=138
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>ComitÈ: <T> + Proyecto
+
+[A6]
+Celda=A6
+Alineacion=Centrado
+AnchoEnCm=25.71
+AnchoTexto=138
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Caja: <T> + CtaDinero + <T> <T> + SQL(<T>SELECT Descripcion FROM CtaDinero WHERE <BR>CtaDinero = :tCta<T>, CtaDinero)
+
+[Linea7]
+Clave=Inicio: Cajero
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=Cajero
+AltoEnCm=0.7
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 10, Negro, [Negritas]}
+AVertical=Abajo
+
+[Linea8]
+Clave=Inicio: Cajero
+Objetos=0
+Seccion=Inicio Grupo
+Grupo=Cajero
+AltoEnCm=0.3
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A7]
+Celda=A7
+Alineacion=Izquierda
+AnchoEnCm=25.7
+AnchoTexto=138
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Cajero: <T> + Cajero + <T> <T> + SQL(<T>SELECT Nombre FROM Agente WHERE Agente = <BR>:tAgente<T>, Cajero)
+
+
+
+
+
+
+
+
+
+BordeAbajo=S
+EstiloAbajo=1
+[Linea9]
+Clave=Inicio: Cajero
+Objetos=11
+Seccion=Inicio Grupo
+AltoEnCm=0.5
+Renglones=1
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+Fuente={Arial, 10, Negro, [Negritas]}
+AVertical=Centrado
+
+Grupo=Cajero
+[A9]
+Celda=A9
+Alineacion=Izquierda
+AnchoEnCm=4.5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Concepto<T>
+
+[B9]
+Celda=B9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=13
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Importe<T>
+
+[C9]
+Celda=C9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=13
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Efectivo<T>
+
+[D9]
+Celda=D9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=12
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>T. DÈbito<T>
+
+[E9]
+Celda=E9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=14
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Cheque<T>
+
+[F9]
+Celda=F9
+Alineacion=Izquierda
+FormatoValidacion=
+AnchoEnCm=2.34
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Cheque USD<T>
+
+[G9]
+Celda=G9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Transf.<T>
+
+[H9]
+Celda=H9
+Alineacion=Centrado
+FormatoValidacion=
+AnchoEnCm=2.08
+AnchoTexto=12
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>T. CrÈdito<T>
+
+[Linea10]
+Clave=Detalle
+Objetos=11
+Seccion=Detalle
+Grupo=
+AltoEnCm=0.45
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 9, Negro, []}
+AVertical=Centrado
+
+Marco=S
+EstiloMarco=3
+[Linea11]
+Clave=Fin: Cajero
+Objetos=11
+Seccion=Fin Grupo
+Grupo=Cajero
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Abajo
+
+[Linea12]
+Clave=Fin: CtaDinero
+Objetos=11
+Seccion=Fin Grupo
+Grupo=CtaDinero
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Abajo
+
+[Linea13]
+Clave=Fin: Proyecto
+Seccion=Fin Grupo
+AltoEnCm=0.58
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Abajo
+
+Objetos=11
+Grupo=Proyecto
+[Linea14]
+Clave=Final
+Objetos=0
+Seccion=Final
+AltoEnCm=0.61
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A10]
+Celda=A10
+Alineacion=Derecha
+AnchoEnCm=4.5
+AnchoTexto=27
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Concepto
+
+Marco=S
+EstiloMarco=3
+[B10]
+Celda=B10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Importe
+
+Marco=S
+EstiloMarco=3
+[C10]
+Celda=C10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=11
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Efectivo
+
+Marco=S
+EstiloMarco=3
+[D10]
+Celda=D10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=TDebito
+
+Marco=S
+EstiloMarco=3
+[E10]
+Celda=E10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Cheque
+
+Marco=S
+EstiloMarco=3
+[F10]
+Celda=F10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.34
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=ChequeUSD
+
+Marco=S
+EstiloMarco=3
+[G10]
+Celda=G10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Transferencia
+
+Marco=S
+EstiloMarco=3
+[H10]
+Celda=H10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=TCredito
+
+Marco=S
+EstiloMarco=3
+[A11]
+Celda=A11
+Alineacion=Derecha
+AnchoEnCm=4.5
+AnchoTexto=27
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Total Cajero<T>
+
+[B11]
+Celda=B11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=11
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Importe)
+
+[C11]
+Celda=C11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Efectivo)
+
+[D11]
+Celda=D11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TDebito)
+
+[E11]
+Celda=E11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Cheque)
+
+[F11]
+Celda=F11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.34
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(ChequeUSD)
+
+[G11]
+Celda=G11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Transferencia)
+
+[H11]
+Celda=H11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TCredito)
+
+[A12]
+Celda=A12
+Alineacion=Derecha
+AnchoEnCm=4.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Total Caja<T>
+
+[B12]
+Celda=B12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Importe)
+
+[C12]
+Celda=C12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Efectivo)
+
+[D12]
+Celda=D12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TDebito)
+
+[E12]
+Celda=E12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Cheque)
+
+[F12]
+Celda=F12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.34
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(ChequeUSD)
+
+[G12]
+Celda=G12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Transferencia)
+
+[H12]
+Celda=H12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TCredito)
+
+
+
+
+
+[Linea15]
+Clave=Pie
+Objetos=2
+Seccion=Pie P·gina
+AltoEnCm=0.6
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+BordeArriba=S
+EstiloArriba=1
+[A13]
+Celda=A13
+Alineacion=Derecha
+AnchoEnCm=4.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Total  Proyecto<T>
+
+[B13]
+Celda=B13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Importe)
+
+[C13]
+Celda=C13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Efectivo)
+
+[D13]
+Celda=D13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TDebito)
+
+[E13]
+Celda=E13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Cheque)
+
+[F13]
+Celda=F13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.34
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(ChequeUSD)
+
+[G13]
+Celda=G13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Transferencia)
+
+[H13]
+Celda=H13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(TCredito)
+
+[A15]
+Celda=A15
+Alineacion=Izquierda
+AnchoEnCm=13
+AnchoTexto=70
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Ahora
+
+BordeArriba=S
+EstiloArriba=1
+[B15]
+Celda=B15
+Alineacion=Derecha
+AnchoEnCm=12.7
+AnchoTexto=68
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Pagina: <T> +  ReportePaginaNumero
+
+
+
+
+
+
+BordeArriba=S
+EstiloArriba=1
+[Acciones.Cerrar]
+Nombre=Cerrar
+Boton=23
+NombreEnBoton=S
+NombreDesplegar=&Cerrar
+EnBarraHerramientas=S
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Activo=S
+Visible=S
+
+
+
+
+[Acciones.Imprimir]
+Nombre=Imprimir
+Boton=4
+NombreDesplegar=&Imprimir
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Reportes Impresora
+ClaveAccion=RepCDICorteCaja
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+[Acciones.Excel]
+Nombre=Excel
+Boton=67
+NombreDesplegar=&Excel
+EnBarraHerramientas=S
+TipoAccion=Reportes Excel
+ClaveAccion=RepCDICorteCaja
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[AMEX]
+Clave=AMEX
+Nombre=AMEX
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=AMEX
+
+[AMEXPROMO]
+Clave=AMEXPROMO
+Nombre=AMEXPROMO
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=AMEXPROMO
+
+[ChequeUSD]
+Clave=ChequeUSD
+Nombre=ChequeUSD
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=ChequeUSD
+
+[Vista.ListaCampos]
+(Inicio)=Concepto
+Concepto=Proyecto
+Proyecto=CtaDinero
+CtaDinero=Cajero
+Cajero=Efectivo
+Efectivo=TDebito
+TDebito=Cheque
+Cheque=TCredito
+TCredito=Transferencia
+Transferencia=Otras
+Otras=Importe
+Importe=AMEX
+AMEX=AMEXPROMO
+AMEXPROMO=ChequeUSD
+ChequeUSD=(Fin)
+
+[Vista.SQL]
+(Inicio)=spCDIRepCorteCaja '{Empresa}',
+spCDIRepCorteCaja '{Empresa}',='{Info.Proyecto}',
+'{Info.Proyecto}',='{Info.CDICtaDineroCaja}',
+'{Info.CDICtaDineroCaja}',='{Info.CDICajero}',
+'{Info.CDICajero}',='{FechaFormatoServidor(Info.Fecha)}'
+'{FechaFormatoServidor(Info.Fecha)}'=(Fin)
+
+[Vista.CamposBusquedaRapida]
+(Inicio)=Proyecto
+Proyecto=CtaDinero
+CtaDinero=Cajero
+Cajero=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+[I9]
+Celda=I9
+Alineacion=Centrado
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>AMEX<T>
+
+[I10]
+Celda=I10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=AMEX
+
+[I11]
+Celda=I11
+Alineacion=Derecha
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+FormatoValidacion=(Monetario)
+Expresion=Suma(AMEX)
+
+
+[J9]
+Celda=J9
+Alineacion=Centrado
+AnchoEnCm=2.39
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>AMEX Promo<T>
+
+[K9]
+Celda=K9
+Alineacion=Centrado
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Otros<T>
+
+[J10]
+Celda=J10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.39
+AnchoTexto=16
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=AMEXPROMO
+
+[K10]
+Celda=K10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+Marco=S
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Otras
+
+[I12]
+Celda=I12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(AMEX)
+
+[I13]
+Celda=I13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(AMEX)
+
+
+
+
+
+[J11]
+Celda=J11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.39
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(AMEXPROMO)
+
+[K11]
+Celda=K11
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Otras)
+
+[J12]
+Celda=J12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.39
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(AMEXPROMO)
+
+[K12]
+Celda=K12
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=ê´vo)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Otras)
+
+[J13]
+Celda=J13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.39
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(AMEXPROMO)
+
+[K13]
+Celda=K13
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=2.08
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Suma(Otras)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reporte.ListaOrden]
+(Inicio)=Proyecto	(Acendente)
+Proyecto	(Acendente)=CtaDinero	(Acendente)
+CtaDinero	(Acendente)=Cajero	(Acendente)
+Cajero	(Acendente)=(Fin)
+
+[Reporte.ListaAcciones]
+(Inicio)=Cerrar
+Cerrar=Imprimir
+Imprimir=Excel
+Excel=(Fin)

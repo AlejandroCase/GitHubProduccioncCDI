@@ -1,0 +1,12 @@
+[Acciones.Otros1]
+Expresion=Asigna(Art:Art.HTML, EditorHTML.Directo(Art:Art.Articulo, Art:Art.HTML))
+
+[Art.tbl/wMostrar]
+ValorPorOmision=Falso
+
+[Art.tbl/ObjetoGasto]
+ValorPorOmision=<T>CDI<T>
+
+
+;[Art.FRM/Detalle.Art.Categoria]
+;Editar=N

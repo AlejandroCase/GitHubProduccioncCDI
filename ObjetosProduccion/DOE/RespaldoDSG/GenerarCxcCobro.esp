@@ -1,0 +1,16 @@
+[GenerarCxcCobro.dlg/Acciones.Otros1]
+NombreDesplegar=Generar &Cuenta Incobrable
+Expresion=Generar(<T>CXC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cuenta Incobrable<T>, Afectar.FormaCaptura)
+Activo=S
+Visible=S
+
+[GenerarCxcCobro.dlg/Dialogo]
+PosicionInicialIzquierda=545
+PosicionInicialArriba=224
+PosicionInicialAlturaCliente=282
+
+[GenerarCxcCobro.dlg/Dialogo.ListaAcciones]
+Posfechado=Otros1
+AplicacionNCargo=Otros2
+Otros1=IntentoCobro
+

@@ -1,0 +1,36 @@
+
+[Reporte]
+Clave=Dinamico
+Nombre=Dinamico
+Icono=0
+Vista=ArtProv
+Tipo=Reporte
+SubmenuPreliminar=S
+BarraHerramientas=S
+Tablas=S
+TablaAlineacionCeldas=Derecha
+TablaAlineacionEncabezados=Centrado
+TablaAlineacionRenglones=Centrado
+TablaTotalTitulo=Total
+TablaFlujoTitulo=Flujo
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=Por omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S

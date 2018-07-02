@@ -1,0 +1,30 @@
+[MenuCfgFiscal.dlg/Dialogo]
+PosicionInicialArriba=275
+PosicionInicialAlturaCliente=138
+
+[MenuCfgFiscal.dlg/Dialogo.ListaAcciones]
+(Inicio)=CatalogosSAT
+CatalogosSAT=MapeoIntelisis
+MapeoIntelisis=ObligacionFiscal
+
+[MenuCfgFiscal.dlg/Acciones.CatalogosSAT]
+Nombre=CatalogosSAT
+Boton=0
+NombreDesplegar=&Maestros SAT
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=MenuCfgFiscalSAT
+Activo=S
+Visible=S
+
+[MenuCfgFiscal.dlg/Acciones.MapeoIntelisis]
+Nombre=MapeoIntelisis
+Boton=0
+NombreDesplegar=&Mapeos Intelisis
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=MenuCtaDireccionFiscal
+Activo=S
+Visible=S

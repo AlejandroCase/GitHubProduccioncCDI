@@ -1,0 +1,8 @@
+
+[Vista]
+Icono=0
+Clave=CDIProvD
+Nombre=CDIProvD
+Modulos=(Todos)
+Singular=CDIProvD
+TipoTabla=General

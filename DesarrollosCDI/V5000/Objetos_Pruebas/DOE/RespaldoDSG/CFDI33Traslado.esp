@@ -1,0 +1,15 @@
+[Inv.frm/Forma.ListaAcciones]
+Otros8=TimbreTraslado
+TimbreTraslado=Otros9
+
+[Inv.frm/Acciones.TimbreTraslado]
+Nombre=TimbreTraslado
+Boton=0
+NombreDesplegar=Timbrar Traslado
+EnMenu=S
+TipoAccion=Expresion
+Menu=&Edición
+EspacioPrevio=S
+Expresion=Asigna(Temp.Texto, SQL(<T>spXMLCFDITrasladoFlex :tEmpresa, :nID<T>, Empresa, Inv:Inv.ID))<BR><BR>Si ConDatos(Temp.Texto) Entonces<BR>    Error(Temp.Texto)<BR>sino<BR>    Asigna(Info.Reporte, <T>CFDITrasladoPDF<T>)<BR>    Asigna(Info.Ruta, SQL(<T>SELECT REPLACE(Direccion, :tDato, :tRemplaza) FROM AnexoMov WHERE ID = :nID AND Rama = :tRama<T>,<T>.xml<T>,<T><T>,Inv:Inv.ID,<T>INV<T>))<BR>    ReportePDF(Info.Reporte,Inv:Inv.ID,Info.Ruta)<BR>    Informacion(<T>El movimiento se timbró correctamente<T>)<BR>Fin
+ActivoCondicion=Inv:Inv.Estatus = <T>CONCLUIDO<T>
+VisibleCondicion=MovTipo(<T>INV<T>,Inv:Inv.Mov) EN (<T>INV.T<T>,<T>INV.SI<T>)

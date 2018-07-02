@@ -1,0 +1,27 @@
+[CompraD.vis/Vista.ListaCampos]
+ClavePresupuestal.Descripcion=ClavePresupuestal.ObjetoGasto
+ClavePresupuestal.ObjetoGasto=TipoComprobante.Concepto
+
+[CompraD.vis/Vista.SQL]
+ClavePresupuestal.Descripcion,=ClavePresupuestal.ObjetoGasto,
+ClavePresupuestal.ObjetoGasto,=TipoComprobante.Concepto,
+
+[CompraD.vis/ClavePresupuestal.ObjetoGasto]
+Clave=ClavePresupuestal.ObjetoGasto
+Nombre=Objeto Gasto
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=CPObjetoGastoLista
+AyudaVista=CPObjetoGasto
+AyudaCampo=CPObjetoGasto.ObjetoGasto
+ValidacionUsaTabla=S
+ValidacionTablas=CPObjetoGasto
+LigaTabla=ClavePresupuestal
+LigaCampo=ObjetoGasto
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=ObjetoGasto_1

@@ -1,0 +1,894 @@
+
+[Reporte]
+Clave=CDIRptIngresosAcademias
+Nombre=Ingresos Academias
+Icono=0
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=27.9
+LargoPagina=21.6
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=Horizontal
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+VistaEspecial=S
+BarraHerramientas=S
+OtroOrden=S
+
+PosicionInicialAlturaCliente=750
+PosicionInicialAncho=1296
+PreliminarColores=S
+ListaOrden=(Lista)
+ListaAcciones=(Lista)
+ConFormaPrevia=S
+FormaPrevia=CDIRptCalendarioCursos
+[Vista]
+Icono=0
+Clave=CDIRptIngresosAcademias
+VistaIndependiente=S
+
+ListaCampos=(Lista)
+SQL=spCDIRptIngresosAcademias <T>{Empresa}<T>,<T>{Info.CDIComite}<T>,<T>{FechaFormatoServidor(Info.FechaD)}<T>, <T>{FechaFormatoServidor(Info.FechaA)}<T>
+[Empresa]
+Clave=Empresa
+Nombre=Empresa
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+ClaveBDE=Empresa
+
+[Mov]
+Clave=Mov
+Nombre=Mov
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+ClaveBDE=Mov
+
+[Proyecto]
+Clave=Proyecto
+Nombre=Proyecto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Proyecto
+
+[Coordinacion]
+Clave=Coordinacion
+Nombre=Coordinacion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+ClaveBDE=Coordinacion
+
+[Importe]
+Clave=Importe
+Nombre=Importe
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Importe
+
+[Impuestos]
+Clave=Impuestos
+Nombre=Impuestos
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=Impuestos
+
+
+
+
+[Acciones.Cerrar]
+Nombre=Cerrar
+Boton=36
+NombreEnBoton=S
+NombreDesplegar=&Cerrar
+EnBarraHerramientas=S
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Activo=S
+Visible=S
+
+
+[Acciones.Imprimir]
+Nombre=Imprimir
+Boton=4
+NombreEnBoton=S
+NombreDesplegar=&Imprimir
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Reportes Impresora
+ClaveAccion=CDIRptIngresosAcademias
+Activo=S
+Visible=S
+
+
+
+[Acciones.Excel]
+Nombre=Excel
+Boton=67
+NombreEnBoton=S
+NombreDesplegar=&Excel
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Reportes Excel
+ClaveAccion=CDIRptIngresosAcademias
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Encabezado<BR>Encabezado<BR>Inicio: Proyecto<BR>Inicio: Proyecto<BR>Inicio: Proyecto<BR>Detalle<BR>Fin: Proyecto<BR>Fin: Proyecto<BR>Fin: Proyecto<BR>Pie
+
+VentanaIzquierda=0
+VentanaArriba=23
+VentanaAltura=754
+VentanaAncho=1300
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=1
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 12, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.5
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 11, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea3]
+Clave=Encabezado
+Objetos=1
+Seccion=Encabezado Página
+AltoEnCm=0.5
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 9, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea4]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=1
+BordeArriba=S
+BordeAbajo=N
+[A1]
+Celda=A1
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 12, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Mayusculas(Empresa.Nombre)
+
+[A2]
+Celda=A2
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Ingresos Academias<T>
+
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=25
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Periodo <T>& FechaFormatoServidor(Info.FechaD) & <T> AL <T> & FechaFormatoServidor( <BR>Info.FechaA )
+
+
+
+
+
+
+
+
+
+
+
+[Linea5]
+Clave=Inicio: Proyecto
+Seccion=Inicio Grupo
+Grupo=Proyecto
+AltoEnCm=0.5
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 10, Negro, [Negritas]}
+AVertical=Centrado
+
+
+
+Objetos=2
+[A4]
+Celda=A4
+Alineacion=Izquierda
+AnchoEnCm=25
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+BordeAbajo=N
+
+
+
+
+[A5]
+Celda=A5
+Alineacion=Derecha
+AnchoEnCm=11.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Comité:<T>
+
+[B5]
+Celda=B5
+Alineacion=Izquierda
+AnchoEnCm=13.5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Proyecto
+
+
+
+
+
+
+
+
+
+[Linea6]
+Clave=Inicio: Proyecto
+Objetos=5
+Seccion=Inicio Grupo
+AltoEnCm=0.5
+Renglones=1
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+Fuente={Arial, 9, Negro, [Negritas]}
+AVertical=Centrado
+
+Grupo=Proyecto
+[Linea7]
+Clave=Inicio: Proyecto
+Seccion=Inicio Grupo
+Grupo=Proyecto
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=0
+Marco=N
+EstiloMarco=0
+[A6]
+Celda=A6
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B6]
+Celda=B6
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Academia<T>
+
+BordeAbajo=S
+EstiloAbajo=0
+[C6]
+Celda=C6
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+BordeAbajo=S
+Expresion=<T>Total de Ingresos<T>
+EstiloAbajo=0
+[D6]
+Celda=D6
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+BordeAbajo=S
+Expresion=<T>Ingresos sin IVA<T>
+EstiloAbajo=0
+[E6]
+Celda=E6
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+Marco=N
+EstiloMarco=0
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+
+
+[Linea8]
+Clave=Detalle
+Seccion=Detalle
+Grupo=
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 9, Negro, []}
+AVertical=Centrado
+
+Objetos=5
+EstiloMarco=3
+
+
+
+
+
+[ImporteT]
+Clave=ImporteT
+Nombre=ImporteT
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=NumMonetario
+ClaveBDE=ImporteT
+
+[Vista.ListaCampos]
+(Inicio)=Empresa
+Empresa=Mov
+Mov=Proyecto
+Proyecto=Coordinacion
+Coordinacion=Importe
+Importe=Impuestos
+Impuestos=ImporteT
+ImporteT=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Linea9]
+Clave=Fin: Proyecto
+Objetos=0
+Seccion=Fin Grupo
+AltoEnCm=0.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+BordeArriba=N
+Grupo=Proyecto
+EstiloMarco=0
+
+
+[Linea10]
+Clave=Fin: Proyecto
+Objetos=5
+Seccion=Fin Grupo
+AltoEnCm=0.5
+Renglones=1
+BordeArriba=N
+FondoColor=Blanco
+Fuente={Arial, 9, Negro, []}
+AVertical=Centrado
+
+Grupo=Proyecto
+
+
+
+[A10]
+Celda=A10
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+BordeArriba=N
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+[B10]
+Celda=B10
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+Expresion=<T>TOTAL<T>
+
+
+[Linea11]
+Clave=Fin: Proyecto
+Objetos=0
+Seccion=Fin Grupo
+AltoEnCm=0.3
+Renglones=1
+BordeArriba=N
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Grupo=Proyecto
+
+
+
+
+
+[C10]
+Celda=C10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=5
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=SUMA(ImporteT)
+
+[D10]
+Celda=D10
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=5
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=SUMA(Importe)
+
+
+[Linea12]
+Clave=Pie
+Objetos=2
+Seccion=Pie Página
+AltoEnCm=0.5
+Renglones=1
+BordeArriba=S
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Grupo=
+[A12]
+Celda=A12
+Alineacion=Izquierda
+AnchoEnCm=12.5
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Ahora
+
+[B12]
+Celda=B12
+Alineacion=Izquierda
+AnchoEnCm=12.5
+AnchoTexto=16
+BordeArriba=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Expresion=
+
+
+
+
+
+
+
+
+[A8]
+Celda=A8
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[B8]
+Celda=B8
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Coordinacion
+
+[C8]
+Celda=C8
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=ImporteT
+
+[D8]
+Celda=D8
+Alineacion=Derecha
+FormatoValidacion=(Monetario)
+AnchoEnCm=5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Importe
+
+[E8]
+Celda=E8
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+EstiloMarco=3
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[E10]
+Celda=E10
+Alineacion=Izquierda
+AnchoEnCm=5
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 9, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+[Reporte.ListaOrden]
+(Inicio)=Proyecto	(Acendente)
+Proyecto	(Acendente)=Coordinacion	(Acendente)
+Coordinacion	(Acendente)=(Fin)
+
+[Reporte.ListaAcciones]
+(Inicio)=Cerrar
+Cerrar=Imprimir
+Imprimir=Excel
+Excel=(Fin)

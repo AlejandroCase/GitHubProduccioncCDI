@@ -1,0 +1,32 @@
+[Forma]
+PosicionInicialAncho=493
+PosicionInicialIzquierda=393
+PosicionInicialArriba=158
+PosicionInicialAlturaCliente=370
+VentanaEstadoInicial=Normal
+
+[Forma.ListaAcciones]
+Tarjetas=TarjetaBancaria
+TarjetaBancaria=(Fin)
+
+[Acciones.TarjetaBancaria]
+Nombre=TarjetaBancaria
+Boton=96
+NombreEnBoton=S
+NombreDesplegar=Tarjetas &Bancarias
+EnBarraHerramientas=S
+TipoAccion=Expresion
+Visible=S
+Expresion=Asigna(Info.Clase,Nulo)<BR>Forma(<T>CDITarjetasBanc<T>)<BR>Si Temp.Num = 1<BR>Entonces Asigna(VentaCobro:VentaCobro.Referencia1,Info.Clase)<BR>Fin<BR>Si Temp.Num = 2<BR>Entonces Asigna(VentaCobro:VentaCobro.Referencia2,Info.Clase)<BR>Fin<BR>Si Temp.Num = 3<BR>Entonces Asigna(VentaCobro:VentaCobro.Referencia3,Info.Clase)<BR>Fin<BR>Si Temp.Num = 4<BR>Entonces Asigna(VentaCobro:VentaCobro.Referencia4,Info.Clase)<BR>Fin<BR>Si Temp.Num = 5<BR>Entonces Asigna(VentaCobro:VentaCobro.Referencia5,Info.Clase)<BR>Fin
+ActivoCondicion=Si Temp.Num = 1<BR>Entonces SQL(<T>SELECT 1 FROM FormaPago WHERE CDICargoAutom = :nCargo AND FormaPago = :tPago<T>, 1, VentaCobro:VentaCobro.FormaCobro1)<BR>Sino Si Temp.Num = 2<BR>     Entonces SQL(<T>SELECT 1 FROM FormaPago WHERE CDICargoAutom = :nCargo AND FormaPago = :tPago<T>, 1, VentaCobro:VentaCobro.FormaCobro2)<BR>     Sino Si Temp.Num = 3<BR>          Entonces SQL(<T>SELECT 1 FROM FormaPago WHERE CDICargoAutom = :nCargo AND FormaPago = :tPago<T>, 1, VentaCobro:VentaCobro.FormaCobro3)<BR>          Sino Si Temp.Num = 4<BR>               Entonces SQL(<T>SELECT 1 FROM FormaPago WHERE CDICargoAutom = :nCargo AND FormaPago = :tPago<T>, 1, VentaCobro:VentaCobro.FormaCobro4)<BR>               Sino Si Temp.Num = 5<BR>                    Entonces SQL(<T>SELECT 1 FROM FormaPago WHERE CDICargoAutom = :nCargo AND FormaPago = :tPago<T>, 1, VentaCobro:VentaCobro.FormaCobro5)<BR>                    Fin<BR>               Fin<BR>          Fin<BR>     Fin<BR>Fin
+
+[Acciones.TarjetaBancaria.ListaAccionesMultiples]
+(Inicio)=Forma
+Forma=Actualiza
+Actualiza=(Fin)
+
+[Tarjetas.Columnas]
+Nombre=265
+NoTarjeta=138
+Vigencia=112
+Institucion=137

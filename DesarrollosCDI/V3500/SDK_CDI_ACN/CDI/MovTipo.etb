@@ -1,0 +1,172 @@
+[Tabla]
+SQL=(Lista)
+
+[Tabla.ListaCampos]
+GuatemalaLibroVentaExento=FlujoAutorizacion
+FlujoAutorizacion=FlujoAutorizacionEstatus
+FlujoAutorizacionEstatus=CDICargosRecurrentes
+CDICargosRecurrentes=CDICancMovOp
+CDICancMovOp=CDIProcMismoMes
+CDIProcMismoMes=CDICalendarizacion
+CDICalendarizacion=(Fin)
+
+[FlujoAutorizacion]
+Clave=FlujoAutorizacion
+Nombre=Flujo Autorizacion
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+ConRefrescarCondiciones=S
+AlCambiar=Si(FlujoAutorizacion = Falso, Asigna(FlujoAutorizacionEstatus, Nulo))
+RefrescarTodoCondiciones=S
+
+[FlujoAutorizacionEstatus]
+Clave=FlujoAutorizacionEstatus
+Nombre=Estatus
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=Texto
+Tamano=15
+CondicionDespliege=FlujoAutorizacion
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Estatus
+OpcionesValidar=S
+
+[CDICargosRecurrentes]
+Clave=CDICargosRecurrentes
+Nombre=Cargos Recurrentes
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=Falso
+CondicionDespliege=Info.Modulo = <T>VTAS<T>
+
+[CDICancMovOp]
+Clave=CDICancMovOp
+Nombre=Envío Mes 13
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionDespliege=Info.Modulo en (<T>COMS<T>, <T>GAS<T>)
+ValorPorOmision=Falso
+
+[CDIProcMismoMes]
+Clave=CDIProcMismoMes
+Nombre=Cancelación Mismo Mes
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+CondicionDespliege=Info.Modulo en (<T>COMS<T>, <T>GAS<T>)
+ValorPorOmision=Falso
+
+[CDICalendarizacion]
+Clave=CDICalendarizacion
+Nombre=Calendarizacion CP
+Visible=S
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+AyudaEnCaptura=Lista de Opciones
+ListaOpciones=(Lista)
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+
+[CDICalendarizacion.ListaOpciones]
+(Inicio)=Mes 13
+Mes 13=Mismo mes
+Mismo mes=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=Modulo,
+Modulo,=Mov,
+Mov,=Orden,
+Orden,=Clave,
+Clave,=SubClave,
+SubClave,=ConsecutivoModulo,
+ConsecutivoModulo,=ConsecutivoMov,
+ConsecutivoMov,=Grupo,
+Grupo,=Icono,
+Icono,=Factor,
+Factor,=ConsecutivoPorPeriodo,
+ConsecutivoPorPeriodo,=ConsecutivoPorEjercicio,
+ConsecutivoPorEjercicio,=ConsecutivoPorEmpresa,
+ConsecutivoPorEmpresa,=ConsecutivoSucursalEsp,
+ConsecutivoSucursalEsp,=ConsecutivoControl,
+ConsecutivoControl,=SucursalEsp,
+SucursalEsp,=Almacen,
+Almacen,=DiasVencimiento,
+DiasVencimiento,=NomProcesarIncidencias,
+NomProcesarIncidencias,=NomGenerarBaja,
+NomGenerarBaja,=NomDividirCantidades,
+NomDividirCantidades,=GenerarParalelo,
+GenerarParalelo,=PV,
+PV,=EstatusContabilizar,
+EstatusContabilizar,=AfectarPresupuesto,
+AfectarPresupuesto,=AfectarFiscal,
+AfectarFiscal,=ObligacionFiscal,
+ObligacionFiscal,=ObligacionFiscalTasa,
+ObligacionFiscalTasa,=ObligacionFiscalTipoImporte,
+ObligacionFiscalTipoImporte,=GenerarGasto,
+GenerarGasto,=GastoMov,
+GastoMov,=GastoClase,
+GastoClase,=GastoSubClase,
+GastoSubClase,=GastoAcreedor,
+GastoAcreedor,=GastoFactor,
+GastoFactor,=GastoConcepto,
+GastoConcepto,=eMailAuto,
+eMailAuto,=SinAfectarVINCostoExtra,
+SinAfectarVINCostoExtra,=TipoPago,
+TipoPago,=CE,
+CE,=CEAntesAfectar,
+CEAntesAfectar,=CEAfectarContacto,
+CEAfectarContacto,=NomAuto,
+NomAuto,=NomAutoTipo,
+NomAutoTipo,=NomAutoCalcSDI,
+NomAutoCalcSDI,=NomAutoCxc,
+NomAutoCxc,=NomAutoCalendarioEsp,
+NomAutoCalendarioEsp,=ImpresionInmediata,
+ImpresionInmediata,=ConsecutivoFEA,
+ConsecutivoFEA,=EditarDeptoDetallista,
+EditarDeptoDetallista,=ProyectoContactoTipo,
+ProyectoContactoTipo,=PlantillaProyecto,
+PlantillaProyecto,=PlantillaProyectoFija,
+PlantillaProyectoFija,=ProyectoLineaBase,
+ProyectoLineaBase,=CFD,
+CFD,=CFD_tipoDeComprobante,
+CFD_tipoDeComprobante,=CFD_Reporte,
+CFD_Reporte,=Instrucciones,
+Instrucciones,=FormaTipo,
+FormaTipo,=FormaFija,
+FormaFija,=AplicarOfertas,
+AplicarOfertas,=FormaAnexaOmision,
+FormaAnexaOmision,=TraspasoExpress,
+TraspasoExpress,=ModuloCentral,
+ModuloCentral,=DefUsuario,
+DefUsuario,=SubFoliosOrigen,
+SubFoliosOrigen,=RequiereAutorizacion,
+RequiereAutorizacion,=TipoConsecutivo,
+TipoConsecutivo,=ConsecutivoGeneral,
+ConsecutivoGeneral,=ArrastrarTipoCambioGenerarMov,
+ArrastrarTipoCambioGenerarMov,=AfectarCP,
+AfectarCP,=AplicarCP,
+AplicarCP,=FactorCP,
+FactorCP,=ReservarCP,
+ReservarCP,=AnticiposCP,
+AnticiposCP,=EcuadorMostrarAnexo,
+EcuadorMostrarAnexo,=GuatemalaLibroVentaExento,
+GuatemalaLibroVentaExento,=EsISRReglamento,
+EsISRReglamento,=ProyectoSugerir,
+ProyectoSugerir,=FlujoAutorizacion,
+FlujoAutorizacion,=FlujoAutorizacionEstatus,
+FlujoAutorizacionEstatus,=CDICargosRecurrentes,
+CDICargosRecurrentes,=CDICancMovOp,
+CDICancMovOp,=CDIProcMismoMes,
+CDIProcMismoMes,=CDICalendarizacion
+CDICalendarizacion=FROM MovTipo
+FROM MovTipo=(Fin)

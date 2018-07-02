@@ -1,0 +1,34 @@
+[Forma]
+PosicionInicialIzquierda=431
+PosicionInicialArriba=188
+ListaAcciones=(Lista)
+
+[Acciones.cdiAccesoIp]
+Nombre=cdiAccesoIp
+Boton=16
+NombreEnBoton=S
+NombreDesplegar=Acceso Ip
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=cdiAccesoIp
+Activo=S
+Visible=S
+
+[Acciones.CDIAccesoOrigen]
+Nombre=CDIAccesoOrigen
+Boton=54
+NombreEnBoton=S
+NombreDesplegar=Acceso Origen
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=CDIAccesoOrigen
+Activo=S
+Visible=S
+
+[Forma.ListaAcciones]
+(Inicio)=Aceptar
+Aceptar=cdiAccesoIp
+cdiAccesoIp=CDIAccesoOrigen
+CDIAccesoOrigen=(Fin)

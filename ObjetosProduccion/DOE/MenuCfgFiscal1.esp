@@ -1,0 +1,15 @@
+[MenuCfgFiscal.dlg/Dialogo.ListaAcciones]
+FiscalDireccion=Tipocontrato
+Tipocontrato=(Fin)
+
+
+[MenuCfgFiscal.dlg/Acciones.Tipocontrato]
+Nombre=Tipocontrato
+Boton=0
+NombreDesplegar=Tipo de C&ontrato
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CFDINominaContratoTipo
+Activo=S
+Visible=S

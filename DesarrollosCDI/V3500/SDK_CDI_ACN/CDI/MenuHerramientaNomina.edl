@@ -1,0 +1,25 @@
+[Dialogo]
+PosicionInicialIzquierda=551
+PosicionInicialArriba=272
+
+[Acciones.IncidenciaH]
+NombreDesplegar=Vacaciones Programadas
+VisibleCondicion=
+Visible=S
+
+[Dialogo.ListaAcciones]
+NominaH=NominaFusionarBorradores
+IncidenciaH=(Fin)
+NominaExportarBancomer=CDIMenuCfgDIM
+CDIMenuCfgDIM=IncidenciaH
+
+[Acciones.CDIMenuCfgDIM]
+Nombre=CDIMenuCfgDIM
+Boton=0
+NombreDesplegar=Configuracion DIM
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDICfgDim
+Activo=S
+Visible=S

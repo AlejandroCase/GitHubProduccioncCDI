@@ -1,0 +1,81 @@
+[Venta.frm/Forma.ListaAcciones]
+Otros8=AnticiposRelacionados
+AnticiposRelacionados=CFDIVentaTimbrada
+CFDIVentaTimbrada=Otros9
+Otros9=CDIAutorizar
+CDIAutorizar=CDIPuntos
+CDIPuntos=TraePrecio
+TraePrecio=CDICuota
+CDICuota=(Fin)
+
+[Venta.frm/Acciones.AnticiposRelacionados]
+Nombre=AnticiposRelacionados
+Boton=0
+Menu=&Edición
+NombreDesplegar=Anticipos Relacionados
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CFDRelacionadoAnticipos
+Antes=S
+Visible=S
+GuardarAntes=S
+ActivoCondicion=Venta:Venta.Estatus = <T>SINAFECTAR<T>
+AntesExpresiones=Asigna(Info.ID, Venta:Venta.ID)<BR>Asigna(Info.Cliente, Venta:Venta.Cliente)
+
+[Venta.frm/Acciones.CFDIVentaTimbrada]
+Nombre=CFDIVentaTimbrada
+Boton=0
+Menu=&Edición
+NombreDesplegar=CFDI Relacionados Ventas
+GuardarAntes=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CFDRelacionadoVenta
+Activo=S
+Antes=S
+DespuesGuardar=S
+Visible=S
+ActivoCondicion=Venta:Venta.Estatus = <T>SINAFECTAR<T>
+AntesExpresiones=Asigna( Info.Cliente, Venta:Venta.Cliente )<BR>Asigna( Info.Modulo, <T>VTAS<T> )<BR>Asigna( Info.Id, Venta:Venta.ID )
+
+
+;[Venta.frm/Acciones.CDICuota]
+;Nombre=CDICuota
+;Boton=9
+;NombreEnBoton=S
+;NombreDesplegar=Periodo Cuota
+;GuardarAntes=S
+;EnBarraHerramientas=S
+;EnMenu=S
+;EspacioPrevio=S
+;TipoAccion=Formas
+;ClaveAccion=CDiCuotaAnt
+;Antes=S
+;Visible=S
+;ConCondicion=S
+;;ActivoCondicion=(Venta:Venta.Concepto en (<T>Cuota Mensual<T>)) y (Venta:Venta.Estatus=<T>SINAFECTAR<T>)  
+;ActivoCondicion=Venta:Venta.Mov en (<T>Recibo<T>,<T>SC Cuota<T>)y (Venta:Venta.Estatus=<T>SINAFECTAR<T>)
+;EjecucionCondicion=(Venta:Venta.Concepto en (<T>Cuota Mensual Anticipada<T>,<T>Cuota Mensual<T>)) 
+;AntesExpresiones=Asigna(info.id,Venta:Venta.ID)
+;DespuesGuardar=S
+
+
+[Venta.frm/Acciones.CDICuota]
+Nombre=CDICuota
+Boton=9
+NombreEnBoton=S
+NombreDesplegar=Cuota Anticipada
+GuardarAntes=S
+EnBarraHerramientas=S
+EnMenu=S
+EspacioPrevio=S
+TipoAccion=Expresion
+Antes=S
+Visible=S
+ConCondicion=S
+DespuesGuardar=S
+RefrescarDespues=S
+Expresion=FormaModal(<T>CDiCuotaAnt<T>)
+ActivoCondicion=Venta:Venta.Mov en (<T>Recibo<T>,<T>SC Cuota<T>)y (Venta:Venta.Estatus en (<T>SINAFECTAR<T>,<T>PENDIENTE<T>))
+EjecucionCondicion=(Venta:Venta.Concepto en (<T>Cuota Mensual<T>)) y (Venta:Venta.Estatus en (<T>SINAFECTAR<T>,<T>PENDIENTE<T>))
+AntesExpresiones=Asigna(info.id,Venta:Venta.ID)

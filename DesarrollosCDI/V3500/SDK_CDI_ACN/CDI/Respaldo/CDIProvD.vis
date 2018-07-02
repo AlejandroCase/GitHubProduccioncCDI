@@ -1,0 +1,12 @@
+
+[Vista]
+Icono=0
+Clave=CDIProvD
+Nombre=CDIProvD
+Modulos=(Todos)
+Singular=CDIProvD
+ListaTablas=CDIProvD
+TablaPrincipal=CDIProvD
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S

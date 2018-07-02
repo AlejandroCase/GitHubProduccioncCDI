@@ -1,0 +1,4 @@
+
+[Prov.tbl/ProvBancoSucursal]
+AyudaEnCaptura=Expresion
+Formula=SQLenlista(<T>SELECT Institucion FROM InstitucionFIn)

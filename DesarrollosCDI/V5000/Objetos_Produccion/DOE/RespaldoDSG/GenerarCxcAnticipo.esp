@@ -1,0 +1,32 @@
+[GenerarCxcAnticipo.dlg/Dialogo]
+PosicionInicialIzquierda=569
+PosicionInicialArriba=272
+PosicionInicialAlturaCliente=186
+
+[GenerarCxcAnticipo.dlg/Dialogo.ListaAcciones]
+Devolucion=Otros4
+Otros4=Otros5
+Otros5=(Fin)
+
+[GenerarCxcAnticipo.dlg/Acciones.Otros4]
+Nombre=Otros4
+Boton=0
+NombreDesplegar=Aplicación Ant MN
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>,<T>Aplicación Ant MN<T>, Afectar.FormaCaptura)
+
+[GenerarCxcAnticipo.dlg/Acciones.Otros5]
+Nombre=Otros5
+Boton=0
+NombreDesplegar=Aplicación Ant ME
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>,<T>Aplicación Ant ME<T>, Afectar.FormaCaptura)
+

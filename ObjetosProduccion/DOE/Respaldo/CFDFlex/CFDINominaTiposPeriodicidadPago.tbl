@@ -1,0 +1,44 @@
+
+
+
+[Tabla]
+Icono=0
+Clave=CFDINominaTiposPeriodicidadPago
+Nombre=CFDINominaTiposPeriodicidadPago
+Archivo=CFDINominaTiposPeriodicidadPago
+Modulos=(Todos)
+Singular=CFDINominaTiposPeriodicidadPago
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=PeriodicidadPago
+SQL=(Lista)
+[PeriodicidadPago]
+Clave=PeriodicidadPago
+Nombre=Periodicidad Pago
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=PeriodicidadPago
+PeriodicidadPago=Descripcion
+Descripcion=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=PeriodicidadPago,
+PeriodicidadPago,=Descripcion
+Descripcion=FROM CFDINominaTiposPeriodicidadPago
+FROM CFDINominaTiposPeriodicidadPago=(Fin)

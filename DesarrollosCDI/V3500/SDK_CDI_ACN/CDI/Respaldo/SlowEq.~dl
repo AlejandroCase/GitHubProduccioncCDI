@@ -1,0 +1,47 @@
+
+[Dialogo]
+Clave=SlowEq
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+PosicionInicialAlturaCliente=104
+PosicionInicialAncho=500
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+
+ListaAcciones=(Lista)
+
+[Acciones.BateoColecXEnc]
+Nombre=BateoColecXEnc
+Boton=0
+NombreDesplegar=Bateo Colectivo Por Encuentro Jugado
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+Activo=S
+Visible=S
+
+[Acciones.BatColeInter]
+Nombre=BatColeInter
+Boton=0
+NombreDesplegar=Bateo Colectivo (Internet Bateo Colectivo)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=BateoColecXEnc
+BateoColecXEnc=BatColeInter
+BatColeInter=(Fin)

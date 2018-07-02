@@ -1,0 +1,155 @@
+[Vista]
+SQL=(Lista)
+
+[Concepto.InvSeguridad]
+Nombre=
+Visible=
+TamanoValidacion=
+Cantidad=
+AyudaEnCaptura=
+CondicionDespliege=
+
+[Concepto.CantidadMinima]
+Nombre=
+Visible=
+TamanoValidacion=
+Cantidad=
+AyudaEnCaptura=
+CondicionDespliege=
+
+[Concepto.CantidadMaxima]
+Nombre=
+Visible=
+TamanoValidacion=
+Cantidad=
+AyudaEnCaptura=
+CondicionDespliege=
+
+[Vista.ListaCampos]
+Concepto.CantidadMaxima=Concepto.CdiCausaBloqueo
+Cta.Tipo=Cta.TieneMovimientos
+Concepto.CdiCausaBloqueo=Cta.Cuenta
+Cta.TieneMovimientos=Cta.Estatus
+
+[Concepto.CdiCausaBloqueo]
+Clave=Concepto.CdiCausaBloqueo
+Nombre=Causa Bloqueo
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+CondicionDespliege=Info.Modulo = <T>CXC<T>
+LigaTabla=Concepto
+LigaCampo=CdiCausaBloqueo
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CdiCausaBloqueo
+
+[Cta.TieneMovimientos]
+Clave=Cta.TieneMovimientos
+LigaTabla=Cta
+LigaCampo=TieneMovimientos
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Lógico
+ClaveBDE=TieneMovimientos
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=Concepto.Modulo,
+Concepto.Modulo,=Concepto.Concepto,
+Concepto.Concepto,=Concepto.PorcentajeDeducible,
+Concepto.PorcentajeDeducible,=Concepto.LimiteDeducible,
+Concepto.LimiteDeducible,=Concepto.ConSueldo,
+Concepto.ConSueldo,=Concepto.Orden,
+Concepto.Orden,=Concepto.Bloqueo,
+Concepto.Bloqueo,=Concepto.Cuenta,
+Concepto.Cuenta,=Concepto.CuentaPresupuesto,
+Concepto.CuentaPresupuesto,=Concepto.Impuestos,
+Concepto.Impuestos,=Concepto.Retencion,
+Concepto.Retencion,=Concepto.Retencion2,
+Concepto.Retencion2,=Concepto.Retencion3,
+Concepto.Retencion3,=Concepto.Clase,
+Concepto.Clase,=Concepto.SubClase,
+Concepto.SubClase,=Concepto.ValidarPresupuesto,
+Concepto.ValidarPresupuesto,=Concepto.Tipo,
+Concepto.Tipo,=Concepto.AcreedorDef,
+Concepto.AcreedorDef,=Concepto.Indirecto,
+Concepto.Indirecto,=Concepto.NivelAcceso,
+Concepto.NivelAcceso,=Concepto.TipoProrrateo,
+Concepto.TipoProrrateo,=Concepto.EstimuloFiscal,
+Concepto.EstimuloFiscal,=Concepto.CR,
+Concepto.CR,=Concepto.UEN,
+Concepto.UEN,=Concepto.ConceptoCxp,
+Concepto.ConceptoCxp,=Concepto.Provisionable,
+Concepto.Provisionable,=Concepto.ProvisionImporte,
+Concepto.ProvisionImporte,=Concepto.CalcularPresupuesto,
+Concepto.CalcularPresupuesto,=Concepto.InflacionPresupuesto,
+Concepto.InflacionPresupuesto,=Concepto.DepartamentoDetallista,
+Concepto.DepartamentoDetallista,=Concepto.Impuesto1Excento,
+Concepto.Impuesto1Excento,=Concepto.Proyecto,
+Concepto.Proyecto,=Concepto.Actividad,
+Concepto.Actividad,=Concepto.TipoOperacion,
+Concepto.TipoOperacion,=Concepto.Numero,
+Concepto.Numero,=Concepto.Descripcion,
+Concepto.Descripcion,=Concepto.CostoEstandar,
+Concepto.CostoEstandar,=Concepto.UltimoCosto,
+Concepto.UltimoCosto,=Concepto.UltimoGasto,
+Concepto.UltimoGasto,=Concepto.MonedaCosto,
+Concepto.MonedaCosto,=Concepto.Excento2,
+Concepto.Excento2,=Concepto.Excento3,
+Concepto.Excento3,=Concepto.EsInventariable,
+Concepto.EsInventariable,=Concepto.Articulo,
+Concepto.Articulo,=Concepto.ContUso,
+Concepto.ContUso,=Concepto.ContUso2,
+Concepto.ContUso2,=Concepto.ContUso3,
+Concepto.ContUso3,=Concepto.ObjetoGasto,
+Concepto.ObjetoGasto,=Concepto.ObjetoGastoRef,
+Concepto.ObjetoGastoRef,=Concepto.ClavePresupuestalImpuesto1,
+Concepto.ClavePresupuestalImpuesto1,=Concepto.TipoImpuesto1,
+Concepto.TipoImpuesto1,=Concepto.TipoImpuesto2,
+Concepto.TipoImpuesto2,=Concepto.TipoImpuesto3,
+Concepto.TipoImpuesto3,=Concepto.TipoImpuesto4,
+Concepto.TipoImpuesto4,=Concepto.TipoRetencion1,
+Concepto.TipoRetencion1,=Concepto.TipoRetencion2,
+Concepto.TipoRetencion2,=Concepto.TipoRetencion3,
+Concepto.TipoRetencion3,=Concepto.EcuadorTipoOperacionGasto,
+Concepto.EcuadorTipoOperacionGasto,=Concepto.TipoImpuesto5,
+Concepto.TipoImpuesto5,=Concepto.InvSeguridad,
+Concepto.InvSeguridad,=Concepto.CantidadMinima,
+Concepto.CantidadMinima,=Concepto.CantidadMaxima,
+Concepto.CantidadMaxima,=Concepto.CdiCausaBloqueo,
+Concepto.CdiCausaBloqueo,=Cta.Cuenta,
+Cta.Cuenta,=Cta.Descripcion,
+Cta.Descripcion,=Cta.Tipo,
+Cta.Tipo,=Cta.TieneMovimientos,
+Cta.TieneMovimientos,=Cta.Estatus,
+Cta.Estatus,=CtaPresupuesto.Descripcion,
+CtaPresupuesto.Descripcion,=Prov.Proveedor,
+Prov.Proveedor,=Prov.Nombre,
+Prov.Nombre,=Prov.Estatus,
+Prov.Estatus,=UEN.Nombre,
+UEN.Nombre,=DepartamentoDetallista.Departamento,
+DepartamentoDetallista.Departamento,=DepartamentoDetallista.Nombre,
+DepartamentoDetallista.Nombre,=DepartamentoDetallista.Merma,
+DepartamentoDetallista.Merma,=ProyectoDEnFirme.Asunto,
+ProyectoDEnFirme.Asunto,=CentroCostos.CentroCostos,
+CentroCostos.CentroCostos,=CentroCostos2.CentroCostos2,
+CentroCostos2.CentroCostos2,=CentroCostos3.CentroCostos3,
+CentroCostos3.CentroCostos3,=CPObjetoGasto.Nombre,
+CPObjetoGasto.Nombre,=CPObjetoGastoRef.Nombre,
+CPObjetoGastoRef.Nombre,=ClavePresupuestal.Nombre
+ClavePresupuestal.Nombre=FROM Concepto
+FROM Concepto=LEFT OUTER JOIN Cta ON Concepto.Cuenta<IGUAL>Cta.Cuenta
+LEFT OUTER JOIN Cta ON Concepto.Cuenta<IGUAL>Cta.Cuenta=LEFT OUTER JOIN Prov ON Concepto.AcreedorDef<IGUAL>Prov.Proveedor
+LEFT OUTER JOIN Prov ON Concepto.AcreedorDef<IGUAL>Prov.Proveedor=LEFT OUTER JOIN UEN ON Concepto.UEN<IGUAL>UEN.UEN
+LEFT OUTER JOIN UEN ON Concepto.UEN<IGUAL>UEN.UEN=LEFT OUTER JOIN Cta CtaPresupuesto ON Concepto.CuentaPresupuesto<IGUAL>CtaPresupuesto.Cuenta
+LEFT OUTER JOIN Cta CtaPresupuesto ON Concepto.CuentaPresupuesto<IGUAL>CtaPresupuesto.Cuenta=LEFT OUTER JOIN DepartamentoDetallista ON Concepto.DepartamentoDetallista<IGUAL>DepartamentoDetallista.Departamento
+LEFT OUTER JOIN DepartamentoDetallista ON Concepto.DepartamentoDetallista<IGUAL>DepartamentoDetallista.Departamento=LEFT OUTER JOIN ProyectoDEnFirme ON Concepto.Proyecto<IGUAL>ProyectoDEnFirme.Proyecto AND Concepto.Actividad<IGUAL>ProyectoDEnFirme.Actividad
+LEFT OUTER JOIN ProyectoDEnFirme ON Concepto.Proyecto<IGUAL>ProyectoDEnFirme.Proyecto AND Concepto.Actividad<IGUAL>ProyectoDEnFirme.Actividad=LEFT OUTER JOIN CentroCostos ON Concepto.ContUso<IGUAL>CentroCostos.CentroCostos
+LEFT OUTER JOIN CentroCostos ON Concepto.ContUso<IGUAL>CentroCostos.CentroCostos=LEFT OUTER JOIN CentroCostos2 ON Concepto.ContUso2<IGUAL>CentroCostos2.CentroCostos2
+LEFT OUTER JOIN CentroCostos2 ON Concepto.ContUso2<IGUAL>CentroCostos2.CentroCostos2=LEFT OUTER JOIN CentroCostos3 ON Concepto.ContUso3<IGUAL>CentroCostos3.CentroCostos3
+LEFT OUTER JOIN CentroCostos3 ON Concepto.ContUso3<IGUAL>CentroCostos3.CentroCostos3=LEFT OUTER JOIN CPObjetoGasto ON Concepto.ObjetoGasto<IGUAL>CPObjetoGasto.ObjetoGasto
+LEFT OUTER JOIN CPObjetoGasto ON Concepto.ObjetoGasto<IGUAL>CPObjetoGasto.ObjetoGasto=LEFT OUTER JOIN CPObjetoGasto CPObjetoGastoRef ON Concepto.ObjetoGastoRef<IGUAL>CPObjetoGastoRef.ObjetoGasto
+LEFT OUTER JOIN CPObjetoGasto CPObjetoGastoRef ON Concepto.ObjetoGastoRef<IGUAL>CPObjetoGastoRef.ObjetoGasto=LEFT OUTER JOIN ClavePresupuestal ON Concepto.ClavePresupuestalImpuesto1<IGUAL>ClavePresupuestal.ClavePresupuestal
+LEFT OUTER JOIN ClavePresupuestal ON Concepto.ClavePresupuestalImpuesto1<IGUAL>ClavePresupuestal.ClavePresupuestal=(Fin)

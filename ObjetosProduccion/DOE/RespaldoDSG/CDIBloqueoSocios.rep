@@ -1,0 +1,90 @@
+
+[Reporte]
+Clave=CDIBloqueoSocios
+Nombre=Job Bloqueo Socios
+Icono=0
+Tipo=Reporte
+SubmenuPreliminar=S
+BarraHerramientas=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=2
+AnchoPagina=21.6
+LargoPagina=27.9
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+ListaAcciones=JobBloqueo
+VistaEspecial=S
+PosicionInicialAlturaCliente=28
+PosicionInicialAncho=630
+Submenu=Especiales
+[Formato]
+ListaLineas=Encabezado
+
+VentanaIzquierda=0
+VentanaArriba=12
+VentanaAltura=744
+VentanaAncho=1382
+PanelArriba=120
+PanelBotones=80
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=1
+[Acciones.JobBloqueo]
+Nombre=JobBloqueo
+Boton=7
+NombreEnBoton=S
+NombreDesplegar=Job Bloqueo
+EnBarraHerramientas=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+
+Expresion=ejecutarSql(<T>CDSocBloqueoVencimientoRepor<T>)
+[Vista]
+Icono=0
+Clave=CDIBloqueoSocios
+UsoCapturas=S
+UsoReportes=S
+SQL=select top 1 empresa from empresa
+
+[A1]
+Celda=A1
+Alineacion=Derecha
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa

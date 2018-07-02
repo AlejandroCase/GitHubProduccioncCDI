@@ -1,0 +1,573 @@
+[Reporte]
+Clave=Ticket
+Nombre=Ticket
+Icono=49
+Vista=VentaT
+TamanoPagina=1
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+AnchoPagina=15
+LargoPagina=12.79
+FuentePorOmision={Arial, 10, Negro, []}
+Parametros1=Venta.ID
+Parametros2==
+Parametros3=N
+Parametros=S
+Columnas=1
+OtroOrden=S
+ListaOrden=(Lista)
+PosicionInicialAltura=561
+PosicionInicialAncho=798
+PosicionInicialIzquierda=45
+PosicionInicialArriba=75
+BarraHerramientas=S
+ListaAcciones=(Lista)
+Menus=S
+Orientacion=por Omision
+Ascii=S
+Impresora=S
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+ImpresoraEspecifica=(por Omisión)
+PosicionSeparador=100
+Tipo=Reporte
+PosicionInicialAlturaCliente=534
+ImpresoraPixeles=(Auto)
+PreliminarColores=S
+
+[Formato]
+ListaLineas=Encabezado<BR>Inicio: Venta.ID<BR>Inicio: Venta.ID<BR>Inicio: Venta.ID<BR>Inicio: Venta.ID<BR>Inicio: Venta.ID
+VentanaIzquierda=0
+VentanaArriba=12
+VentanaAltura=744
+VentanaAncho=1378
+PanelArriba=196
+PanelBotones=113
+
+[Linea1]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=1.39
+AVertical=Arriba
+Fuente={Arial, 8, Negro, []}
+Objetos=2
+Grupo=
+Marco=N
+EstiloMarco=0
+BordeAbajo=S
+EstiloAbajo=3
+Renglones=4
+FondoColor=Blanco
+
+[Linea2]
+Clave=Inicio: Venta.ID
+Seccion=Inicio Grupo
+AltoEnCm=1.74
+AVertical=Centrado
+Fuente={Arial, 10, Negro, []}
+Objetos=1
+Grupo=Venta.ID
+Marco=N
+BordeArriba=N
+BorqueIzquierdo=N
+EstiloMarco=0
+Renglones=5
+FondoColor=Blanco
+BordeAbajo=N
+EstiloAbajo=0
+
+[Linea3]
+Clave=Inicio: Venta.ID
+Seccion=Inicio Grupo
+Marco=S
+EstiloMarco=1
+AltoEnCm=0.63
+AVertical=Centrado
+Fuente={Arial, 10, Negro, [Cursiva]}
+Objetos=4
+Grupo=Venta.ID
+BordeArriba=N
+BorqueIzquierdo=N
+FondoEstilo=0
+Renglones=1
+FondoColor=Blanco
+
+[Linea4]
+Clave=Inicio: Venta.ID
+Objetos=2
+Seccion=Inicio Grupo
+AltoEnCm=0.61
+AVertical=Centrado
+Fuente={Arial, 10, Negro, []}
+Grupo=Venta.ID
+Marco=N
+EstiloMarco=0
+FondoEstilo=0
+Renglones=2
+FondoColor=Blanco
+
+[Linea5]
+Clave=Inicio: Venta.ID
+Objetos=2
+Seccion=Inicio Grupo
+Marco=N
+EstiloMarco=0
+AltoEnCm=0.4
+AVertical=Centrado
+Fuente={Arial, 10, Negro, []}
+Grupo=Venta.ID
+BordeAbajo=N
+FondoEstilo=0
+Visible=
+BordeArriba=N
+EstiloAbajo=0
+Renglones=1
+FondoColor=Blanco
+
+[A1]
+Celda=A1
+Alineacion=Izquierda
+AnchoEnCm=2.11
+AVertical=Arriba
+TipoImagen=Estirada
+Fuente={Arial, 8, Negro, []}
+Expresion=Logo CDI Integra.bmp
+Marco=N
+BordeArriba=S
+BordeAbajo=S
+BordeIzquierdo=S
+BordeDerecho=N
+EstiloMarco=0
+EstiloAbajo=3
+AnchoTexto=11
+FondoColor=Blanco
+CBTipo=UPC A
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+EsImagen=S
+Taches=
+
+CBAncho=12
+[Linea6]
+Clave=Inicio: Venta.ID
+Objetos=2
+Seccion=Inicio Grupo
+Grupo=Venta.ID
+AltoEnCm=1.2
+AVertical=Centrado
+Fuente={Arial, 10, Negro, []}
+BordeAbajo=N
+EstiloMarco=3
+Marco=N
+FondoEstilo=0
+Visible=
+EstiloAbajo=0
+Renglones=1
+FondoColor=Blanco
+
+
+[A6]
+Celda=A6
+Alineacion=Derecha
+AnchoEnCm=2.61
+AVertical=Centrado
+TipoImagen=Estirada
+Fuente={Arial, 8, Negro, []}
+EstiloMarco=3
+Expresion=CampoNombre( Venta.Referencia ) & <T>:<T><BR>CampoNombre( Venta.Concepto )  & <T>:<T><BR>CampoNombre( Venta.Condicion )  & <T>:<T>
+Marco=N
+FondoEstilo=0
+BordeAbajo=S
+EstiloAbajo=0
+ExpresionMultiple=S
+AnchoTexto=15
+FondoColor=Blanco
+CBTipo=UPC A
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+CBAncho=12
+BordeIzquierdo=S
+[B6]
+Celda=B6
+Alineacion=Izquierda
+AnchoEnCm=10.18
+BordeArriba=N
+EstiloArriba=0
+AVertical=Centrado
+TipoImagen=Estirada
+Fuente={Arial, 8, Negro, [Negritas]}
+Expresion=Venta.Referencia<BR>Venta.Concepto<BR>Venta.Condicion
+EstiloMarco=3
+Marco=N
+FondoEstilo=0
+BordeAbajo=S
+EstiloAbajo=0
+ExpresionMultiple=S
+AnchoTexto=55
+FondoColor=Blanco
+CBTipo=UPC A
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+CBAncho=12
+
+BordeDerecho=S
+
+
+[Acciones.Imprimir]
+Nombre=Imprimir
+Boton=4
+NombreDesplegar=&Imprimir
+EnBarraHerramientas=S
+TipoAccion=Reportes Impresora
+ClaveAccion=Ticket
+ListaParametros1=Venta.ID
+Visible=S
+Activo=S
+UsaTeclaRapida=S
+TeclaRapida=Ctrl+P
+EnMenu=S
+EspacioPrevio=S
+ListaParametros=S
+
+[Acciones.Excel]
+Nombre=Excel
+Boton=67
+NombreDesplegar=Enviar a Excel
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Reportes Excel
+ClaveAccion=Ticket
+ListaParametros1=Venta.ID
+ListaParametros=S
+Visible=S
+
+ActivoCondicion=Usuario.EnviarExcel
+[Acciones.Cerrar]
+Nombre=Cerrar
+Boton=23
+NombreDesplegar=&Cerrar
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Visible=S
+Activo=S
+EnMenu=S
+UsaTeclaRapida=S
+TeclaRapida=Alt+F4
+NombreEnBoton=S
+EnBarraHerramientas=S
+
+
+
+
+
+
+
+[C5]
+Celda=C5
+Alineacion=Izquierda
+AnchoEnCm=4.89
+ExpresionMultiple=N
+AnchoTexto=26
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+Fuente={Arial, 10, Negro, []}
+Expresion=SQL(<T>SELECT Nombre FROM Cte WHERE Cliente =:tCliente<T>,Venta.Cliente)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[B1]
+Celda=B1
+Alineacion=Derecha
+AnchoEnCm=10.68
+AnchoTexto=58
+BordeAbajo=S
+EstiloAbajo=3
+FondoColor=Blanco
+AVertical=Arriba
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+CBAncho=12
+BordeArriba=S
+BordeDerecho=S
+[A3]
+Celda=A3
+Alineacion=Izquierda
+AnchoEnCm=4.29
+AnchoTexto=23
+Marco=S
+EstiloMarco=1
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 11, Negro, [Negritas + Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Venta.Mov & <T>  <T> & Venta.MovID
+
+CBAncho=12
+[B3]
+Celda=B3
+Alineacion=Centrado
+AnchoEnCm=2.5
+AnchoTexto=15
+Marco=S
+EstiloMarco=1
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=EstatusNombreSingular(Venta.Estatus)
+
+CBAncho=12
+[C3]
+Celda=C3
+Alineacion=Derecha
+AnchoEnCm=1.7
+AnchoTexto=9
+Marco=S
+EstiloMarco=1
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Comité: <T>
+
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+[D3]
+Celda=D3
+Alineacion=Centrado
+AnchoEnCm=4.3
+AnchoTexto=23
+Marco=S
+EstiloMarco=1
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Cursiva]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Venta.Proyecto
+
+CBAncho=12
+
+[A5]
+Celda=A5
+Alineacion=Derecha
+AnchoEnCm=2.61
+AnchoTexto=15
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=CampoNombre( Venta.Cliente ) & <T>:<T>
+
+CBAncho=12
+BordeIzquierdo=S
+[B5]
+Celda=B5
+Alineacion=Izquierda
+AnchoEnCm=10.18
+AnchoTexto=55
+FondoColor=Blanco
+AVertical=Abajo
+TipoImagen=Estirada
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Cte.Nombre + <T> (<T>+Venta.Cliente+<T>)<T>
+
+CBAncho=12
+
+
+
+
+
+
+
+
+
+
+
+
+
+BordeDerecho=S
+[A2]
+Celda=A2
+Alineacion=Izquierda
+AnchoEnCm=12.79
+AnchoTexto=69
+FondoColor=Blanco
+AVertical=Centrado
+EsImagen=N
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=Code 128-A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Venta.MovID
+
+
+
+
+
+EsCodigoBarras=S
+CBGuardiaAltos=N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BordeIzquierdo=S
+BordeDerecho=S
+
+
+[A4]
+Celda=A4
+Alineacion=Centrado
+FormatoValidacion=d mmmm yyyy
+AnchoEnCm=3
+AnchoTexto=16
+BordeIzquierdo=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Venta.FechaEmision
+
+[B4]
+Celda=B4
+Alineacion=Izquierda
+AnchoEnCm=9.79
+AnchoTexto=52
+BordeDerecho=S
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reporte.ListaOrden]
+(Inicio)=Venta.ID	(Acendente)
+Venta.ID	(Acendente)=VentaD.Unidad	(Acendente)
+VentaD.Unidad	(Acendente)=(Fin)
+
+[Reporte.ListaAcciones]
+(Inicio)=Cerrar
+Cerrar=Imprimir
+Imprimir=Excel
+Excel=(Fin)

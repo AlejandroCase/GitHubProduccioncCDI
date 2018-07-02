@@ -1,0 +1,86 @@
+[Tabla]
+Icono=0
+Clave=CteOportunidad
+Archivo=CteOportunidad
+Modulos=(Todos)
+TipoTabla=General
+ListaCampos=(Lista)
+Nombre=Oportunidad
+Singular=Oportunidad
+LlavePrimaria=Cliente
+SQL=SELECT<BR>  Cliente,<BR>  ImporteEstimado,<BR>  Etapa,<BR>  Avance,<BR>  ProbabilidadCierre,<BR>  FechaEstimadaCierre,<BR>  PresupuestoAsignado<BR><BR>FROM<BR>  CteOportunidad
+
+[Cliente]
+Clave=Cliente
+Nombre=Cliente
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+
+[ImporteEstimado]
+Clave=ImporteEstimado
+Nombre=Importe Estimado
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[Etapa]
+Clave=Etapa
+Nombre=Etapa
+Visible=S
+TamanoValidacion=50
+Tamano=50
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Consulta opcional
+Formula=SQLEnLista(<T>SELECT DISTINCT Etapa FROM CteOportunidad<T>)
+
+[Avance]
+Clave=Avance
+Nombre=% Avance
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[ProbabilidadCierre]
+Clave=ProbabilidadCierre
+Nombre=% Probabilidad Cierre
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumFlotante
+AyudaEnCaptura=Calculadora
+
+[FechaEstimadaCierre]
+Clave=FechaEstimadaCierre
+Nombre=Fecha Estimada Cierre
+Visible=S
+TamanoValidacion=10
+TipoDatos=FechaHora
+FormatoValidacion=dd/mmm/aaaa
+AyudaEnCaptura=Calendario sin Hora
+
+[PresupuestoAsignado]
+Clave=PresupuestoAsignado
+Nombre=Presupuesto Asignado
+Visible=S
+TamanoValidacion=10
+TipoDatos=NumMonetario
+Monetario=S
+AyudaEnCaptura=Calculadora
+
+[Tabla.ListaCampos]
+(Inicio)=Cliente
+Cliente=ImporteEstimado
+ImporteEstimado=Etapa
+Etapa=Avance
+Avance=ProbabilidadCierre
+ProbabilidadCierre=FechaEstimadaCierre
+FechaEstimadaCierre=PresupuestoAsignado
+PresupuestoAsignado=(Fin)

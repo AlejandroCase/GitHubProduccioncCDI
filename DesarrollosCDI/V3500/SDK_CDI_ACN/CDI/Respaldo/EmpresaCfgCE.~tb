@@ -1,0 +1,93 @@
+[Tabla]
+Icono=0
+Clave=EmpresaCfgCE
+Nombre=EmpresaCfgCE
+Archivo=EmpresaCfgCE
+Modulos=(Todos)
+Singular=EmpresaCfgCE
+TipoTabla=General
+ListaCampos=(Lista)
+LlavePrimaria=Empresa
+CampoEmpresa=Empresa
+SQL=SELECT<BR>  Empresa,<BR>  ArticuloInscripcion,<BR>  ArticuloMateria,<BR>  MovVenta,<BR>  EstatusVenta,<BR>  HHArticuloSEP<BR><BR>FROM<BR>  EmpresaCfgCE
+[Empresa]
+Clave=Empresa
+Nombre=Empresa
+Visible=S
+TamanoValidacion=5
+Tamano=5
+ValorPorOmision=Info.Empresa
+TipoDatos=Texto
+[ArticuloInscripcion]
+Clave=ArticuloInscripcion
+Nombre=Artículo Inscripción
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Vista
+AyudaForma=ArtLista
+AyudaVista=Art
+AyudaCampo=Art.Articulo
+Mayusculas=S
+TipoDatos=Texto
+[ArticuloMateria]
+Clave=ArticuloMateria
+Nombre=Artículo Materia
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Vista
+AyudaForma=ArtLista
+AyudaVista=Art
+AyudaCampo=Art.Articulo
+Mayusculas=S
+TipoDatos=Texto
+[MovVenta]
+Clave=MovVenta
+Nombre=Movimiento de Venta
+Visible=S
+TamanoValidacion=20
+Tamano=20
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Modulo = :tM AND (Clave = :tCA OR Clave = :tCB)<T>, <T>VTAS<T>, <T>VTAS.P<T>, <T>VTAS.F<T>)
+TipoDatos=Texto
+[EstatusVenta]
+Clave=EstatusVenta
+Nombre=Estatus de Venta
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=4
+TamanoValidacion=15
+Tamano=15
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+OpcionesUnicamente=S
+OpcionesValidar=S
+ListaOpciones=SINAFECTAR<BR>CONFIRMAR<BR>BORRADOR<BR>CONCLUIDO
+
+TipoDatos=Texto
+
+[HHArticuloSEP]
+Clave=HHArticuloSEP
+Nombre=Artículo SEP
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+Mayusculas=S
+AyudaEnCaptura=Vista
+AyudaForma=ArtLista
+AyudaVista=Art
+AyudaCampo=Art.Articulo
+
+[Tabla.ListaCampos]
+(Inicio)=Empresa
+Empresa=ArticuloInscripcion
+ArticuloInscripcion=ArticuloMateria
+ArticuloMateria=HHArticuloSEP
+HHArticuloSEP=MovVenta
+MovVenta=EstatusVenta
+EstatusVenta=(Fin)

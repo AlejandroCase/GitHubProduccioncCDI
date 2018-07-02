@@ -1,0 +1,5 @@
+[Cxp.frm/Acciones.Imprimir]
+Expresion=si Cxp:Cxp.Mov = <T>Contra Recibo<T>,<BR>  entonces<BR>    ReporteImpresora(ReporteMovImpresora(<T>CXPTerm<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>  sino<BR>ReporteImpresora(ReporteMovImpresora(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>Fin
+
+[Cxp.frm/Acciones.RepPantalla]
+Expresion=//ReportePantalla(ReporteMovPantalla(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>si Cxp:Cxp.Mov = <T>Contra Recibo<T>,<BR>  entonces<BR>   ReportePantalla(ReporteMovPantalla(<T>CXPTerm<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>  sino<BR>   ReportePantalla(ReporteMovPantalla(<T>CXP<T>, Cxp:Cxp.Mov, Cxp:Cxp.Estatus), Cxp:Cxp.ID)<BR>Fin

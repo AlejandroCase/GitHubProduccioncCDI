@@ -1,0 +1,81 @@
+
+[Vista]
+Icono=0
+Clave=CDIVDeporE1_6
+Nombre=CDIVDeporE1_6
+Modulos=(Todos)
+Singular=CDIVDeporE1_6
+
+VistaIndependiente=S
+TipoTabla=General
+
+
+
+
+
+
+
+
+
+
+
+
+ListaCampos=(Lista)
+SQL=select * from CDIVDeporE1_6
+[Vista.SQL]
+(Inicio)=sql('SELECT s.ClaveTorneo, s.Equipo, 
+sql('SELECT s.ClaveTorneo, s.Equipo, =SUM(distinct golesencontra) GolesEnContra
+SUM(distinct golesencontra) GolesEnContra=FROM CDIVDeporE1 s
+FROM CDIVDeporE1 s=GROUP BY 
+GROUP BY =s.ClaveTorneo, 
+s.ClaveTorneo, =s.Equipo')
+s.Equipo')=(Fin)
+
+[ClaveTorneo]
+Clave=ClaveTorneo
+Nombre=ClaveTorneo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=ClaveTorneo
+
+[Equipo]
+Clave=Equipo
+Nombre=Equipo
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=Equipo
+
+[fecha]
+Clave=fecha
+Nombre=fecha
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=15
+TipoDatos=FechaHora
+ClaveBDE=fecha
+
+[GolesEnContra]
+Clave=GolesEnContra
+Nombre=GolesEnContra
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=GolesEnContra
+
+[Vista.ListaCampos]
+(Inicio)=ClaveTorneo
+ClaveTorneo=Equipo
+Equipo=fecha
+fecha=GolesEnContra
+GolesEnContra=(Fin)

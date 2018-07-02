@@ -1,0 +1,93 @@
+
+[Tabla]
+Icono=0
+Clave=HHCECfgCambio
+Nombre=HHCECfgCambio
+Archivo=HHCECfgCambio
+Modulos=(Todos)
+TipoTabla=General
+
+ListaCampos=(Lista)
+LlavePrimaria=Empresa
+CampoEmpresa=Empresa
+SQL=SELECT<BR>  Empresa,<BR>  MovAltaPospuesto,<BR>  MovBajaPospuesto,<BR>  MovAltaCambio,<BR>  MovBajaCambio<BR><BR>FROM<BR>  HHCECfgCambio
+[Empresa]
+Clave=Empresa
+Nombre=Empresa
+Visible=S
+TamanoValidacion=5
+TipoDatos=Texto
+Tamano=5
+
+ValorPorOmision=Info.Empresa
+[MovAltaPospuesto]
+Clave=MovAltaPospuesto
+Nombre=Alta Pospuesto
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Clave in (:tC1, :tC2)<T>, <T>CE.I<T>, <T>CE.P<T>)
+[MovBajaPospuesto]
+Clave=MovBajaPospuesto
+Nombre=Baja Pospuesto
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Clave = :tB<T>, <T>CE.B<T>)
+[MovAltaCambio]
+Clave=MovAltaCambio
+Nombre=Alta Cambio
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Clave in (:tC1, :tC2)<T>, <T>CE.I<T>, <T>CE.P<T>)
+[MovBajaCambio]
+Clave=MovBajaCambio
+Nombre=Baja Cambio
+Visible=S
+TamanoValidacion=20
+TipoDatos=Texto
+Tamano=20
+
+
+
+
+
+
+
+AyudaEnCaptura=Expresion
+AyudaMemRenglones=12
+AyudaMemEnBlanco=S
+AyudaMemOpc=Validar captura en la lista
+Formula=SQLEnLista(<T>SELECT Mov FROM MovTipo WHERE Clave = :tB<T>, <T>CE.B<T>)
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=Empresa
+Empresa=MovAltaPospuesto
+MovAltaPospuesto=MovBajaPospuesto
+MovBajaPospuesto=MovAltaCambio
+MovAltaCambio=MovBajaCambio
+MovBajaCambio=(Fin)

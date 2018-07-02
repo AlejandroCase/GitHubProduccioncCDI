@@ -1,0 +1,27 @@
+[MenuCtaPersonal.dlg/Dialogo.ListaAcciones]
+Plazas=PersonalExterno
+PersonalExterno=(Fin)
+;PersonalExternoCom
+;PersonalExternoCom=(Fin)
+
+[MenuCtaPersonal.dlg/Acciones.PersonalExterno]
+Nombre=PersonalExterno
+Boton=0
+NombreDesplegar=Personal Externo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=cdiPersonalExterno
+Activo=S
+Visible=S
+
+[MenuCtaPersonal.dlg/Acciones.PersonalExternoCom]
+Nombre=PersonalExternoCom
+Boton=0
+NombreDesplegar=Personal Externo Comité
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=cdiPersonalExternoCom
+Activo=S
+Visible=S

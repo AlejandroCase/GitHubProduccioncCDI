@@ -1,0 +1,34 @@
+
+[Dialogo]
+Clave=CDIGenerarBaja
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={Tahoma, 8, Negro, []}
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+VentanaSiempreAlFrente=S
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaExclusiva=S
+VentanaEscCerrar=S
+VentanaEstadoInicial=Normal
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+
+ListaAcciones=Baja
+PosicionInicialIzquierda=595
+PosicionInicialArriba=460
+PosicionInicialAlturaCliente=80
+PosicionInicialAncho=216
+[Acciones.Baja]
+Nombre=Baja
+Boton=0
+NombreDesplegar=Baja
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(<T>SOC<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Baja<T>, Afectar.FormaCaptura)

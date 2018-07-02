@@ -1,0 +1,22 @@
+[GenerarSolicitudDevolucion.dlg/Dialogo]
+PosicionInicialIzquierda=544
+PosicionInicialArriba=296
+PosicionInicialAlturaCliente=138
+
+[GenerarSolicitudDevolucion.dlg/Dialogo.ListaAcciones]
+DevFaltante=DevVtaSI
+DevVtaSI=(Fin)
+
+[GenerarSolicitudDevolucion.dlg/Acciones.DevVtaSI]
+Nombre=DevVtaSI
+Boton=0
+NombreDesplegar=Devolución Venta SI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=GenerarPedidoPendiente
+Activo=S
+Visible=S
+Antes=S
+AntesExpresiones=Asigna(Afectar.GenerarMov, <T>Devolucion Venta SI<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))
+

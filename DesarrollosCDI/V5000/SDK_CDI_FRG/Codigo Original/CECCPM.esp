@@ -1,0 +1,16 @@
+[CE.tbl/Concepto]
+Requerido=S
+
+[CE.tbl/Proyecto]
+Requerido=S
+TipoDatos=Texto
+
+[CED.tbl/ContUso]
+Requerido=S
+
+[CA.tbl/Concepto]
+Requerido=S
+
+[CA.tbl/Proyecto]
+Requerido=S
+TipoDatos=Texto

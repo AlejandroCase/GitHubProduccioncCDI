@@ -1,0 +1,22 @@
+
+[Tabla]
+Icono=0
+Clave=VerTipoImpuesto
+Archivo=VerTipoImpuesto
+Modulos=(Todos)
+TipoTabla=General
+
+ListaCampos=TipoImpuesto
+Nombre=Tipos Impuestos
+Singular=Tipo Impuesto
+SQL=SELECT<BR>  TipoImpuesto<BR><BR>FROM<BR>  VerTipoImpuesto
+LlavePrimaria=TipoImpuesto
+[TipoImpuesto]
+Clave=TipoImpuesto
+Nombre=TipoImpuesto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10

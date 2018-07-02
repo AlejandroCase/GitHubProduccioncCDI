@@ -1,0 +1,1212 @@
+
+[Reporte]
+Clave=CDITempInscripContra
+Nombre=Contrato
+Icono=0
+VistaEspecial=S
+Tipo=Reporte
+SubmenuPreliminar=S
+ImpresoraEspecifica=(por Omisión)
+ImpresoraPixeles=(Auto)
+ImpresoraFactor=(Auto)
+ImpresoraAlto=(Auto)
+FuentePorOmision={Arial, 8, Negro, []}
+Caracteres=132
+Renglones=66
+MargenInferior=2
+TamanoPagina=3
+AnchoPagina=21.6
+LargoPagina=35.6
+Impresora=S
+MargenArriba=1
+MargenAbajo=1
+MargenIzquierdo=1
+MargenDerecho=1
+Orientacion=por Omision
+FormatoSinConexion=S
+ASCIISinModos=S
+Puerto=LPT1
+Parametros=S
+
+PosicionInicialAlturaCliente=746
+PosicionInicialAncho=1319
+OtroOrden=S
+ListaOrden=CDITempInscrip.Socio<TAB>(Acendente)
+[Vista]
+Icono=0
+Clave=CDITempInscripContra
+
+ListaCampos=(Lista)
+VistaIndependiente=S
+SQL=xpCDICalInsc1Rep2 {estacionTrabajo}
+[CDITempInscrip.LId]
+Clave=CDITempInscrip.LId
+Nombre=LId
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+LigaTabla=CDITempInscrip
+LigaCampo=LId
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=LId
+
+[CDITempInscrip.id]
+Clave=CDITempInscrip.id
+Nombre=id
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+LigaTabla=CDITempInscrip
+LigaCampo=id
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=id
+
+
+
+
+
+[CDITempInscrip.Socio]
+Clave=CDITempInscrip.Socio
+Nombre=Socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+LigaTabla=CDITempInscrip
+LigaCampo=Socio
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Socio
+
+
+
+
+
+
+
+
+
+
+
+
+
+[CDITempInscrip.Estacion]
+Clave=CDITempInscrip.Estacion
+Nombre=Estacion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+LigaTabla=CDITempInscrip
+LigaCampo=Estacion
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Estacion
+
+
+
+
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDITempInscrip.LId,
+CDITempInscrip.LId,=CDITempInscrip.id,
+CDITempInscrip.id,=CDITempInscrip.mov,
+CDITempInscrip.mov,=CDITempInscrip.movid,
+CDITempInscrip.movid,=CDITempInscrip.FechaEmision,
+CDITempInscrip.FechaEmision,=CDITempInscrip.Cliente,
+CDITempInscrip.Cliente,=CDITempInscrip.Socio,
+CDITempInscrip.Socio,=CDITempInscrip.Articulo,
+CDITempInscrip.Articulo,=CDITempInscrip.Descripcion,
+CDITempInscrip.Descripcion,=CDITempInscrip.Precio,
+CDITempInscrip.Precio,=CDITempInscrip.membresia,
+CDITempInscrip.membresia,=CDITempInscrip.Descuento1,
+CDITempInscrip.Descuento1,=CDITempInscrip.Descuento2,
+CDITempInscrip.Descuento2,=CDITempInscrip.Descuento3,
+CDITempInscrip.Descuento3,=CDITempInscrip.Descuento4,
+CDITempInscrip.Descuento4,=CDITempInscrip.importe,
+CDITempInscrip.importe,=CDITempInscrip.PuntoCDI,
+CDITempInscrip.PuntoCDI,=CDITempInscrip.Calcula,
+CDITempInscrip.Calcula,=CDITempInscrip.Procesa,
+CDITempInscrip.Procesa,=CDITempInscrip.Estacion,
+CDITempInscrip.Estacion,=CDITempInscrip.RenglonId,
+CDITempInscrip.RenglonId,=CDITempInscrip.descuentotipo,
+CDITempInscrip.descuentotipo,=CDITempInscrip.descuentolinea,
+CDITempInscrip.descuentolinea,=CDITempInscrip.descuentoimporte
+CDITempInscrip.descuentoimporte=FROM CDITempInscrip CDITempInscrip
+FROM CDITempInscrip CDITempInscrip=(Fin)
+
+[Formato]
+ListaLineas=Encabezado<BR>Encabezado<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio<BR>Inicio: CDITempInscrip.Socio
+
+VentanaIzquierda=23
+VentanaArriba=0
+VentanaAltura=784
+VentanaAncho=1319
+PanelArriba=84
+PanelBotones=150
+[Linea1]
+Clave=Encabezado
+Objetos=2
+Seccion=Encabezado Página
+AltoEnCm=1.11
+Renglones=3
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+[Linea2]
+Clave=Encabezado
+Seccion=Encabezado Página
+AltoEnCm=1
+Renglones=2
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, [Negritas]}
+AVertical=Centrado
+
+Objetos=1
+
+
+[A1]
+Celda=A1
+Alineacion=Derecha
+AnchoEnCm=3
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=
+
+
+
+
+[LId]
+Clave=LId
+Nombre=LId
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=AutoInc
+ClaveBDE=LId
+
+[id]
+Clave=id
+Nombre=id
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=id
+
+[estacion]
+Clave=estacion
+Nombre=estacion
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=estacion
+
+[texto]
+Clave=texto
+Nombre=texto
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=132
+TipoDatos=Texto
+Tamano=132
+ClaveBDE=texto
+
+[socio]
+Clave=socio
+Nombre=socio
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+Tamano=10
+ClaveBDE=socio
+
+
+
+
+[B1]
+Celda=B1
+Alineacion=Centrado
+AnchoEnCm=13.79
+AnchoTexto=74
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=Empresa.Nombre
+
+[A2]
+Celda=A2
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Reglamento<T>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Vista.ListaCampos]
+(Inicio)=CDITempInscrip.LId
+CDITempInscrip.LId=CDITempInscrip.id
+CDITempInscrip.id=CDITempInscrip.Socio
+CDITempInscrip.Socio=CDITempInscrip.Estacion
+CDITempInscrip.Estacion=texto
+texto=(Fin)
+
+[Linea3]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=1
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea4]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=1
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea5]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A3]
+Celda=A3
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>REQUISITOS DE INSCRIPCIÓN: <T>
+
+[A4]
+Celda=A4
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 10, Negro, [Negritas]}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=texto
+
+[A5]
+Celda=A5
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>a)En caso de que el socio este bloqueado por el sistema no podrá inscribirse sin <BR>importar cuál sea su situación. <T>
+
+[Linea6]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea7]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea8]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea9]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea10]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea11]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea12]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea13]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea14]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea15]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea16]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea17]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea18]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea19]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=1.6
+Renglones=5
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea20]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea21]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea22]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea23]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=5.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea24]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea25]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea26]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[Linea27]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=1.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+Objetos=1
+[A6]
+Celda=A6
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>b)Llenar la solicitud por cada participante. Las solicitudes son aceptadas en el <BR>orden que se reciben y están sujetas a aprobación <T>
+
+[A7]
+Celda=A7
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>por los directivos del Campamento. <T>
+
+[A8]
+Celda=A8
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>c)Realizar su pago en caja. De no hacerlo dentro de la fecha que se indica en la <BR>hoja de inscripción, se cancelará, y se tendrá que <T>
+
+[A9]
+Celda=A9
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>realizar nuevamente todo el proceso. <T>
+
+[A10]
+Celda=A10
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>d)Leer y aceptar el presente reglamento. <T>
+
+[A11]
+Celda=A11
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>SEGURO DE ACCIDENTES<T>
+
+[A12]
+Celda=A12
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>El seguro de accidentes del Deportivo es indispensable. Ningún participante <BR>podrá ser inscrito al Campamento sin este requisito. <T>
+
+[A13]
+Celda=A13
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Si su hijo ya tiene pagado el seguro de accidentes del CDI actual, ya no es <BR>necesario volver a realizar el pago, la cobertura de<T>
+
+[A14]
+Celda=A14
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>este seguro es limitada.<T>
+
+[A15]
+Celda=A15
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>CANCELACIONES <T>
+
+[A16]
+Celda=A16
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Al contar con cupo limitado, toda cancelación debera presentarse por escrito en <BR>elmodulo de atención de campamentos <T>
+
+[A17]
+Celda=A17
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>por parte de los padres de familia o tutor responsable del participante inscrito, y <BR>será considerado de acuerdo a las siguientes <T>
+
+[A18]
+Celda=A18
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=102
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>condiciones: <T>
+
+[A19]
+Celda=A19
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T> <T><BR><T>* Cancelaciones hasta el 31 de mayo 2014, se reembolsan el 80% del costo. <T><BR><T>* Cancelaciones posteriores al 1 de junio y hasta el 30 de junio 2014, se reembolsan el 50% del costo. <T><BR><T>* Cancelaciones posteriores al 1 de Julio, no habrá devolución de la inscripción, sin importar el motivo de la cancelación. <T>
+
+ExpresionMultiple=S
+[A20]
+Celda=A20
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>EL CUPO <T>
+
+[A21]
+Celda=A21
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>El cupo es limitado. El lugar es personal, no transferible. <T>
+
+[A22]
+Celda=A22
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>EDADES DE PARTICIPACIÓN: <T>
+
+[A24]
+Celda=A24
+Alineacion=Centrado
+AnchoEnCm=19
+ExpresionMultiple=N
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>FORMACIÓN DE KVUTZOT (GRUPOS) <T>
+
+[A26]
+Celda=A26
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>SERVICIO MÉDICO<T>
+
+ExpresionMultiple=N
+[A25]
+Celda=A25
+Alineacion=Izquierda
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Los Campamentos del CDI se reserva el derecho de colocar a los niños (as) en los grupos que a criterio de los dirigentes, sea<T><BR><T>el mejor para ellos.<T>
+
+ExpresionMultiple=S
+[A23]
+Celda=A23
+Alineacion=Izquierda
+AnchoEnCm=19
+ExpresionMultiple=S
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T> <T><BR><T>a) GIMNASIA PARA BEBÉS: de 11 meses a 2 años acompañados por algún padre.<T><BR><T>b) NITZANIM: De 3 a 5 años de edad.<T><BR><T>c) PUNTO CDI MONTE SINAI: De 4 a 14 Años de edad.<T><BR><T>d) CLÍNICAS DEPORTIVAS: De 6 a 13 años de edad.<T><BR><T>e) CAMP CDI: De 6 a 13 años de edad.<T><BR><T>f) CLÍNICAS MUSICALES: De 6 años en adelante.<T><BR><T>g) CLÍNICA DE TRAPECIO: De 6 A 18 años de edad.<T><BR><T>h) CLÍNICA DE ACROBACIA EN TELAS: De 9 años en adelante.<T><BR><T>i) TEPOZOTLAN: De 8 a 14 años de edad.<T><BR><T>j) CAMP VERACRUZ: De 14 a 17 Años de Edad.<T><BR><T> <T><BR><T>Estos grupos se han formado pensando en las características de los niños y jóvenes, por ningún motivo podemos admitir en<T><BR><T>dichos grupos, niños que no cumplan con los requisitos.<T>
+
+[A27]
+Celda=A27
+Alineacion=Izquierda
+AnchoEnCm=19
+ExpresionMultiple=S
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>En CDI y Tepotzotlán y Verazruz contamos con servicio médico capacitado en primeros auxilios. En caso de que el participante lo<T><BR><T>requiera, será atendido por nuestro personal el cual, a menos que los padres o tutores del participante proporcionen otra indicación.<T><BR><T>En caso de enfermedad, el padre o tutor debera definir como se procede.<T>
+
+[Linea28]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea29]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=1.2
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea30]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.8
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea31]
+Clave=Inicio: CDITempInscrip.Socio
+Objetos=1
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=7
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[Linea32]
+Clave=Inicio: CDITempInscrip.Socio
+Seccion=Inicio Grupo
+Grupo=CDITempInscrip.Socio
+AltoEnCm=0.4
+Renglones=1
+FondoColor=Blanco
+Fuente={Arial, 8, Negro, []}
+AVertical=Centrado
+
+[A28]
+Celda=A28
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>OBJETOS PERSONALES <T>
+
+[A29]
+Celda=A29
+Alineacion=Izquierda
+AnchoEnCm=19
+ExpresionMultiple=S
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Por razones de seguridad y buen desarrollo de las actividades, todo objeto que lleve el participante y que a juicio de los madrijim<T><BR><T>o directivos del Campamento, no se requiera para el desarrollo de las actividades, debera ser entregado para su custodia<T><BR><T>y al término del evento será devuelto.<T>
+
+[A30]
+Celda=A30
+Alineacion=Centrado
+AnchoEnCm=19
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>TRANSPORTE: <T>
+
+[A31]
+Celda=A31
+Alineacion=Izquierda
+AnchoEnCm=19
+ExpresionMultiple=S
+AnchoTexto=16
+FondoColor=Blanco
+AVertical=Centrado
+TipoImagen=Estirada
+CBAncho=12
+CBMostrarCodigo=S
+CBDigitoVerificador=S
+CBTipo=UPC A
+Fuente={Arial, 8, Negro, []}
+TablaAncho=(Auto)
+TablaAnchoCeldas=(Auto)
+TablaAnchoTituloRenglon=(Auto)
+TablaAnchoTotales=(Auto)
+Expresion=<T>Para comodidad de los participantes, se ha previsto para Nitzanim, Clínicas Deportivas y Campamento CDI, servicio de<T><BR><T>autobuses diario, ida y vuelta<T><BR><T> <T><BR><T>*Por seguridad de nuestros participantes, una vez elegida la ruta de transporte en la solicitud, no se puede realizar ningún<T><BR><T>cambio de ruta.<T><BR><T> <T><BR><T>*En el caso de domicilios dentro de condominios, los camiones pasarán por los niños en la caseta de entrada de los mismos,<T><BR><T>no llegará hasta la entrada del edificio/casa.<T><BR><T>*El CDI no podrá ofrecer servicio de transporte si los cupos minimos de las rutas no se completan. Los padres podrán ofrecer<T><BR><T>llevar a sus hijos a alguna otra localización donde el camión pase.<T><BR><T>*En caso de inscribirse despues 1/julio NO se proporcionará servicio de transporte durante los primeros cuatro días del evento.<T><BR><T>*No se permitirá bajo ninguna situación bajar a los niños en casa de amigos y/o familiares. La ruta establecida en la inscripción<T><BR><T>es la unica autorizada.<T><BR><T>*Una vez iniciada la ruta, los prefectos son la autoridad dentro de los camiones, por lo que cualquier falta de respeto al personal<T><BR><T>será considerada una penalidad a decisión de la dirección del Campamento.<T><BR><T>*Campamento Tepozotlán y Camp Veracruz:<T><BR><T> <T><BR><T>Transporte en autobús escolar el primero y último día del Campamento<T>

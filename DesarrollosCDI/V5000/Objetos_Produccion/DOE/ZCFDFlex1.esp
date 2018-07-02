@@ -1,0 +1,121 @@
+
+;[Cte.frm/Acciones.CteCFD]
+;VisibleCondicion=(Empresa.CFD) o (General.CFDFlex)
+;ClaveAccion=CteCFDFlexible1
+
+[Venta.frm/Acciones.Imprimir]
+Expresion=Asigna(Info.Descripcion, SQL(<T>xpCDIAntesImprimirRec :nID<T>,Venta:Venta.ID) )<BR>si Info.Descripcion=<T>VTAS.F<T><BR>entonces<BR>    Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>VTAS<T>, Venta:Venta.ID))<BR>    Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>        Entonces<BR>            VerImagen(<T><T>, Info.Descripcion)<BR>        Sino<BR>            ReporteImpresora(ReporteMovImpresora(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>        Fin<BR>Sino<BR> ReporteImpresora(ReporteMovImpresora(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>Fin
+;Expresion=Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>VTAS<T>, Venta:Venta.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReporteImpresora(ReporteMovImpresora(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>Fin 
+;ActivoCondicion=Usuario.ImprimirMovs y SQL(<T>EXEC xpMostrarAccion :tEmpresa, :tMov, :tID,:tModulo, :tAccion<T>, Empresa, Venta:Venta.Mov, Venta:Venta.ID,<T>VTAS<T>,<T>IMPRIMIR<T>)
+;ActivoCondicion=SQL(<T>EXEC xpMostrarAccion :tEmpresa, :tMov, :tID,:tModulo, :tAccion<T>, Empresa, Venta:Venta.Mov, Venta:Venta.ID,<T>VTAS<T>,<T>IMPRIMIR<T>)
+
+[Venta.frm/Acciones.RepPantalla]
+Expresion=Asigna(Info.Descripcion, SQL(<T>xpCDIAntesImprimirRec :nID<T>,Venta:Venta.ID) )<BR>si Info.Descripcion=<T>VTAS.F<T><BR>entonces<BR>    Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>VTAS<T>, Venta:Venta.ID))<BR>    Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>        Entonces<BR>            VerImagen(<T><T>, Info.Descripcion)<BR>        Sino<BR>            ReportePantalla(ReporteMovPantalla(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>        Fin<BR>Sino<BR> ReportePantalla(ReporteMovPantalla(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>Fin
+;Expresion=Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>VTAS<T>, Venta:Venta.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReportePantalla(ReporteMovPantalla(Info.SubModuloVenta, Venta:Venta.Mov, Venta:Venta.Estatus), Venta:Venta.ID)<BR>Fin 
+;ActivoCondicion=SQL(<T>EXEC xpMostrarAccion  :tEmpresa,  :tMov,  :tID,:tModulo, :tAccion<T>, Empresa, Venta:Venta.Mov, Venta:Venta.ID,<T>VTAS<T>,<T>IMPRIMIR<T>)
+;ActivoCondicion=SQL(<T>EXEC xpMostrarAccion  :tEmpresa,  :tMov,  :tID,:tModulo, :tAccion<T>, Empresa, Venta:Venta.Mov, Venta:Venta.ID,<T>VTAS<T>,<T>IMPRIMIR<T>)
+
+[Venta.frm/Acciones.GenerarCFDFlex]
+Nombre=GenerarCFDI
+Boton=127
+Menu=&Archivo
+NombreDesplegar=Generar CFDIBBBB
+EnMenu=S
+TipoAccion=Expresion
+EnBarraHerramientas=S
+Visible=S
+Expresion=Si Venta:Venta.Estatus = <T>CANCELADO<T><BR>Entonces<BR>    ProcesarSQL(<T>DECLARE @Ok int, @OkRef varchar(255) EXEC spCFDICancelacion :tmodulo, :nID, :tEstatus, :tEmpresa, :nSucursal, @Ok OUTPUT, @OkRef OUTPUT SELECT @OkRef<T>, <T>VTAS<T>, Venta:Venta.ID, Venta:Venta.Estatus, Empresa, Sucursal)<BR>Sino<BR>  Si SQL(<T>SELECT ISNULL(eDoc, 0) FROM EmpresaGral WHERE Empresa = :tEmpresa<T>, Empresa) y(SQL(<T>SELECT ISNULL(CFDFlex, 0) FROM EmpresaGral WHERE Empresa = :tEmpresa<T>, Empresa))<BR>  Entonces<BR>    ProcesarSQL(<T>EXEC spRegenerarCFDFlex :nEstacion, :tEmpresa, :tModulo, :nID, :tEstatus<T>, EstacionTrabajo, Empresa, <T>VTAS<T>, Venta:Venta.ID, Venta:Venta.Estatus)<BR>  Sino                       <BR>    Si Empresa.CFD y SQL(<T>spVerMovTipoCFD :tEmpresa, :tModulo, :tMov, :nID<T>, Empresa, <T>VTAS<T>, Venta:Venta.Mov, Venta:Venta.ID)<BR>    Entonces<BR>      Si(no CFD.Generar(<T>VTAS<T>, Venta:Venta.ID),  Forma.ActualizarForma AbortarOperacion)<BR>      Asigna(Afectar.EnviarCFD, SQL(<T>SELECT EnviarAlAfectar FROM EmpresaCFD WHERE Empresa=:tEmpresa<T>, Empresa))<BR>    Fin<BR>      CFD.Confirmar<BR>      Si(Afectar.EnviarCFD, CFD.Enviar(<T>VTAS<T>, Venta:Venta.ID))<BR>  Fin<BR>Fin<BR><BR>ActualizarVista<BR>ActualizarForma
+ActivoCondicion=(SQL(<T>EXEC xpMostrarAccion :tEmpresa, :tMov, :tID,:tModulo, :tAccion<T>, Empresa, Venta:Venta.Mov, Venta:Venta.ID,<T>VTAS<T>,<T>GENERARCFDI<T>)) y (SQL(<T>spVerMovTipoCFD :tEmpresa, :tModulo, :tMov, :nID<T>, Empresa, <T>VTAS<T>, Venta:Venta.Mov, Venta:Venta.ID))
+
+
+[Venta.frm/Acciones.TraePrecio]
+Nombre=TraePrecio
+Boton=61
+NombreDesplegar=Traer Precio
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Actualizar Forma
+Antes=S
+Visible=S
+NombreEnBoton=S
+EspacioPrevio=S
+GuardarAntes=S
+ActivoCondicion=(Venta:Venta.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))<BR>y<BR>(Venta:Venta.Mov en (<T>Solicitud Cargo<T>,<T>SC Cuota<T>)))<BR>y<BR>(Venta:Venta.Concepto en(<T>Cuota Anual<T>,<T>Cuota Mensual<T>))
+AntesExpresiones=GuardarCambios<BR>EjecutarSql(<T>spCDIJobCargosRecurrentesSinContraCargoPorCliente :tE, :nI, :tC<T>, Empresa, Venta:Venta.ID, Venta:Venta.Cliente)
+
+[Venta.Frm/Acciones.MovCopiar]
+;Visible=
+;VisibleCondicion=1=0
+
+[Venta.Frm/Acciones.CopiarLote]
+Visible=
+VisibleCondicion=1=0
+
+
+
+[Venta.Frm/Acciones.CopiarMeses]
+;Visible=
+;VisibleCondicion=1=0
+
+
+
+
+[Venta.frm/Forma]
+ListaAcciones.Cambios=Insertar<TAB>TraePrecio<TAB>77
+
+;[Venta.frm/Detalle]
+;CondicionEdicion= ((Venta:Venta.Mov <><T>Solicitud Cargo<T>) y (Venta:Venta.Concepto noen(<T>Cuota Anual<T>,<T>Cuota Mensual<T>)))
+;CondicionEdicion=(Venta:Venta.CDIPermiteEditar) y (Venta:Venta.Estatus en(EstatusSinAfectar, EstatusBorrador, EstatusPorConfirmar))<BR>y ((Venta:Venta.Mov <> <T>Recibo<T>) y (Venta:Venta.Origen <><T>Solicitud Cargo<T>))<BR>0 ((Venta:Venta.Mov <><T>Solicitud Cargo<T>) y (Venta:Venta.Concepto noen(<T>Cuota Anual<T>,<T>Cuota Mensual<T>)))
+
+
+[Venta.tbl/Concepto]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+
+[Cxc.frm/Acciones.Imprimir]
+Expresion=si (Cxc:Cxc.Mov en (<T>Cobro<T>,<T>Anticipo<T>)) Y (Cxc:Cxc.Estatus en (<T>CONCLUIDO<T>,<T>PENDIENTE<T>))<BR>    Entonces<BR>     ReporteImpresora(ReporteMovImpresora(<T>CXcTerm<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Sino<BR>     si Cxc:Cxc.Mov en (<T>Contracargo<T>,<T>Nota Credito<T>,<T>Cancelacion Cargos<T>)<BR>      entonces<BR>      Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>      Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>        Entonces<BR>        VerImagen(<T><T>, Info.Descripcion)<BR>     Sino<BR>        ReporteImpresora(ReporteMovImpresora(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR> Fin<BR>Sino<BR> ReporteImpresora(ReporteMovImpresora(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR> Fin<BR>Fin
+;0Expresion=Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReporteImpresora(ReporteMovImpresora(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Fin
+;Expresion=si(Cxc:Cxc.Mov en (<T>Cobro<T>,<T>Anticipo<T>)) y (Cxc:Cxc.Estatus en (<T>CONCLUIDO<T>,<T>PENDIENTE<T>)) <BR>  entonces<BR>   ReporteImpresora(ReporteMovImpresora(<T>CXcTerm<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Sino<BR> Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReporteImpresora(ReporteMovImpresora(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Fin<BR>    Fin<BR>Fin
+;ActivoCondicion=SQL(<T>EXEC xpMostrarAccion :tEmpresa, :tMov, :tID,:tModulo, :tAccion<T>, Empresa,Cxc:Cxc.Mov, Cxc:Cxc.ID,<T>CXC<T>,<T>IMPRIMIR<T>)
+
+[Cxc.frm/Acciones.RepPantalla]
+;0Expresion=Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReportePantalla(ReporteMovPantalla(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Fin
+;Expresion=SI (Cxc:Cxc.Mov en (<T>Cobro<T>,<T>Anticipo<T>)) y (Cxc:Cxc.Estatus en (<T>CONCLUIDO<T>,<T>PENDIENTE<T>))<BR> entonces<BR>    ReportePantalla(ReporteMovPantalla(<T>CXcTerm<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Sino<BR> Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>Entonces<BR>  VerImagen(<T><T>, Info.Descripcion)<BR>Sino<BR>  ReportePantalla(ReporteMovPantalla(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Fin<BR>    Fin<BR>Fin
+Expresion=SI (Cxc:Cxc.Mov  en (<T>Cobro<T>,<T>Anticipo<T>)) Y (Cxc:Cxc.Estatus en (<T>CONCLUIDO<T>,<T>PENDIENTE<T>))<BR> entonces<BR>    ReportePantalla(ReporteMovPantalla(<T>CXcTerm<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR>Sino<BR>   si Cxc:Cxc.Mov en (<T>Contracargo<T>,<T>Nota Credito<T>,<T>Cancelacion Cargos<T>)<BR>   entonces<BR>    Asigna(Info.Descripcion, SQL(<T>EXEC spAbrirAnexo :tModulo, :nID<T>, <T>CXC<T>, Cxc:Cxc.ID))<BR>    Si (Info.Descripcion <> NULO) Y (Archivo.Leer(Info.Descripcion) <> <T><T>)<BR>        Entonces<BR>          VerImagen(<T><T>, Info.Descripcion)<BR>    Sino<BR>          ReportePantalla(ReporteMovPantalla(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR> Fin<BR> Sino<BR> ReportePantalla(ReporteMovPantalla(<T>CXC<T>, Cxc:Cxc.Mov, Cxc:Cxc.Estatus), Cxc:Cxc.ID)<BR> Fin<BR>Fin
+;ActivoCondicion=SQL(<T>EXEC xpMostrarAccion :tEmpresa, :tMov, :tID,:tModulo, :tAccion<T>, Empresa,Cxc:Cxc.Mov, Cxc:Cxc.ID,<T>CXC<T>,<T>IMPRIMIR<T>)
+
+
+[Cxc.Frm/Acciones.MovCopiar]
+Visible=
+VisibleCondicion=1=0
+
+[Cxc.Frm/Acciones.CopiarMeses]
+Visible=
+VisibleCondicion=1=0
+
+
+[Cxc.tbl/FormaCobro]
+CondicionDespliege=(no ConDesglose)
+
+
+
+[Cxc.Frm/Acciones.CDICampTCDCxcVer]
+Nombre=CDICampTCDCxcVer
+Boton=64
+NombreEnBoton=S
+Menu=&Archivo
+NombreDesplegar=Cobrar Gestión
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=CDICampanaTCDCxc
+Activo=S
+Antes=S
+ConCondicion=S
+EjecucionCondicion=//usuario=sql(<T>CDICampTCDCxcVer :ni, :nB<T>,Cxc:Cxc.ID,1)
+AntesExpresiones=Asigna(info.Id,Cxc:Cxc.ID))<BR>Asigna(info.numero,sql(<T>CDICampTCDCxcVer :ni, :nB<T>,Cxc:Cxc.ID,0))
+VisibleCondicion=(Cxc:Cxc.Mov=<T>Cobro Gestion<T>) Y (Cxc:Cxc.Estatus en (ESTATUSPENDIENTE, ESTATUSSINAFECTAR))
+
+;[Cxc.frm/Forma.ListaAcciones]
+;Otros9=CDICampTCDCxcVer

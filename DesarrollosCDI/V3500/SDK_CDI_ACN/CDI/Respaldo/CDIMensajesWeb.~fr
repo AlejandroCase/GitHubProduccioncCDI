@@ -1,0 +1,262 @@
+
+[Forma]
+Clave=CDIMensajesWeb
+Icono=0
+Modulos=(Todos)
+Nombre=Mensajes Web
+VentanaTipoMarco=Normal
+VentanaPosicionInicial=Centrado
+VentanaEscCerrar=S
+VentanaEstadoInicial=Normal
+
+ListaCarpetas=CDIMensajesWeb
+CarpetaPrincipal=CDIMensajesWeb
+PosicionInicialIzquierda=312
+PosicionInicialArriba=266
+PosicionInicialAlturaCliente=197
+PosicionInicialAncho=742
+BarraHerramientas=S
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+DialogoAbrir=S
+[CDIMensajesWeb]
+Estilo=Ficha
+Clave=CDIMensajesWeb
+PermiteEditar=S
+AlineacionAutomatica=S
+AcomodarTexto=S
+MostrarConteoRegistros=S
+Zona=A1
+Vista=CDIMensajesWeb
+Fuente={Tahoma, 8, Negro, []}
+FichaEspacioEntreLineas=6
+FichaEspacioNombres=100
+FichaEspacioNombresAuto=S
+FichaNombres=Izquierda
+FichaAlineacion=Izquierda
+FichaColorFondo=Plata
+FichaAlineacionDerecha=S
+CampoColorLetras=Negro
+CampoColorFondo=Blanco
+ListaEnCaptura=(Lista)
+
+CarpetaVisible=S
+
+[CDIMensajesWeb.CDIMensajesWeb.Modulo]
+Carpeta=CDIMensajesWeb
+Clave=CDIMensajesWeb.Modulo
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=10
+ColorFondo=Blanco
+
+[CDIMensajesWeb.CDIMensajesWeb.IdMensaje]
+Carpeta=CDIMensajesWeb
+Clave=CDIMensajesWeb.IdMensaje
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=10
+ColorFondo=Blanco
+
+[CDIMensajesWeb.CDIMensajesWeb.Titulo]
+Carpeta=CDIMensajesWeb
+Clave=CDIMensajesWeb.Titulo
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=50
+ColorFondo=Blanco
+
+[CDIMensajesWeb.CDIMensajesWeb.Mensaje]
+Carpeta=CDIMensajesWeb
+Clave=CDIMensajesWeb.Mensaje
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=80X4
+ColorFondo=Blanco
+
+[CDIMensajesWeb.ListaEnCaptura]
+(Inicio)=CDIMensajesWeb.Modulo
+CDIMensajesWeb.Modulo=CDIMensajesWeb.IdMensaje
+CDIMensajesWeb.IdMensaje=CDIMensajesWeb.Titulo
+CDIMensajesWeb.Titulo=CDIMensajesWeb.Mensaje
+CDIMensajesWeb.Mensaje=(Fin)
+
+[Acciones.Documento Nuevo]
+Nombre=Documento Nuevo
+Boton=1
+NombreDesplegar=Documento Nuevo
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Documento Nuevo
+Activo=S
+Visible=S
+
+[Acciones.Documento Abrir]
+Nombre=Documento Abrir
+Boton=2
+NombreDesplegar=Documento Abrir
+EnBarraHerramientas=S
+TipoAccion=Controles Captura
+ClaveAccion=Documento Abrir
+Activo=S
+Visible=S
+
+
+[Acciones.Guardar Cambios]
+Nombre=Guardar Cambios
+Boton=3
+NombreDesplegar=Guardar Cambios
+EnBarraHerramientas=S
+EspacioPrevio=S
+TipoAccion=Controles Captura
+ClaveAccion=Guardar Cambios
+Activo=S
+Visible=S
+
+
+
+
+
+
+[Acciones.Cerrar]
+Nombre=Cerrar
+Boton=23
+NombreDesplegar=Cerrar
+EnBarraHerramientas=S
+TipoAccion=Ventana
+ClaveAccion=Cerrar
+Activo=S
+Visible=S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[(Carpeta Abrir)]
+Estilo=Iconos
+Clave=(Carpeta Abrir)
+AlineacionAutomatica=S
+AcomodarTexto=S
+MostrarConteoRegistros=S
+Vista=CDIMensajesWeb
+Fuente={Tahoma, 8, Negro, []}
+IconosCampo=(sin Icono)
+IconosEstilo=Detalles
+IconosAlineacion=de Arriba hacia Abajo
+IconosConSenales=S
+ElementosPorPaginaEsp=200
+CampoColorLetras=Negro
+CampoColorFondo=Blanco
+ListaEnCaptura=(Lista)
+
+CarpetaVisible=S
+
+
+
+IconosNombre=CDIMensajesWeb:CDIMensajesWeb.Modulo
+IconosSubTitulo=Modulo
+[(Carpeta Abrir).CDIMensajesWeb.IdMensaje]
+Carpeta=(Carpeta Abrir)
+Clave=CDIMensajesWeb.IdMensaje
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+ColorFondo=Blanco
+
+[(Carpeta Abrir).CDIMensajesWeb.Titulo]
+Carpeta=(Carpeta Abrir)
+Clave=CDIMensajesWeb.Titulo
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=100
+ColorFondo=Blanco
+
+[(Carpeta Abrir).CDIMensajesWeb.Mensaje]
+Carpeta=(Carpeta Abrir)
+Clave=CDIMensajesWeb.Mensaje
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=255
+ColorFondo=Blanco
+
+[(Carpeta Abrir).CDIMensajesWeb.Estatus]
+Carpeta=(Carpeta Abrir)
+Clave=CDIMensajesWeb.Estatus
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Blanco
+
+
+[(Carpeta Abrir).Columnas]
+0=-2
+1=-2
+2=-2
+3=-2
+4=-2
+5=-2
+
+
+
+
+6=-2
+
+
+
+
+
+
+[(Carpeta Abrir).ListaEnCaptura]
+(Inicio)=CDIMensajesWeb.IdMensaje
+CDIMensajesWeb.IdMensaje=CDIMensajesWeb.Titulo
+CDIMensajesWeb.Titulo=CDIMensajesWeb.Mensaje
+CDIMensajesWeb.Mensaje=CDIMensajesWeb.Estatus
+CDIMensajesWeb.Estatus=(Fin)
+
+
+
+[Forma.ListaAcciones]
+(Inicio)=Documento Nuevo
+Documento Nuevo=Documento Abrir
+Documento Abrir=Guardar Cambios
+Guardar Cambios=Cerrar
+Cerrar=(Fin)

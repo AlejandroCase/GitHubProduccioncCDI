@@ -1,0 +1,6 @@
+[Venta.frm/Acciones.Campos]
+Expresion=GuardarCambios<BR>Forma(<T>VentaCampos<T>)
+VisibleCondicion=
+Visible=S
+GuardarAntes=S
+DespuesGuardar=S

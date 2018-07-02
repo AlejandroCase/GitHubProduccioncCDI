@@ -1,0 +1,828 @@
+
+[Tabla]
+Icono=0
+Clave=vic_TipoPlano
+Archivo=vic_TipoPlano
+Modulos=(Todos)
+TipoTabla=Maestros
+
+ListaCampos=(Lista)
+LlavePrimaria=TipoPlano
+SQL=SELECT<BR>  TipoPlano,<BR>  Icono,<BR>  FiltroLista,<BR>  TotalCamposFiltroLista,<BR>  C1A,<BR>  C1TD,<BR>  C1E,<BR>  C2A,<BR>  C2TD,<BR>  C2E,<BR>  FiltroElemento,<BR>  TotalCamposFiltroElemento,<BR>  CFE1A,<BR>  CFE1TD,<BR>  CFE1E,<BR>  CFE2A,<BR>  CFE2TD,<BR>  CFE2E,<BR>  CFE3A,<BR>  CFE3TD,<BR>  CFE3E,<BR>  CFE4A,<BR>  CFE4TD,<BR>  CFE4E,<BR>  FiltroElementoEspecial,<BR>  TotalCamposFEE,<BR>  CFEE1A,<BR>  CFEE1TD,<BR>  CFEE1E,<BR>  CFEE2A,<BR>  CFEE2TD,<BR>  CFEE2E,<BR>  CFEE3A,<BR>  CFEE3TD,<BR>  CFEE3E,<BR>  CFEE4A,<BR>  CFEE4TD,<BR>  CFEE4E,<BR>  Comentarios<BR><BR>FROM<BR>  vic_TipoPlano
+[TipoPlano]
+Clave=TipoPlano
+Nombre=Nombre
+Visible=S
+TamanoValidacion=50
+TipoDatos=Texto
+Tamano=50
+
+Requerido=S
+[Icono]
+Clave=Icono
+Nombre=Icono
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[FiltroLista]
+Clave=FiltroLista
+Nombre=Filtro Lista
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[TotalCamposFiltroLista]
+Clave=TotalCamposFiltroLista
+Nombre=TC Filtro Lista
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+AyudaEnCaptura=Lista de Opciones
+ValorPorOmision=1
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+OpcionesUnicamente=S
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+ListaOpciones=(Lista)
+[C1A]
+Clave=C1A
+Nombre=C1 Alineación
+Visible=S
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+CondicionDespliege=TotalCamposFiltroLista en (1,2)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[C1TD]
+Clave=C1TD
+Nombre=C1 Tipo Dato
+Visible=S
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+CondicionDespliege=TotalCamposFiltroLista en (1,2)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[C1E]
+Clave=C1E
+Nombre=C1 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFiltroLista en (1,2)
+RequeridoActivo=S
+[C2A]
+Clave=C2A
+Nombre=C2 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroLista en (2)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[C2TD]
+Clave=C2TD
+Nombre=C2 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+
+
+
+
+
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroLista en (2)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[FiltroElemento]
+Clave=FiltroElemento
+Nombre=Filtro Elemento
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[TotalCamposFiltroElemento]
+Clave=TotalCamposFiltroElemento
+Nombre=TC Filtro Elemento
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+AyudaEnCaptura=Lista de Opciones
+ValorPorOmision=1
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Ninguna
+OpcionesRenglones=8
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+ListaOpciones=(Lista)
+[CFE1A]
+Clave=CFE1A
+Nombre=CFE1 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (1,2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE1TD]
+Clave=CFE1TD
+Nombre=CFE1 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (1,2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE1E]
+Clave=CFE1E
+Nombre=CFE1 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFiltroElemento en (1,2,3,4)
+RequeridoActivo=S
+[CFE2A]
+Clave=CFE2A
+Nombre=CFE2 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE2TD]
+Clave=CFE2TD
+Nombre=CFE2 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE2E]
+Clave=CFE2E
+Nombre=CFE2 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFiltroElemento en (2,3,4)
+RequeridoActivo=S
+[CFE3A]
+Clave=CFE3A
+Nombre=CFE3 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE3TD]
+Clave=CFE3TD
+Nombre=CFE3 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE3E]
+Clave=CFE3E
+Nombre=CFE3 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFiltroElemento en (3,4)
+RequeridoActivo=S
+[CFE4A]
+Clave=CFE4A
+Nombre=CFE4 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE4TD]
+Clave=CFE4TD
+Nombre=CFE4 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFiltroElemento en (4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFE4E]
+Clave=CFE4E
+Nombre=CFE4 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFiltroElemento en (4)
+RequeridoActivo=S
+[FiltroElementoEspecial]
+Clave=FiltroElementoEspecial
+Nombre=Filtro Elemento Especial
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+[TotalCamposFEE]
+Clave=TotalCamposFEE
+Nombre=TC Filtro Especial
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+ValorPorOmision=1
+ConRefrescarCondiciones=S
+ListaRefrescarCondiciones=(Lista)
+ListaOpciones=(Lista)
+[CFEE1A]
+Clave=CFEE1A
+Nombre=CFEE1 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (1,2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE1TD]
+Clave=CFEE1TD
+Nombre=CFEE1 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (1,2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE1E]
+Clave=CFEE1E
+Nombre=CFEE1 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFEE en (1,2,3,4)
+RequeridoActivo=S
+[CFEE2A]
+Clave=CFEE2A
+Nombre=CFEE2 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE2TD]
+Clave=CFEE2TD
+Nombre=CFEE2 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (2,3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE2E]
+Clave=CFEE2E
+Nombre=CFEE2 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFEE en (2,3,4)
+RequeridoActivo=S
+[CFEE3A]
+Clave=CFEE3A
+Nombre=CFEE3 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE3TD]
+Clave=CFEE3TD
+Nombre=CFEE3 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (3,4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE3E]
+Clave=CFEE3E
+Nombre=CFEE3 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFEE en (3,4)
+RequeridoActivo=S
+[CFEE4A]
+Clave=CFEE4A
+Nombre=CFEE4 Alineación
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=1
+TipoDatos=Texto
+Tamano=1
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE4TD]
+Clave=CFEE4TD
+Nombre=CFEE4 Tipo Dato
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=7
+TipoDatos=Texto
+Tamano=7
+
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesPredefinidas=Ninguna
+CondicionDespliege=TotalCamposFEE en (4)
+RequeridoActivo=S
+ListaOpciones=(Lista)
+[CFEE4E]
+Clave=CFEE4E
+Nombre=CFEE4 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+CondicionDespliege=TotalCamposFEE en (4)
+RequeridoActivo=S
+[Comentarios]
+Clave=Comentarios
+Nombre=Comentarios
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+
+
+
+[C2E]
+Clave=C2E
+Nombre=C2 Etiqueta
+Visible=S
+TamanoValidacion=25
+TipoDatos=Texto
+Tamano=25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CondicionDespliege=TotalCamposFiltroLista en (2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RequeridoActivo=S
+[TotalCamposFiltroElemento.ListaRefrescarCondiciones]
+(Inicio)=CFE1A
+CFE1A=CFE1TD
+CFE1TD=CFE1E
+CFE1E=CFE2A
+CFE2A=CFE2TD
+CFE2TD=CFE2E
+CFE2E=CFE3A
+CFE3A=CFE3TD
+CFE3TD=CFE3E
+CFE3E=CFE4A
+CFE4A=CFE4TD
+CFE4TD=CFE4E
+CFE4E=(Fin)
+
+[TotalCamposFiltroElemento.ListaOpciones]
+(Inicio)=1
+1=2
+2=3
+3=4
+4=(Fin)
+
+[TotalCamposFEE.ListaRefrescarCondiciones]
+(Inicio)=CFEE1A
+CFEE1A=CFEE1TD
+CFEE1TD=CFEE1E
+CFEE1E=CFEE2A
+CFEE2A=CFEE2TD
+CFEE2TD=CFEE2E
+CFEE2E=CFEE3A
+CFEE3A=CFEE3TD
+CFEE3TD=CFEE3E
+CFEE3E=CFEE4A
+CFEE4A=CFEE4TD
+CFEE4TD=CFEE4E
+CFEE4E=(Fin)
+
+[TotalCamposFEE.ListaOpciones]
+(Inicio)=1
+1=2
+2=3
+3=4
+4=(Fin)
+
+
+
+[TotalCamposFiltroLista.ListaRefrescarCondiciones]
+(Inicio)=C1A
+C1A=C1TD
+C1TD=C1E
+C1E=C2A
+C2A=C2TD
+C2TD=C2E
+C2E=(Fin)
+
+[TotalCamposFiltroLista.ListaOpciones]
+(Inicio)=1
+1=2
+2=(Fin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[C1A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[C1TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[C2A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[C2TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFE1A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFE1TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFE2A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFE2TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+
+[CFE3A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFE3TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+
+
+[CFE4A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFE4TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFEE1A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFEE1TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFEE2A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFEE2TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFEE3A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFEE3TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+[CFEE4A.ListaOpciones]
+(Inicio)=D
+D=I
+I=C
+C=(Fin)
+
+[CFEE4TD.ListaOpciones]
+(Inicio)=Fecha
+Fecha=Entero
+Entero=Decimal
+Decimal=Texto
+Texto=(Fin)
+
+
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=TipoPlano
+TipoPlano=Icono
+Icono=FiltroLista
+FiltroLista=TotalCamposFiltroLista
+TotalCamposFiltroLista=C1A
+C1A=C1TD
+C1TD=C1E
+C1E=C2A
+C2A=C2TD
+C2TD=C2E
+C2E=FiltroElemento
+FiltroElemento=TotalCamposFiltroElemento
+TotalCamposFiltroElemento=CFE1A
+CFE1A=CFE1TD
+CFE1TD=CFE1E
+CFE1E=CFE2A
+CFE2A=CFE2TD
+CFE2TD=CFE2E
+CFE2E=CFE3A
+CFE3A=CFE3TD
+CFE3TD=CFE3E
+CFE3E=CFE4A
+CFE4A=CFE4TD
+CFE4TD=CFE4E
+CFE4E=FiltroElementoEspecial
+FiltroElementoEspecial=TotalCamposFEE
+TotalCamposFEE=CFEE1A
+CFEE1A=CFEE1TD
+CFEE1TD=CFEE1E
+CFEE1E=CFEE2A
+CFEE2A=CFEE2TD
+CFEE2TD=CFEE2E
+CFEE2E=CFEE3A
+CFEE3A=CFEE3TD
+CFEE3TD=CFEE3E
+CFEE3E=CFEE4A
+CFEE4A=CFEE4TD
+CFEE4TD=CFEE4E
+CFEE4E=Comentarios
+Comentarios=(Fin)

@@ -1,0 +1,18 @@
+[Dialogo]
+PosicionInicialArriba=308
+PosicionInicialAlturaCliente=306
+
+[Dialogo.ListaAcciones]
+Globales=CDIComparaRotacion
+CDIComparaRotacion=(Fin)
+
+[Acciones.CDIComparaRotacion]
+Nombre=CDIComparaRotacion
+Boton=0
+NombreDesplegar=CDI Comparativo Rotacion
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDIRepComparativoRotacion
+Activo=S
+Visible=S

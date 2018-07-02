@@ -1,0 +1,327 @@
+[Dialogo]
+Clave=MenuRepNomina
+Nombre=Menú
+Icono=14
+TipoDialogo=Menú
+Modulos=(Todos)
+Fuente={MS Sans Serif, 8, Negro, []}
+MenuEstilo=Lista Opciones
+MenuColumnas=1
+AccionesTamanoBoton=15x5
+AccionesDerecha=S
+ListaAcciones=(Lista)
+PosicionInicialAltura=484
+PosicionInicialAncho=313
+VentanaTipoMarco=Diálogo
+VentanaPosicionInicial=Centrado
+VentanaConIcono=S
+PosicionInicialIzquierda=563
+PosicionInicialArriba=355
+PosicionInicialAlturaCliente=162
+
+[Acciones.Acum]
+Nombre=Acum
+Boton=0
+NombreDesplegar=&Acumulados
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaAcum
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/Acum<T>)
+[Acciones.Recibo]
+Nombre=Recibo
+Boton=0
+NombreDesplegar=&Recibos
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaRecibo
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/Recibo<T>)
+[Acciones.NominaDesglose]
+Nombre=NominaDesglose
+Boton=0
+NombreDesplegar=Desglose de &Moneda
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaDesglose
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/NominaDesglose<T>)
+[Acciones.RepNominaDinero]
+Nombre=RepNominaDinero
+Boton=0
+NombreDesplegar=Movimientos - &Dinero
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaDinero
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/RepNominaDinero<T>)
+[Acciones.RepNominaCxp]
+Nombre=RepNominaCxp
+Boton=0
+NombreDesplegar=Movimientos - Cuentas por &Pagar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaCxp
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/RepNominaCxp<T>)
+[Acciones.RepNominaTabular]
+Nombre=RepNominaTabular
+Boton=0
+NombreDesplegar=Nómina &Tabular
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=RepNominaTabular
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/RepNominaTabular<T>)
+[Acciones.RepNominaTabularAcum]
+Nombre=RepNominaTabularAcum
+Boton=0
+NombreDesplegar=Nómina Tabular (Acumulados)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaTabularAcum
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/RepNominaTabularAcum<T>)
+[Acciones.RepNominaTabularConAcum]
+Nombre=RepNominaTabularConAcum
+Boton=0
+NombreDesplegar=Nómina Tabular (Nómina/Acumulados)
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaTabularConAcum
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/RepNominaTabularConAcum<T>)
+[Acciones.SUAMovimientos]
+Nombre=SUAMovimientos
+Boton=0
+NombreDesplegar=SUA Movimientos
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Formas
+ClaveAccion=RepSUAMovimientos
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/SUAMovimientos<T>)
+[Acciones.SUATrabajador]
+Nombre=SUATrabajador
+Boton=0
+NombreDesplegar=SUA Trabajador
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepSUATrabajador
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/SUATrabajador<T>)
+[Acciones.PTUDatos]
+Nombre=PTUDatos
+Boton=0
+NombreDesplegar=PTU
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Reportes Pantalla
+ClaveAccion=PTUDatos
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/PTUDatos<T>)
+[Acciones.Avisos]
+Nombre=Avisos
+Boton=0
+NombreDesplegar=A&visos
+EnMenu=S
+EnBarraAcciones=S
+EspacioPrevio=S
+TipoAccion=Dialogos
+ClaveAccion=MenuRepNomAvisos
+Activo=S
+Visible=S
+
+[Acciones.DispMag]
+Nombre=DispMag
+Boton=0
+NombreDesplegar=A&rchivos DispMag
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=MenuRepNomDispMag
+Activo=S
+Visible=S
+
+[Acciones.ISRAnual]
+Nombre=ISRAnual
+Boton=0
+NombreDesplegar=&ISR Anual sin Estimar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=mis_RepNomISRAnual
+Activo=S
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/ISRAnual<T>)
+[Acciones.MovsProcesar]
+Nombre=MovsProcesar
+Boton=0
+NombreDesplegar=Movimientos por Procesar
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=MenuRepNomMovsProc
+Activo=S
+Visible=S
+
+[Acciones.Iscas]
+Nombre=Iscas
+Boton=0
+NombreDesplegar=A&nálisis ISCAS
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+TipoAccion=Formas
+ClaveAccion=mis_RepAnalisisIscas
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/Iscas<T>)
+[Acciones.PrimaRiesgo]
+Nombre=PrimaRiesgo
+Boton=0
+NombreDesplegar=Prima de Riesgo de Trabajo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepNominaPrimaRiesgo
+Activo=S
+
+
+
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/PrimaRiesgo<T>)
+[Acciones.ReciboAdicional]
+Nombre=ReciboAdicional
+Boton=0
+NombreDesplegar=Recibos - &Otros Formatos
+EnMenu=S
+EnBarraAcciones=S
+Activo=S
+
+
+
+
+
+TipoAccion=Formas
+ClaveAccion=RepReciboNomina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VisibleCondicion=no CfgLista.Existe(<T>Reportes Inactivos<T>, <T>Nomina/ReciboAdicional<T>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Acciones.LayoutsBancarios]
+Nombre=LayoutsBancarios
+Boton=0
+NombreDesplegar=&Layouts Bancarios
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=RepLayoutNomina
+Activo=S
+Visible=S
+
+
+
+[Dialogo.ListaAcciones]
+(Inicio)=Acum
+Acum=Recibo
+Recibo=ReciboAdicional
+ReciboAdicional=NominaDesglose
+NominaDesglose=RepNominaDinero
+RepNominaDinero=RepNominaCxp
+RepNominaCxp=RepNominaTabular
+RepNominaTabular=RepNominaTabularAcum
+RepNominaTabularAcum=RepNominaTabularConAcum
+RepNominaTabularConAcum=SUAMovimientos
+SUAMovimientos=SUATrabajador
+SUATrabajador=PTUDatos
+PTUDatos=Avisos
+Avisos=DispMag
+DispMag=ISRAnual
+ISRAnual=MovsProcesar
+MovsProcesar=Iscas
+Iscas=PrimaRiesgo
+PrimaRiesgo=LayoutsBancarios
+LayoutsBancarios=(Fin)

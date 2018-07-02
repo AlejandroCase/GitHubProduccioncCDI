@@ -1,0 +1,48 @@
+[Personal.tbl/MovNomina]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Personal.frm/Acciones.Guardar Cambios]
+Activo=
+ActivoCondicion=(Personal:Personal.Tipo<><T>Externo<T>) y (Personal:Personal.MovNomina<><T>PersonalExterno<T>)
+
+
+[Personal.frm/(Carpeta Abrir)]
+FiltroGeneral=Tipo<><T>Externo<T>
+
+[Personal.frm/Beneficiarios]
+Pestana=N
+
+[Personal.frm/OtrosDatos]
+Pestana=N
+
+[Personal.frm/Perfiles]
+Pestana=N
+
+[Personal.frm/FormaExtraValor]
+Pestana=N
+
+[Personal.frm/SituacionCta]
+Pestana=N
+
+[Personal.tbl/Registro4]
+ValorPorOmision=0
+
+
+
+[Personal.frm/Forma.ListaAcciones]
+Jornada=DesplegarCampos
+DesplegarCampos=(Fin)
+
+[Personal.frm/Acciones.DesplegarCampos]
+Nombre=DesplegarCampos
+Boton=95
+NombreEnBoton=S
+NombreDesplegar=&Desplegar Campos
+EnBarraHerramientas=S
+TipoAccion=formas
+ClaveAccion=CDIPersonalCamp
+Activo=S
+Antes=S
+AntesExpresiones=asigna(Info.Personal,Personal:Personal.Personal)
+Visible=S

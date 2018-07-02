@@ -1,0 +1,60 @@
+[Vista]
+SQL=(Lista)
+
+[Vista.ListaCampos]
+FormaPago.Importacion=FormaPago.CDICargoAutom
+FormaPago.CDICargoAutom=FormaPago.CDIPorDefault
+FormaPago.CDIPorDefault=Cta.Cuenta
+
+[FormaPago.CDICargoAutom]
+Clave=FormaPago.CDICargoAutom
+LigaTabla=FormaPago
+LigaCampo=CDICargoAutom
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Lógico
+ClaveBDE=CDICargoAutom
+
+[FormaPago.CDIPorDefault]
+Clave=FormaPago.CDIPorDefault
+Nombre=Por Omisión
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+ValorPorOmision=0
+LigaTabla=FormaPago
+LigaCampo=CDIPorDefault
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=CDIPorDefault
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=FormaPago.FormaPago,
+FormaPago.FormaPago,=FormaPago.MovIngresos,
+FormaPago.MovIngresos,=FormaPago.MovEgresos,
+FormaPago.MovEgresos,=FormaPago.Comision,
+FormaPago.Comision,=FormaPago.Comision2,
+FormaPago.Comision2,=FormaPago.Impuestos,
+FormaPago.Impuestos,=FormaPago.Moneda,
+FormaPago.Moneda,=FormaPago.RequiereReferencia,
+FormaPago.RequiereReferencia,=FormaPago.Orden,
+FormaPago.Orden,=FormaPago.Restringida,
+FormaPago.Restringida,=FormaPago.PermiteCambio,
+FormaPago.PermiteCambio,=FormaPago.PV,
+FormaPago.PV,=FormaPago.TarjetaBandaMagnetica,
+FormaPago.TarjetaBandaMagnetica,=FormaPago.Cuenta,
+FormaPago.Cuenta,=FormaPago.Grupo,
+FormaPago.Grupo,=FormaPago.DefCtaDinero,
+FormaPago.DefCtaDinero,=FormaPago.Importacion,
+FormaPago.Importacion,=FormaPago.CDICargoAutom,
+FormaPago.CDICargoAutom,=FormaPago.CDIPorDefault,
+FormaPago.CDIPorDefault,=Cta.Cuenta,
+Cta.Cuenta,=Cta.Descripcion,
+Cta.Descripcion,=CtaDinero.CtaDinero,
+CtaDinero.CtaDinero,=CtaDinero.Descripcion,
+CtaDinero.Descripcion,=CtaDinero.Tipo
+CtaDinero.Tipo=FROM FormaPago
+FROM FormaPago=LEFT OUTER JOIN Cta ON FormaPago.Cuenta<IGUAL>Cta.Cuenta
+LEFT OUTER JOIN Cta ON FormaPago.Cuenta<IGUAL>Cta.Cuenta=LEFT OUTER JOIN CtaDinero ON FormaPago.DefCtaDinero<IGUAL>CtaDinero.CtaDinero
+LEFT OUTER JOIN CtaDinero ON FormaPago.DefCtaDinero<IGUAL>CtaDinero.CtaDinero=(Fin)

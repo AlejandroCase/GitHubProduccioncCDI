@@ -1,0 +1,54 @@
+
+[Vista]
+Icono=0
+Clave=CDIFechaPlanesBajar
+Nombre=CDIFechaPlanesBajar
+Modulos=(Todos)
+Singular=CDIFechaPlanesBajar
+ListaTablas=CDIFechaPlanesBajar
+TablaPrincipal=CDIFechaPlanesBajar
+UsoCapturas=S
+UsoReportes=S
+UsarJOIN=S
+
+ListaCampos=(Lista)
+SQL=(Lista)
+[CDIFechaPlanesBajar.FechaInicio]
+Clave=CDIFechaPlanesBajar.FechaInicio
+Nombre=Fecha de Inicio
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario
+LigaTabla=CDIFechaPlanesBajar
+LigaCampo=FechaInicio
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=FechaInicio
+
+[CDIFechaPlanesBajar.FechaFin]
+Clave=CDIFechaPlanesBajar.FechaFin
+Nombre=Fecha Final
+Visible=S
+TamanoValidacion=15
+TipoDatos=FechaHora
+AyudaEnCaptura=Calendario
+LigaTabla=CDIFechaPlanesBajar
+LigaCampo=FechaFin
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=FechaFin
+
+
+
+[Vista.ListaCampos]
+(Inicio)=CDIFechaPlanesBajar.FechaInicio
+CDIFechaPlanesBajar.FechaInicio=CDIFechaPlanesBajar.FechaFin
+CDIFechaPlanesBajar.FechaFin=(Fin)
+
+[Vista.SQL]
+(Inicio)=SELECT
+SELECT=CDIFechaPlanesBajar.FechaInicio,
+CDIFechaPlanesBajar.FechaInicio,=CDIFechaPlanesBajar.FechaFin
+CDIFechaPlanesBajar.FechaFin=FROM CDIFechaPlanesBajar
+FROM CDIFechaPlanesBajar=(Fin)

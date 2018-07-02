@@ -1,0 +1,11 @@
+[Personal.tbl/MovNomina]
+ConRefrescarCondiciones=S
+RefrescarTodoCondiciones=S
+
+[Personal.frm/Acciones.Guardar Cambios]
+Activo=
+ActivoCondicion=(Personal:Personal.Tipo<><T>Externo<T>) y (Personal:Personal.MovNomina<><T>PersonalExterno<T>)
+
+
+[Personal.frm/(Carpeta Abrir)]
+FiltroGeneral=Tipo<><T>Externo<T>

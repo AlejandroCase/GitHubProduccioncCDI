@@ -1,0 +1,33 @@
+[Tabla]
+SQL=(Lista)
+
+[Tabla.ListaCampos]
+UltimoDiaPagado=PeriodicidadPago
+PeriodicidadPago=NominaAnexo20
+NominaAnexo20=(Fin)
+
+[PeriodicidadPago]
+Clave=PeriodicidadPago
+Nombre=PeriodicidadPago
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+ValorRefrescar=SQL(<T>SELECT PeriodicidadPago FROM CFDINominaTiposPeriodicidadPago WHERE Descripcion = :tDescripcion<T>, PeriodoTipo)
+
+[NominaAnexo20]
+Clave=NominaAnexo20
+Nombre=NominaAnexo20
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=PeriodoTipo,
+PeriodoTipo,=DiasPeriodo,
+DiasPeriodo,=DiasHabiles,
+DiasHabiles,=UltimoDiaPagado,
+UltimoDiaPagado,=PeriodicidadPago,
+PeriodicidadPago,=NominaAnexo20
+NominaAnexo20=FROM PeriodoTipo
+FROM PeriodoTipo=(Fin)

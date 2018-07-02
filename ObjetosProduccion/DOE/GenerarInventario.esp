@@ -1,0 +1,36 @@
+[GenerarSolicitud.dlg/Dialogo]
+PosicionInicialIzquierda=1000
+PosicionInicialArriba=1000
+PosicionInicialAltura=1300
+PosicionInicialAncho=318
+
+
+[GenerarSolicitud.dlg/Acciones.Otros1]
+Nombre=Otros1
+Boton=0
+NombreDesplegar=Generar &Salida Cafeteria
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Dialogos
+ClaveAccion=GenerarPedidoPendiente
+Activo=S
+Visible=S
+Antes=S
+AntesExpresiones=Asigna(Afectar.GenerarMov, <T>Salida Cafeteria<T>)<BR>Asigna(Info.TituloDialogo, <T>Generar <T>+Comillas(Afectar.GenerarMov)+<T> de <T>+Comillas(Afectar.Mov))
+
+
+[GenerarSolicitud.dlg/Dialogo.ListaAcciones]
+(Inicio)=SalidaDiversa
+SalidaDiversa=Consumo
+Consumo=Prestamo
+Prestamo=Transferencia
+Transferencia=Traspaso
+Traspaso=Entarimado
+Entarimado=SolicitudCancelada
+SolicitudCancelada=SolicitudRechazada
+SolicitudRechazada=Otros1
+Otros1=Reservar
+Reservar=DesReservar
+DesReservar=Asignar
+Asignar=DesAsignar
+DesAsignar=(Fin)

@@ -1,0 +1,16 @@
+[Dialogo]
+PosicionInicialIzquierda=542
+PosicionInicialArriba=236
+PosicionInicialAlturaCliente=258
+
+[Acciones.Otros1]
+NombreDesplegar=Cancelacion Gasto
+Activo=S
+Visible=S
+Expresion=Generar(<T>CXP<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cancela Gasto<T>, Afectar.FormaCaptura)
+
+[Acciones.Otros2]
+NombreDesplegar=Cancela Gasto Prov
+Expresion=Generar(<T>CXP<T>, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cancela Gasto Prov<T>, Afectar.FormaCaptura)
+Activo=S
+Visible=S

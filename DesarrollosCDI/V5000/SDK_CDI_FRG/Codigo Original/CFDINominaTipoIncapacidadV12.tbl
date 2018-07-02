@@ -1,0 +1,46 @@
+
+
+
+[Tabla]
+Icono=0
+Clave=CFDINominaTipoIncapacidadV12
+Nombre=CFDINominaTipoIncapacidadV12
+Archivo=CFDINominaTipoIncapacidad
+Modulos=(Todos)
+Singular=CFDINominaTipoIncapacidadV12
+
+TipoTabla=General
+ListaCampos=(Lista)
+
+LlavePrimaria=TipoIncapacidad
+SQL=(Lista)
+[TipoIncapacidad]
+Clave=TipoIncapacidad
+Nombre=Tipo de Incapacidad
+Visible=S
+TamanoValidacion=10
+TipoDatos=Numérico
+
+[Descripcion]
+Clave=Descripcion
+Nombre=Descripción
+Visible=S
+TamanoValidacion=255
+TipoDatos=Texto
+Tamano=255
+
+
+
+
+
+[Tabla.ListaCampos]
+(Inicio)=TipoIncapacidad
+TipoIncapacidad=Descripcion
+Descripcion=(Fin)
+
+[Tabla.SQL]
+(Inicio)=SELECT
+SELECT=TipoIncapacidad,
+TipoIncapacidad,=Descripcion
+Descripcion=FROM CFDINominaTipoIncapacidad
+FROM CFDINominaTipoIncapacidad=(Fin)

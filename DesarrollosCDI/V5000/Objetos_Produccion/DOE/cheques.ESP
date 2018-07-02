@@ -1,0 +1,81 @@
+[GenerarDineroEgreso.dlg/Acciones.Otros1]
+Nombre=Otros1
+Boton=0
+NombreDesplegar=Generar Efectivo
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Efectivo<T>, Afectar.FormaCaptura)
+
+
+[GenerarGastoSolicitud.dlg/Acciones.Otros1]
+Nombre=Otros1
+Boton=0
+NombreDesplegar=Anticipo Caja Chica
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Anticipo Caja Chica<T>, Afectar.FormaCaptura)
+
+[GenerarDineroIngreso.dlg/Acciones.Otros1]
+Nombre=Otros1
+Boton=0
+NombreDesplegar=Generar Deposito Caja
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Deposito Caja<T>, Afectar.FormaCaptura)
+
+
+[GenerarDineroEgreso.dlg/Acciones.Otros2]
+Nombre=Otros2
+Boton=0
+NombreDesplegar=Generar Cheque Nomina
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cheque Nomina<T>, Afectar.FormaCaptura)
+
+
+[GenerarDineroEgreso.dlg/Acciones.Otros3]
+Nombre=Otros3
+Boton=0
+NombreDesplegar=Generar Dispersion Nomina
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Dispersion Nomina<T>, Afectar.FormaCaptura)
+
+
+[GenerarDineroEgreso.dlg/Acciones.Otros4]
+Nombre=Otros4
+Boton=0
+NombreDesplegar=Generar Cheque Reembolso
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cheque Reembolso<T>, Afectar.FormaCaptura)
+
+
+[GenerarDineroEgreso.dlg/Acciones.Otros5]
+Nombre=Otros5
+Boton=0
+NombreDesplegar=Generar Cheque Devolucion
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Expresion
+Activo=S
+Visible=S
+Expresion=Generar(Afectar.Modulo, Afectar.ID, Afectar.Mov, Afectar.MovID, <T>Todo<T>, <T>Cheque Devolucion<T>, Afectar.FormaCaptura)

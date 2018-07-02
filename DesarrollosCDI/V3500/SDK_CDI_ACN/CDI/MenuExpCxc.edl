@@ -1,0 +1,43 @@
+[Dialogo]
+PosicionInicialIzquierda=562
+PosicionInicialArriba=224
+PosicionInicialAlturaCliente=282
+
+[Dialogo.ListaAcciones]
+FordPagos=ExpCxcAplicaCDi
+ExpCxcAplicaCDi=CDICobrosInsc
+CDICobrosInsc=expresion
+expresion=(Fin)
+
+[Acciones.ExpCxcAplicaCDi]
+Nombre=ExpCxcAplicaCDi
+Boton=0
+NombreDesplegar=Explorar Cxc Aplicacion - Venta
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ExplorarCxcAplicaCDI
+Activo=S
+Visible=S
+
+[Acciones.CDICobrosInsc]
+Nombre=CDICobrosInsc
+Boton=0
+NombreDesplegar=Explorar Cobros Inscripciones
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=CDICobrosInsc
+Activo=S
+Visible=S
+
+[Acciones.expresion]
+Nombre=expresion
+Boton=0
+NombreDesplegar=Explorar Movimientos CDI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ExplorarCxcMovCDI
+Activo=S
+Visible=S

@@ -1,0 +1,30 @@
+
+[Vista]
+Icono=0
+Clave=CDIMembresiaLista
+Nombre=<T>Membresia<T>
+Modulos=(Todos)
+
+VistaIndependiente=S
+TipoTabla=General
+ListaCampos=Membresia
+
+CamposBusquedaRapida=Membresia
+SQL=(Lista)
+[Membresia]
+Clave=Membresia
+Nombre=Membresia
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Numérico
+ClaveBDE=Membresia
+
+
+
+[Vista.SQL]
+(Inicio)=SELECT Membresia
+SELECT Membresia=FROM Cte
+FROM Cte=WHERE CDISocio <IGUAL> 1 AND Membresia IS NOT NULL
+WHERE CDISocio <IGUAL> 1 AND Membresia IS NOT NULL=(Fin)

@@ -1,0 +1,21 @@
+[CDICEAsistencia.frm/(Variables).ListaEnCaptura]
+Info.CEGrupo=Info.CDIPago
+Info.CDIPago=(Fin)
+
+[CDICEAsistencia.frm/Forma]
+PosicionInicialIzquierda=511
+PosicionInicialArriba=242
+PosicionInicialAlturaCliente=201
+PosicionInicialAncho=258
+ExpresionesAlMostrar=Asigna(Info.CDIPago, <T>(Todos)<T>)
+
+[CDICEAsistencia.frm/(Variables).Info.CDIPago]
+Carpeta=(Variables)
+Clave=Info.CDIPago
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=20
+ColorFondo=Blanco
+

@@ -1,0 +1,12 @@
+
+[Vista]
+Icono=0
+Clave=CDIDinamica
+Nombre=CDIDinamica
+Modulos=(Todos)
+Singular=CDIDinamica
+VistaDinamica=S
+TipoTabla=General
+VistaIndependiente=S
+SQL=select * from cdictecat
+VistaDinamicaFormatos=0
